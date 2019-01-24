@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="1532-d287-6896-31b9" name="100_night_lords_killteam" battleScribeVersion="2.01" gameSystemId="a467-5f42-d24c-6e5b" gameSystemName="Warhammer 40,000: Kill Team (2018)" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="99.0"/>
+  </costs>
+  <costLimits>
+    <costLimit name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="100.0"/>
+  </costLimits>
+  <forces>
+    <force id="03fc-2ad1-9607-c6ff" name="Kill Team List" entryId="cf61-9e5a-51cd-b4d2" catalogueId="ecac-e836-08ce-c0aa" catalogueRevision="7" catalogueName="Heretic Astartes">
+      <rules/>
+      <profiles/>
+      <selections>
+        <selection id="e682-9dbf-0eef-e67b" name="List Configuration" entryId="5c5e-a332-5578-705f::24de-9906-6401-a20e" number="1" type="upgrade">
+          <rules/>
+          <profiles/>
+          <selections>
+            <selection id="b540-3318-8e70-5016" name="Matched Play: Kill Team" entryId="5c5e-a332-5578-705f::46a8-9e97-401a-03f7" entryGroupId="5c5e-a332-5578-705f::a763-c901-e2be-22eb" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="8c1b-921f-e452-4341" name="Style: Matched" entryId="c502-39de-965b-6780" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+                <category id="83b5-7cbe-3170-6d2a" name="List: Kill Team" entryId="beaf-798d-961f-353d" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+                <category id="75b2-7ba7-d37e-d30b" name="List: Battle-Forged Kill Team" entryId="c0f7-c442-b695-bf07" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="bcbb-4390-34fd-64a1" name="Configuration" entryId="f868-bdfd-567c-3eac" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="f9a8-9753-16b6-6dcd" name="Aspiring Champion" entryId="fe39-04a9-3456-5f56::9254-c2fe-8376-2bfd" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="fe39-04a9-3456-5f56::88b7-5c15-8865-fc19" name="Aspiring Champion" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="2"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="8"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="1"/>
+              </characteristics>
+            </profile>
+            <profile id="fe39-04a9-3456-5f56::c8d3-a073-1cd2-82a7::936f-5757-453b-83b5" name="Death to the False Emperor" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If a model with this ability makes an attack in the Fight phase which targets an IMPERIUM model, each time you roll a hit roll of 6+ you may make an additional attack with the same weapon against the same target. These attacks cannot themselves generate any further attacks."/>
+              </characteristics>
+            </profile>
+            <profile id="fe39-04a9-3456-5f56::8d90-7551-44f4-8818::30ba-1544-5db1-c355" name="Transhuman Physiology" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7f2e-f419-0051-ad85" name="Frag and krak grenades" entryId="fe39-04a9-3456-5f56::fea1-6819-c625-30ca::d688-708b-a896-c8ed" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="fe39-04a9-3456-5f56::fea1-6819-c625-30ca::5762-2627-dd8f-9e6c" name="Frag grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="fe39-04a9-3456-5f56::fea1-6819-c625-30ca::d6a3-f104-c391-9204" name="Krak grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="1360-ba38-3c21-6430" name="Khorne" entryId="fe39-04a9-3456-5f56::781d-fe32-a46a-0f8d::cda4-a3cb-ae7f-13e1" entryGroupId="fe39-04a9-3456-5f56::781d-fe32-a46a-0f8d::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="a913-d7df-fffa-07c8" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="ed41-2026-ddf3-434e" name="Power fist" entryId="fe39-04a9-3456-5f56::cb42-3308-83f9-b946::223e-d693-a58c-77ef" entryGroupId="fe39-04a9-3456-5f56::3785-0ce9-1540-aef7" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="fe39-04a9-3456-5f56::cb42-3308-83f9-b946::17a6-f7fd-5b8c-5066" name="Power fist" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="x2"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="When attacking with this weapon, you must subtract 1 from the hit roll."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="89e7-4209-cdf9-b10f" name="Plasma pistol" entryId="fe39-04a9-3456-5f56::6555-2de1-226a-febe::1ffe-81a9-c612-d79b" entryGroupId="fe39-04a9-3456-5f56::1ae4-29d6-8697-36f5" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="fe39-04a9-3456-5f56::6555-2de1-226a-febe::a05c-c5d7-396f-5dca" name="Plasma pistol - Standard" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="fe39-04a9-3456-5f56::6555-2de1-226a-febe::009c-5e6c-c216-015c" name="Plasma pistol - Supercharge" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="On an unmodified hit roll of 1, the bearer is taken out of action."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="45f7-ceef-ba18-900e" name="Leader" entryId="fe39-04a9-3456-5f56::1e5f-15b2-fb1b-9547::acba-90e0-4167-8951::2abd-70f4-e7e8-4d18" entryGroupId="fe39-04a9-3456-5f56::1e5f-15b2-fb1b-9547::2582-24f9-c06f-b44d" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections>
+                <selection id="b09a-e8a4-5122-2afd" name="Level 1: Resourceful" entryId="fe39-04a9-3456-5f56::1e5f-15b2-fb1b-9547::acba-90e0-4167-8951::49c6-1aa8-c120-1cf1" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="fe39-04a9-3456-5f56::1e5f-15b2-fb1b-9547::acba-90e0-4167-8951::0827-f431-3c0e-66c0::b8d6-5870-939e-3cdf" name="Resourceful" book="Core Manual" page="68" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="As long as this model is on the battlefield and not shaken, you gain an additional Command Point at the beginning of the battle round."/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                  </costs>
+                  <categories>
+                    <category id="82bb-caaf-5a57-edf2" name="Level 1" entryId="6e29-5d9a-98f5-ad2a" primary="false">
+                      <rules/>
+                      <profiles/>
+                    </category>
+                  </categories>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+          </costs>
+          <categories>
+            <category id="571f-d662-6a4a-1465" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="dbba-6ab0-f257-394e" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="f78d-6ce5-b075-c12f" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="1251-d73d-0184-878c" name="Chaos Space Marine" entryId="be41-2105-548f-c896" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="4ad7-ade6-2442-5a24" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="fdea-f249-0de8-c763" name="Leader" entryId="ade4-0710-e40e-be3f" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="c4f6-1141-776f-e49b" name="Chaos Space Marine" entryId="e2e4-5a5a-ffce-b050::4075-809f-9ee0-32ad" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e2e4-5a5a-ffce-b050::528f-521f-57f8-cd9d" name="Chaos Space Marine" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+            <profile id="e2e4-5a5a-ffce-b050::bb44-6833-66d9-8056::936f-5757-453b-83b5" name="Death to the False Emperor" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If a model with this ability makes an attack in the Fight phase which targets an IMPERIUM model, each time you roll a hit roll of 6+ you may make an additional attack with the same weapon against the same target. These attacks cannot themselves generate any further attacks."/>
+              </characteristics>
+            </profile>
+            <profile id="e2e4-5a5a-ffce-b050::cba8-9f1c-fa9e-aceb::30ba-1544-5db1-c355" name="Transhuman Physiology" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="cec6-86b3-881b-1ca8" name="Bolt pistol" entryId="e2e4-5a5a-ffce-b050::054e-7f89-ed8a-b74a::61c8-b45d-100b-33e0" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e2e4-5a5a-ffce-b050::054e-7f89-ed8a-b74a::bb3a-a737-c650-0fc9" name="Bolt pistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="e91d-4c5b-9277-24e6" name="Frag and krak grenades" entryId="e2e4-5a5a-ffce-b050::a605-6f35-c7be-aaf9::d688-708b-a896-c8ed" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e2e4-5a5a-ffce-b050::a605-6f35-c7be-aaf9::5762-2627-dd8f-9e6c" name="Frag grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="e2e4-5a5a-ffce-b050::a605-6f35-c7be-aaf9::d6a3-f104-c391-9204" name="Krak grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="ca4a-3d5e-25f4-c171" name="Khorne" entryId="e2e4-5a5a-ffce-b050::b226-2b48-ce04-c877::cda4-a3cb-ae7f-13e1" entryGroupId="e2e4-5a5a-ffce-b050::b226-2b48-ce04-c877::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="8b39-8439-7f12-a7a1" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="5654-dfc6-0db1-f059" name="Icon of Wrath" entryId="e2e4-5a5a-ffce-b050::c368-d034-358f-0717" entryGroupId="e2e4-5a5a-ffce-b050::eae2-0473-e99c-7efe" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e2e4-5a5a-ffce-b050::aab2-91a5-4ac0-ef37" name="Icon of Wrath" hidden="false" profileTypeId="0883-432d-b2ca-f11a" profileTypeName="Wargear">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Ability" characteristicTypeId="8b56-49a8-40e5-242a" value="You can re-roll charge rolls for KHORNE models within 6&quot; of any friendly models equipped with an Icon of Wrath."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="741e-d302-897a-173a" name="Chainsword" entryId="e2e4-5a5a-ffce-b050::eab4-972b-5685-f056::66af-e06c-a79f-50f8" entryGroupId="e2e4-5a5a-ffce-b050::cb3e-b228-8f5b-5eab" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e2e4-5a5a-ffce-b050::eab4-972b-5685-f056::cd11-7a53-3c0a-2eae::1c57-880e-31aa-9dc6" name="Chainsword" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each time the bearer fights, it can make one additional attack with this weapon."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="7ddd-146b-9d80-01ef" name="Combat" entryId="e2e4-5a5a-ffce-b050::ae10-66e4-c603-b3c3::4b4f-55de-8aee-2124::cc58-f869-82d1-b353" entryGroupId="e2e4-5a5a-ffce-b050::ae10-66e4-c603-b3c3::2582-24f9-c06f-b44d" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections>
+                <selection id="9fc4-b4ae-cf35-977a" name="Level 1: Expert Fighter" entryId="e2e4-5a5a-ffce-b050::ae10-66e4-c603-b3c3::4b4f-55de-8aee-2124::16da-492c-b6a7-fb5c" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="e2e4-5a5a-ffce-b050::ae10-66e4-c603-b3c3::4b4f-55de-8aee-2124::61e0-eab1-2c31-17ec::c0fe-c084-3f73-2cbf" name="Expert Fighter" book="Core Manual" page="69" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Add 1 to this model&apos;s Attacks characteristic."/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                  </costs>
+                  <categories>
+                    <category id="fc3b-7d81-b2b4-16bd" name="Level 1" entryId="6e29-5d9a-98f5-ad2a" primary="false">
+                      <rules/>
+                      <profiles/>
+                    </category>
+                  </categories>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+          </costs>
+          <categories>
+            <category id="51bb-0faf-bc77-feee" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="812d-b026-748b-0ffc" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="a275-8865-3170-6f57" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="3fee-18a6-586c-51c1" name="Chaos Space Marine" entryId="be41-2105-548f-c896" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="053f-ddd2-e987-7f86" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="b656-edc7-0370-194b" name="Specialist" entryId="29e7-d60f-5acd-4d99" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="06b9-6824-ee0b-edf3" name="Chaos Space Marine Gunner" entryId="15fa-cc18-079b-1f27::058a-4851-7cd8-27d4" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="15fa-cc18-079b-1f27::dcfd-40ef-6faf-ce9a" name="Chaos Space Marine Gunner" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="2"/>
+              </characteristics>
+            </profile>
+            <profile id="15fa-cc18-079b-1f27::6299-0aee-a1b8-578f::30ba-1544-5db1-c355" name="Transhuman Physiology" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered."/>
+              </characteristics>
+            </profile>
+            <profile id="15fa-cc18-079b-1f27::55d4-2244-361b-2e0b::936f-5757-453b-83b5" name="Death to the False Emperor" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If a model with this ability makes an attack in the Fight phase which targets an IMPERIUM model, each time you roll a hit roll of 6+ you may make an additional attack with the same weapon against the same target. These attacks cannot themselves generate any further attacks."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7d7e-fffa-708b-319b" name="Bolt pistol" entryId="15fa-cc18-079b-1f27::bf6f-2cc2-5f0a-58f0::61c8-b45d-100b-33e0" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="15fa-cc18-079b-1f27::bf6f-2cc2-5f0a-58f0::bb3a-a737-c650-0fc9" name="Bolt pistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="4171-4741-014e-2e53" name="Frag and krak grenades" entryId="15fa-cc18-079b-1f27::7741-379f-4575-c434::d688-708b-a896-c8ed" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="15fa-cc18-079b-1f27::7741-379f-4575-c434::5762-2627-dd8f-9e6c" name="Frag grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="15fa-cc18-079b-1f27::7741-379f-4575-c434::d6a3-f104-c391-9204" name="Krak grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="ad83-1288-ee4d-b5dd" name="*No Mark*" entryId="15fa-cc18-079b-1f27::f8e2-b938-6259-48cf::e75b-e261-2820-3a75" entryGroupId="15fa-cc18-079b-1f27::f8e2-b938-6259-48cf::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="a200-59d4-da16-7038" name="&lt;Mark of Chaos&gt;" entryId="c551-1a62-9b66-b53c" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="e14b-b304-f011-36e6" name="Heavy bolter" entryId="15fa-cc18-079b-1f27::1643-aa0a-0004-0b60" entryGroupId="15fa-cc18-079b-1f27::a2d8-a4e5-baa9-dd68" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="15fa-cc18-079b-1f27::d05f-2b10-6d13-3933" name="Heavy bolter" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="36&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Heavy 3"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="5"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="1d7e-842f-fc75-adf1" name="Heavy" entryId="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::6333-03be-2bc3-6708::8c9b-a772-02e7-d673" entryGroupId="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::2582-24f9-c06f-b44d" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections>
+                <selection id="4813-1cdb-ed2f-5514" name="Level 1: Relentless" entryId="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::6333-03be-2bc3-6708::5308-cce0-90b6-1881" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::6333-03be-2bc3-6708::3bfc-5415-5d96-2a37::32fd-6f95-11d2-943d" name="Relentless" book="Core Manual" page="72" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="This model does not suffer the -1 penalty for shooting with a Heavy weapon after moving in the preceding Movement phase, or for shooting an Assault weapon after Advancing."/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                  </costs>
+                  <categories>
+                    <category id="7584-05c1-67ad-5144" name="Level 1" entryId="6e29-5d9a-98f5-ad2a" primary="false">
+                      <rules/>
+                      <profiles/>
+                    </category>
+                  </categories>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+          </costs>
+          <categories>
+            <category id="9d23-61a2-92ee-ad20" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="1738-5d64-8ba0-a394" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="310f-8425-8d46-b756" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="92cf-7eb3-810f-ed1c" name="Chaos Space Marine" entryId="be41-2105-548f-c896" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="f559-1ed6-8b69-8543" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="f70e-0761-d323-230e" name="Specialist" entryId="29e7-d60f-5acd-4d99" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="2b84-600d-9a0e-d472" name="Chaos Space Marine Gunner" entryId="15fa-cc18-079b-1f27::058a-4851-7cd8-27d4" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="15fa-cc18-079b-1f27::dcfd-40ef-6faf-ce9a" name="Chaos Space Marine Gunner" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="3+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="3+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="4"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="4"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="7"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="3+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="2"/>
+              </characteristics>
+            </profile>
+            <profile id="15fa-cc18-079b-1f27::6299-0aee-a1b8-578f::30ba-1544-5db1-c355" name="Transhuman Physiology" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered."/>
+              </characteristics>
+            </profile>
+            <profile id="15fa-cc18-079b-1f27::55d4-2244-361b-2e0b::936f-5757-453b-83b5" name="Death to the False Emperor" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="If a model with this ability makes an attack in the Fight phase which targets an IMPERIUM model, each time you roll a hit roll of 6+ you may make an additional attack with the same weapon against the same target. These attacks cannot themselves generate any further attacks."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="dd06-3229-95c3-665d" name="Bolt pistol" entryId="15fa-cc18-079b-1f27::bf6f-2cc2-5f0a-58f0::61c8-b45d-100b-33e0" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="15fa-cc18-079b-1f27::bf6f-2cc2-5f0a-58f0::bb3a-a737-c650-0fc9" name="Bolt pistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="b939-1a48-4f23-b153" name="Frag and krak grenades" entryId="15fa-cc18-079b-1f27::7741-379f-4575-c434::d688-708b-a896-c8ed" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="15fa-cc18-079b-1f27::7741-379f-4575-c434::5762-2627-dd8f-9e6c" name="Frag grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade D6"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="15fa-cc18-079b-1f27::7741-379f-4575-c434::d6a3-f104-c391-9204" name="Krak grenade" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="6&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Grenade 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="94b7-f63f-87fb-dc47" name="Khorne" entryId="15fa-cc18-079b-1f27::f8e2-b938-6259-48cf::cda4-a3cb-ae7f-13e1" entryGroupId="15fa-cc18-079b-1f27::f8e2-b938-6259-48cf::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="88a4-8f5f-9b9a-d120" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="095a-a99d-dbb1-c944" name="Sniper" entryId="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::d0ca-f5ce-aa98-9555::ead5-ea32-5412-c857" entryGroupId="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::2582-24f9-c06f-b44d" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections>
+                <selection id="8e49-38cf-9cf4-6075" name="Level 1: Marksman" entryId="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::d0ca-f5ce-aa98-9555::b5b2-a1ad-bbf0-b381" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="15fa-cc18-079b-1f27::d1f5-3802-20fe-48cf::d0ca-f5ce-aa98-9555::aaa1-c9c7-a48f-6a23::476c-6e3d-0038-5251" name="Marksman" book="Core Manual" page="75" hidden="false" profileTypeId="1015-f0b1-9137-0060" profileTypeName="Ability">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="b373-019d-503a-1124" value="You can re-roll hit rolls of 1 for this model when it makes a shooting attack."/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                  </costs>
+                  <categories>
+                    <category id="12d4-035c-1a3e-15cb" name="Level 1" entryId="6e29-5d9a-98f5-ad2a" primary="false">
+                      <rules/>
+                      <profiles/>
+                    </category>
+                  </categories>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="8648-af2a-8c21-eae4" name="Plasma gun" entryId="15fa-cc18-079b-1f27::e1b2-c13d-492d-6002" entryGroupId="15fa-cc18-079b-1f27::23f0-e452-d858-fd9b" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="15fa-cc18-079b-1f27::e93b-b3e2-9dd6-ce00" name="Plasma gun - Standard" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+                <profile id="15fa-cc18-079b-1f27::7bf0-5cae-296d-b81d" name="Plasma gun - Supercharge" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="-3"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="On an unmodified hit roll of 1, the bearer is slain after all of this weapon&apos;s shots have been resolved."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+          </costs>
+          <categories>
+            <category id="4a33-773a-a43b-f740" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="b332-7785-8e05-0285" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="3fa8-c1e1-5f6d-78e4" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="285a-f6ca-8b72-3f87" name="Chaos Space Marine" entryId="be41-2105-548f-c896" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="5432-5c89-2990-4afa" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="d93d-4084-b442-0259" name="Specialist" entryId="29e7-d60f-5acd-4d99" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="00b6-dd07-5702-ff2f" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="d0ab-382c-6c3e-c6b0" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="4b00-8e1e-5620-0f73" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="b7a2-e2df-7c41-b5ff" name="Brutal assault weapon and autopistol" entryId="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::6677-18c5-13dc-5a12" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::c1cf-db61-8970-b01a" name="Brutal assault weapon" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each time the bearer fights with this weapon, it can make one additional attack with this weapon."/>
+                  </characteristics>
+                </profile>
+                <profile id="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::03a5-cd22-d983-a9e5" name="Autopistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="cf05-0db6-00d7-859e" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="7b45-4791-fa49-e731" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="4b84-574d-1a74-c430" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="23b2-ae36-c47b-b184" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="879f-50ed-b666-45f3" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="cb8b-c95e-2168-115d" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="09fd-b1ce-e91a-e391" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="5be0-4905-993d-b8da" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="f28f-2f00-3cec-6de9" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="cb29-5d81-f8f2-1fd2" name="Brutal assault weapon and autopistol" entryId="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::6677-18c5-13dc-5a12" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::c1cf-db61-8970-b01a" name="Brutal assault weapon" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each time the bearer fights with this weapon, it can make one additional attack with this weapon."/>
+                  </characteristics>
+                </profile>
+                <profile id="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::03a5-cd22-d983-a9e5" name="Autopistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="2d6f-a9e9-b681-6e82" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="4933-4b98-1074-4205" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="90a0-91f2-0cbc-aa5c" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="3557-7e34-cb85-7007" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="6cd1-4f34-8d7d-2edf" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="d9e3-6542-bbd4-2dac" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="95c5-c460-3d20-e9b3" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="6a9a-c8fc-cc9e-52f8" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="8dd7-369b-144c-975a" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="252f-50ab-a9c4-964e" name="Brutal assault weapon and autopistol" entryId="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::6677-18c5-13dc-5a12" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::c1cf-db61-8970-b01a" name="Brutal assault weapon" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="User"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="Each time the bearer fights with this weapon, it can make one additional attack with this weapon."/>
+                  </characteristics>
+                </profile>
+                <profile id="e1b0-7e6c-83e5-caef::207f-22b8-2739-cac3::03a5-cd22-d983-a9e5" name="Autopistol" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Pistol 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="eb91-f166-a592-7f7c" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="6c57-a364-010d-29d4" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="7a95-a827-03cf-10da" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="1ca2-3c75-0f4a-7d33" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="598a-abda-6731-4e24" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="b58b-4be3-ec48-9cf5" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="489b-6124-081b-4f0f" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="8af1-26ca-18d6-fa7a" name="Autogun" entryId="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::c822-7316-0ec1-892d" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::8561-5e25-5037-0ce9" name="Autogun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="de6a-75da-79a7-1ff9" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="afb1-f713-92cd-fc67" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="c6cc-643b-442a-bd6e" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="e174-266a-27d2-c151" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="8730-e891-c3a7-57f0" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="fa40-2faf-4d14-04dc" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="2ed5-0c69-0497-4c04" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="ef63-eaba-61ad-4c75" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="2f12-1f3c-b6a1-976e" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="17e4-f01c-e230-c98f" name="Autogun" entryId="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::c822-7316-0ec1-892d" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::8561-5e25-5037-0ce9" name="Autogun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="d4c4-51c3-3053-d45f" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="9447-47a6-b0a3-394e" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="315f-37fc-3740-8a57" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="fa52-38ec-0874-9555" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="bdd6-6607-029d-6208" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="24d3-6413-4338-1ed6" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="0423-1bac-edc8-f9c3" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="ba58-65a3-bdfb-db05" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="3023-107d-a471-18fb" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b776-8aaa-33cc-c535" name="Autogun" entryId="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::c822-7316-0ec1-892d" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::8561-5e25-5037-0ce9" name="Autogun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="c2c8-51fd-40ca-78e6" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="8079-56ac-c568-6789" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="31b5-2f74-2cd5-b592" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="add1-3eb8-0a3b-1520" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="09f8-5ded-93a3-36ec" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="08be-c037-7309-c5e9" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="5404-c87c-3172-82dd" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="be77-d04f-6691-f5d9" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="7000-a560-3f00-cae2" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b95d-cce1-db45-cd8b" name="Autogun" entryId="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::c822-7316-0ec1-892d" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::8561-5e25-5037-0ce9" name="Autogun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="3aae-37e2-3d44-7417" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="2031-670b-aff2-6094" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="0d6a-368f-3133-fe43" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="2183-06f5-e41f-6709" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="cde7-f680-452b-4972" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="f064-cfbf-4e7a-f31b" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="d33a-4757-b803-cdcb" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="ceca-e639-7d6c-c7b2" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="aa95-1ac3-22db-a7ab" name="Chaos Cultist" entryId="e1b0-7e6c-83e5-caef::f9df-0d10-d7d2-8f3c" number="1" type="model">
+          <rules/>
+          <profiles>
+            <profile id="e1b0-7e6c-83e5-caef::27ef-4af7-1b2d-7f81" name="Chaos Cultist" hidden="false" profileTypeId="bb0a-aba1-abd0-beb3" profileTypeName="Model">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0a65-6cb0-f00d-e414" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="99d4-2590-8bac-3ad3" value="4+"/>
+                <characteristic name="BS" characteristicTypeId="27ff-d5c5-5422-1614" value="4+"/>
+                <characteristic name="S" characteristicTypeId="d474-89b0-047c-4f3a" value="3"/>
+                <characteristic name="T" characteristicTypeId="803c-5453-20c4-4b94" value="3"/>
+                <characteristic name="W" characteristicTypeId="0c48-aed0-609b-9818" value="1"/>
+                <characteristic name="A" characteristicTypeId="d63d-20cc-db25-5dd5" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="411b-5228-afed-8334" value="5"/>
+                <characteristic name="Sv" characteristicTypeId="c319-1a2d-3648-2294" value="6+"/>
+                <characteristic name="Max" characteristicTypeId="44ec-172b-6381-4908" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="86fd-362b-0a45-dd86" name="Autogun" entryId="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::c822-7316-0ec1-892d" entryGroupId="e1b0-7e6c-83e5-caef::3326-8a3d-1035-165e" number="1" type="upgrade">
+              <rules/>
+              <profiles>
+                <profile id="e1b0-7e6c-83e5-caef::5f72-0547-e806-4e81::8561-5e25-5037-0ce9" name="Autogun" hidden="false" profileTypeId="c067-7929-f4dc-7825" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="5410-0b42-87cc-bbc6" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="38ea-c4e0-d3bb-d1e9" value="Rapid Fire 1"/>
+                    <characteristic name="S" characteristicTypeId="fcc6-35ea-38b6-f4ca" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="fc0e-2874-184d-9f64" value="0"/>
+                    <characteristic name="D" characteristicTypeId="cc1f-e463-c014-2251" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="72cf-5b8f-5b71-79b2" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="ee33-a88b-8924-9aed" name="Khorne" entryId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::cda4-a3cb-ae7f-13e1" entryGroupId="e1b0-7e6c-83e5-caef::359a-2dcc-1d85-97a1::5e91-64ba-5229-d2a9" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="4ebb-3e78-1d4d-d64c" name="Khorne" entryId="6597-19ae-d64e-0fad" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+          </costs>
+          <categories>
+            <category id="ac40-01ea-e04a-6e3e" name="Faction: Heretic Astartes" entryId="57de-32ed-68ae-23bf" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="ca7f-2455-36f5-5003" name="Chaos" entryId="5c8a-0750-e7af-2761" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="3050-6739-9d88-790d" name="Infantry" entryId="96c1-32dc-d9dc-4678" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="a4ac-226c-1f9b-4d63" name="Chaos Cultist" entryId="f5f1-3c88-54ba-b808" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="ca24-de37-0006-f323" name="Model" entryId="50dd-a755-e02d-1c30" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="4a8f-a878-65cf-316b" name="Non-specialist" entryId="79c6-76fc-47ee-c005" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="a2cd-2589-3a41-de6f" name="Uncategorised" entryId="(No Category)" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="4d53-e600-3fe0-d68a" name="Configuration" entryId="f868-bdfd-567c-3eac" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ad5a-de84-b7d6-2006" name="Commander" entryId="6c25-5825-9054-44a7" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ebe9-5ec3-d5cb-aab2" name="Leader" entryId="ade4-0710-e40e-be3f" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="24c5-790b-a803-5960" name="Specialists" entryId="29e7-d60f-5acd-4d99" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="1fbe-23ce-b103-8b4b" name="Specialist Retainers" entryId="181f-e47f-6ec3-2e9b" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="38b6-f909-ed72-d8ce" name="Non-specialists" entryId="79c6-76fc-47ee-c005" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+      </categories>
+      <forces/>
+    </force>
+  </forces>
+</roster>
