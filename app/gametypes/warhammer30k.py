@@ -2,4 +2,5 @@ from app.gametypes.gametype import GameType
 
 
 class Warhammer30k(GameType):
-    pass
+    def find(self, gametype_name, gametype_id):
+        pass
