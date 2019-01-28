@@ -6,5 +6,5 @@ class GameType(metaclass=ABCMeta):
     gametype_id = None
 
     @abstractmethod
-    def find(self, gametype_name, gametype_id):
+    def run_parser(self, gametype_name, gametype_id):
         pass

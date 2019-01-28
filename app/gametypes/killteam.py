@@ -6,5 +6,5 @@ class KillTeam(GameType):
     gametype_name = KILLTEAM_NAME
     gametype_id = KILLTEAM_ID
 
-    def find(self, gametype_name, gametype_id):
+    def run_parser(self, gametype_name, gametype_id):
         pass
