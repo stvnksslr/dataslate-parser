@@ -1,11 +1,12 @@
 from unittest import TestCase
-from lib import gametype_parser
+from app import gametype_parser
 
 
 class GameTypeParserTest(TestCase):
     def setUp(self):
         self.killteam = "killteam"
         self.gameSystemName = "Warhammer 40,000: Kill Team (2018)"
+        self.gameSystemId = 'a467-5f42-d24c-6e5b'
 
     def test__find_game_type(self):
         """
@@ -13,7 +14,7 @@ class GameTypeParserTest(TestCase):
         Precondition: gametype killteam
         Result: list matches expected outcome
         """
-        gamesystem = gametype_parser.GameTypeParser.find_gametype(
-            self, self.gameSystemName
+        gamesystem = gametype_parser.find_gametype(
+            self, self.gameSystemName, self.gameSystemId
         )
         self.assertEqual(gamesystem, self.killteam)

@@ -1,7 +1,12 @@
-from lib import gametype
+supported_gametypes = {
+    killteam:KillTeam
+}
 
 
-class GameTypeParser:
-    def find_gametype(self, gametype):
-        return "killteam"
-
+def find_gametype(self, gametype, gametype_id):
+    self.gametype = gametype
+    self.gametype_id = gametype_id
+    if self.gametype == supported_gametypes:
+        return True
+    else:
+        return False

@@ -10,6 +10,7 @@ pytest = "*"
 [packages]
 beautifulsoup4 = "*"
 lxml = "*"
+flask = "*"
 
 [requires]
 python_version = "3.7"
