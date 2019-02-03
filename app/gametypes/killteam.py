@@ -3,8 +3,12 @@ from app.gametypes.gametype import GameType
 
 
 class KillTeam(GameType):
-    gametype_name = KILLTEAM_NAME
-    gametype_id = KILLTEAM_ID
+    game_type_name = KILLTEAM_NAME
+    game_type_id = KILLTEAM_ID
 
-    def run_parser(self, gametype_name, gametype_id):
+    @property
+    def return_name(self):
+        return self.game_type_name
+
+    def run_parser(self, game_type_name, game_type_id):
         pass
