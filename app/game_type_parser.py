@@ -1,2 +1,2 @@
-def find_game_type(self, game_type_id, game_type_name):
-    pass
+def find_game_type(game_type_id):
+    return True

@@ -9,5 +9,6 @@ class GameTypeParser(TestCase):
         self.game_type_id = KILLTEAM_ID
         self.game_type_name = KILLTEAM_NAME
 
-    def find_game_type_test(self):
-        find_game_type(self.game_type_id, self.game_type_name)
+    def test_find_game_type_test(self):
+        found_game = find_game_type(self.game_type_id)
+        self.assertTrue(found_game)
