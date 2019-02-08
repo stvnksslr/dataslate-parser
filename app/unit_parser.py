@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-
+from app.models.kt_models import kt_unit
 
 class UnitParser:
     @staticmethod
@@ -7,5 +7,5 @@ class UnitParser:
         soup = BeautifulSoup(contents, "html")
         unit_list = soup.findAll("selection", {"type": "model"})
         for unit in unit_list:
-            pass
+            unit_name = unit.attrs.get('name')
         return unit_list
