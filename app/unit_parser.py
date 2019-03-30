@@ -26,8 +26,8 @@ class UnitParser:
                                attacks=list_of_attributes.get('A'),
                                leadership=list_of_attributes.get('L'),
                                save=list_of_attributes.get("SV"),
-                               max=list_of_attributes.get("MAX")
-                               )
+                               max=list_of_attributes.get("MAX"))
+
             parsed_unit_list.append(parsed_unit)
 
         return unit_list
