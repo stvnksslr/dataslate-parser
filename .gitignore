@@ -18,6 +18,7 @@
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
+.pytest_cache
 
 # Dump file
 *.stackdump

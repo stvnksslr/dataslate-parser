@@ -1,3 +1,9 @@
 {
-    "python.pythonPath": "/Users/skessler/.virtualenvs/dataslate-parser-Vofo1Osn/bin/python"
+    "python.pythonPath": "/Users/skessler/.virtualenvs/dataslate-parser-Vofo1Osn/bin/python",
+    "python.unitTest.pyTestArgs": [
+        "app"
+    ],
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestEnabled": true
 }
