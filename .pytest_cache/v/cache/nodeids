@@ -1,4 +1,0 @@
-[
-  "app/game_type_parser_test.py::GameTypeParser::test_find_game_type_test",
-  "app/unit_parser_test.py::UnitParserTest::test_parse_units_test_for_killteam"
-]
