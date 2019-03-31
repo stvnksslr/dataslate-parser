@@ -53,9 +53,11 @@ class UnitParser:
             for weapon_ in test2:
                 weapon_name = weapon_.attrs.get('name')
                 weapon_profile_cleaned = [weapon_ for weapon_ in weapon_ if weapon_.name == "characteristics"][0]
+
                 weapon_profile_cleaned_list = [weapon_profile_cleaned for weapon_profile_cleaned in
                                                weapon_profile_cleaned if
                                                weapon_profile_cleaned.name == "characteristic"]
+
                 parsed_weapons = UnitParser.dict_of_attributes(weapon_profile_cleaned_list)
                 parsed_weapons.update({'Name': weapon_name})
                 list_of_weapons.append(parsed_weapons)
