@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 from app.models.unit import Unit
-from app.models.weapon import Weapon
 
 
 class UnitParser:
@@ -17,9 +16,13 @@ class UnitParser:
         for item in unit_list:
             parsed_unit_name = item.attrs.get('name')
             unit_profile = UnitParser.fetch_list_of_profiles(item, parsed_unit_name)
-            list_of_attributes = UnitParser.list_of_attributes(unit_profile)
+            list_of_attributes = UnitParser.dict_of_attributes(unit_profile)
             list_of_keywords = UnitParser.get_keywords(item)
             list_of_weapons = UnitParser.get_weapons(item)
+            dict_of_wargear = {}
+            for weapon in list_of_weapons:
+                dict_of_wargear.update({weapon.get('Name'): weapon})
+
             parsed_unit = Unit(unit_name=parsed_unit_name,
                                movement=list_of_attributes.get('M'),
                                weapon_skill=list_of_attributes.get('WS'),
@@ -32,7 +35,7 @@ class UnitParser:
                                save=list_of_attributes.get("Sv"),
                                max=list_of_attributes.get("Max"),
                                keywords=list_of_keywords,
-                               wargear=list_of_weapons)
+                               wargear=dict_of_wargear)
 
             parsed_unit_list.append(parsed_unit)
 
@@ -53,7 +56,7 @@ class UnitParser:
                 weapon_profile_cleaned_list = [weapon_profile_cleaned for weapon_profile_cleaned in
                                                weapon_profile_cleaned if
                                                weapon_profile_cleaned.name == "characteristic"]
-                parsed_weapons = UnitParser.list_of_attributes(weapon_profile_cleaned_list)
+                parsed_weapons = UnitParser.dict_of_attributes(weapon_profile_cleaned_list)
                 parsed_weapons.update({'Name': weapon_name})
                 list_of_weapons.append(parsed_weapons)
         return list_of_weapons
@@ -86,10 +89,10 @@ class UnitParser:
         return cleaned_list_of_characteristics
 
     @staticmethod
-    def list_of_attributes(item):
-        list_of_attrs = {}
+    def dict_of_attributes(item):
+        dict_of_attrs = {}
         for attribute in item:
             attr_name = attribute.get('name')
             attr_value = attribute.get('value')
-            list_of_attrs.update({attr_name: attr_value})
-        return list_of_attrs
+            dict_of_attrs.update({attr_name: attr_value})
+        return dict_of_attrs
