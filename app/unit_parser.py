@@ -25,12 +25,12 @@ class UnitParser:
                                wounds=list_of_attributes.get('W'),
                                attacks=list_of_attributes.get('A'),
                                leadership=list_of_attributes.get('L'),
-                               save=list_of_attributes.get("SV"),
-                               max=list_of_attributes.get("MAX"))
+                               save=list_of_attributes.get("Sv"),
+                               max=list_of_attributes.get("Max"))
 
             parsed_unit_list.append(parsed_unit)
 
-        return unit_list
+        return parsed_unit_list
 
     @staticmethod
     def fetch_list_of_profiles(item, parsed_unit_name):
