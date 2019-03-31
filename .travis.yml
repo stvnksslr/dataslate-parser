@@ -1,6 +1,7 @@
 env:
   global:
     - CC_TEST_REPORTER_ID=$CODE_CLIMATE
+    - PIPENV_VERBOSITY=-1
 dist: xenial
 language: python
 python:
