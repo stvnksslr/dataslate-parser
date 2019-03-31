@@ -52,7 +52,7 @@ class UnitParser:
             weapon_profile = [weapon for weapon in weapon if weapon.name if weapon.name == "profiles"]
             test = [weapon_profile.contents for weapon_profile in weapon_profile][0]
             test2 = [test for test in test if test.name]
-            
+
             for weapon_ in test2:
                 weapon_name = weapon_.attrs.get("name")
                 weapon_profile_cleaned = [weapon_ for weapon_ in weapon_ if weapon_.name == "characteristics"][0]
@@ -95,8 +95,7 @@ class UnitParser:
         cleaned_list_of_characteristics = [
             selected_unit
             for selected_unit in list_of_characteristics
-            if selected_unit.name == "characteristic"
-        ]
+            if selected_unit.name == "characteristic"]
 
         return cleaned_list_of_characteristics
 
