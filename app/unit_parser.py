@@ -1,7 +1,6 @@
-from dataclasses import asdict
-
 from bs4 import BeautifulSoup
 from app.models.unit import Unit
+from app.models.weapon import Weapon
 
 
 class UnitParser:
@@ -11,7 +10,6 @@ class UnitParser:
         unit_list = soup.findAll("selection", {"type": "model"})
         parsed_unit_list = []
         UnitParser.get_unit_stats(parsed_unit_list, unit_list)
-
         return parsed_unit_list
 
     @staticmethod
@@ -21,7 +19,7 @@ class UnitParser:
             unit_profile = UnitParser.fetch_list_of_profiles(item, parsed_unit_name)
             list_of_attributes = UnitParser.list_of_attributes(unit_profile)
             list_of_keywords = UnitParser.get_keywords(item)
-
+            list_of_weapons = UnitParser.get_weapons(item)
             parsed_unit = Unit(unit_name=parsed_unit_name,
                                movement=list_of_attributes.get('M'),
                                weapon_skill=list_of_attributes.get('WS'),
@@ -33,9 +31,32 @@ class UnitParser:
                                leadership=list_of_attributes.get('L'),
                                save=list_of_attributes.get("Sv"),
                                max=list_of_attributes.get("Max"),
-                               keywords=list_of_keywords)
+                               keywords=list_of_keywords,
+                               wargear=list_of_weapons)
 
             parsed_unit_list.append(parsed_unit)
+
+    @staticmethod
+    def get_weapons(item):
+        weapons = [item for item in item.contents
+                   if item.name == "selections"][0].contents
+        list_of_weapons = []
+        cleaned_weapons = [weapons for weapons in weapons if weapons.name]
+        list_of_cleaned_weapon_stats = [cleaned_weapons.contents for cleaned_weapons in cleaned_weapons]
+        for weapon in list_of_cleaned_weapon_stats:
+            weapon_profile = [weapon for weapon in weapon if weapon.name if weapon.name == 'profiles']
+            test = [weapon_profile.contents for weapon_profile in weapon_profile][0]
+            test2 = [test for test in test if test.name]
+            for weapon_ in test2:
+                weapon_name = weapon_.attrs.get('name')
+                weapon_profile_cleaned = [weapon_ for weapon_ in weapon_ if weapon_.name == "characteristics"][0]
+                weapon_profile_cleaned_list = [weapon_profile_cleaned for weapon_profile_cleaned in
+                                               weapon_profile_cleaned if
+                                               weapon_profile_cleaned.name == "characteristic"]
+                parsed_weapons = UnitParser.list_of_attributes(weapon_profile_cleaned_list)
+                parsed_weapons.update({'Name': weapon_name})
+                list_of_weapons.append(parsed_weapons)
+        return list_of_weapons
 
     @staticmethod
     def get_keywords(item):

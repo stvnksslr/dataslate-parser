@@ -4,7 +4,7 @@ from dataclasses import dataclass
 @dataclass
 class Unit:
     unit_name: str = ""
-    wargear: dict = ""
+    wargear: list = ""
     abilities: dict = ""
     keywords: list = ""
     point_cost: int = 0
