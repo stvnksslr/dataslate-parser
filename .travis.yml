@@ -16,4 +16,4 @@ install:
 script:
   - pipenv run pytest --cov=app app
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - pipenv run ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
