@@ -35,3 +35,4 @@ class UnitParserTest(TestCase):
         self.assertEqual(asp_champ.wounds, '1')
         self.assertEqual(asp_champ.save, "3+")
         self.assertEqual(asp_champ.max, "1")
+        self.assertEqual(len(asp_champ.keywords), 6)

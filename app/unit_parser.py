@@ -10,11 +10,17 @@ class UnitParser:
         soup = BeautifulSoup(contents, "lxml")
         unit_list = soup.findAll("selection", {"type": "model"})
         parsed_unit_list = []
+        UnitParser.get_unit_stats(parsed_unit_list, unit_list)
 
+        return parsed_unit_list
+
+    @staticmethod
+    def get_unit_stats(parsed_unit_list, unit_list):
         for item in unit_list:
             parsed_unit_name = item.attrs.get('name')
             unit_profile = UnitParser.fetch_list_of_profiles(item, parsed_unit_name)
             list_of_attributes = UnitParser.list_of_attributes(unit_profile)
+            list_of_keywords = UnitParser.get_keywords(item)
 
             parsed_unit = Unit(unit_name=parsed_unit_name,
                                movement=list_of_attributes.get('M'),
@@ -26,11 +32,20 @@ class UnitParser:
                                attacks=list_of_attributes.get('A'),
                                leadership=list_of_attributes.get('L'),
                                save=list_of_attributes.get("Sv"),
-                               max=list_of_attributes.get("Max"))
+                               max=list_of_attributes.get("Max"),
+                               keywords=list_of_keywords)
 
             parsed_unit_list.append(parsed_unit)
 
-        return parsed_unit_list
+    @staticmethod
+    def get_keywords(item):
+        keyword_list = []
+        keywords = [item for item in item.contents
+                    if item.name == "categories"][0].contents
+        cleaned_keywords = [keyword for keyword in keywords if keyword.name]
+        for keyword in cleaned_keywords:
+            keyword_list.append(keyword.attrs.get('name'))
+        return keyword_list
 
     @staticmethod
     def fetch_list_of_profiles(item, parsed_unit_name):
