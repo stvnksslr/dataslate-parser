@@ -7,7 +7,7 @@ from app.kt_unit_parser import KTUnitParser
 class KTUnitParserTest(TestCase):
 
     def setUp(self):
-        self.killteam_roster_path = Path.cwd() / "test_rosters" / "unzipped" / "test.ros"
+        self.killteam_roster_path = Path.cwd() / "test_rosters" / "kill_team" / "chaos_roster.ros"
 
     def test_parse_units_test_for_killteam_returns_list(self):
         with open(self.killteam_roster_path, "r") as roster_file:
