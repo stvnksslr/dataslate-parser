@@ -20,3 +20,12 @@ exclude_patterns:
   - "**/*.rosz"
   - "**/*.xml"
   - "**/*.txt"
+  - "**/*.yml"
+  - "**/*.iml"
+  - "Pipfile"
+  - "Pipfile.lock"
+  - ".gitignore"
+  - "README.md"
+  - "setup.cfg"
+  - "Dockerfile"
+
