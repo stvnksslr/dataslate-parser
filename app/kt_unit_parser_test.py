@@ -4,7 +4,7 @@ from pathlib import Path
 from app.kt_unit_parser import KTUnitParser
 
 
-class UnitParserTest(TestCase):
+class KTUnitParserTest(TestCase):
 
     def setUp(self):
         self.killteam_roster_path = Path.cwd() / "test_rosters" / "unzipped" / "test.ros"
