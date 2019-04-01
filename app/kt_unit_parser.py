@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from app.models.unit import Unit
+from app.models.kt_unit import KtUnit
 
 
 class KTUnitParser:
@@ -23,7 +23,7 @@ class KTUnitParser:
             for weapon in list_of_weapons:
                 dict_of_wargear.update({weapon.get("Name"): weapon})
 
-            parsed_unit = Unit(
+            parsed_unit = KtUnit(
                 unit_name=parsed_unit_name,
                 movement=list_of_attributes.get("M"),
                 weapon_skill=list_of_attributes.get("WS"),

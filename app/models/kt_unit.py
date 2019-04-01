@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Unit:
+class KtUnit:
     unit_name: str = ""
     wargear: dict = ""
     abilities: dict = ""
