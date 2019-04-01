@@ -1,6 +1,7 @@
 from unittest import TestCase
-from app.unit_parser import UnitParser
 from pathlib import Path
+
+from app.kt_unit_parser import KTUnitParser
 
 
 class UnitParserTest(TestCase):
@@ -11,19 +12,19 @@ class UnitParserTest(TestCase):
     def test_parse_units_test_for_killteam_returns_list(self):
         with open(self.killteam_roster_path, "r") as roster_file:
             contents = roster_file.read()
-            parsed_roster = UnitParser.parse_units(contents=contents)
+            parsed_roster = KTUnitParser.parse_units(contents=contents)
             self.assertTrue(parsed_roster)
 
     def test_parse_chaos_roster_for_killteam_returns_12_units(self):
         with open(self.killteam_roster_path, "r") as roster_file:
             contents = roster_file.read()
-            parsed_roster = UnitParser.parse_units(contents=contents)
+            parsed_roster = KTUnitParser.parse_units(contents=contents)
         self.assertEqual(len(parsed_roster), 12)
 
     def test_parse_chaos_roster_for_killteam_returns_properly_formatted_asp_champion(self):
         with open(self.killteam_roster_path, "r") as roster_file:
             contents = roster_file.read()
-            parsed_roster = UnitParser.parse_units(contents=contents)
+            parsed_roster = KTUnitParser.parse_units(contents=contents)
         asp_champ = parsed_roster[0]
         self.assertEqual(asp_champ.unit_name, "Aspiring Champion")
         self.assertEqual(asp_champ.movement, '6"')

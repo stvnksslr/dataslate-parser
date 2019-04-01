@@ -2,23 +2,23 @@ from bs4 import BeautifulSoup
 from app.models.unit import Unit
 
 
-class UnitParser:
+class KTUnitParser:
     @staticmethod
     def parse_units(contents):
         soup = BeautifulSoup(contents, "lxml")
         unit_list = soup.findAll("selection", {"type": "model"})
         parsed_unit_list = []
-        UnitParser.get_unit_stats(parsed_unit_list, unit_list)
+        KTUnitParser.get_unit_stats(parsed_unit_list, unit_list)
         return parsed_unit_list
 
     @staticmethod
     def get_unit_stats(parsed_unit_list, unit_list):
         for item in unit_list:
             parsed_unit_name = item.attrs.get("name")
-            unit_profile = UnitParser.fetch_list_of_profiles(item, parsed_unit_name)
-            list_of_attributes = UnitParser.dict_of_attributes(unit_profile)
-            list_of_keywords = UnitParser.get_keywords(item)
-            list_of_weapons = UnitParser.get_weapons(item)
+            unit_profile = KTUnitParser.fetch_list_of_profiles(item, parsed_unit_name)
+            list_of_attributes = KTUnitParser.dict_of_attributes(unit_profile)
+            list_of_keywords = KTUnitParser.get_keywords(item)
+            list_of_weapons = KTUnitParser.get_weapons(item)
             dict_of_wargear = {}
             for weapon in list_of_weapons:
                 dict_of_wargear.update({weapon.get("Name"): weapon})
@@ -63,7 +63,7 @@ class UnitParser:
                     if weapon_profile_cleaned.name == "characteristic"
                 ]
 
-                parsed_weapons = UnitParser.dict_of_attributes(weapon_profile_cleaned_list)
+                parsed_weapons = KTUnitParser.dict_of_attributes(weapon_profile_cleaned_list)
                 parsed_weapons.update({"Name": weapon_name})
                 list_of_weapons.append(parsed_weapons)
         return list_of_weapons
