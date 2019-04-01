@@ -18,10 +18,10 @@ class KTUnitParser:
             unit_profile = KTUnitParser.fetch_list_of_profiles(item, parsed_unit_name)
             list_of_attributes = KTUnitParser.dict_of_attributes(unit_profile)
             list_of_keywords = KTUnitParser.get_keywords(item)
-            list_of_weapons = KTUnitParser.get_weapons(item)
+            list_of_wargear = KTUnitParser.get_wargear(item)
             dict_of_wargear = {}
-            for weapon in list_of_weapons:
-                dict_of_wargear.update({weapon.get("Name"): weapon})
+            for wargear in list_of_wargear:
+                dict_of_wargear.update({wargear.get("Name"): wargear})
 
             parsed_unit = KtUnit(
                 unit_name=parsed_unit_name,
@@ -42,31 +42,36 @@ class KTUnitParser:
             parsed_unit_list.append(parsed_unit)
 
     @staticmethod
-    def get_weapons(item):
-        weapons = [item for item in item.contents if item.name == "selections"][0].contents
-        list_of_weapons = []
-        cleaned_weapons = [weapons for weapons in weapons if weapons.name]
-        list_of_cleaned_weapon_stats = [cleaned_weapons.contents for cleaned_weapons in cleaned_weapons]
+    def get_wargear(item):
+        list_of_parsed_wargear = []
 
-        for weapon in list_of_cleaned_weapon_stats:
-            weapon_profile = [weapon for weapon in weapon if weapon.name if weapon.name == "profiles"]
-            test = [weapon_profile.contents for weapon_profile in weapon_profile][0]
-            test2 = [test for test in test if test.name]
+        list_of_wargear = [item for item in item.contents if item.name == "selections"][0].contents
+        list_of_wargear_dicts = [selection for selection in list_of_wargear if selection.name]
+        list_of_wargear_elements = [cleaned_weapons.contents for cleaned_weapons in list_of_wargear_dicts]
 
-            for weapon_ in test2:
-                weapon_name = weapon_.attrs.get("name")
-                weapon_profile_cleaned = [weapon_ for weapon_ in weapon_ if weapon_.name == "characteristics"][0]
+        for wargear in list_of_wargear_elements:
+            wargear_profile = [wargear for wargear in wargear if wargear.name if wargear.name == "profiles"][0]
+            wargear_profile_cleaned = [wargear_profile for wargear_profile in wargear_profile if wargear_profile.name]
 
-                weapon_profile_cleaned_list = [
+            for wargear_profile in wargear_profile_cleaned:
+                wargear_name = wargear_profile.attrs.get("name")
+
+                wargear_profile_list = [
+                    wargear_profile
+                    for wargear_profile in wargear_profile
+                    if wargear_profile.name == "characteristics"][0]
+
+                wargear_profile_list_cleaned = [
                     weapon_profile_cleaned
-                    for weapon_profile_cleaned in weapon_profile_cleaned
+                    for weapon_profile_cleaned in wargear_profile_list
                     if weapon_profile_cleaned.name == "characteristic"
                 ]
 
-                parsed_weapons = KTUnitParser.dict_of_attributes(weapon_profile_cleaned_list)
-                parsed_weapons.update({"Name": weapon_name})
-                list_of_weapons.append(parsed_weapons)
-        return list_of_weapons
+                parsed_wargear = KTUnitParser.dict_of_attributes(wargear_profile_list_cleaned)
+                parsed_wargear.update({"Name": wargear_name})
+
+                list_of_parsed_wargear.append(parsed_wargear)
+        return list_of_parsed_wargear
 
     @staticmethod
     def get_keywords(item):
