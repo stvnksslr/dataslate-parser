@@ -25,6 +25,7 @@ class KTUnitParserTest(TestCase):
         with open(self.killteam_roster_path, "r") as roster_file:
             contents = roster_file.read()
             parsed_roster = parse_units(contents=contents)
+
         aspiring_champion = parsed_roster[0]
         self.assertEqual(aspiring_champion.unit_name, "Aspiring Champion")
         self.assertEqual(aspiring_champion.movement, '6"')
