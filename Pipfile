@@ -13,6 +13,7 @@ pytest-cov = "*"
 beautifulsoup4 = "*"
 lxml = "*"
 flask = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
