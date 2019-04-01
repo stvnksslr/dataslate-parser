@@ -1,0 +1,22 @@
+version: "2"
+
+plugins:
+  sonar-python:
+    enabled: true
+  pep8:
+    enabled: true
+  radon:
+    enabled: true
+  bandit:
+    enabled: true
+
+exclude_patterns:
+  - ".pytest_cache/"
+  - ".idea/"
+  - ".vscode/"
+  - "test_rosters/"
+  - "**/static/"
+  - "**/*.ros"
+  - "**/*.rosz"
+  - "**/*.xml"
+  - "**/*.txt"
