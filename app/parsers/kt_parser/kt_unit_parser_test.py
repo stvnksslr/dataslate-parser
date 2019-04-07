@@ -27,7 +27,7 @@ class KTUnitParserTest(TestCase):
             parsed_roster = parse_units(contents=contents)
 
         aspiring_champion = parsed_roster[0]
-        self.assertEqual(aspiring_champion.unit_name, "Aspiring Champion")
+        self.assertEqual(aspiring_champion.name, "Aspiring Champion")
         self.assertEqual(aspiring_champion.movement, '6"')
         self.assertEqual(aspiring_champion.attacks, "2")
         self.assertEqual(aspiring_champion.ballistic_skill, "3+")

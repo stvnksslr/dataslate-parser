@@ -16,13 +16,14 @@ def get_unit_stats(parsed_unit_list, unit_list):
         unit_profile = fetch_list_of_profiles(item, parsed_unit_name)
         list_of_attributes = dict_of_attributes(unit_profile)
         list_of_keywords = get_keywords(item)
-        list_of_wargear = get_wargear(item)
-        dict_of_wargear = get_dict_of_wargear(list_of_wargear)
+        dict_of_wargear = get_dict_of_wargear(item)
         parsed_unit = create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name)
         parsed_unit_list.append(parsed_unit)
 
 
-def get_dict_of_wargear(list_of_wargear):
+def get_dict_of_wargear(item):
+    list_of_wargear = get_wargear(item)
+
     dict_of_wargear = {}
     for wargear in list_of_wargear:
         dict_of_wargear.update({wargear.get("Name"): wargear})
@@ -31,7 +32,7 @@ def get_dict_of_wargear(list_of_wargear):
 
 def create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name):
     parsed_unit = KtUnit(
-        unit_name=parsed_unit_name,
+        name=parsed_unit_name,
         movement=list_of_attributes.get("M"),
         weapon_skill=list_of_attributes.get("WS"),
         ballistic_skill=list_of_attributes.get("BS"),
