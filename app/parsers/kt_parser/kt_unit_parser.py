@@ -17,34 +17,42 @@ def get_unit_stats(parsed_unit_list, unit_list):
         list_of_attributes = dict_of_attributes(unit_profile)
         list_of_keywords = get_keywords(item)
         list_of_wargear = get_wargear(item)
-        dict_of_wargear = {}
-        for wargear in list_of_wargear:
-            dict_of_wargear.update({wargear.get("Name"): wargear})
-
-        parsed_unit = KtUnit(
-            unit_name=parsed_unit_name,
-            movement=list_of_attributes.get("M"),
-            weapon_skill=list_of_attributes.get("WS"),
-            ballistic_skill=list_of_attributes.get("BS"),
-            strength=list_of_attributes.get("S"),
-            toughness=list_of_attributes.get("T"),
-            wounds=list_of_attributes.get("W"),
-            attacks=list_of_attributes.get("A"),
-            leadership=list_of_attributes.get("L"),
-            save=list_of_attributes.get("Sv"),
-            max=list_of_attributes.get("Max"),
-            keywords=list_of_keywords,
-            wargear=dict_of_wargear,
-        )
-
+        dict_of_wargear = get_dict_of_wargear(list_of_wargear)
+        parsed_unit = create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name)
         parsed_unit_list.append(parsed_unit)
+
+
+def get_dict_of_wargear(list_of_wargear):
+    dict_of_wargear = {}
+    for wargear in list_of_wargear:
+        dict_of_wargear.update({wargear.get("Name"): wargear})
+    return dict_of_wargear
+
+
+def create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name):
+    parsed_unit = KtUnit(
+        unit_name=parsed_unit_name,
+        movement=list_of_attributes.get("M"),
+        weapon_skill=list_of_attributes.get("WS"),
+        ballistic_skill=list_of_attributes.get("BS"),
+        strength=list_of_attributes.get("S"),
+        toughness=list_of_attributes.get("T"),
+        wounds=list_of_attributes.get("W"),
+        attacks=list_of_attributes.get("A"),
+        leadership=list_of_attributes.get("L"),
+        save=list_of_attributes.get("Sv"),
+        max=list_of_attributes.get("Max"),
+        keywords=list_of_keywords,
+        wargear=dict_of_wargear,
+    )
+    return parsed_unit
 
 
 def get_wargear(item):
     list_of_parsed_wargear = []
 
-    list_of_wargear = [item for item in item.contents if item.name == "selections"][0].contents
-    list_of_wargear_dicts = [selection for selection in list_of_wargear if selection.name]
+    list_of_possible_wargear_elements = [item for item in item.contents if item.name == "selections"][0].contents
+    list_of_wargear_dicts = [selection for selection in list_of_possible_wargear_elements if selection.name]
     list_of_wargear_elements = [cleaned_weapons.contents for cleaned_weapons in list_of_wargear_dicts]
 
     for wargear in list_of_wargear_elements:

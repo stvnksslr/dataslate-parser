@@ -1,7 +1,7 @@
 from unittest import TestCase
 from pathlib import Path
 
-from app.kt_unit_parser import parse_units
+from app.parsers.kt_parser.kt_unit_parser import parse_units
 
 
 class KTUnitParserTest(TestCase):
