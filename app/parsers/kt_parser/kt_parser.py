@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from app.models.kt_unit import KtUnit
+from app.models.kt_model import KtModel
 
 
 def parse_units(contents):
@@ -19,7 +19,7 @@ def create_list_of_units(parsed_unit_list, unit_list):
         dict_of_wargear = get_dict_of_wargear(item)
         dict_of_abilities = get_abilities(item)
 
-        parsed_unit = KtUnit(
+        parsed_unit = KtModel(
             name=parsed_unit_name,
             movement=list_of_attributes.get("M"),
             weapon_skill=list_of_attributes.get("WS"),
@@ -60,33 +60,18 @@ def get_dict_of_wargear(item):
 
 def get_wargear(item):
     list_of_parsed_wargear = []
-
-    list_of_possible_wargear_elements = [item for item in item.contents if item.name == "selections"][0].contents
-    list_of_wargear_dicts = [selection for selection in list_of_possible_wargear_elements if selection.name]
-    list_of_wargear_elements = [cleaned_weapons.contents for cleaned_weapons in list_of_wargear_dicts]
+    list_of_wargear_elements = item.findAll('profile', {'profiletypename': "Weapon"})
 
     for wargear in list_of_wargear_elements:
-        wargear_profile = [wargear for wargear in wargear if wargear.name if wargear.name == "profiles"][0]
-        wargear_profile_cleaned = [wargear_profile for wargear_profile in wargear_profile if wargear_profile.name]
+        wargear_name = wargear.attrs.get("name")
+        wargear_attribute_list = [wargear for wargear in wargear
+                                  if wargear.name and wargear.name == 'characteristics'][0].contents
+        wargear_attribute_list_cleaned = [wargear_attribute_list for wargear_attribute_list in wargear_attribute_list
+                                          if wargear_attribute_list.name]
 
-        for wargear_profile in wargear_profile_cleaned:
-            wargear_name = wargear_profile.attrs.get("name")
-
-            wargear_profile_list = [
-                wargear_profile
-                for wargear_profile in wargear_profile
-                if wargear_profile.name == "characteristics"][0]
-
-            wargear_profile_list_cleaned = [
-                weapon_profile_cleaned
-                for weapon_profile_cleaned in wargear_profile_list
-                if weapon_profile_cleaned.name == "characteristic"
-            ]
-
-            parsed_wargear = dict_of_attributes(wargear_profile_list_cleaned)
-            parsed_wargear.update({"Name": wargear_name})
-
-            list_of_parsed_wargear.append(parsed_wargear)
+        parsed_wargear = dict_of_attributes(wargear_attribute_list_cleaned)
+        parsed_wargear.update({"Name": wargear_name})
+        list_of_parsed_wargear.append(parsed_wargear)
     return list_of_parsed_wargear
 
 

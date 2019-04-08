@@ -1,7 +1,7 @@
 from unittest import TestCase
 from pathlib import Path
 
-from app.parsers.kt_parser.kt_unit_parser import parse_units
+from app.parsers.kt_parser.kt_parser import parse_units
 
 
 class KTUnitParserTest(TestCase):
@@ -51,6 +51,7 @@ class KTUnitParserTest(TestCase):
         with open(self.death_guard_kill_team_with_commander, "r") as roster_file:
             contents = roster_file.read()
             parsed_roster = parse_units(contents=contents)
+
         plague_surgeon_commander = parsed_roster[0]
         self.assertTrue(len(parsed_roster), 8)
         self.assertTrue(len(plague_surgeon_commander.abilities), 11)
