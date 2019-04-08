@@ -42,5 +42,5 @@ class KTUnitParserTest(TestCase):
         self.assertEqual(len(aspiring_champion.keywords), 6)
         self.assertEqual(len(aspiring_champion.wargear), 5)
         self.assertTrue(aspiring_champion.wargear.get('Power fist'))
-        self.assertEqual(len(aspiring_champion.abilities), 2)
+        self.assertEqual(len(aspiring_champion.abilities), 3)
         self.assertTrue(aspiring_champion.abilities.get(self.ability_example_name))
