@@ -9,7 +9,7 @@ class KillteamTest(TestCase):
     def setUp(self):
         self.base_path = Path.cwd() / "test_rosters" / "kill_team"
         self.chaos_kill_team_standard = str(self.base_path / "chaos_roster.ros")
-        self.death_guard_kill_team_with_commander = str(self.base_path / "death_guard_test_with_commander.ros")
+        self.death_guard_kill_team_with_commander = str(self.base_path / "death_guard_with_commander.ros")
         self.ability_example_name = "Death to the False Emperor"
 
     @staticmethod
