@@ -8,6 +8,7 @@ class KTUnitParserTest(TestCase):
 
     def setUp(self):
         self.killteam_roster_path = Path.cwd() / "test_rosters" / "kill_team" / "chaos_roster.ros"
+        self.ability_example_name = "Death to the False Emperor"
 
     def test_parse_units_test_for_killteam_returns_list(self):
         with open(self.killteam_roster_path, "r") as roster_file:
@@ -40,3 +41,4 @@ class KTUnitParserTest(TestCase):
         self.assertEqual(len(aspiring_champion.keywords), 6)
         self.assertEqual(len(aspiring_champion.wargear), 5)
         self.assertTrue(aspiring_champion.wargear.get('Power fist'))
+        self.assertTrue(aspiring_champion.abilities.get(self.ability_example_name))

@@ -17,8 +17,28 @@ def get_unit_stats(parsed_unit_list, unit_list):
         list_of_attributes = dict_of_attributes(unit_profile)
         list_of_keywords = get_keywords(item)
         dict_of_wargear = get_dict_of_wargear(item)
-        parsed_unit = create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name)
+        dict_of_abilities = get_abilities(item)
+
+        parsed_unit = create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name,
+                                         dict_of_abilities)
         parsed_unit_list.append(parsed_unit)
+
+
+def get_abilities(item):
+    dict_of_abilities = {}
+    potential_unit_abilities = [item for item in item.contents if item.name == "profiles"][0].contents
+    cleaned_unit_abilities = [potential_unit_abilities for potential_unit_abilities in potential_unit_abilities if
+                              potential_unit_abilities.name]
+    list_of_unit_abilities = [cleaned_unit_abilities for cleaned_unit_abilities in cleaned_unit_abilities if
+                              cleaned_unit_abilities.attrs.get('profiletypename') == 'Ability']
+    for ability in list_of_unit_abilities:
+        ability_name = ability.attrs.get('name')
+        ability_characteristics = \
+            [ability for ability in ability if ability.name and ability.name == 'characteristics'][0].contents
+        ability_description = [ability_characteristics for ability_characteristics in ability_characteristics if
+                               ability_characteristics.name == 'characteristic'][0].attrs.get('value')
+        dict_of_abilities.update({ability_name: ability_description})
+    return dict_of_abilities
 
 
 def get_dict_of_wargear(item):
@@ -30,7 +50,7 @@ def get_dict_of_wargear(item):
     return dict_of_wargear
 
 
-def create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name):
+def create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, parsed_unit_name, dict_of_abilities):
     parsed_unit = KtUnit(
         name=parsed_unit_name,
         movement=list_of_attributes.get("M"),
@@ -45,6 +65,7 @@ def create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, pa
         max=list_of_attributes.get("Max"),
         keywords=list_of_keywords,
         wargear=dict_of_wargear,
+        abilities=dict_of_abilities
     )
     return parsed_unit
 
