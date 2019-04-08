@@ -14,12 +14,11 @@ def parse_units(contents):
 def create_unit(unit_list):
     list_of_units = []
     for item in unit_list:
-        dict_of_units = {}
         dict_of_abilities = get_abilities(item)
         unit_group_name = get_unit_group_name(item)
-        list_of_units_in_group = item.findAll("selection", {"type": "model"})
-        parsed_list_if_units_in_grpup = get_units_in_group(list_of_units_in_group, dict_of_abilities)
-        parsed_group = UnitGroup(name=unit_group_name, list_of_units=parsed_list_if_units_in_grpup)
+        list_of_units_in_group = item.findAll("profile", {"profiletypename": "Unit"})
+        parsed_list_if_units_in_group = get_units_in_group(list_of_units_in_group, dict_of_abilities)
+        parsed_group = UnitGroup(name=unit_group_name, list_of_units=parsed_list_if_units_in_group)
         list_of_units.append(parsed_group)
 
     return list_of_units
@@ -28,28 +27,30 @@ def create_unit(unit_list):
 def get_units_in_group(list_of_units_in_group, dict_of_abilities):
     parsed_units_in_group = []
     for unit in list_of_units_in_group:
-        unit_cost = unit.findAll('cost')[0].attrs.get('value')
-        unit_name = unit.attrs.get('name')
-        unit_count = unit.attrs.get('number')
-        list_of_unit_characteristics = unit.findAll('characteristic')
-        dict_of_characteristics = get_unit_characteristics(list_of_unit_characteristics)
-
-        parsed_unit = HeresyUnit(name=unit_name,
-                                 number_of_units=unit_count,
-                                 unit_type=dict_of_characteristics.get('Unit Type'),
-                                 weapon_skill=dict_of_characteristics.get("WS"),
-                                 ballistic_skill=dict_of_characteristics.get("BS"),
-                                 strength=dict_of_characteristics.get("S"),
-                                 toughness=dict_of_characteristics.get("T"),
-                                 wounds=dict_of_characteristics.get("W"),
-                                 initiative=dict_of_characteristics.get("I"),
-                                 attacks=dict_of_characteristics.get("A"),
-                                 leadership=dict_of_characteristics.get("LD"),
-                                 save=dict_of_characteristics.get('Save'),
-                                 abilities=dict_of_abilities
-                                 )
-        parsed_units_in_group.append(parsed_unit)
+        create_unit_object(dict_of_abilities, parsed_units_in_group, unit)
     return parsed_units_in_group
+
+
+def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
+    unit_name = unit.attrs.get('name')
+    unit_count = unit.attrs.get('number')
+    list_of_unit_characteristics = unit.findAll('characteristic')
+    dict_of_characteristics = get_unit_characteristics(list_of_unit_characteristics)
+    parsed_unit = HeresyUnit(name=unit_name,
+                             number_of_units=unit_count,
+                             unit_type=dict_of_characteristics.get('Unit Type'),
+                             weapon_skill=dict_of_characteristics.get("WS"),
+                             ballistic_skill=dict_of_characteristics.get("BS"),
+                             strength=dict_of_characteristics.get("S"),
+                             toughness=dict_of_characteristics.get("T"),
+                             wounds=dict_of_characteristics.get("W"),
+                             initiative=dict_of_characteristics.get("I"),
+                             attacks=dict_of_characteristics.get("A"),
+                             leadership=dict_of_characteristics.get("LD"),
+                             save=dict_of_characteristics.get('Save'),
+                             abilities=dict_of_abilities
+                             )
+    parsed_units_in_group.append(parsed_unit)
 
 
 def get_unit_characteristics(list_of_unit_characteristics):
