@@ -1,7 +1,7 @@
 from pathlib import Path
 from unittest import TestCase
 
-from app.parsers.test_utils import fetch_and_parse_roster
+from app.tests.test_utils import fetch_and_parse_roster
 
 
 class HeresyTest(TestCase):

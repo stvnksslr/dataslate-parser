@@ -1,6 +1,6 @@
 from unittest import TestCase
 from pathlib import Path
-from app.parsers.test_utils import fetch_and_parse_roster
+from app.tests.test_utils import fetch_and_parse_roster
 
 
 class KillteamTest(TestCase):

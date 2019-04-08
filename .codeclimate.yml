@@ -28,4 +28,5 @@ exclude_patterns:
   - "README.md"
   - "setup.cfg"
   - "Dockerfile"
+  - "app/tests"
 
