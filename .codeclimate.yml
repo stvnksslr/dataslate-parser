@@ -18,6 +18,7 @@ exclude_patterns:
   - "**/static/"
   - "**/*.ros"
   - "**/*.rosz"
+  - "**/__init__.py"
   - "**/*.xml"
   - "**/*.txt"
   - "**/*.yml"
