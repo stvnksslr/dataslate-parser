@@ -7,9 +7,8 @@ from app.models.unit_group import UnitGroup
 def parse_units(contents):
     soup = BeautifulSoup(contents, "lxml")
     unit_list = soup.findAll("selection", {"type": "unit"})
-    create_list_of_units(unit_list)
-    parsed_unit_list = []
-    return parsed_unit_list
+    parsed_roster = create_list_of_units(unit_list)
+    return parsed_roster
 
 
 def create_list_of_units(unit_list):
