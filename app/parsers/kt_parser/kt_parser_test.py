@@ -12,22 +12,23 @@ class KTUnitParserTest(TestCase):
         self.death_guard_kill_team_with_commander = str(self.base_path / "death_guard_test_with_commander.ros")
         self.ability_example_name = "Death to the False Emperor"
 
-    def test__parse_units_test_for_killteam_returns_list(self):
-        with open(self.chaos_kill_team_standard, "r") as roster_file:
+    @staticmethod
+    def fetch_and_parse_roster(roster_file):
+        with open(roster_file, "r") as roster_file:
             contents = roster_file.read()
             parsed_roster = parse_units(contents=contents)
-            self.assertTrue(parsed_roster)
+            return parsed_roster
+
+    def test__parse_units_test_for_killteam_returns_list(self):
+        parsed_roster = self.fetch_and_parse_roster(roster_file=self.chaos_kill_team_standard)
+        self.assertTrue(parsed_roster)
 
     def test__parse_chaos_roster_for_killteam_returns_12_units(self):
-        with open(self.chaos_kill_team_standard, "r") as roster_file:
-            contents = roster_file.read()
-            parsed_roster = parse_units(contents=contents)
+        parsed_roster = self.fetch_and_parse_roster(self.chaos_kill_team_standard)
         self.assertEqual(len(parsed_roster), 12)
 
     def test__parse_chaos_roster_for_killteam_returns_properly_formatted_asp_champion(self):
-        with open(self.chaos_kill_team_standard, "r") as roster_file:
-            contents = roster_file.read()
-            parsed_roster = parse_units(contents=contents)
+        parsed_roster = self.fetch_and_parse_roster(self.chaos_kill_team_standard)
 
         aspiring_champion = parsed_roster[0]
         self.assertEqual(aspiring_champion.name, "Aspiring Champion")
@@ -48,9 +49,7 @@ class KTUnitParserTest(TestCase):
         self.assertTrue(aspiring_champion.abilities.get(self.ability_example_name))
 
     def test__parse_death_guard_roster_with_commander(self):
-        with open(self.death_guard_kill_team_with_commander, "r") as roster_file:
-            contents = roster_file.read()
-            parsed_roster = parse_units(contents=contents)
+        parsed_roster = self.fetch_and_parse_roster(self.death_guard_kill_team_with_commander)
 
         plague_surgeon_commander = parsed_roster[0]
         self.assertTrue(len(parsed_roster), 8)

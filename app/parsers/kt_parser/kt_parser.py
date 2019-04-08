@@ -74,7 +74,7 @@ def parse_all_wargear(list_of_parsed_wargear, wargear):
 
     wargear_attribute_list_cleaned = [wargear_attribute_list for wargear_attribute_list in wargear_attribute_list
                                       if wargear_attribute_list.name]
-    
+
     parsed_wargear = dict_of_attributes(wargear_attribute_list_cleaned)
     parsed_wargear.update({"Name": wargear_name})
     list_of_parsed_wargear.append(parsed_wargear)
