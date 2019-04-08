@@ -33,11 +33,11 @@ def get_units_in_group(list_of_units_in_group, dict_of_abilities):
 
 def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
     unit_name = unit.attrs.get('name')
-    unit_count = unit.attrs.get('number')
+    unit_count = unit.parent.parent.attrs.get('number')
     list_of_unit_characteristics = unit.findAll('characteristic')
     dict_of_characteristics = get_unit_characteristics(list_of_unit_characteristics)
     parsed_unit = HeresyUnit(name=unit_name,
-                             number_of_units=unit_count,
+                             number_in_unit=unit_count,
                              unit_type=dict_of_characteristics.get('Unit Type'),
                              weapon_skill=dict_of_characteristics.get("WS"),
                              ballistic_skill=dict_of_characteristics.get("BS"),
@@ -48,8 +48,7 @@ def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
                              attacks=dict_of_characteristics.get("A"),
                              leadership=dict_of_characteristics.get("LD"),
                              save=dict_of_characteristics.get('Save'),
-                             abilities=dict_of_abilities
-                             )
+                             abilities=dict_of_abilities)
     parsed_units_in_group.append(parsed_unit)
 
 
