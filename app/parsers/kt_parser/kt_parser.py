@@ -63,15 +63,21 @@ def get_wargear(item):
     list_of_wargear_elements = item.findAll('profile', {'profiletypename': "Weapon"})
 
     for wargear in list_of_wargear_elements:
-        wargear_name = wargear.attrs.get("name")
-        wargear_attribute_list = [wargear for wargear in wargear
-                                  if wargear.name and wargear.name == 'characteristics'][0].contents
-        wargear_attribute_list_cleaned = [wargear_attribute_list for wargear_attribute_list in wargear_attribute_list
-                                          if wargear_attribute_list.name]
+        parse_all_wargear(list_of_parsed_wargear, wargear)
+    return list_of_parsed_wargear
 
-        parsed_wargear = dict_of_attributes(wargear_attribute_list_cleaned)
-        parsed_wargear.update({"Name": wargear_name})
-        list_of_parsed_wargear.append(parsed_wargear)
+
+def parse_all_wargear(list_of_parsed_wargear, wargear):
+    wargear_name = wargear.attrs.get("name")
+    wargear_attribute_list = [wargear for wargear in wargear
+                              if wargear.name and wargear.name == 'characteristics'][0].contents
+
+    wargear_attribute_list_cleaned = [wargear_attribute_list for wargear_attribute_list in wargear_attribute_list
+                                      if wargear_attribute_list.name]
+    
+    parsed_wargear = dict_of_attributes(wargear_attribute_list_cleaned)
+    parsed_wargear.update({"Name": wargear_name})
+    list_of_parsed_wargear.append(parsed_wargear)
     return list_of_parsed_wargear
 
 
