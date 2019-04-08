@@ -1,2 +1,7 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class UnitGroup:
-    pass
+    name: str = None
+    list_of_units: [] = None
