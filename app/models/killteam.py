@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 
-from app.models.model import Model
+from app.models.unit import Unit
 
 
 @dataclass
-class KtModel(Model):
+class Killteam(Unit):
     max: str = None
     keywords: list = None
     point_cost: int = 0

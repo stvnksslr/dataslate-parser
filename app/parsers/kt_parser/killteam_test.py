@@ -1,10 +1,10 @@
 from unittest import TestCase
 from pathlib import Path
 
-from app.parsers.kt_parser.kt_parser import parse_units
+from app.parsers.kt_parser.killteam import parse_units
 
 
-class KTUnitParserTest(TestCase):
+class KillteamTest(TestCase):
 
     def setUp(self):
         self.base_path = Path.cwd() / "test_rosters" / "kill_team"

@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from app.models.kt_model import KtModel
+from app.models.killteam import Killteam
 
 
 def parse_units(contents):
@@ -19,7 +19,7 @@ def create_list_of_units(parsed_unit_list, unit_list):
         dict_of_wargear = get_dict_of_wargear(item)
         dict_of_abilities = get_abilities(item)
 
-        parsed_unit = KtModel(
+        parsed_unit = Killteam(
             name=parsed_unit_name,
             movement=list_of_attributes.get("M"),
             weapon_skill=list_of_attributes.get("WS"),

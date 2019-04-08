@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Model:
+class Unit:
     name: str = None
     wargear: dict = None
     abilities: dict = None
