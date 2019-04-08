@@ -1,7 +1,7 @@
 from unittest import TestCase
 from pathlib import Path
 
-from app.parsers.kt_parser.killteam import parse_units
+from app.parsers.killteam import parse_units
 
 
 class KillteamTest(TestCase):
