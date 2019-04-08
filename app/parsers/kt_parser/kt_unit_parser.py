@@ -60,7 +60,7 @@ def create_unit_object(dict_of_wargear, list_of_attributes, list_of_keywords, pa
         toughness=list_of_attributes.get("T"),
         wounds=list_of_attributes.get("W"),
         attacks=list_of_attributes.get("A"),
-        leadership=list_of_attributes.get("L"),
+        leadership=list_of_attributes.get("Ld"),
         save=list_of_attributes.get("Sv"),
         max=list_of_attributes.get("Max"),
         keywords=list_of_keywords,
