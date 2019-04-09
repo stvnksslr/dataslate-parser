@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+from app.models.armor_facing import ArmorFacing
 from app.models.heresy_unit import HeresyUnit
 from app.models.unit_group import UnitGroup
 
@@ -8,7 +9,6 @@ def parse_units(contents):
     soup = BeautifulSoup(contents, "lxml")
     list_of_parsable_items = soup.find('selections').contents
     cleaned_item_to_parse = [parsable_item for parsable_item in list_of_parsable_items if parsable_item != '\n']
-
     list_of_units = get_units(cleaned_item_to_parse)
     list_of_upgrades = get_upgrades(cleaned_item_to_parse)
 
@@ -90,6 +90,7 @@ def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
     unit_count = unit.parent.parent.attrs.get('number')
     list_of_unit_characteristics = unit.findAll('characteristic')
     dict_of_characteristics = get_unit_characteristics(list_of_unit_characteristics)
+
     parsed_unit = HeresyUnit(name=unit_name,
                              number_in_unit=unit_count,
                              unit_type=dict_of_characteristics.get('Unit Type'),
@@ -102,7 +103,11 @@ def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
                              attacks=dict_of_characteristics.get("A"),
                              leadership=dict_of_characteristics.get("LD"),
                              save=dict_of_characteristics.get('Save'),
-                             abilities=dict_of_abilities)
+                             abilities=dict_of_abilities,
+                             armor_facing=ArmorFacing(front=dict_of_characteristics.get('Front'),
+                                                 side=dict_of_characteristics.get('Side'),
+                                                 rear=dict_of_characteristics.get('Rear'),
+                                                 hp=dict_of_characteristics.get('HP')))
     parsed_units_in_group.append(parsed_unit)
 
 

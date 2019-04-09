@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+from app.models.armor_facing import ArmorFacing
 from app.models.unit import Unit
 
 
@@ -10,3 +11,4 @@ class HeresyUnit(Unit):
     initiative: str = None
     unit_type: str = None
     movement: str = '6"'
+    armor_facing: ArmorFacing = None
