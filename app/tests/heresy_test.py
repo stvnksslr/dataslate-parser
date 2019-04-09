@@ -12,6 +12,7 @@ class HeresyTest(TestCase):
         self.night_lords_zm_force_with_vehicles = str(self.base_path / "test_hh_vehicles.ros")
         self.single_dread_contemptor = str(self.base_path / "hh_test_dread_only.ros")
         self.single_cortus_dread_contemptor = str(self.base_path / "hh_test_cortus_dread_only.ros")
+        self.tac_squad_with_transport_only = str(self.base_path / "tactical_squad_with_transport.ros")
         self.gametype = "heresy"
 
     def test__parse_heresy_roster_without_errors(self):
@@ -76,3 +77,8 @@ class HeresyTest(TestCase):
                                                gametype=self.gametype)
         parsed_units = parsed_roster[1]
         self.assertEqual(len(parsed_units), 1)
+
+    def test__parse_tac_squad_with_transport(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.tac_squad_with_transport_only,
+                                               gametype=self.gametype)
+        parsed_units = parsed_roster[1]

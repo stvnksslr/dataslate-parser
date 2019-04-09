@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="2a22-9605-123c-b061" name="hh_test_cortus_dread_only" battleScribeVersion="2.01" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemName="Warhammer 30,000 - The Horus Heresy" gameSystemRevision="103" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="pts" costTypeId="points" value="160.0"/>
+  </costs>
+  <costLimits/>
+  <forces>
+    <force id="7135-c173-4bb9-6e0b" name=" Zone Mortalis - Combatant" entryId="7e48-c376-8ffe-8ae7" catalogueId="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" catalogueRevision="535" catalogueName="Legiones Astartes: Age of Darkness Army List">
+      <rules/>
+      <profiles/>
+      <selections>
+        <selection id="24e6-f232-438d-decd" name="Rite of War" entryId="b7cc-2c26-f295-0f33::52b0-74b3-6b9b-eac0" number="1" type="upgrade">
+          <rules/>
+          <profiles/>
+          <selections/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4ff8-4b03-227d-57e5" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="dce6-9954-0c28-34b0" name="Legion and Allegiance" entryId="408f-dd4f-1acf-1465::5642-ef2d-98ff-3d87" number="1" type="upgrade">
+          <rules/>
+          <profiles/>
+          <selections>
+            <selection id="bc76-401a-567e-5381" name="   VIII: Night Lords" entryId="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::cf56-aabc-9977-728d" entryGroupId="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::4101-9822-0bde-f32e" book="" page="" number="1" type="upgrade">
+              <rules>
+                <rule id="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::04cc-3c1e-3285-0b44" name="The Night Lords" book="LA:ADL" page="36" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>• A Talent for Murder: If a unit or units of models with the Legiones Astartes (Night Lords) special rule outnumber one or more enemy infantry units during any Initiative step in which they fight in an assault, they gain 1 To Hit and To Wound. Bulky models count as two models and Very Bulky models as three models for the purposes of working out when the Night Lords outnumber their victims.
+• Nostraman Blood: All models with this special rule fall back 1&quot; further than normal. If they fail a Pinning test, they may, if the controlling player wishes, fall back instead of becoming pinned - just as if they had failed a Morale check for taking casualties in the Shooting phase.
+• Night Vision: All models in a Night Lords primary detachment (not just those with the Legiones Astartes (Night Lords) special rule) have the Night Vision special rule.
+• From the Shadows: All models with this special rule have a cover save of 5 on the first game turn, even in open ground. This rule can be combined with the effects of Stealth, etc, as normal, but other forms of cover the model might be in which provide a higher save supersede it.
+• Seeds of Dissent: If an army’s Warlord is slain, each unit in the army with this special rule must make an immediate Morale check as if they had suffered 25% losses from shooting</description>
+                </rule>
+                <rule id="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::d3f9-386d-00ce-8742::a225-e39b-3699-c8f8" name="Night Vision" book="HH: AoD Rulebook" page="168" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A unit that contains at least one model with this special rule ignores the effects of Night Fighting.</description>
+                </rule>
+                <rule id="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::209b-9bfc-5f3b-e1ef::23a4-a37f-e8e8-c756" name="Legiones Astartes" book="HH: AoD Rulebook" page="168" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.
+
+In addition to these benefits, units  will also have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in the Legiones Astartes Army List and other future Forge World publications.
+
+If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
+                </rule>
+              </rules>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="26a5-ce3f-e0c8-04f0" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="c6ef-b8f4-d4b0-1e2f" name="Tactical Squad, Legion , Compulsory" entryId="16aa-3762-4269-e00b::da40e015-a22c-ecc4-c9b8-0add9ff5d50f" book="HH:LACAL" page="30" number="1" type="unit">
+          <rules>
+            <rule id="0998-96d0-00c0-0e09::8afd-9c24-3738-43b1" name="A Talent for Murder" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>If any units with the Legiones Astartes (Night Lords) special rule outnumber one or more enemy infantry units during any Initiative step in which they fight in assault, they gain +1 To Hit and To Wound (to a maximum of a 2+). Bulky models count as two models and Very Bulky models as three models on both sides for the purposes of working out when Night Lords outnumber their victims.</description>
+            </rule>
+            <rule id="f11f-4fdc-d2d2-c491::a350-1803-c2b8-0d3f" name="From the Shadows" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>All models with this special rule have a cover save of 5 on the first game turn, even in open ground. This rule can be combined with the effects of Stealth, etc, as normal, but other forms of cover the model might be in which provide a higher save supersede it.</description>
+            </rule>
+            <rule id="d801-130c-8363-ba48::f2ea-6534-0b19-3252" name="Night Vision" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>All models in a Night Lords primary detachment (not just those with the Legiones Astartes (Night Lords) special rule) have the Night Vision special rule.</description>
+            </rule>
+            <rule id="2586-12ed-70e1-1686::7b50-00bc-cffc-78e5" name="Nostraman Blood" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>All models with this special rule fall back 1&quot; further than normal. If they fail a Pinning test, they may, if the controlling player wishes, fall back instead of becoming pinned - just as if they had failed a Morale check for taking casualties in the Shooting phase.</description>
+            </rule>
+            <rule id="92b5-4489-981e-bd64::23a4-a37f-e8e8-c756" name="Legiones Astartes" book="HH: AoD Rulebook" page="168" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.
+
+In addition to these benefits, units  will also have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in the Legiones Astartes Army List and other future Forge World publications.
+
+If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
+            </rule>
+            <rule id="d7b0-bbf5-6788-67a5::adbd-7129-14fe-19bc" name="Compulsory" book="AoDRB" page="132" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>One box on a Force Organisation chart allows you to make one selection from that part of your army list. Dark boxes indicate compulsory selections, which must be included as part of the army, while the lighter boxes indicate optional choices, which are only included as part of the army if the player in question chooses to do so. If constructing an army using the Crusade Force Organisation chart, this would mean that an army would be required to take at least one HQ choice and two Troops choices. These compulsory choices are intended to ensure that the core of each army is illustrative of the force represented by the Army List in use, and that all armies are capable of properly participating in the varied missions available to players in the Age of Darkness.</description>
+            </rule>
+            <rule id="0998-96d0-00c0-0e09::8afd-9c24-3738-43b1" name="A Talent for Murder" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>If any units with the Legiones Astartes (Night Lords) special rule outnumber one or more enemy infantry units during any Initiative step in which they fight in assault, they gain +1 To Hit and To Wound (to a maximum of a 2+). Bulky models count as two models and Very Bulky models as three models on both sides for the purposes of working out when Night Lords outnumber their victims.</description>
+            </rule>
+            <rule id="f11f-4fdc-d2d2-c491::a350-1803-c2b8-0d3f" name="From the Shadows" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>All models with this special rule have a cover save of 5 on the first game turn, even in open ground. This rule can be combined with the effects of Stealth, etc, as normal, but other forms of cover the model might be in which provide a higher save supersede it.</description>
+            </rule>
+            <rule id="d801-130c-8363-ba48::f2ea-6534-0b19-3252" name="Night Vision" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>All models in a Night Lords primary detachment (not just those with the Legiones Astartes (Night Lords) special rule) have the Night Vision special rule.</description>
+            </rule>
+            <rule id="2586-12ed-70e1-1686::7b50-00bc-cffc-78e5" name="Nostraman Blood" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>All models with this special rule fall back 1&quot; further than normal. If they fail a Pinning test, they may, if the controlling player wishes, fall back instead of becoming pinned - just as if they had failed a Morale check for taking casualties in the Shooting phase.</description>
+            </rule>
+            <rule id="92b5-4489-981e-bd64::23a4-a37f-e8e8-c756" name="Legiones Astartes" book="HH: AoD Rulebook" page="168" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.
+
+In addition to these benefits, units  will also have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in the Legiones Astartes Army List and other future Forge World publications.
+
+If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
+            </rule>
+            <rule id="16aa-3762-4269-e00b::7ec6b7a3-f2c7-2dae-92da-eeb275814911" name="Fury of the Legion" book="LA:AODAL" page="40" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>While at least five models remain in the unit armed with bolters or bolt pistols, the squad can elect to make a Fury of the Legion attack in the Shooting phase so long as they did not move, arrive via Deep Strike or disembark a vehicle earlier in that player turn. Models making a Fury of the Legion attack may fire twice with their bolters or bolt pistols against a single target (note that in the case of a combi-weapon, only the bolter part may fire twice).
+
+                  Owing to the massive expenditure of ammunition involved, once a squad has made a Fury of the Legion attack it may not use Overwatch fire later that turn or fire in the Shooting phase of their next player turn, but may otherwise move, fight in assault, run, etc, normally (place a counter or note next to the unit to represent this). Fury of the Legion attacks may not be used for Snap Shots, and models joining the unit do not benefit from this rule and must fire normally, as does any non-bolter weapon used by the squad at the same time as the Fury of the Legion attack is made</description>
+            </rule>
+          </rules>
+          <profiles/>
+          <selections>
+            <selection id="1c8b-4672-50e5-6560" name="Tactical Space Marines, Legion" entryId="16aa-3762-4269-e00b::cdc44304-100a-25d6-01d5-4be1eb3b32b7" book="" page="0" number="9" type="model">
+              <rules/>
+              <profiles>
+                <profile id="16aa-3762-4269-e00b::8579-d590-49fc-4dc6" name="Legion Tactical Space Marine" book="LA:AODAL" page="40" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry"/>
+                    <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+                    <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+                    <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+                    <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
+                    <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+                    <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+                    <characteristic name="A" characteristicTypeId="4123232344415441232323" value="1"/>
+                    <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="8"/>
+                    <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="90.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="8273-c134-2912-40f5" name="Tactical Sergeant, Legion" entryId="16aa-3762-4269-e00b::76b160c7-d7da-b446-947a-ade196020616" book="" page="0" number="1" type="model">
+              <rules/>
+              <profiles>
+                <profile id="16aa-3762-4269-e00b::54ca-3833-470c-ce87" name="Legion Tactical Sergeant" book="LA:AODAL" page="40" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infanty (Character)"/>
+                    <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+                    <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+                    <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+                    <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
+                    <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+                    <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+                    <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
+                    <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
+                    <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="6881-0a32-bfb7-a2a7" name="Bolter" entryId="16aa-3762-4269-e00b::ef75-c0c1-0f09-a697::d6f9-09fd-83af-070d" entryGroupId="16aa-3762-4269-e00b::a8b03166-dd5e-29fa-a642-bd1b7d0bcae2" book="" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="16aa-3762-4269-e00b::ef75-c0c1-0f09-a697::767e-240c-1006-1740::09fd-8af1-a6b1-51f7" name="Boltgun" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="b9e6-ad56-fdc9-3527" name="Character" entryId="eb92-48f9-9a1a-7bd1" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+            <selection id="efd9-cbd5-c4da-4052" name="Standard Wargear" entryId="16aa-3762-4269-e00b::d7a2-becf-6863-9b02" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections>
+                <selection id="61a8-ece4-2dbe-8841" name="Bolt Pistols" entryId="16aa-3762-4269-e00b::1f6a-2fbf-91e7-4dac::fe8d-1baa-d58d-00bc" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="16aa-3762-4269-e00b::1f6a-2fbf-91e7-4dac::007f-9e7f-2a8f-8258::ec83-0776-ef74-9cc2" name="Bolt Pistol" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+                <selection id="38b4-303c-a014-d413" name="Power Armour" entryId="16aa-3762-4269-e00b::e7bd-562b-c05c-a747::0a96-04b6-7340-91a4" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="16aa-3762-4269-e00b::e7bd-562b-c05c-a747::0680-4dd1-54b3-1ed8" name="Power Armour" book="LA:AODAL" page="133" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Power armour provides a 3+ Armour save."/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+                <selection id="5271-6124-e753-235c" name="Frag and Krak Grenades" entryId="16aa-3762-4269-e00b::5501-2a6e-0746-13da::0a53-b471-df87-7b83" number="1" type="upgrade">
+                  <rules>
+                    <rule id="16aa-3762-4269-e00b::5501-2a6e-0746-13da::a7b7-4101-28f0-fc1a::9430-a4d5-6f01-57e2" name="Assault Grenades" book="HH: Core Rule Book" hidden="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <description>Shooting: When a unit equiped with Assualt Greandes makes a shooting attack, one model can choose to throw a Grenade, rather than using another shooting weapon.e
+
+Assualt: Models equipped with assault grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative in the ensuing combat.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="16aa-3762-4269-e00b::5501-2a6e-0746-13da::dd55-88e3-9351-e96e::d890-1b84-bbd9-12d3" name="Frag Grenades" book="HH: AoD Rulebook" page="182" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast"/>
+                      </characteristics>
+                    </profile>
+                    <profile id="16aa-3762-4269-e00b::5501-2a6e-0746-13da::2907-df2d-6744-816c::d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="1f19-03a6-b390-8a58" name="Additional Wargear" entryId="16aa-3762-4269-e00b::eef5-90e0-0bff-0b48" number="1" type="upgrade">
+              <rules/>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="c88f-f070-438a-9a5a" name="Legiones Astartes" entryId="16aa-3762-4269-e00b::0f07-62a0-18ef-092a::4014-7d86-22e9-5d96" number="1" type="upgrade">
+              <rules>
+                <rule id="16aa-3762-4269-e00b::0f07-62a0-18ef-092a::31b1-4bb2-e8c5-8fe8" name="Legiones Astartes" book="" page="" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>- Units with this special rules may always attempt to regroup regardless of casualties.</description>
+                </rule>
+              </rules>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="9816-ae77-d5d8-d388" name="Rhino Armoured Carrier, Legion" entryId="16aa-3762-4269-e00b::cff78fb7-162a-b4fb-2feb-e320e72f47ed::3215e60a-5c78-9efe-e6d4-ba87f3e74a21" entryGroupId="16aa-3762-4269-e00b::cda6c5c1-c988-0cb3-a02a-6cade997f240" book="AD:AoDAL" page="45" number="1" type="upgrade">
+              <rules>
+                <rule id="5cfc-efd6-9009-24d3" name="Unshakeable Nerve" book="HH: Rulebook" page="77" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+                </rule>
+                <rule id="16aa-3762-4269-e00b::cff78fb7-162a-b4fb-2feb-e320e72f47ed::1e6e81d2-9601-f129-8824-9b913e08aea5" name="Repair" book="HH:LACAL" page="35" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>In the Shooting phase instead of firing a weapon, the Rhino may attempt to repair an Immobilised result on a D6 roll of a 6.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="16aa-3762-4269-e00b::cff78fb7-162a-b4fb-2feb-e320e72f47ed::ffe93085-806c-773f-f403-2c7d4e8edce2" name="Legion Rhino" book="HH:LACAL" page="35" hidden="false" profileTypeId="56656869636c6523232344415441232323" profileTypeName="Vehicle">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+                    <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="11"/>
+                    <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="11"/>
+                    <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="10"/>
+                    <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank, Transport"/>
+                  </characteristics>
+                </profile>
+                <profile id="16aa-3762-4269-e00b::cff78fb7-162a-b4fb-2feb-e320e72f47ed::dbec-0d7a-553e-bf50" name="Legion Rhino (Transport)" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10"/>
+                    <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="Two - Top Hatch"/>
+                    <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="Three. One on each side of the Hull and one at the rear."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="85bf-20c4-f2e7-14a2" name="Twin-linked Bolter" entryId="16aa-3762-4269-e00b::cff78fb7-162a-b4fb-2feb-e320e72f47ed::d45f-11bb-04d2-9ff5::30c2c848-c1d3-e61f-6632-a91bcee1fdc4" page="0" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="16aa-3762-4269-e00b::cff78fb7-162a-b4fb-2feb-e320e72f47ed::d45f-11bb-04d2-9ff5::af07-3a13-8c01-1fe7::09fd-8af1-a6b1-51f7" name="Twin-Linked Bolter" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire , Twin-Linked"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+              <categories>
+                <category id="2fc7-d6cc-4938-42e5" name="Dedicated Transport" entryId="c407-80ff-568e-3394" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+                <category id="3f59-0f42-6ad2-9dc6" name="Transport" entryId="e4e0-c5d1-3430-f101" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+                <category id="304a-9a8e-2e3e-b9cd" name="Tank" entryId="e59c-462e-9d9c-66dd" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+                <category id="12bc-8ec2-37e0-85ea" name="Vehicle" entryId="53bd-99e7-aba0-e79f" primary="false">
+                  <rules/>
+                  <profiles/>
+                </category>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="points" value="35.0"/>
+          </costs>
+          <categories>
+            <category id="1ceb-51d6-f044-9201" name="Infantry" entryId="f74d-4679-75a6-1252" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="6c53-c0c1-86af-f843" name="Legiones Astartes" entryId="0c56-27b8-a737-c9fd" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="2e46-7954-0787-c9dc" name="Compulsory Troops" entryId="219d-aefa-dfa5-44db" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="2f0b-296e-7314-1200" name="Legiones Astartes" entryId="0c56-27b8-a737-c9fd" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="cd9f-1136-39f1-f98f" name="Infantry" entryId="f74d-4679-75a6-1252" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="8c54-712f-1cb9-6043" name="Troops" entryId="54726f6f707323232344415441232323" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="83be-b536-8d58-5cec" name="Uncategorised" entryId="(No Category)" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="d89b-75f3-7188-52be" name="Elites" entryId="456c6974657323232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="4aae-7bcb-e008-dd92" name="HQ" entryId="485123232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="461e-d49d-4f47-9bf8" name="Fast Attack" entryId="466173742041747461636b23232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="1714-66cf-d6d3-1643" name="Troops" entryId="54726f6f707323232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="3324-0be4-b48b-2ca6" name="Heavy Support" entryId="486561767920537570706f727423232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ff0f-ab2a-301a-09ba" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ec30-dfd6-c2c3-e130" name="Cortex Controlled" entryId="3f9d-27a5-969f-399b" primary="false">
+          <rules>
+            <rule id="b0ce-e6a6-2cc5-2355" name="Optional Heavy Support" book="AoDAL" page="131" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>For each cortex controller present in a Space Marine detachment, 0-1 of the following units from the Mechanicum Taghmata army list are available as Heavy Support options: Thallax Cohort*, Castellax Battle-automata Maniple, Vorax Battle-automata maniple.
+*If purchased a Triaros as a Dedicated Transport, this may not transport Space Marine models of any kind</description>
+            </rule>
+          </rules>
+          <profiles/>
+        </category>
+        <category id="4c14-1d84-3598-0cec" name="Wolf Lord/Claw Leader" entryId="a5b5-33d4-9941-d832" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ab25-7335-4cbb-3714" name="Bodyguard" entryId="73b6-4f0e-c013-b242" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="f779-4534-8ea4-14cc" name="Use Playtest Rules" entryId="fdf4-0683-3e84-5a4b" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+      </categories>
+      <forces/>
+    </force>
+  </forces>
+</roster>
