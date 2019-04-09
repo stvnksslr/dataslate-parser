@@ -6,9 +6,42 @@ from app.models.unit_group import UnitGroup
 
 def parse_units(contents):
     soup = BeautifulSoup(contents, "lxml")
-    unit_list = soup.findAll("selection", {"type": "unit"})
-    parsed_roster = create_unit(unit_list)
+    list_of_parsable_items = soup.find('selections').contents
+    cleaned_item_to_parse = [parsable_item for parsable_item in list_of_parsable_items if parsable_item != '\n']
+
+    list_of_units = get_units(cleaned_item_to_parse)
+    list_of_upgrades = get_upgrades(cleaned_item_to_parse)
+
+    parsed_upgrades = parse_upgrades(list_of_upgrades)
+    parsed_units = create_unit(list_of_units)
+    parsed_roster = [parsed_upgrades, parsed_units]
     return parsed_roster
+
+
+def parse_upgrades(list_of_upgrades):
+    dict_of_upgrades = {}
+    for upgrade in list_of_upgrades:
+        upgrade_name = upgrade.attrs.get('name')
+        upgrade_description = upgrade.find('description').contents[0]
+        dict_of_upgrades.update({upgrade_name: upgrade_description})
+    parsed_upgrades = dict_of_upgrades
+    return parsed_upgrades
+
+
+def get_units(cleaned_item_to_parse):
+    list_of_units = []
+    for item in cleaned_item_to_parse:
+        if item.attrs.get('type') == 'model' or item.attrs.get('type') == 'unit':
+            list_of_units.append(item)
+    return list_of_units
+
+
+def get_upgrades(cleaned_item_to_parse):
+    list_of_upgrades = []
+    for item in cleaned_item_to_parse:
+        if item.attrs.get('type') == 'upgrade':
+            list_of_upgrades.append(item)
+    return list_of_upgrades
 
 
 def create_unit(unit_list):
