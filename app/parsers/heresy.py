@@ -88,8 +88,11 @@ def parse_items_in_group(list_of_units_in_group, dict_of_abilities):
 def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
     unit_name = unit.attrs.get('name')
     unit_count = unit.parent.parent.attrs.get('number')
-    list_of_unit_characteristics = unit.findAll('characteristic')
-    dict_of_characteristics = get_unit_characteristics(list_of_unit_characteristics)
+    list_of_unit_characteristics = unit.find('characteristics').contents
+    cleaned_list_of_unit_characteristic = [list_of_unit_characteristics for list_of_unit_characteristics in
+                                           list_of_unit_characteristics
+                                           if list_of_unit_characteristics != '\n']
+    dict_of_characteristics = get_unit_characteristics(cleaned_list_of_unit_characteristic)
 
     parsed_unit = HeresyUnit(name=unit_name,
                              number_in_unit=unit_count,

@@ -18,6 +18,6 @@ def get_parser_method(gametype):
     parser = None
     try:
         parser = supported_parsers.get(gametype)
-    except Exception as e:
+    except Exception:
         print('Parser not supported')
     return parser
