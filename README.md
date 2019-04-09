@@ -12,3 +12,6 @@ This project is to take in battlescribe roster files and output them into easily
 ##### Setup
 1. pipenv install --dev
 2. py.test
+
+
+###### Inspired by https://github.com/gregchiasson/warhams 
