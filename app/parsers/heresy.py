@@ -105,9 +105,9 @@ def create_unit_object(dict_of_abilities, parsed_units_in_group, unit):
                              save=dict_of_characteristics.get('Save'),
                              abilities=dict_of_abilities,
                              armor_facing=ArmorFacing(front=dict_of_characteristics.get('Front'),
-                                                 side=dict_of_characteristics.get('Side'),
-                                                 rear=dict_of_characteristics.get('Rear'),
-                                                 hp=dict_of_characteristics.get('HP')))
+                                                      side=dict_of_characteristics.get('Side'),
+                                                      rear=dict_of_characteristics.get('Rear'),
+                                                      hp=dict_of_characteristics.get('HP')))
     parsed_units_in_group.append(parsed_unit)
 
 
