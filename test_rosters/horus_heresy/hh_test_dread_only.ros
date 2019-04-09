@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="2a22-9605-123c-b061" name="hh_test_dread_only" battleScribeVersion="2.01" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemName="Warhammer 30,000 - The Horus Heresy" gameSystemRevision="103" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="pts" costTypeId="points" value="175.0"/>
+  </costs>
+  <costLimits/>
+  <forces>
+    <force id="7135-c173-4bb9-6e0b" name=" Zone Mortalis - Combatant" entryId="7e48-c376-8ffe-8ae7" catalogueId="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" catalogueRevision="535" catalogueName="Legiones Astartes: Age of Darkness Army List">
+      <rules/>
+      <profiles/>
+      <selections>
+        <selection id="24e6-f232-438d-decd" name="Rite of War" entryId="b7cc-2c26-f295-0f33::52b0-74b3-6b9b-eac0" number="1" type="upgrade">
+          <rules/>
+          <profiles/>
+          <selections/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4ff8-4b03-227d-57e5" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="dce6-9954-0c28-34b0" name="Legion and Allegiance" entryId="408f-dd4f-1acf-1465::5642-ef2d-98ff-3d87" number="1" type="upgrade">
+          <rules/>
+          <profiles/>
+          <selections>
+            <selection id="bc76-401a-567e-5381" name="   VIII: Night Lords" entryId="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::cf56-aabc-9977-728d" entryGroupId="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::4101-9822-0bde-f32e" book="" page="" number="1" type="upgrade">
+              <rules>
+                <rule id="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::04cc-3c1e-3285-0b44" name="The Night Lords" book="LA:ADL" page="36" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>• A Talent for Murder: If a unit or units of models with the Legiones Astartes (Night Lords) special rule outnumber one or more enemy infantry units during any Initiative step in which they fight in an assault, they gain 1 To Hit and To Wound. Bulky models count as two models and Very Bulky models as three models for the purposes of working out when the Night Lords outnumber their victims.
+• Nostraman Blood: All models with this special rule fall back 1&quot; further than normal. If they fail a Pinning test, they may, if the controlling player wishes, fall back instead of becoming pinned - just as if they had failed a Morale check for taking casualties in the Shooting phase.
+• Night Vision: All models in a Night Lords primary detachment (not just those with the Legiones Astartes (Night Lords) special rule) have the Night Vision special rule.
+• From the Shadows: All models with this special rule have a cover save of 5 on the first game turn, even in open ground. This rule can be combined with the effects of Stealth, etc, as normal, but other forms of cover the model might be in which provide a higher save supersede it.
+• Seeds of Dissent: If an army’s Warlord is slain, each unit in the army with this special rule must make an immediate Morale check as if they had suffered 25% losses from shooting</description>
+                </rule>
+                <rule id="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::d3f9-386d-00ce-8742::a225-e39b-3699-c8f8" name="Night Vision" book="HH: AoD Rulebook" page="168" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A unit that contains at least one model with this special rule ignores the effects of Night Fighting.</description>
+                </rule>
+                <rule id="408f-dd4f-1acf-1465::cdd1-9aff-3222-cff2::209b-9bfc-5f3b-e1ef::23a4-a37f-e8e8-c756" name="Legiones Astartes" book="HH: AoD Rulebook" page="168" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.
+
+In addition to these benefits, units  will also have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in the Legiones Astartes Army List and other future Forge World publications.
+
+If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
+                </rule>
+              </rules>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="26a5-ce3f-e0c8-04f0" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+        <selection id="3324-0a7d-9713-4dd6" name="Contemptor Dreadnought Talon" entryId="0d8c-bcf7-51cf-c36d::5ea9-06d0-d880-86f1" book="HH:LACAL" page="26" number="1" type="unit">
+          <rules>
+            <rule id="0d8c-bcf7-51cf-c36d::7e0e-147e-c144-f9d8::a993-0e91-2841-9326" name="Dreadnought Talon" book="HH:GEAFAQV1.0" page="4" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>When first deployed on the battlefield (either at the start of the game or when arriving via Reserves later on), the Dreadnoughts must be placed within 6&quot; of each other, but afterwards operate independently and are not treated as a vehicle squadron but operate independently as individual units for the purposes of taking any actions, as well for determining Victory points in missions which make use of Victory points for destroying units.</description>
+            </rule>
+          </rules>
+          <profiles/>
+          <selections>
+            <selection id="662f-7afa-ca3e-9a5f" name="Contemptor Dreadnought, Legion" entryId="0d8c-bcf7-51cf-c36d::48c8-5bb4-3541-bc91" book="" page="0" number="1" type="model">
+              <rules>
+                <rule id="0d8c-bcf7-51cf-c36d::f412-5896-b981-65cd::69e5-fc02-1f9d-63c2" name="Fleet" book="HH: AoD Rulebook" page="164" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A unit composed entirely of models with this special rule can re-roll one or more of the dice when determining Run moves and charge ranges (such as a single D6 from a charge range roll, for example).</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="0d8c-bcf7-51cf-c36d::3d2e-408c-23e8-07c2" name="Contemptor Dreadnought" book="LA:AoDAL" page="34" hidden="false" profileTypeId="57616c6b657223232344415441232323" profileTypeName="Walker">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="5"/>
+                    <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="5"/>
+                    <characteristic name="S" characteristicTypeId="5323232344415441232323" value="7"/>
+                    <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+                    <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+                    <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="10"/>
+                    <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+                    <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+                    <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Walker"/>
+                  </characteristics>
+                </profile>
+                <profile id="0d8c-bcf7-51cf-c36d::035b-c310-dea0-f51f::e0898f15-4b47-28f4-313e-0b321f0a3dca" name="Atomantic Shielding" book="HH3: Extermination" page="207" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Gains 5+ Invulnerable save from shooting attacks and explosions, and a 6+ Invulnerable save in close combat.  In addition, add 1 to the range of explosions from the Reactor Blast rule.  "/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="3112-301c-74d7-4058" name="Searchlight and Smoke Launchers" entryId="0d8c-bcf7-51cf-c36d::8c3d-73b7-0e78-c065::b572273e-2b93-4961-75c8-d9022c31a47d" page="0" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="0d8c-bcf7-51cf-c36d::8c3d-73b7-0e78-c065::8c8d-0d8e-df0e-787f::6875-ee73-2a85-6a97" name="Smoke Launchers" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Once per game, instead of shooting or flat out movements/running, the vehicle can activate smoke launchers. May not fire its weapons that turn but recieves a 5+ cover save until next player turn. Unaffected by weapon destroyed, crew shaken and crew stunned results."/>
+                      </characteristics>
+                    </profile>
+                    <profile id="0d8c-bcf7-51cf-c36d::8c3d-73b7-0e78-c065::2810-c276-561f-9c43::9bb4-3833-5343-0dd9" name="Searchlight" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Night fighting only. it can, after firing all of its weapons, choose to illuminate its target with the searchlight. If it does so, it also illuminates itself."/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+                <selection id="7a5b-759f-05ef-fa0e" name="Twin-linked Heavy Bolter" entryId="0d8c-bcf7-51cf-c36d::7e35-1925-4af4-a9ea::aa78-540d-996f-52ff" entryGroupId="0d8c-bcf7-51cf-c36d::5e8d-4abb-a227-47be" page="0" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="0d8c-bcf7-51cf-c36d::7e35-1925-4af4-a9ea::4aa7-16ea-64d7-3e19::271e-6286-86cc-06dd" name="Twin-Linked Heavy Bolter" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3 , Twin-Linked"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+                <selection id="6fbc-d025-fd0a-0aba" name="Dreadnought Close Combat Weapon" entryId="0d8c-bcf7-51cf-c36d::b978-7dab-1405-9499::40e7-f5c1-ce3b-f2a5" entryGroupId="0d8c-bcf7-51cf-c36d::6ca5-3205-c2d8-2ece" number="1" type="upgrade">
+                  <rules/>
+                  <profiles>
+                    <profile id="0d8c-bcf7-51cf-c36d::b978-7dab-1405-9499::0d61-2b1b-3226-d865::3b26-3098-155f-0e58" name="Dreadnought Close Combat Weapon" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="x2"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selections>
+                    <selection id="1dfa-7281-0409-1113" name="Twin-linked Bolter" entryId="0d8c-bcf7-51cf-c36d::b978-7dab-1405-9499::79fa-a1ec-ce1e-e22b::bb11-adc6-d21d-b4c0::30c2c848-c1d3-e61f-6632-a91bcee1fdc4" entryGroupId="0d8c-bcf7-51cf-c36d::b978-7dab-1405-9499::79fa-a1ec-ce1e-e22b::68cf-68c6-5017-156b" page="0" number="1" type="upgrade">
+                      <rules/>
+                      <profiles>
+                        <profile id="0d8c-bcf7-51cf-c36d::b978-7dab-1405-9499::79fa-a1ec-ce1e-e22b::bb11-adc6-d21d-b4c0::af07-3a13-8c01-1fe7::09fd-8af1-a6b1-51f7" name="Twin-Linked Bolter" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <characteristics>
+                            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire , Twin-Linked"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <selections/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
+                      <categories/>
+                    </selection>
+                  </selections>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                  <categories/>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" costTypeId="points" value="175.0"/>
+              </costs>
+              <categories/>
+            </selection>
+            <selection id="b811-12f2-06b5-3d2c" name="Dreadnought Talon" entryId="0d8c-bcf7-51cf-c36d::edaf-fe50-c332-21a3::a0ec-d8e7-e5e8-ce18" number="1" type="upgrade">
+              <rules>
+                <rule id="0d8c-bcf7-51cf-c36d::edaf-fe50-c332-21a3::4506-1410-32ab-7d64::a993-0e91-2841-9326" name="Dreadnought Talon" book="HH:GEAFAQV1.0" page="4" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>When first deployed on the battlefield (either at the start of the game or when arriving via Reserves later on), the Dreadnoughts must be placed within 6&quot; of each other, but afterwards operate independently and are not treated as a vehicle squadron but operate independently as individual units for the purposes of taking any actions, as well for determining Victory points in missions which make use of Victory points for destroying units.</description>
+                </rule>
+              </rules>
+              <profiles/>
+              <selections/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+              <categories/>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="494f-a856-ecf2-4887" name="Walker" entryId="264d-166e-36c0-77b7" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="a77e-7db9-2bff-23d0" name="Vehicle" entryId="53bd-99e7-aba0-e79f" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="17b1-ee51-6126-7a8a" name="Elites" entryId="456c6974657323232344415441232323" primary="true">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="c601-9b76-92d1-25ba" name="Walker" entryId="264d-166e-36c0-77b7" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+            <category id="87fd-3753-504d-7b22" name="Vehicle" entryId="53bd-99e7-aba0-e79f" primary="false">
+              <rules/>
+              <profiles/>
+            </category>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="83be-b536-8d58-5cec" name="Uncategorised" entryId="(No Category)" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="d89b-75f3-7188-52be" name="Elites" entryId="456c6974657323232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="4aae-7bcb-e008-dd92" name="HQ" entryId="485123232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="461e-d49d-4f47-9bf8" name="Fast Attack" entryId="466173742041747461636b23232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="1714-66cf-d6d3-1643" name="Troops" entryId="54726f6f707323232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="3324-0be4-b48b-2ca6" name="Heavy Support" entryId="486561767920537570706f727423232344415441232323" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ff0f-ab2a-301a-09ba" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ec30-dfd6-c2c3-e130" name="Cortex Controlled" entryId="3f9d-27a5-969f-399b" primary="false">
+          <rules>
+            <rule id="b0ce-e6a6-2cc5-2355" name="Optional Heavy Support" book="AoDAL" page="131" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>For each cortex controller present in a Space Marine detachment, 0-1 of the following units from the Mechanicum Taghmata army list are available as Heavy Support options: Thallax Cohort*, Castellax Battle-automata Maniple, Vorax Battle-automata maniple.
+*If purchased a Triaros as a Dedicated Transport, this may not transport Space Marine models of any kind</description>
+            </rule>
+          </rules>
+          <profiles/>
+        </category>
+        <category id="4c14-1d84-3598-0cec" name="Wolf Lord/Claw Leader" entryId="a5b5-33d4-9941-d832" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="ab25-7335-4cbb-3714" name="Bodyguard" entryId="73b6-4f0e-c013-b242" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+        <category id="f779-4534-8ea4-14cc" name="Use Playtest Rules" entryId="fdf4-0683-3e84-5a4b" primary="false">
+          <rules/>
+          <profiles/>
+        </category>
+      </categories>
+      <forces/>
+    </force>
+  </forces>
+</roster>

@@ -22,7 +22,11 @@ def parse_upgrades(list_of_upgrades):
     dict_of_upgrades = {}
     for upgrade in list_of_upgrades:
         upgrade_name = upgrade.attrs.get('name')
-        upgrade_description = upgrade.find('description').contents[0]
+        upgrade_description = upgrade.find('description')
+        # this can sometimes be blank
+        if upgrade_description:
+            upgrade_description = upgrade_description.contents[0]
+
         dict_of_upgrades.update({upgrade_name: upgrade_description})
     parsed_upgrades = dict_of_upgrades
     return parsed_upgrades
@@ -50,14 +54,31 @@ def create_unit(unit_list):
         dict_of_abilities = get_abilities(item)
         unit_group_name = get_unit_group_name(item)
         list_of_units_in_group = item.findAll("profile", {"profiletypename": "Unit"})
-        parsed_list_if_units_in_group = get_units_in_group(list_of_units_in_group, dict_of_abilities)
+        list_of_vehicles_in_group = item.findAll("profile", {"profiletypename": 'Vehicle'})
+        list_of_models_as_units = item.findAll("selection", {"type": 'model'})
+        list_to_be_parsed = list_of_units_in_group
+
+        if not list_of_units_in_group:
+            list_to_be_parsed = list_of_vehicles_in_group
+
+        if not list_of_vehicles_in_group and not list_of_units_in_group:
+            list_to_be_parsed = list_of_models_as_units
+
+        if not list_of_vehicles_in_group and not list_of_units_in_group and not list_of_models_as_units:
+            raw_list_of_upgrades_as_units = item.find('selections').contents
+            list_of_upgrades_as_units = [raw_list_of_upgrades_as_units for raw_list_of_upgrades_as_units in
+                                         raw_list_of_upgrades_as_units if
+                                         raw_list_of_upgrades_as_units.name]
+            list_to_be_parsed = list_of_upgrades_as_units
+
+        parsed_list_if_units_in_group = parse_items_in_group(list_to_be_parsed, dict_of_abilities)
         parsed_group = UnitGroup(name=unit_group_name, list_of_units=parsed_list_if_units_in_group)
         list_of_units.append(parsed_group)
 
     return list_of_units
 
 
-def get_units_in_group(list_of_units_in_group, dict_of_abilities):
+def parse_items_in_group(list_of_units_in_group, dict_of_abilities):
     parsed_units_in_group = []
     for unit in list_of_units_in_group:
         create_unit_object(dict_of_abilities, parsed_units_in_group, unit)
