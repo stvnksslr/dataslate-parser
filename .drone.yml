@@ -12,6 +12,6 @@ steps:
       - chmod +x ./cc-test-reporter
       - pip install pipenv
       - pipenv install --dev
-      - pipenv run pytest --cov-report xml --cov=app app
+      - pipenv run pytest --cov-branch --cov-report xml --cov=app app
       - pipenv run ./cc-test-reporter before-build
       - pipenv run ./cc-test-reporter after-build --coverage-input-type coverage.py --exit-code $?
