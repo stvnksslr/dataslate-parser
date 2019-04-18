@@ -1,3 +1,4 @@
+---
 kind: pipeline
 name: default
 
@@ -15,3 +16,8 @@ steps:
       - ./cc-test-reporter before-build
       - pytest --cov-branch --cov-report xml --cov=app app
       - ./cc-test-reporter after-build --coverage-input-type coverage.py --exit-code $?
+---
+kind: signature
+hmac: 0127949f4bac421fe70d5d8ab965ea06e96230e7f3875c3f40edc98ed5a51875
+
+...
