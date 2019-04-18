@@ -82,3 +82,4 @@ class HeresyTest(TestCase):
         parsed_roster = fetch_and_parse_roster(roster_file=self.tac_squad_with_transport_only,
                                                gametype=self.gametype)
         parsed_units = parsed_roster[1]
+        self.assertEqual(len(parsed_units[0].list_of_units), 3)
