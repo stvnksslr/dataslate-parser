@@ -30,4 +30,5 @@ exclude_patterns:
   - "setup.cfg"
   - "Dockerfile"
   - "app/tests"
+  - "app/constants.py"
 
