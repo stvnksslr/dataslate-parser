@@ -91,6 +91,7 @@ class HeresyTest(TestCase):
     def test__parse_list_with_multiple_types_of_dedicated_transport(self):
         parsed_roster = fetch_and_parse_roster(roster_file=self.all_dedicated_transports, gametype=self.gametype)
         parsed_units = parsed_roster[1]
+        self.assertEqual(len(parsed_units), 7)
 
     def test__parse_list_with_dreadclaw_dedicated_transport(self):
         parsed_roster = fetch_and_parse_roster(roster_file=self.dread_claw_dt, gametype=self.gametype)
