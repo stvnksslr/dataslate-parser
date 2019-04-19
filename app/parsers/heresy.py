@@ -74,8 +74,15 @@ def create_unit(unit_list):
             list_to_be_parsed = list_of_upgrades_as_units
 
         dedicated_transport = item.findAll("category", {"name": "Dedicated Transport"})
+        transport = item.findAll("category", {"name": "Transport"})
 
-        if dedicated_transport:
+        if transport and dedicated_transport:
+            list_to_be_parsed.append(transport[0].parent.parent)
+
+        elif transport:
+            list_to_be_parsed.append(transport[0].parent.parent)
+
+        elif dedicated_transport:
             list_to_be_parsed.append(dedicated_transport[0].parent.parent)
 
         parsed_list_if_units_in_group = parse_items_in_group(list_to_be_parsed, dict_of_abilities, dict_of_wargear)

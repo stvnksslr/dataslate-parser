@@ -13,6 +13,10 @@ class HeresyTest(TestCase):
         self.single_dread_contemptor = str(self.base_path / "hh_test_dread_only.ros")
         self.single_cortus_dread_contemptor = str(self.base_path / "hh_test_cortus_dread_only.ros")
         self.tac_squad_with_transport_only = str(self.base_path / "tactical_squad_with_transport.ros")
+        self.all_dedicated_transports = str(self.base_path / 'all_dedicated_transports.ros')
+        self.dread_claw_dt = str(self.base_path / "dread_claw_transport.ros")
+        self.drop_pod_dt = str(self.base_path / "drop_pod_dt.ros")
+        self.phobos_dt = str(self.base_path / "land_raider_phobos_dt.ros")
         self.gametype = "heresy"
 
     def test__parse_heresy_roster_without_errors(self):
@@ -83,3 +87,22 @@ class HeresyTest(TestCase):
                                                gametype=self.gametype)
         parsed_units = parsed_roster[1]
         self.assertEqual(len(parsed_units[0].list_of_units), 3)
+
+    def test__parse_list_with_multiple_types_of_dedicated_transport(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.all_dedicated_transports, gametype=self.gametype)
+        parsed_units = parsed_roster[1]
+
+    def test__parse_list_with_dreadclaw_dedicated_transport(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.dread_claw_dt, gametype=self.gametype)
+        parsed_units = parsed_roster[1]
+        self.assertEqual(len(parsed_units[0].list_of_units), 3)
+
+    def test__parse_list_with_drop_pod_dedicated_transport(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.drop_pod_dt, gametype=self.gametype)
+        parsed_units = parsed_roster[1]
+        self.assertEqual(len(parsed_units[0].list_of_units), 3)
+
+    def test__parse_list_with_land_raider_dedicated_transport(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.phobos_dt, gametype=self.gametype)
+        parsed_units = parsed_roster[1]
+        self.assertEqual(len(parsed_units[0].list_of_units), 6)
