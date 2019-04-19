@@ -33,7 +33,7 @@ def create_list_of_units(parsed_unit_list, unit_list):
             max=list_of_attributes.get("Max"),
             keywords=list_of_keywords,
             wargear=dict_of_wargear,
-            abilities=dict_of_abilities
+            abilities=dict_of_abilities,
         )
 
         parsed_unit_list.append(parsed_unit)
@@ -44,8 +44,10 @@ def get_abilities(item):
     list_of_unit_abilities = item.findAll("profile", {"profiletypename": "Ability"})
 
     for ability in list_of_unit_abilities:
-        ability_name = ability.attrs.get('name')
-        ability_description = ability.findAll("characteristic", {"name": "Description"})[0].attrs.get('value')
+        ability_name = ability.attrs.get("name")
+        ability_description = ability.findAll(
+            "characteristic", {"name": "Description"}
+        )[0].attrs.get("value")
         dict_of_abilities.update({ability_name: ability_description})
     return dict_of_abilities
 
@@ -60,7 +62,7 @@ def get_dict_of_wargear(item):
 
 def get_wargear(item):
     list_of_parsed_wargear = []
-    list_of_wargear_elements = item.findAll('profile', {'profiletypename': "Weapon"})
+    list_of_wargear_elements = item.findAll("profile", {"profiletypename": "Weapon"})
 
     for wargear in list_of_wargear_elements:
         parse_all_wargear(list_of_parsed_wargear, wargear)
@@ -69,11 +71,17 @@ def get_wargear(item):
 
 def parse_all_wargear(list_of_parsed_wargear, wargear):
     wargear_name = wargear.attrs.get("name")
-    wargear_attribute_list = [wargear for wargear in wargear
-                              if wargear.name and wargear.name == 'characteristics'][0].contents
+    wargear_attribute_list = [
+        wargear
+        for wargear in wargear
+        if wargear.name and wargear.name == "characteristics"
+    ][0].contents
 
-    wargear_attribute_list_cleaned = [wargear_attribute_list for wargear_attribute_list in wargear_attribute_list
-                                      if wargear_attribute_list.name]
+    wargear_attribute_list_cleaned = [
+        wargear_attribute_list
+        for wargear_attribute_list in wargear_attribute_list
+        if wargear_attribute_list.name
+    ]
 
     parsed_wargear = dict_of_attributes(wargear_attribute_list_cleaned)
     parsed_wargear.update({"Name": wargear_name})
@@ -96,12 +104,14 @@ def fetch_list_of_profiles(item):
     list_of_characteristics = [
         selected_unit
         for selected_unit in unit_profile
-        if selected_unit.name == "characteristics"][0].contents
+        if selected_unit.name == "characteristics"
+    ][0].contents
 
     cleaned_list_of_characteristics = [
         selected_unit
         for selected_unit in list_of_characteristics
-        if selected_unit.name == "characteristic"]
+        if selected_unit.name == "characteristic"
+    ]
 
     return cleaned_list_of_characteristics
 

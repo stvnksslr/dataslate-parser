@@ -1,9 +1,6 @@
 from app.parsers import killteam, heresy
 
-supported_parsers = {
-    'killteam': killteam,
-    'heresy': heresy
-}
+supported_parsers = {"killteam": killteam, "heresy": heresy}
 
 
 def fetch_and_parse_roster(roster_file, gametype):
@@ -19,5 +16,5 @@ def get_parser_method(gametype):
     try:
         parser = supported_parsers.get(gametype)
     except Exception:
-        print('Parser not supported')
+        print("Parser not supported")
     return parser
