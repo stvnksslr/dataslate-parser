@@ -100,9 +100,20 @@ class HeresyTest(TestCase):
     def test__parse_list_with_drop_pod_dedicated_transport(self):
         parsed_roster = fetch_and_parse_roster(roster_file=self.drop_pod_dt, gametype=self.gametype)
         parsed_units = parsed_roster[1]
+        drop_pod = parsed_units[0].list_of_units[2]
         self.assertEqual(len(parsed_units[0].list_of_units), 3)
+        self.assertEqual(drop_pod.armor_facing.front, "12")
 
     def test__parse_list_with_land_raider_dedicated_transport(self):
         parsed_roster = fetch_and_parse_roster(roster_file=self.phobos_dt, gametype=self.gametype)
         parsed_units = parsed_roster[1]
+        spartan_assault_tank = parsed_units[0].list_of_units[5]
         self.assertEqual(len(parsed_units[0].list_of_units), 6)
+        self.assertEqual(spartan_assault_tank.armor_facing.front, "14")
+
+    def test__parse_list_with_drop_pod_dedicated_transport_get_armor_facings(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.drop_pod_dt, gametype=self.gametype)
+        parsed_units = parsed_roster[1]
+        drop_pod = parsed_units[0].list_of_units[2]
+        self.assertEqual(len(parsed_units[0].list_of_units), 3)
+        self.assertEqual(drop_pod.armor_facing.front, "12")

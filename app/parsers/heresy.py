@@ -121,6 +121,18 @@ def create_unit_object(dict_of_abilities, parsed_units_in_group, unit, dict_of_w
     cleaned_list_of_unit_characteristic = [list_of_unit_characteristics for list_of_unit_characteristics in
                                            list_of_unit_characteristics
                                            if list_of_unit_characteristics != '\n']
+
+    if bool(unit.findAll("profile", {"profiletypename": "Vehicle"})):
+        possible_vehicle_characteristics = unit.findAll("profile", {"profiletypename": "Vehicle"})[0]
+        list_of_vehicle_characteristics = possible_vehicle_characteristics.find('characteristics').contents
+        cleaned_list_of_vehicle_characteristics = \
+            [list_of_vehicle_characteristics for list_of_vehicle_characteristics in
+             list_of_vehicle_characteristics
+             if list_of_vehicle_characteristics != '\n']
+
+        for characteristic in cleaned_list_of_vehicle_characteristics:
+            cleaned_list_of_unit_characteristic.append(characteristic)
+
     dict_of_characteristics = get_unit_characteristics(cleaned_list_of_unit_characteristic)
 
     parsed_unit = HeresyUnit(name=unit_name,
