@@ -15,5 +15,5 @@ class KillteamTest(TestCase):
     def test__render_parsed_roster(self):
         parsed_roster = fetch_and_parse_roster(
             roster_file=self.chaos_kill_team_standard, gametype=self.gametype)
-        render_roster(parsed_roster)
-        self.assertTrue(parsed_roster)
+        roster_image = render_roster(parsed_roster)
+        self.assertTrue(roster_image)

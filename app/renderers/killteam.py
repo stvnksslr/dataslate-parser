@@ -1,4 +1,7 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageFont, ImageDraw
+from pathlib import Path
+
+from app.models.killteam_unit import KillteamUnit
 
 
 def render_roster(roster):
@@ -9,32 +12,46 @@ def render_roster(roster):
     # Draw some lines
     draw = ImageDraw.Draw(image)
 
+    font = Path.cwd() / "assets" / "kt_font.ttf"
+
+    get_font = ImageFont.truetype(str(font), 16)
+
     x_start = 0
     y = 0
-    x = 0
     x_end = image.width
 
     y_start = 0
-    y_end = image.height
 
-    weapons_skill_cord = 160
+    name_cord = 0
+    movement_skill_cord = 200
+    weapons_skill_cord = 250
+    ballistic_skill_cord = 300
+    strength_skill_cord = 350
+    toughness_skill_cord = 400
 
-    list_of_field_names = ['name', 'ws']
+    draw.text(xy=(name_cord, y_start), text='Name', font=get_font)
+    draw.text(xy=(movement_skill_cord, y_start), text='M', font=get_font)
+    draw.text(xy=(weapons_skill_cord, y_start), text='WS', font=get_font)
+    draw.text(xy=(ballistic_skill_cord, y_start), text='BS', font=get_font)
+    draw.text(xy=(strength_skill_cord, y_start), text='T', font=get_font)
+    draw.text(xy=(toughness_skill_cord, y_start), text='S', font=get_font)
 
-    for field_name in list_of_field_names:
-        line = ((x, y_start), (x, y_end))
-        draw.line(line, fill=128)
-        draw.text(xy=(x, y_start), text=field_name)
-        x = x + 60
-
+    item: KillteamUnit
     for item in roster:
         y = y + 20
         line = ((x_start, y), (x_end, y))
         draw.line(line, fill=128)
-        draw.text(xy=(x_start, y), text=item.name)
-        draw.text(xy=(weapons_skill_cord, y), text=item.weapon_skill)
+
+        draw.text(xy=(x_start, y), text=item.name, font=get_font)
+        draw.text(xy=(movement_skill_cord, y), text=item.movement, font=get_font)
+        draw.text(xy=(weapons_skill_cord, y), text=item.weapon_skill, font=get_font)
+        draw.text(xy=(ballistic_skill_cord, y), text=item.ballistic_skill, font=get_font)
+        draw.text(xy=(toughness_skill_cord, y), text=item.toughness, font=get_font)
+        draw.text(xy=(strength_skill_cord, y), text=item.strength, font=get_font)
         y = y + 60
 
     del draw
 
-    image.show()
+    # image.show()
+
+    return image
