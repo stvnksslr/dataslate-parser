@@ -1,6 +1,8 @@
 from unittest import TestCase
 from pathlib import Path
 from app.tests.test_utils import fetch_and_parse_roster
+from os import listdir
+from os.path import isfile, join
 
 
 class KillteamTest(TestCase):
@@ -12,6 +14,17 @@ class KillteamTest(TestCase):
         )
         self.ability_example_name = "Death to the False Emperor"
         self.gametype = "killteam"
+
+    def test__loop_through_test_folder_and_parse(self):
+        parsed_rosters = []
+        list_of_rosters = [f for f in listdir(str(self.base_path)) if isfile(join(str(self.base_path), f))]
+        for roster in list_of_rosters:
+            parsed_roster = fetch_and_parse_roster(
+                roster_file=str(self.base_path) + "/" + roster, gametype=self.gametype
+            )
+            parsed_rosters.append(parsed_roster)
+
+        self.assertTrue(parsed_rosters)
 
     def test__parse_units_test_for_killteam_returns_list(self):
         parsed_roster = fetch_and_parse_roster(
@@ -26,7 +39,7 @@ class KillteamTest(TestCase):
         self.assertEqual(len(parsed_roster), 12)
 
     def test__parse_chaos_roster_for_killteam_returns_properly_formatted_asp_champion(
-        self
+            self
     ):
         parsed_roster = fetch_and_parse_roster(
             roster_file=self.chaos_kill_team_standard, gametype=self.gametype

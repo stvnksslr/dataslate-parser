@@ -5,7 +5,7 @@ from app.renderers.killteam import render_roster
 from app.tests.test_utils import fetch_and_parse_roster
 
 
-class KillteamTest(TestCase):
+class KillteamRenderTest(TestCase):
 
     def setUp(self):
         self.base_path = Path.cwd() / "test_rosters" / "kill_team"

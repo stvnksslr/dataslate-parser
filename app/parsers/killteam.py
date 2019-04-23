@@ -99,19 +99,21 @@ def get_keywords(item):
 
 
 def fetch_list_of_profiles(item):
-    unit_profile = item.findAll("profile", {"profiletypename": "Model"})[0].contents
+    cleaned_list_of_characteristics = []
+    if item.findAll("profile", {"profiletypename": "Model"}):
+        unit_profile = item.findAll("profile", {"profiletypename": "Model"})[0].contents
 
-    list_of_characteristics = [
-        selected_unit
-        for selected_unit in unit_profile
-        if selected_unit.name == "characteristics"
-    ][0].contents
+        list_of_characteristics = [
+            selected_unit
+            for selected_unit in unit_profile
+            if selected_unit.name == "characteristics"
+        ][0].contents
 
-    cleaned_list_of_characteristics = [
-        selected_unit
-        for selected_unit in list_of_characteristics
-        if selected_unit.name == "characteristic"
-    ]
+        cleaned_list_of_characteristics = [
+            selected_unit
+            for selected_unit in list_of_characteristics
+            if selected_unit.name == "characteristic"
+        ]
 
     return cleaned_list_of_characteristics
 
