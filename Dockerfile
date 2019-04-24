@@ -14,5 +14,4 @@ COPY --from=build /build /app/
 COPY . /app/
 
 RUN apk add --update --no-cache libxslt
-
 RUN .venv/bin/python -mpytest
