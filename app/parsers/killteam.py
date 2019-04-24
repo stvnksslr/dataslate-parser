@@ -75,11 +75,13 @@ def get_wargear(model):
         dict_of_characteristics = {}
         wargear_name = item.attrs.get("name")
         wargear_stats = item.findAll("characteristic")
+
         for characteristic in wargear_stats:
             name = characteristic.attrs.get("name")
             value = characteristic.contents[0].strip().split()
             cleaned_value = " ".join(value)
             dict_of_characteristics.update({name: cleaned_value})
+
         dict_of_wargear.update({wargear_name: dict_of_characteristics})
     return dict_of_wargear
 
