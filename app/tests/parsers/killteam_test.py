@@ -24,10 +24,9 @@ class KillteamTest(TestCase):
         """
         parsed_rosters = []
         list_of_rosters = [
-            f
-            for f in listdir(str(self.base_path))
-            if isfile(join(str(self.base_path), f))
-        ]
+            f for f in listdir(str(self.base_path))
+            if isfile(join(str(self.base_path), f))]
+        
         for roster in list_of_rosters:
             parsed_roster = fetch_and_parse_roster(
                 roster_file=str(self.base_path) + "/" + roster, gametype=self.gametype
