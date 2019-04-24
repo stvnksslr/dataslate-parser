@@ -34,6 +34,7 @@ def create_list_of_units(model_list, parsed_models):
             keywords=keywords,
             wargear=wargear,
             abilities=abilities,
+            point_cost=cost
         )
         parsed_models.append(parsed_model)
 
