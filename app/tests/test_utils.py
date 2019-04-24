@@ -1,6 +1,7 @@
 from app.parsers import killteam, heresy
 
-supported_parsers = {"killteam": killteam, "heresy": heresy}
+supported_parsers = {"killteam": killteam,
+                     "heresy": heresy}
 
 
 def fetch_and_parse_roster(roster_file, gametype):
