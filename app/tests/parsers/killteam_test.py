@@ -17,6 +17,7 @@ class KillteamTest(TestCase):
         self.new_bs_format = str(self.base_path / 'test_roster_chaos_new.ros')
 
     def test__loop_through_test_folder_and_parse(self):
+        # Loops through the kill team test folder and makes sure all the tests parse without errors
         parsed_rosters = []
         list_of_rosters = [f for f in listdir(str(self.base_path)) if isfile(join(str(self.base_path), f))]
         for roster in list_of_rosters:
