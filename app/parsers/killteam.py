@@ -34,7 +34,7 @@ def create_list_of_units(model_list, parsed_models):
             keywords=keywords,
             wargear=wargear,
             abilities=abilities,
-            point_cost=cost
+            point_cost=cost,
         )
         parsed_models.append(parsed_model)
 
@@ -42,29 +42,29 @@ def create_list_of_units(model_list, parsed_models):
 
 
 def get_cost(model):
-    list_of_costs = model.findAll('cost')
+    list_of_costs = model.findAll("cost")
     total_cost = 0.0
     for cost in list_of_costs:
-        total_cost = total_cost + float(cost.attrs.get('value'))
+        total_cost = total_cost + float(cost.attrs.get("value"))
     return total_cost
 
 
 def get_abilities(model):
-    list_of_abilities = model.findAll('profile', {'typename': 'Ability'})
+    list_of_abilities = model.findAll("profile", {"typename": "Ability"})
     dict_of_abilities = {}
     for ability in list_of_abilities:
-        name = ability.attrs.get('name')
-        value = ability.find('characteristic').contents[0].strip().split()
-        cleaned_value = ' '.join(value)
+        name = ability.attrs.get("name")
+        value = ability.find("characteristic").contents[0].strip().split()
+        cleaned_value = " ".join(value)
         dict_of_abilities.update({name: cleaned_value})
     return dict_of_abilities
 
 
 def get_keywords(model):
     categories = []
-    list_of_categories = model.findAll('category')
+    list_of_categories = model.findAll("category")
     for category in list_of_categories:
-        categories.append(category.attrs.get('name'))
+        categories.append(category.attrs.get("name"))
     return categories
 
 
@@ -73,28 +73,28 @@ def get_wargear(model):
     dict_of_wargear = {}
     for item in wargear:
         dict_of_characteristics = {}
-        wargear_name = item.attrs.get('name')
-        wargear_stats = item.findAll('characteristic')
+        wargear_name = item.attrs.get("name")
+        wargear_stats = item.findAll("characteristic")
         for characteristic in wargear_stats:
-            name = characteristic.attrs.get('name')
+            name = characteristic.attrs.get("name")
             value = characteristic.contents[0].strip().split()
-            cleaned_value = ' '.join(value)
+            cleaned_value = " ".join(value)
             dict_of_characteristics.update({name: cleaned_value})
         dict_of_wargear.update({wargear_name: dict_of_characteristics})
     return dict_of_wargear
 
 
 def get_model_name(model):
-    return model.attrs.get('name')
+    return model.attrs.get("name")
 
 
 def get_characteristics(model):
     dict_of_characteristics = {}
-    model_profile = model.find('profile', {'typename': 'Model'})
+    model_profile = model.find("profile", {"typename": "Model"})
     if model_profile:
-        list_of_characteristics = model_profile.findAll('characteristic')
+        list_of_characteristics = model_profile.findAll("characteristic")
         for characteristic in list_of_characteristics:
-            name = characteristic.attrs.get('name')
+            name = characteristic.attrs.get("name")
             value = characteristic.contents[0]
             dict_of_characteristics.update({name: value})
     return dict_of_characteristics
