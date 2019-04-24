@@ -17,8 +17,3 @@ steps:
       - ./cc-test-reporter before-build
       - pytest --cov-branch --cov-report xml --cov=app app
       - ./cc-test-reporter after-build --coverage-input-type coverage.py --exit-code $?
----
-kind: signature
-hmac: b32717d2ba0ebf8396b340b61aa2d76213b913f3511561768e997e43b2b9d7c3
-
-...
