@@ -20,8 +20,10 @@ class HeresyTest(TestCase):
         """
         parsed_rosters = []
         list_of_rosters = [
-            f for f in listdir(str(self.base_path))
-            if isfile(join(str(self.base_path), f))]
+            f
+            for f in listdir(str(self.base_path))
+            if isfile(join(str(self.base_path), f))
+        ]
 
         for roster in list_of_rosters:
             parsed_roster = fetch_and_parse_roster(
@@ -33,6 +35,7 @@ class HeresyTest(TestCase):
 
     def test__new_bs_format(self):
         parsed_roster = fetch_and_parse_roster(
-            roster_file=self.new_bs_format, gametype=self.gametype)
+            roster_file=self.new_bs_format, gametype=self.gametype
+        )
 
         self.assertTrue(parsed_roster)

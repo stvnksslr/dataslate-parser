@@ -1,8 +1,5 @@
 from unittest import TestCase
 from pathlib import Path
-
-from bs4 import BeautifulSoup
-
 from app.tests.test_utils import fetch_and_parse_roster
 from os import listdir
 from os.path import isfile, join
@@ -27,8 +24,10 @@ class KillteamTest(TestCase):
         """
         parsed_rosters = []
         list_of_rosters = [
-            f for f in listdir(str(self.base_path))
-            if isfile(join(str(self.base_path), f))]
+            f
+            for f in listdir(str(self.base_path))
+            if isfile(join(str(self.base_path), f))
+        ]
 
         for roster in list_of_rosters:
             parsed_roster = fetch_and_parse_roster(
@@ -72,11 +71,11 @@ class KillteamTest(TestCase):
         aspiring_champion = parsed_roster[0]
         self.assertEqual(len(aspiring_champion.abilities), 3)
         self.assertEqual(aspiring_champion.attacks, "2")
-        self.assertEqual(aspiring_champion.ballistic_skill, '3+')
+        self.assertEqual(aspiring_champion.ballistic_skill, "3+")
         self.assertEqual(aspiring_champion.leadership, "8")
         self.assertEqual(aspiring_champion.max, "1")
         self.assertEqual(aspiring_champion.movement, '6"')
-        self.assertEqual(aspiring_champion.name, 'Aspiring Champion')
+        self.assertEqual(aspiring_champion.name, "Aspiring Champion")
         self.assertEqual(aspiring_champion.point_cost, 18.0)
         self.assertEqual(aspiring_champion.save, "3+")
         self.assertEqual(aspiring_champion.strength, "4")
@@ -94,9 +93,8 @@ class KillteamTest(TestCase):
             roster_file=self.new_bs_format, gametype=self.gametype
         )
         aspiring_champion = parsed_roster[0]
-        self.assertTrue(aspiring_champion.wargear.get('Power fist'))
-        self.assertTrue(aspiring_champion.wargear.get('Frag grenade'))
-        self.assertTrue(aspiring_champion.wargear.get('Krak grenade'))
-        self.assertTrue(aspiring_champion.wargear.get('Plasma pistol - Standard'))
-        self.assertTrue(aspiring_champion.wargear.get('Plasma pistol - Supercharge'))
-
+        self.assertTrue(aspiring_champion.wargear.get("Power fist"))
+        self.assertTrue(aspiring_champion.wargear.get("Frag grenade"))
+        self.assertTrue(aspiring_champion.wargear.get("Krak grenade"))
+        self.assertTrue(aspiring_champion.wargear.get("Plasma pistol - Standard"))
+        self.assertTrue(aspiring_champion.wargear.get("Plasma pistol - Supercharge"))

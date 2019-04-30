@@ -1,9 +1,9 @@
 {
-    "python.pythonPath": "/Users/skessler/.virtualenvs/dataslate-parser-Vofo1Osn/bin/python",
-    "python.unitTest.pyTestArgs": [
+    "python.pythonPath": "/Users/skessler/.virtualenvs/dataslate-parser-pUl6zQrk/bin/python",
+    "python.testing.pyTestArgs": [
         "app"
     ],
-    "python.unitTest.unittestEnabled": false,
-    "python.unitTest.nosetestsEnabled": false,
-    "python.unitTest.pyTestEnabled": true
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pyTestEnabled": true
 }
