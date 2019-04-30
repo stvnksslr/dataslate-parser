@@ -3,6 +3,12 @@ kind: pipeline
 name: default
 
 steps:
+  - name: Lint
+    image: python:3.7
+    commands:
+      - pip install flake8
+      - flake8
+      
   - name: Test
     image: python:3.7
     environment:
@@ -13,12 +19,11 @@ steps:
       - chmod +x ./cc-test-reporter
       - pip install pipenv
       - pipenv install --dev --system
-      - pipenv run flake8
       - ./cc-test-reporter before-build
       - pytest --cov-branch --cov-report xml --cov=app app
       - ./cc-test-reporter after-build --coverage-input-type coverage.py --exit-code $?
 ---
 kind: signature
-hmac: 88448679508c9fb4e0e7646dc8a92221b5655d3146be7d358f5c8b2f81ecaebd
+hmac: 3948515587dbdd881a2a8907913c2a1ca9f9b8cec5de53a21e363e7e295d64c6
 
 ...
