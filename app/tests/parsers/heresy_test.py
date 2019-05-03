@@ -55,4 +55,3 @@ class HeresyTest(TestCase):
         )
 
         self.assertTrue(parsed_roster)
-
