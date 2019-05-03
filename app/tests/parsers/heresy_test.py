@@ -10,6 +10,8 @@ class HeresyTest(TestCase):
     def setUp(self):
         self.base_path = Path.cwd() / "test_rosters" / "horus_heresy"
         self.new_bs_format = str(self.base_path / "legion_astartes_roster_new.ros")
+        self.full_list = str(self.base_path / "parser_test_full_list.ros")
+        self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
         self.gametype = "heresy"
 
     def test__loop_through_test_folder_and_parse(self):
@@ -39,3 +41,18 @@ class HeresyTest(TestCase):
         )
 
         self.assertTrue(parsed_roster)
+
+    def test__full_list(self):
+        parsed_roster = fetch_and_parse_roster(
+            roster_file=self.full_list, gametype=self.gametype
+        )
+
+        self.assertTrue(parsed_roster)
+
+    def test__tac_squad_with_dt(self):
+        parsed_roster = fetch_and_parse_roster(
+            roster_file=self.tac_squad_with_dt, gametype=self.gametype
+        )
+
+        self.assertTrue(parsed_roster)
+
