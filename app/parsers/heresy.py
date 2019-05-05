@@ -86,8 +86,10 @@ def get_rules(unit):
     dict_of_rules = {}
     rules = unit.find_all(name="rule")
     for rule in rules:
+        description = None
         name = rule.get("name")
-        description = rule.find(name="description").contents[0]
+        if rule.find(name="description"):
+            description = rule.find(name="description").contents[0]
         dict_of_rules.update({name: description})
     return dict_of_rules
 
@@ -99,8 +101,10 @@ def get_characteristics(unit_type, unit_name):
     dict_of_characteristics.update({"name": model_name})
     unit_characteristics = unit_type.find_all("characteristic")
     for characteristic in unit_characteristics:
+        value = None
         name = characteristic.attrs.get("name").lower()
-        value = characteristic.contents[0].lower()
+        if characteristic.contents:
+            value = characteristic.contents[0].lower()
         dict_of_characteristics.update({name: value})
     return dict_of_characteristics
 
