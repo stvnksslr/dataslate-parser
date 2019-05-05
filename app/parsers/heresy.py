@@ -34,7 +34,7 @@ def create_parsed_list(list_of_squads):
                 attacks=unit.get("a"),
                 leadership=unit.get("ld"),
                 save=unit.get("save"),
-                wargear=None,
+                wargear=unit.get('wargear'),
                 abilities=None,
                 movement=None,
                 cost=None,
@@ -56,6 +56,16 @@ def get_squads(squads):
     return list_of_squads
 
 
+def get_wargear(unit):
+    dict_of_wargear = {}
+    wargear = unit.find_all(typename="Weapon")
+    for item in wargear:
+        gear = get_characteristics(item, unit_name=None)
+        name = gear.get('name')
+        dict_of_wargear.update({name: gear})
+    return dict_of_wargear
+
+
 def parse_squad_characteristics(unit):
     parsed_profiles = []
     unit_name = unit.attrs.get("name")
@@ -64,7 +74,9 @@ def parse_squad_characteristics(unit):
     list_of_vehicles = unit.find_all(typename="Vehicle")
     list_of_profiles_in_squad = list_of_units + list_of_walkers + list_of_vehicles
     for profile in list_of_profiles_in_squad:
-        parsed_profiles.append(get_characteristics(profile, unit_name))
+        parsed_unit = get_characteristics(profile, unit_name)
+        parsed_unit.update({'wargear': get_wargear(unit)})
+        parsed_profiles.append(parsed_unit)
     return parsed_profiles
 
 
