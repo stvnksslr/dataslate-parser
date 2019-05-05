@@ -10,3 +10,10 @@ class HeresyUnit(Unit):
     initiative: str
     unit_type: str
     armor_facing: ArmorFacing
+
+    @staticmethod
+    def get_movement(unit_type):
+        movement = None
+        if unit_type == "infantry":
+            movement = 6
+        return movement

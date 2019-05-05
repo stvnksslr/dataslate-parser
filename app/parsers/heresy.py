@@ -5,16 +5,17 @@ from app.models.heresy_unit import HeresyUnit
 
 
 def parse_units(contents):
-    rule_whitelist = ["Rite of War", "Legion and Allegiance", "Use Playtest Rules"]
     soup = BeautifulSoup(contents, "lxml")
+    rule_whitelist = ["Rite of War", "Legion and Allegiance", "Use Playtest Rules"]
+    parsed_list = data_cleanse(rule_whitelist, soup)
+    return parsed_list
+
+
+def data_cleanse(rule_whitelist, soup):
     selections = soup.find("selections").find_all("selection", recursive=False)
-    filter_out_rules(rule_whitelist, selections)
-
-    squads = selections
-    list_of_squads = get_squads(squads)
-
+    filter_out_non_unit_entries(rule_whitelist, selections)
+    list_of_squads = get_squads(selections)
     parsed_list = create_parsed_list(list_of_squads)
-
     return parsed_list
 
 
@@ -34,9 +35,9 @@ def create_parsed_list(list_of_squads):
                 attacks=unit.get("a"),
                 leadership=unit.get("ld"),
                 save=unit.get("save"),
-                wargear=unit.get('wargear'),
-                abilities=None,
-                movement=None,
+                wargear=unit.get("wargear"),
+                abilities=unit.get("rules"),
+                movement=HeresyUnit.get_movement(unit.get("unit type")),
                 cost=None,
                 armor_facing=ArmorFacing(
                     front=unit.get("front"),
@@ -61,7 +62,7 @@ def get_wargear(unit):
     wargear = unit.find_all(typename="Weapon")
     for item in wargear:
         gear = get_characteristics(item, unit_name=None)
-        name = gear.get('name')
+        name = gear.get("name")
         dict_of_wargear.update({name: gear})
     return dict_of_wargear
 
@@ -75,9 +76,20 @@ def parse_squad_characteristics(unit):
     list_of_profiles_in_squad = list_of_units + list_of_walkers + list_of_vehicles
     for profile in list_of_profiles_in_squad:
         parsed_unit = get_characteristics(profile, unit_name)
-        parsed_unit.update({'wargear': get_wargear(unit)})
+        parsed_unit.update({"wargear": get_wargear(unit)})
+        parsed_unit.update({"rules": get_rules(unit)})
         parsed_profiles.append(parsed_unit)
     return parsed_profiles
+
+
+def get_rules(unit):
+    dict_of_rules = {}
+    rules = unit.find_all(name="rule")
+    for rule in rules:
+        name = rule.get("name")
+        description = rule.find(name="description").contents[0]
+        dict_of_rules.update({name: description})
+    return dict_of_rules
 
 
 def get_characteristics(unit_type, unit_name):
@@ -93,7 +105,7 @@ def get_characteristics(unit_type, unit_name):
     return dict_of_characteristics
 
 
-def filter_out_rules(rule_whitelist, selections):
+def filter_out_non_unit_entries(rule_whitelist, selections):
     dict_of_rules = {}
     for rule in rule_whitelist:
         for idx, selection in enumerate(selections):
