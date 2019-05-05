@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 
 from app.models.armor_facing import ArmorFacing
 from app.models.heresy_unit import HeresyUnit
+from app.models.unit_group import UnitGroup
 
 
 def parse_units(contents):
@@ -22,32 +23,40 @@ def data_cleanse(rule_whitelist, soup):
 def create_parsed_list(list_of_squads):
     parsed_list = []
     for squads in list_of_squads:
+        parsed_squads = []
         for unit in squads:
-            parsed_model = HeresyUnit(
-                name=unit.get("name"),
-                unit_type=unit.get("unit type"),
-                weapon_skill=unit.get("ws"),
-                ballistic_skill=unit.get("bs"),
-                strength=unit.get("s"),
-                toughness=unit.get("t"),
-                wounds=unit.get("w"),
-                initiative=unit.get("i"),
-                attacks=unit.get("a"),
-                leadership=unit.get("ld"),
-                save=unit.get("save"),
-                wargear=unit.get("wargear"),
-                abilities=unit.get("rules"),
-                movement=HeresyUnit.get_movement(unit.get("unit type")),
-                cost=None,
-                armor_facing=ArmorFacing(
-                    front=unit.get("front"),
-                    side=unit.get("side"),
-                    rear=unit.get("rear"),
-                    hp=unit.get("hp"),
-                ),
-            )
-            parsed_list.append(parsed_model)
+            parsed_squads.append(create_parsed_unit(unit))
+        parsed_list.append(
+            UnitGroup(name=squads[0].get("unit_name"), list_of_units=parsed_squads)
+        )
     return parsed_list
+
+
+def create_parsed_unit(unit):
+    parsed_model = HeresyUnit(
+        name=unit.get("name"),
+        unit_type=unit.get("unit type"),
+        weapon_skill=unit.get("ws"),
+        ballistic_skill=unit.get("bs"),
+        strength=unit.get("s"),
+        toughness=unit.get("t"),
+        wounds=unit.get("w"),
+        initiative=unit.get("i"),
+        attacks=unit.get("a"),
+        leadership=unit.get("ld"),
+        save=unit.get("save"),
+        wargear=unit.get("wargear"),
+        abilities=unit.get("rules"),
+        movement=HeresyUnit.get_movement(unit.get("unit type")),
+        cost=None,
+        armor_facing=ArmorFacing(
+            front=unit.get("front"),
+            side=unit.get("side"),
+            rear=unit.get("rear"),
+            hp=unit.get("hp"),
+        ),
+    )
+    return parsed_model
 
 
 def get_squads(squads):

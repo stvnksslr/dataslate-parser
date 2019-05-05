@@ -16,7 +16,7 @@ class HeresyTest(TestCase):
 
     def test__loop_through_test_folder_and_parse(self):
         """
-        method: fetch_and_parse_roster(killteam)
+        method: fetch_and_parse_roster(horus heresy)
         prerequisite: given a unzipped roster file it will parse without errors
         expected: successfully parses all roster files in the test folder
         """
@@ -36,11 +36,16 @@ class HeresyTest(TestCase):
         self.assertTrue(parsed_rosters)
 
     def test__new_bs_format(self):
+        """
+        method: fetch_and_parse_roster(killteam)
+        prerequisite: given a 2.02+ format roster
+        expected: successfully parses all three entries in the roster
+        """
         parsed_roster = fetch_and_parse_roster(
             roster_file=self.new_bs_format, gametype=self.gametype
         )
-
         self.assertTrue(parsed_roster)
+        self.assertTrue(len(parsed_roster), 3)
 
     def test__full_list(self):
         parsed_roster = fetch_and_parse_roster(
