@@ -26,6 +26,6 @@ steps:
       - ./cc-test-reporter after-build --coverage-input-type coverage.py --exit-code $?
 ---
 kind: signature
-hmac: 3948515587dbdd881a2a8907913c2a1ca9f9b8cec5de53a21e363e7e295d64c6
+hmac: d7b31e8384997e757b13abf27e567ea4425b43e70be1c16d019f8b48eb83da69
 
 ...
