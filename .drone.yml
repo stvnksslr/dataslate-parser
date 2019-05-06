@@ -6,6 +6,7 @@ steps:
   - name: Lint
     image: python:3.7
     commands:
+      - pip install --upgrade pip
       - pip install flake8
       - flake8
       
@@ -16,11 +17,12 @@ steps:
         from_secret: CODE_CLIMATE
     commands:
       - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - pip install --upgrade pip
+      - pip install poetry
       - chmod +x ./cc-test-reporter
-      - pip install pipenv
-      - pipenv install --dev --system
+      - poetry install
       - ./cc-test-reporter before-build
-      - pytest --cov-branch --cov-report xml --cov=app app
+      - poetry run pytest --cov-branch --cov-report xml --cov=app app
       - ./cc-test-reporter after-build --coverage-input-type coverage.py --exit-code $?
 ---
 kind: signature
