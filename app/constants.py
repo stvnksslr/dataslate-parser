@@ -7,4 +7,7 @@ HORUS_HERESY_NAME: str = "Warhammer 30,000 - The Horus Heresy"
 WARHAMMER_40K_ID: str = ""
 WARHAMMER_40K_NAME: str = ""
 
+AGE_OF_SIGMAR_ID: str = ""
+AGE_OF_SIGMAR_NAME: str = ""
+
 BATTLESCRIBE_VERSION = "2.02"
