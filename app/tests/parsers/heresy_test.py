@@ -76,3 +76,22 @@ class HeresyTest(TestCase):
         self.assertEqual(parsed_roster[0].list_of_units[0].name, 'legion tactical space marine')
         self.assertEqual(parsed_roster[0].list_of_units[1].name, 'legion tactical sergeant')
         self.assertEqual(parsed_roster[0].list_of_units[2].name, 'legion rhino')
+
+    def test__tac_squad_with_dt_characteristics(self):
+        """
+        """
+        parsed_roster = fetch_and_parse_roster(roster_file=self.tac_squad_with_dt, gametype=self.gametype)
+        tactical_squad = parsed_roster[0].list_of_units
+        self.assertTrue(parsed_roster)
+        self.assertEqual(parsed_roster[0].list_of_units[0].name, 'legion tactical space marine')
+        self.assertEqual(tactical_squad[0].attacks, "1")
+        self.assertEqual(tactical_squad[0].ballistic_skill, "4")
+        self.assertEqual(tactical_squad[0].initiative, "4")
+        self.assertEqual(tactical_squad[0].leadership, "8")
+        self.assertEqual(tactical_squad[0].movement, 6)
+        self.assertEqual(tactical_squad[0].save, "3+")
+        self.assertEqual(tactical_squad[0].strength, "4")
+        self.assertEqual(tactical_squad[0].toughness, "4")
+        self.assertEqual(tactical_squad[0].unit_type, "infantry")
+        self.assertEqual(tactical_squad[0].weapon_skill, "4")
+        self.assertEqual(tactical_squad[0].wounds, "1")
