@@ -63,7 +63,7 @@ class HeresyTest(TestCase):
     def test__tac_squad_with_dt(self):
         """
         method: fetch_and_parse_roster(killteam)
-        prerequisite: given a 2.02+ format roster that contains an infantry unit 
+        prerequisite: given a 2.02+ format roster that contains an infantry unit
         with a dedicated transport
         expected: successfully parses both the infantry unit and the dedicated transport
         """
