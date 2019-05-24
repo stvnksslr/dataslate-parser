@@ -1,3 +1,11 @@
 {
-    "python.pythonPath": "/home/stvnksslr/.local/share/virtualenvs/dataslate-parser-u5mf8r7q/bin/python"
+    "python.testing.pyTestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pyTestEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }
