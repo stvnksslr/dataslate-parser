@@ -8,6 +8,7 @@ flake8 = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-sugar = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 beautifulsoup4 = "==4.7.1"
