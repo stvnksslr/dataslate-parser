@@ -6,11 +6,8 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 pytest = "*"
-ipython = "*"
 pytest-cov = "*"
 pytest-sugar = "*"
-pytest-xdist = "*"
-pytest-tldr = "*"
 
 [packages]
 beautifulsoup4 = "==4.7.1"
