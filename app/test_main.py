@@ -1,10 +1,11 @@
 from pathlib import Path
 from unittest import TestCase
 
+from starlette.requests import Request
 from starlette.testclient import TestClient
 
-from app.tests.test_utils import fetch_and_parse_roster
-from main import app
+from app.utils.test_utils import fetch_and_parse_roster
+from main import app, templates
 
 client = TestClient(app)
 
@@ -17,14 +18,15 @@ class RenderingTests(TestCase):
         )
         self.gametype = "killteam"
 
+        self.parsed_roster = fetch_and_parse_roster(
+            roster_file=self.chaos_kill_team_standard, gametype=self.gametype
+        )
+
     def test_read_main(self):
         response = client.get("/")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"msg": "Hello World"})
 
-    # def test_basic_kill_team_roster(self):
-    #     parsed_roster = fetch_and_parse_roster(
-    #         roster_file=self.chaos_kill_team_standard, gametype=self.gametype
-    #     )
-    #     response = client.get("render/kt/roster")
-    #     assert response.status_code == 200
+    def test_render_killteam_via_context(self):
+        response = client.get("/render/sandbox")
+        self.assertEqual(response.status_code, 200)
