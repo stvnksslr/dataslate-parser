@@ -1,0 +1,314 @@
+<html>
+<head>
+    <link href="{{ url_for('static', path='/sandbox.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="clearfix faUnitCard">
+    <div class="clearfix faUnitHeader">
+        <div class="faRoleIcon"></div>
+        <div class="faUnitName">Warboss</div>
+    </div>
+    <div class="clearfix faUnitStats">
+        <div class="clearfix faStatsHeader">
+            <div class="faStatHeader" data-stat="name">NAME</div>
+            <div class="faStatHeader" data-stat="movement">M</div>
+            <div class="faStatHeader" data-stat="weaponSkill">WS</div>
+            <div class="faStatHeader" data-stat="ballisticSkill">BS</div>
+            <div class="faStatHeader" data-stat="strength">S</div>
+            <div class="faStatHeader" data-stat="toughness">T</div>
+            <div class="faStatHeader" data-stat="wounds">W</div>
+            <div class="faStatHeader" data-stat="attacks">A</div>
+            <div class="faStatHeader" data-stat="leadership">Ld</div>
+            <div class="faStatHeader" data-stat="save">Sv</div>
+            <div class="faStatHeader" data-stat="points">Pts</div>
+        </div>
+        <div class="clearfix faStatsBody">
+            <div class="faStatBody" data-stat="name">Warboss (1)</div>
+            <div class="faStatBody" data-stat="movement">5"</div>
+            <div class="faStatBody" data-stat="weaponSkill">2+</div>
+            <div class="faStatBody" data-stat="ballisticSkill">5+</div>
+            <div class="faStatBody" data-stat="strength">6</div>
+            <div class="faStatBody" data-stat="toughness">5</div>
+            <div class="faStatBody" data-stat="wounds">6</div>
+            <div class="faStatBody" data-stat="attacks">4</div>
+            <div class="faStatBody" data-stat="leadership">8</div>
+            <div class="faStatBody" data-stat="save">4+</div>
+            <div class="faStatBody" data-stat="points">55</div>
+        </div>
+    </div>
+    <div class="clearfix faWeaponStats">
+        <div class="clearfix faWpnsHeader">
+            <div class="faWpnHeader" data-stat="weapon">WEAPON</div>
+            <div class="faWpnHeader" data-stat="range">RANGE</div>
+            <div class="faWpnHeader" data-stat="type">TYPE</div>
+            <div class="faWpnHeader" data-stat="strength">S</div>
+            <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
+            <div class="faWpnHeader" data-stat="damage">D</div>
+            <div class="faWpnHeader" data-stat="abilities">ABILITIES</div>
+            <div class="faWpnHeader" data-stat="points">Pts</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Kustom Shoota (1)</div>
+            <div class="faWpnBody" data-stat="range">18"</div>
+            <div class="faWpnBody" data-stat="type">Assault 4</div>
+            <div class="faWpnBody" data-stat="strength">4</div>
+            <div class="faWpnBody" data-stat="armorPiercing">0</div>
+            <div class="faWpnBody" data-stat="damage">1</div>
+            <div class="faWpnBody" data-stat="abilities">-</div>
+            <div class="faWpnBody" data-stat="points">4</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Power klaw (1)</div>
+            <div class="faWpnBody" data-stat="range">Melee</div>
+            <div class="faWpnBody" data-stat="type">Melee</div>
+            <div class="faWpnBody" data-stat="strength">x2</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-3</div>
+            <div class="faWpnBody" data-stat="damage">D3</div>
+            <div class="faWpnBody" data-stat="abilities">When attacking with this weapon, you must subtract 1 from the
+                hit roll.
+            </div>
+            <div class="faWpnBody" data-stat="points">25</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Attack squig (1)</div>
+            <div class="faWpnBody" data-stat="range">Melee</div>
+            <div class="faWpnBody" data-stat="type">Melee</div>
+            <div class="faWpnBody" data-stat="strength">4</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-1</div>
+            <div class="faWpnBody" data-stat="damage">1</div>
+            <div class="faWpnBody" data-stat="abilities">Each time a model with an attack squig fights, it can make 2
+                additional attacks with this weapon.
+            </div>
+            <div class="faWpnBody" data-stat="points">0</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Stikkbomb (1)</div>
+            <div class="faWpnBody" data-stat="range">6"</div>
+            <div class="faWpnBody" data-stat="type">Grenade D6</div>
+            <div class="faWpnBody" data-stat="strength">3</div>
+            <div class="faWpnBody" data-stat="armorPiercing">0</div>
+            <div class="faWpnBody" data-stat="damage">1</div>
+            <div class="faWpnBody" data-stat="abilities">-</div>
+            <div class="faWpnBody" data-stat="points">0</div>
+        </div>
+    </div>
+    <div class="clearfix faAbilities">
+        <div class="faSectionTitle">ABILITIES:</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">'Ere We Go: </span>A unit with this ability can re-roll failed charge rolls.
+        </div>
+        <div class="faSectionTitle">&nbsp;</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">Mob Rule: </span>A unit with this ability can use the number of models in their
+            unit as their Leadership characteristic. In addition, a unit with this ability can use the Leadership
+            characteristic of any friendly
+            <span class="keyword">Ork</span> unit within 6".
+        </div>
+        <div class="faSectionTitle">&nbsp;</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">Waaagh!: </span>Friendly <span class="keyword">Ork Infantry</span> units within
+            6" of this model at the start of the Charge phase can charge even if they Advanced this turn.
+        </div>
+        <div class="faSectionTitle">&nbsp;</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">Breakin' Heads: </span>If a <span class="keyword">&lt;Clan&gt;</span> unit fails
+            a Morale test within 3" of a friendly <span class="keyword">&lt;Clan&gt; Warboss</span>, they can restore
+            order with a brutal display
+            of violence. If they do, the unit suffers D3 moral wounds but the Morale test is then considered to have
+            been passed.
+        </div>
+    </div>
+    <div class="clearfix faFactKeyWords">
+        <div class="faSectionTitle">FACTION KEYWORDS:</div>
+        <div class="faSectionBody">Ork, &lt;Clan&gt;</div>
+    </div>
+    <div class="clearfix faKeyWords">
+        <div class="faSectionTitle">KEYWORDS:</div>
+        <div class="faSectionBody">Character, Infantry, Warboss</div>
+    </div>
+</div>
+<div class="clearfix faUnitCard">
+    <div class="clearfix faUnitHeader">
+        <div class="faRoleIcon"></div>
+        <div class="faUnitName">Gorkanaut</div>
+        <div class="clearfix faDamageBlock">
+            <div class="faDamageHeader">DAMAGE</div>
+            <div class="faDamageSubHeader">Some of this model's characteristics change as it suffers damage, as shown
+                below:
+            </div>
+            <div class="clearfix faDamageStats">
+                <div class="clearfix faDamageStatsHeader">
+                    <div class="faDamageStatHeader" data-stat="remainWounds">Remaining W</div>
+                    <div class="faDamageStatHeader" data-stat="movement">M</div>
+                    <div class="faDamageStatHeader" data-stat="weaponSkill">WS</div>
+                    <div class="faDamageStatHeader" data-stat="attacks">A</div>
+                </div>
+                <div class="clearfix faDamageStatsBody">
+                    <div class="faDamageStatBody" data-stat="remainWounds">10-18+</div>
+                    <div class="faDamageStatBody" data-stat="movement">8"</div>
+                    <div class="faDamageStatBody" data-stat="weaponSkill">3+</div>
+                    <div class="faDamageStatBody" data-stat="attacks">6</div>
+                </div>
+                <div class="clearfix faDamageStatsBody">
+                    <div class="faDamageStatBody" data-stat="remainWounds">5-9</div>
+                    <div class="faDamageStatBody" data-stat="movement">6"</div>
+                    <div class="faDamageStatBody" data-stat="weaponSkill">4+</div>
+                    <div class="faDamageStatBody" data-stat="attacks">5</div>
+                </div>
+                <div class="clearfix faDamageStatsBody">
+                    <div class="faDamageStatBody" data-stat="remainWounds">1-4</div>
+                    <div class="faDamageStatBody" data-stat="movement">4"</div>
+                    <div class="faDamageStatBody" data-stat="weaponSkill">5+</div>
+                    <div class="faDamageStatBody" data-stat="attacks">4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix faUnitStats">
+        <div class="clearfix faStatsHeader">
+            <div class="faStatHeader" data-stat="name">NAME</div>
+            <div class="faStatHeader" data-stat="movement">M</div>
+            <div class="faStatHeader" data-stat="weaponSkill">WS</div>
+            <div class="faStatHeader" data-stat="ballisticSkill">BS</div>
+            <div class="faStatHeader" data-stat="strength">S</div>
+            <div class="faStatHeader" data-stat="toughness">T</div>
+            <div class="faStatHeader" data-stat="wounds">W</div>
+            <div class="faStatHeader" data-stat="attacks">A</div>
+            <div class="faStatHeader" data-stat="leadership">Ld</div>
+            <div class="faStatHeader" data-stat="save">Sv</div>
+            <div class="faStatHeader" data-stat="points">Pts</div>
+        </div>
+        <div class="clearfix faStatsBody">
+            <div class="faStatBody" data-stat="name">Gorkanaut (1)</div>
+            <div class="faStatBody" data-stat="movement">*</div>
+            <div class="faStatBody" data-stat="weaponSkill">*</div>
+            <div class="faStatBody" data-stat="ballisticSkill">5+</div>
+            <div class="faStatBody" data-stat="strength">8</div>
+            <div class="faStatBody" data-stat="toughness">8</div>
+            <div class="faStatBody" data-stat="wounds">18</div>
+            <div class="faStatBody" data-stat="attacks">*</div>
+            <div class="faStatBody" data-stat="leadership">7</div>
+            <div class="faStatBody" data-stat="save">3+</div>
+            <div class="faStatBody" data-stat="points">295</div>
+        </div>
+    </div>
+    <div class="clearfix faWeaponStats">
+        <div class="clearfix faWpnsHeader">
+            <div class="faWpnHeader" data-stat="weapon">WEAPON</div>
+            <div class="faWpnHeader" data-stat="range">RANGE</div>
+            <div class="faWpnHeader" data-stat="type">TYPE</div>
+            <div class="faWpnHeader" data-stat="strength">S</div>
+            <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
+            <div class="faWpnHeader" data-stat="damage">D</div>
+            <div class="faWpnHeader" data-stat="abilities">ABILITIES</div>
+            <div class="faWpnHeader" data-stat="points">Pts</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Deffstorm mega-shoota (1)</div>
+            <div class="faWpnBody" data-stat="range">36"</div>
+            <div class="faWpnBody" data-stat="type">Heavy 3D6</div>
+            <div class="faWpnBody" data-stat="strength">6</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-1</div>
+            <div class="faWpnBody" data-stat="damage">1</div>
+            <div class="faWpnBody" data-stat="abilities">-</div>
+            <div class="faWpnBody" data-stat="points">0</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Rokkit launcha (2)</div>
+            <div class="faWpnBody" data-stat="range">24"</div>
+            <div class="faWpnBody" data-stat="type">Assault 1</div>
+            <div class="faWpnBody" data-stat="strength">8</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-2</div>
+            <div class="faWpnBody" data-stat="damage">3</div>
+            <div class="faWpnBody" data-stat="abilities">-</div>
+            <div class="faWpnBody" data-stat="points">24</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Skorcha (1)</div>
+            <div class="faWpnBody" data-stat="range">8"</div>
+            <div class="faWpnBody" data-stat="type">Assault D6</div>
+            <div class="faWpnBody" data-stat="strength">5</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-1</div>
+            <div class="faWpnBody" data-stat="damage">1</div>
+            <div class="faWpnBody" data-stat="abilities">This weapon automatically hits its target.</div>
+            <div class="faWpnBody" data-stat="points">17</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Twin big shoota (2)</div>
+            <div class="faWpnBody" data-stat="range">36"</div>
+            <div class="faWpnBody" data-stat="type">Assault 6</div>
+            <div class="faWpnBody" data-stat="strength">5</div>
+            <div class="faWpnBody" data-stat="armorPiercing">0</div>
+            <div class="faWpnBody" data-stat="damage">1</div>
+            <div class="faWpnBody" data-stat="abilities">-</div>
+            <div class="faWpnBody" data-stat="points">28</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">Klaw of Gork<br/>(or possibly Mork) (1)</div>
+            <div class="faWpnBody" data-stat="range">&nbsp;</div>
+            <div class="faWpnBody" data-stat="type">&nbsp;</div>
+            <div class="faWpnBody" data-stat="strength">&nbsp;</div>
+            <div class="faWpnBody" data-stat="armorPiercing">&nbsp;</div>
+            <div class="faWpnBody" data-stat="damage">&nbsp;</div>
+            <div class="faWpnBody" data-stat="abilities">When attacking with this weapon, choose one of the profiles
+                below.
+            </div>
+            <div class="faWpnBody" data-stat="points">0</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">- Crush</div>
+            <div class="faWpnBody" data-stat="range">Melee</div>
+            <div class="faWpnBody" data-stat="type">Melee</div>
+            <div class="faWpnBody" data-stat="strength">x2</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-4</div>
+            <div class="faWpnBody" data-stat="damage">D6</div>
+            <div class="faWpnBody" data-stat="abilities">-</div>
+            <div class="faWpnBody" data-stat="points">&nbsp;</div>
+        </div>
+        <div class="clearfix faWpnsBody">
+            <div class="faWpnBody" data-stat="weapon">- Smash</div>
+            <div class="faWpnBody" data-stat="range">Melee</div>
+            <div class="faWpnBody" data-stat="type">Melee</div>
+            <div class="faWpnBody" data-stat="strength">User</div>
+            <div class="faWpnBody" data-stat="armorPiercing">-2</div>
+            <div class="faWpnBody" data-stat="damage">2</div>
+            <div class="faWpnBody" data-stat="abilities">Make 3 hit rolls for each attack made with this weapon, instead
+                of 1.
+            </div>
+            <div class="faWpnBody" data-stat="points">&nbsp;</div>
+        </div>
+    </div>
+    <div class="clearfix faAbilities">
+        <div class="faSectionTitle">ABILITIES:</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">'Ere We Go: </span>A unit with this ability can re-roll failed charge rolls.
+        </div>
+        <div class="faSectionTitle">&nbsp;</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">Explodes: </span>If a Gorkanaut is reduced to 0 wounds, roll a D6 before
+            removing the model from the battlefield and before any embarked models disembark. On a 6 it explodes, and
+            each model within 9" suffers D6 mortal
+            wounds.
+        </div>
+        <div class="faSectionTitle">&nbsp;</div>
+        <div class="clearfix faSectionBody">
+            <span class="faAbilityName">Big 'n' Stompy: </span>This model can Fall Back in the Movement phase and still
+            shoot and/or charge that turn, and does not suffer the penalty for moving and firing Heavy weapons
+        </div>
+        <div class="faSectionTitle">&nbsp;</div>
+        <div class="clearfix faSectionBody">
+            This model only gains a bonus to its saving throws for being in cover if at least half of the model is
+            obscured from the firer.
+        </div>
+    </div>
+    <div class="clearfix faFactKeyWords">
+        <div class="faSectionTitle">FACTION KEYWORDS:</div>
+        <div class="faSectionBody">Ork, &lt;Clan&gt;</div>
+    </div>
+    <div class="clearfix faKeyWords">
+        <div class="faSectionTitle">KEYWORDS:</div>
+        <div class="faSectionBody">Vehicle, Transport, Gorkanaut</div>
+    </div>
+</div>
+</body>
+</html>

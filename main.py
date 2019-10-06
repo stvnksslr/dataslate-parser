@@ -19,6 +19,11 @@ async def root():
     return {"msg": "Hello World"}
 
 
+@app.get("/render/sandbox")
+def read_item(request: Request):
+    return templates.TemplateResponse("sandbox.html", {"request": request})
+
+
 @app.get("/render/kt")
 async def read_item(request: Request):
     return templates.TemplateResponse("item.html", {"request": request})
