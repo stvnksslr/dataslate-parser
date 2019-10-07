@@ -39,7 +39,7 @@ def read_item(request: Request):
 
 def generate_test_roster():
     base_path = Path.cwd() / "test_rosters" / "kill_team"
-    chaos_kill_team_standard = str(base_path / "test_roster_chaos_new.ros")
+    chaos_kill_team_standard = str(base_path / "test_roster_commander.ros")
     gametype = "killteam"
     parsed_roster = fetch_and_parse_roster(
         roster_file=chaos_kill_team_standard, gametype=gametype

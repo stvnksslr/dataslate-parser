@@ -15,6 +15,7 @@ class KillteamTest(TestCase):
         self.ability_example_name = "Death to the False Emperor"
         self.gametype = "killteam"
         self.new_bs_format = str(self.base_path / "test_roster_chaos_new.ros")
+        self.commander_roster = str(self.base_path / "test_roster_commander.ros")
 
     def test__loop_through_test_folder_and_parse(self):
         """
@@ -98,3 +99,9 @@ class KillteamTest(TestCase):
         self.assertTrue(aspiring_champion.wargear.get("Krak grenade"))
         self.assertTrue(aspiring_champion.wargear.get("Plasma pistol - Standard"))
         self.assertTrue(aspiring_champion.wargear.get("Plasma pistol - Supercharge"))
+
+    def test__commander_roster(self):
+        parsed_roster = fetch_and_parse_roster(
+            roster_file=self.commander_roster, gametype=self.gametype
+        )
+        self.assertTrue(parsed_roster)
