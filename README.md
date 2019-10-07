@@ -6,11 +6,12 @@ This project is to take in battlescribe roster files and output them into easily
 
 #### Requirements
 * Python 3.7+
-* pipenv 
+* poetry 
 
 ##### Setup
-1. pipenv install --dev
-2. py.test
+1. poetry install
+2. poetry shell
+3. pytest
 
 
 ###### Inspired by https://github.com/gregchiasson/warhams 
