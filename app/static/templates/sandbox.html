@@ -26,7 +26,7 @@
         </div>
         <div class="clearfix faStatsBody">
             <div class="faStatBody" data-stat="name">{{unit.name}}</div>
-            <div class="faStatBody" data-stat="movement">{{unit.movement}}"</div>
+            <div class="faStatBody" data-stat="movement">{{unit.movement}}</div>
             <div class="faStatBody" data-stat="weaponSkill">{{unit.weapon_skill}}</div>
             <div class="faStatBody" data-stat="ballisticSkill">{{unit.ballistic_skill}}</div>
             <div class="faStatBody" data-stat="strength">{{unit.strength}}</div>
@@ -35,7 +35,7 @@
             <div class="faStatBody" data-stat="attacks">{{unit.attacks}}</div>
             <div class="faStatBody" data-stat="leadership">{{unit.leadership}}</div>
             <div class="faStatBody" data-stat="save">{{unit.save}}</div>
-            <div class="faStatBody" data-stat="points">wip</div>
+            <div class="faStatBody" data-stat="points">{{unit.point_cost}}</div>
         </div>
     </div>
     <div class="clearfix faWeaponStats">
@@ -47,7 +47,6 @@
             <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
             <div class="faWpnHeader" data-stat="damage">D</div>
             <div class="faWpnHeader" data-stat="abilities">ABILITIES</div>
-            <div class="faWpnHeader" data-stat="points">Pts</div>
         </div>
         {% for name,weapon in unit.wargear.items() %}
         <div class="clearfix faWpnsBody">
@@ -58,10 +57,10 @@
             <div class="faWpnBody" data-stat="armorPiercing">{{weapon.AP}}</div>
             <div class="faWpnBody" data-stat="damage">{{weapon.D}}</div>
             <div class="faWpnBody" data-stat="abilities">{{weapon.Abilities}}</div>
-            <div class="faWpnBody" data-stat="points">wip</div>
         </div>
         {% endfor %}
     </div>
+    {% if unit.abilities %}
     <div class="clearfix faAbilities">
         <div class="faSectionTitle">ABILITIES:</div>
         {% for name,ability in unit.abilities.items() %}
@@ -70,10 +69,11 @@
         </div>
         {% endfor %}
     </div>
+    {% endif %}
     <div class="clearfix faFactKeyWords">
-        <div class="faSectionTitle">FACTION KEYWORDS:</div>
+        <div class="faSectionTitle">KEYWORDS:</div>
         <div class="faSectionBody"> {% for keyword in unit.keywords %}
-            {{keyword}}
+            {{keyword}},
             {% endfor %}
         </div>
     </div>

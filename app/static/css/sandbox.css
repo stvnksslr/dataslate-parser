@@ -262,7 +262,6 @@ body {
 
 .faFactKeyWords {
   border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
   font-size: small;
 }
 
@@ -273,11 +272,6 @@ body {
 
 .faKeyWords {
   font-size: small;
-}
-
-.faKeyWords .faSectionBody {
-  font-weight: bold;
-  font-variant: small-caps;
 }
 
 @media print {

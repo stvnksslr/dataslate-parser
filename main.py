@@ -11,7 +11,7 @@ app = FastAPI(
     title="Dataslate",
     description="Parsing tool to make more clean and easily printable outputs for battlescribe",
     version="1.0.0",
-    redoc_url=None
+    redoc_url=None,
 )
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
@@ -32,14 +32,14 @@ def read_item(request: Request):
 def read_item(request: Request):
     test_roster = generate_test_roster()
 
-    return templates.TemplateResponse("sandbox.html", {"request": request, "roster": test_roster})
+    return templates.TemplateResponse(
+        "sandbox.html", {"request": request, "roster": test_roster}
+    )
 
 
 def generate_test_roster():
     base_path = Path.cwd() / "test_rosters" / "kill_team"
-    chaos_kill_team_standard = str(
-        base_path / "test_roster_chaos_new.ros"
-    )
+    chaos_kill_team_standard = str(base_path / "test_roster_chaos_new.ros")
     gametype = "killteam"
     parsed_roster = fetch_and_parse_roster(
         roster_file=chaos_kill_team_standard, gametype=gametype
