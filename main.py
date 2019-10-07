@@ -24,12 +24,12 @@ async def root():
 
 
 @app.get("/render/example")
-def read_item(request: Request):
+def example(request: Request):
     return templates.TemplateResponse("40k_example.html", {"request": request})
 
 
 @app.get("/render/sandbox")
-def read_item(request: Request):
+def sandbox(request: Request):
     test_roster = generate_test_roster()
 
     return templates.TemplateResponse(
@@ -48,20 +48,20 @@ def generate_test_roster():
 
 
 @app.get("/render/kt")
-async def read_item(request: Request):
+async def render_kt(request: Request):
     return templates.TemplateResponse("item.html", {"request": request})
 
 
 @app.get("/render/kt/roster")
-async def read_item(request: Request):
+async def render_kt_roster(request: Request):
     return templates.TemplateResponse("item.html", {"request": request})
 
 
 @app.get("/render/30k")
-async def read_item(request: Request):
+async def render_heresy(request: Request):
     return templates.TemplateResponse("item.html", {"request": request})
 
 
 @app.get("/render/40k")
-async def read_item(request: Request):
+async def render_40k(request: Request):
     return templates.TemplateResponse("item.html", {"request": request})

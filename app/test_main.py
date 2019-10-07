@@ -1,11 +1,10 @@
 from pathlib import Path
 from unittest import TestCase
 
-from starlette.requests import Request
 from starlette.testclient import TestClient
 
 from app.utils.test_utils import fetch_and_parse_roster
-from main import app, templates
+from main import app
 
 client = TestClient(app)
 
