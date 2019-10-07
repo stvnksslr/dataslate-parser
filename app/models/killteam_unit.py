@@ -1,8 +1,6 @@
 import json
 from dataclasses import dataclass, asdict
 
-from dataclasses_json import dataclass_json
-
 from app.models.unit import Unit
 
 
