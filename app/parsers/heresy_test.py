@@ -3,7 +3,7 @@ from os.path import isfile, join
 from pathlib import Path
 from unittest import TestCase
 
-from app.tests.test_utils import fetch_and_parse_roster
+from app.utils.test_utils import fetch_and_parse_roster
 
 
 class HeresyTest(TestCase):
@@ -22,9 +22,9 @@ class HeresyTest(TestCase):
         """
         parsed_rosters = []
         list_of_rosters = [
-            f
-            for f in listdir(str(self.base_path))
-            if isfile(join(str(self.base_path), f))
+            file
+            for file in listdir(str(self.base_path))
+            if isfile(join(str(self.base_path), file))
         ]
 
         for roster in list_of_rosters:
@@ -62,7 +62,7 @@ class HeresyTest(TestCase):
 
     def test__tac_squad_with_dt(self):
         """
-        method: fetch_and_parse_roster(killteam)
+        method: fetch_and_parse_roster(heresy)
         prerequisite: given a 2.02+ format roster that contains an infantry unit
         with a dedicated transport
         expected: successfully parses both the infantry unit and the dedicated transport
@@ -83,6 +83,10 @@ class HeresyTest(TestCase):
 
     def test__tac_squad_with_dt_characteristics(self):
         """
+        method: fetch_and_parse_roster(heresy)
+        prerequisite: given a 2.02+ format roster that contains an infantry unit
+        with a dedicated transport
+        expected: successfully parses both the infantry unit and the dedicated transport
         """
         parsed_roster = fetch_and_parse_roster(
             roster_file=self.tac_squad_with_dt, gametype=self.gametype
