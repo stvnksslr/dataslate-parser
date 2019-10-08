@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p> You're one stop shop for creating printer friendly outputs for battlescribe lists </p>
+    <p>
+      You're one stop shop for creating printer friendly outputs for
+      battlescribe lists
+    </p>
   </div>
 </template>
 
