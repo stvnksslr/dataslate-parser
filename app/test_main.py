@@ -11,11 +11,11 @@ client = TestClient(app)
 
 class RenderingTests(TestCase):
     def setUp(self):
-        self.base_path = Path.cwd() / "test_rosters" / "kill_team"
+        self.base_path = Path.cwd() / "test_rosters" / "horus_heresy"
         self.chaos_kill_team_standard = str(
-            self.base_path / "test_roster_chaos_new.ros"
+            self.base_path / "parser_test_full_list.ros"
         )
-        self.gametype = "killteam"
+        self.gametype = "heresy"
 
         self.parsed_roster = fetch_and_parse_roster(
             roster_file=self.chaos_kill_team_standard, gametype=self.gametype

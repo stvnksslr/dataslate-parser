@@ -1,4 +1,5 @@
-from app.parsers import killteam, heresy
+from app.parsers.heresy import heresy
+from app.parsers.killteam import killteam
 
 SUPPORTED_PARSERS = {"killteam": killteam, "heresy": heresy}
 

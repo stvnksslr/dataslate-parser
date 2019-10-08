@@ -25,9 +25,9 @@ class KillteamTest(TestCase):
         """
         parsed_rosters = []
         list_of_rosters = [
-            f
-            for f in listdir(str(self.base_path))
-            if isfile(join(str(self.base_path), f))
+            file
+            for file in listdir(str(self.base_path))
+            if isfile(join(str(self.base_path), file))
         ]
 
         for roster in list_of_rosters:
