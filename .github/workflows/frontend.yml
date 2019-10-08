@@ -19,11 +19,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install and build
         run: |
+          cd frontend
           npm install
           npm run build
       - name: Lint
-        run: npm run lint
+        run: |
+          cd frontend
+          npm run lint
       - name: Test
-        run: npm run test
+        run: |
+          cd frontend
+          npm run test
         env:
           CI: true
