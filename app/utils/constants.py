@@ -1,4 +1,5 @@
-from app.parsers import killteam, heresy
+from app.parsers.heresy import heresy
+from app.parsers.killteam import killteam
 
 KILLTEAM_ID: str = "a467-5f42-d24c-6e5b"
 KILLTEAM_NAME: str = "Warhammer 40,000: Kill Team (2018)"
