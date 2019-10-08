@@ -9,6 +9,3 @@ class KillteamUnit(Unit):
     max: str = None
     keywords: list = None
     point_cost: int = 0
-
-    def to_json(self):
-        json.dumps(asdict(self))

@@ -5,7 +5,7 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from app.utils.test_utils import fetch_and_parse_roster
+from app.utils.test_utils import fetch_and_parse_roster, generate_test_roster_heresy
 
 app = FastAPI(
     title="Dataslate",
@@ -28,33 +28,13 @@ def example(request: Request):
     return templates.TemplateResponse("40k_example.html", {"request": request})
 
 
-@app.get("/render/sandbox")
-def sandbox(request: Request):
+@app.get("/render/heresy/example")
+def heresy_example(request: Request):
     test_roster = generate_test_roster_heresy()
 
     return templates.TemplateResponse(
         "sandbox.html", {"request": request, "roster": test_roster}
     )
-
-
-def generate_test_roster_heresy():
-    base_path = Path.cwd() / "test_rosters" / "horus_heresy"
-    chaos_kill_team_standard = str(base_path / "parser_test_full_list.ros")
-    gametype = "heresy"
-    parsed_roster = fetch_and_parse_roster(
-        roster_file=chaos_kill_team_standard, gametype=gametype
-    )
-    return parsed_roster
-
-
-def generate_test_roster():
-    base_path = Path.cwd() / "test_rosters" / "kill_team"
-    chaos_kill_team_standard = str(base_path / "test_roster_commander.ros")
-    gametype = "killteam"
-    parsed_roster = fetch_and_parse_roster(
-        roster_file=chaos_kill_team_standard, gametype=gametype
-    )
-    return parsed_roster
 
 
 @app.get("/render/kt")
