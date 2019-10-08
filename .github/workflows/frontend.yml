@@ -22,10 +22,8 @@ jobs:
           npm install
           npm run build
       - name: Lint
-        run: |
-          npm run lint
+        run: npm run lint
       - name: Test
-          run: |
-            npm run test:unit
+          run: "npm run test:unit"
         env:
           CI: true
