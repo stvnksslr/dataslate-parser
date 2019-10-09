@@ -17,6 +17,8 @@ class RenderingTests(TestCase):
         )
         self.gametype = "heresy"
 
+        self.test_roster = str(self.base_path / "legion_astartes_roster_new.ros")
+
         self.parsed_roster = fetch_and_parse_roster(
             roster_file=self.chaos_kill_team_standard, gametype=self.gametype
         )
@@ -29,3 +31,11 @@ class RenderingTests(TestCase):
     # def test_render_killteam_via_context(self):
     #     response = client.get("/render/sandbox")
     #     self.assertEqual(response.status_code, 200)
+
+    def test_upload_roster(self):
+        with open(self.test_roster, "r") as roster_file:
+            contents = roster_file.read()
+
+        response = client.post("/files/", files=dict(file=contents))
+
+        self.assertEqual(response.status_code, 200)

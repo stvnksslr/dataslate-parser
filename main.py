@@ -1,11 +1,11 @@
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, File
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from app.utils.test_utils import fetch_and_parse_roster, generate_test_roster_heresy
+from app.utils.test_utils import generate_test_roster_heresy, get_parser_and_parse_roster
 
 app = FastAPI(
     title="Dataslate",
@@ -34,6 +34,15 @@ def heresy_example(request: Request):
 
     return templates.TemplateResponse(
         "sandbox.html", {"request": request, "roster": test_roster}
+    )
+
+
+@app.post("/files/")
+async def create_file(request: Request, file: bytes = File(...)):
+    parsed_roster = get_parser_and_parse_roster(roster=file)
+
+    return templates.TemplateResponse(
+        "sandbox.html", {"request": request, "roster": parsed_roster}
     )
 
 

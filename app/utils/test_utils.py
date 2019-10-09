@@ -11,6 +11,17 @@ def fetch_and_parse_roster(roster_file, gametype):
         return parsed_roster
 
 
+def get_parser_and_parse_roster(roster):
+    gametype = "heresy"
+    parser = get_parser_method(gametype)
+    parsed_roster = parser.parse_units(contents=roster)
+    return parsed_roster
+
+
+def find_gametype(roster):
+    pass
+
+
 def get_parser_method(gametype):
     parser = None
     try:
