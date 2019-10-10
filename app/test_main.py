@@ -3,7 +3,7 @@ from unittest import TestCase
 
 from starlette.testclient import TestClient
 
-from app.utils.test_utils import fetch_and_parse_roster
+from app.utils.test_utils import fetch_and_parse_roster, get_parser_and_parse_roster
 from main import app
 
 client = TestClient(app)
@@ -18,10 +18,6 @@ class RenderingTests(TestCase):
         self.gametype = "heresy"
 
         self.test_roster = str(self.base_path / "legion_astartes_roster_new.ros")
-
-        self.parsed_roster = fetch_and_parse_roster(
-            roster_file=self.chaos_kill_team_standard, gametype=self.gametype
-        )
 
     def test_read_main(self):
         response = client.get("/")
