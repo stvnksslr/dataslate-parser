@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from app.parsers.gametype.gametype import detect_gametype, find_gametype_parser, find_template
 from app.utils.constants import SUPPORTED_PARSERS
 
 
@@ -12,14 +13,12 @@ def fetch_and_parse_roster(roster_file, gametype):
 
 
 def get_parser_and_parse_roster(roster):
-    gametype = "heresy"
-    parser = get_parser_method(gametype)
+    gametype = detect_gametype(roster)
+    parser = find_gametype_parser(gametype)
+    template = find_template(gametype)
+
     parsed_roster = parser.parse_units(contents=roster)
-    return parsed_roster
-
-
-def find_gametype(roster):
-    pass
+    return {"roster": parsed_roster, 'template': template}
 
 
 def get_parser_method(gametype):

@@ -28,10 +28,6 @@ class RenderingTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"msg": "Hello World"})
 
-    # def test_render_killteam_via_context(self):
-    #     response = client.get("/render/sandbox")
-    #     self.assertEqual(response.status_code, 200)
-
     def test_upload_roster(self):
         with open(self.test_roster, "r") as roster_file:
             contents = roster_file.read()

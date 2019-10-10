@@ -8,7 +8,7 @@
 
         <form enctype="multipart/form-data" method="post" name="file" action="http://192.168.180.137:8000/files/">
             <label>upload roster: </label>
-            <input type="file" name="file" required/>
+            <input type="file" name="file"  accept=".ros, rosz" required/>
             <input type="submit" value="upload the roster"/>
         </form>
         <div></div>

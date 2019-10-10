@@ -39,10 +39,12 @@ def heresy_example(request: Request):
 
 @app.post("/files/")
 async def create_file(request: Request, file: bytes = File(...)):
-    parsed_roster = get_parser_and_parse_roster(roster=file)
+    data = get_parser_and_parse_roster(roster=file)
+    parsed_roster = data.get("roster")
+    template = data.get("template")
 
     return templates.TemplateResponse(
-        "sandbox.html", {"request": request, "roster": parsed_roster}
+        template, {"request": request, "roster": parsed_roster}
     )
 
 

@@ -3,7 +3,7 @@ from app.models.killteam_unit import KillteamUnit
 
 
 def parse_units(contents):
-    soup = BeautifulSoup(contents, "lxml")
+    soup = BeautifulSoup(contents, features="lxml")
     model_list = soup.findAll("selection", {"type": "model"})
     parsed_models = []
     parsed_unit_list = create_list_of_units(model_list, parsed_models) or None
