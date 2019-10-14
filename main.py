@@ -19,8 +19,8 @@ templates = Jinja2Templates(directory="app//static/templates")
 
 
 @app.get("/")
-async def root():
-    return {"msg": "Hello World"}
+async def root(request: Request):
+    return templates.TemplateResponse("home.html", {"request": request})
 
 
 @app.get("/render/kt/example")
