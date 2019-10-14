@@ -12,7 +12,6 @@ class HeresyTest(TestCase):
         self.new_bs_format = str(self.base_path / "legion_astartes_roster_new.ros")
         self.full_list = str(self.base_path / "parser_test_full_list.ros")
         self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
-        self.gametype = "heresy"
 
     def test__loop_through_test_folder_and_parse(self):
         """
@@ -29,7 +28,7 @@ class HeresyTest(TestCase):
 
         for roster in list_of_rosters:
             parsed_roster = fetch_and_parse_roster(
-                roster_file=str(self.base_path) + "/" + roster, gametype=self.gametype
+                roster_file=str(self.base_path) + "/" + roster
             )
             parsed_rosters.append(parsed_roster)
 
@@ -41,9 +40,7 @@ class HeresyTest(TestCase):
         prerequisite: given a 2.02+ format roster
         expected: successfully parses all three entries in the roster
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.new_bs_format, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.new_bs_format)
         self.assertTrue(parsed_roster)
         self.assertTrue(len(parsed_roster), 3)
 
@@ -53,9 +50,7 @@ class HeresyTest(TestCase):
         prerequisite: given a 2.02+ format roster that contains infantry, vehicles, fliers
         expected: successfully parses all 12 entries in the roster
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.full_list, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.full_list)
 
         self.assertTrue(parsed_roster)
         self.assertEqual(len(parsed_roster), 12)
@@ -67,9 +62,7 @@ class HeresyTest(TestCase):
         with a dedicated transport
         expected: successfully parses both the infantry unit and the dedicated transport
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.tac_squad_with_dt, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.tac_squad_with_dt)
 
         self.assertTrue(parsed_roster)
         self.assertEqual(len(parsed_roster[0].list_of_units), 3)
@@ -88,9 +81,7 @@ class HeresyTest(TestCase):
         with a dedicated transport
         expected: successfully parses both the infantry unit and the dedicated transport
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.tac_squad_with_dt, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.tac_squad_with_dt)
         tactical_squad = parsed_roster[0].list_of_units
         self.assertTrue(parsed_roster)
         self.assertEqual(

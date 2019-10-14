@@ -32,7 +32,7 @@ class KillteamTest(TestCase):
 
         for roster in list_of_rosters:
             parsed_roster = fetch_and_parse_roster(
-                roster_file=str(self.base_path) + "/" + roster, gametype=self.gametype
+                roster_file=str(self.base_path) + "/" + roster
             )
             parsed_rosters.append(parsed_roster)
 
@@ -44,9 +44,7 @@ class KillteamTest(TestCase):
         prerequisite: given a unzipped roster file it will parse without errors
         expected: successfully parses a single roster without errors
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.new_bs_format, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.new_bs_format)
         self.assertTrue(parsed_roster)
 
     def test__chaos_test_roster_parses_13_models(self):
@@ -55,9 +53,7 @@ class KillteamTest(TestCase):
         prerequisite: given a unzipped roster file it will parse without errors
         expected: successfully parses 13 units
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.new_bs_format, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.new_bs_format)
         self.assertTrue(len(parsed_roster), 13)
 
     def test__aspiring_champion_parsed_correctly(self):
@@ -66,9 +62,7 @@ class KillteamTest(TestCase):
         prerequisite: given a unzipped roster file it will parse without errors
         expected: parsed an aspiring champion correctly
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.new_bs_format, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.new_bs_format)
         aspiring_champion = parsed_roster[0]
         self.assertEqual(len(aspiring_champion.abilities), 3)
         self.assertEqual(aspiring_champion.attacks, "2")
@@ -90,9 +84,7 @@ class KillteamTest(TestCase):
         prerequisite: given a unzipped roster file it will parse without errors
         expected: parsed an aspiring champion correctly
         """
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.new_bs_format, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.new_bs_format)
         aspiring_champion = parsed_roster[0]
         self.assertTrue(aspiring_champion.wargear.get("Power fist"))
         self.assertTrue(aspiring_champion.wargear.get("Frag grenade"))
@@ -101,7 +93,5 @@ class KillteamTest(TestCase):
         self.assertTrue(aspiring_champion.wargear.get("Plasma pistol - Supercharge"))
 
     def test__commander_roster(self):
-        parsed_roster = fetch_and_parse_roster(
-            roster_file=self.commander_roster, gametype=self.gametype
-        )
+        parsed_roster = fetch_and_parse_roster(roster_file=self.commander_roster)
         self.assertTrue(parsed_roster)
