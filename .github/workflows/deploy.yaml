@@ -13,5 +13,5 @@ jobs:
       - name: Build the Docker image
         run: |
           docker login -u stvnksslr -p ${{ secrets.DOCKER_PASSWORD }}
-          docker build . --file Dockerfile --tag stvnksslr/dataslate:latest
-          docker push stvnksslr/dataslate:latest
+          docker build . --file Dockerfile --tag stvnksslr/dataslate:${{GITHUB_REF}}
+          docker push stvnksslr/dataslate:${{GITHUB_REF}}
