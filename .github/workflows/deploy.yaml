@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag dataslate:{tag}
+        run: docker build . --file Dockerfile --tag dataslate:latest
       - name: Push to dockerhub
-        run: docker push stvnksslr/dataslate:{tag}
+        run: docker push stvnksslr/dataslate:latest
