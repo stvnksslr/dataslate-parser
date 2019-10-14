@@ -3,14 +3,17 @@ name: Image Build and Deploy
 on:
   push:
     tags:
-      - v1
-      - v1.*
-      - v0.*
+      - 1
+      - 1.*
 
 jobs:
   build:
+    env:
+      TAG_NAME: $(date +%s)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag dataslate:$(date +%s)
+        run: docker build . --file Dockerfile --tag dataslate:$TAG_NAME
+      - name: Push to dockerhub
+        run: docker push stvnksslr/dataslate:$TAG_NAME
