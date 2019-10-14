@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install poetry
+          pip install --no-cache-dir --pre poetry
           python -m poetry config settings.virtualenvs.in-project true
           python -m poetry install
       - name: Linting
