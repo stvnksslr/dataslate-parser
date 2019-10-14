@@ -1,4 +1,4 @@
-name: backend
+name: build
 
 on: [push]
 
