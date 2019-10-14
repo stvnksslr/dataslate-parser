@@ -4,8 +4,8 @@ from app.utils.constants import SUPPORTED_PARSERS, TEMPLATES
 
 
 def detect_gametype(roster):
-    soup = BeautifulSoup(roster, features='lxml')
-    game_system = soup.find('roster').attrs.get('gamesystemid')
+    soup = BeautifulSoup(roster, features="lxml")
+    game_system = soup.find("roster").attrs.get("gamesystemid")
     return game_system
 
 

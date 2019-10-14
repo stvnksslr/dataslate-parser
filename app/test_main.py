@@ -22,7 +22,6 @@ class RenderingTests(TestCase):
     def test_read_main(self):
         response = client.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), {"msg": "Hello World"})
 
     def test_upload_roster(self):
         with open(self.test_roster, "r") as roster_file:

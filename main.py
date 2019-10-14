@@ -5,7 +5,10 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from app.utils.test_utils import generate_test_roster_heresy, get_parser_and_parse_roster
+from app.utils.test_utils import (
+    generate_test_roster_heresy,
+    get_parser_and_parse_roster,
+)
 
 app = FastAPI(
     title="Dataslate",

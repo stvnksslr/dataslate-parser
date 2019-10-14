@@ -11,7 +11,7 @@ class GametypeTest(TestCase):
         self.base_path = Path.cwd() / "test_rosters" / "horus_heresy"
 
         self.heresy_roster = str(self.base_path / "legion_astartes_roster_new.ros")
-        self.killteam_roster = 'killteam'
+        self.killteam_roster = "killteam"
 
     def test__detect_gametype(self):
         with open(self.heresy_roster, "r") as roster_file:
