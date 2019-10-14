@@ -3,7 +3,6 @@ from unittest import TestCase
 
 from starlette.testclient import TestClient
 
-from app.utils.test_utils import fetch_and_parse_roster, get_parser_and_parse_roster
 from main import app
 
 client = TestClient(app)

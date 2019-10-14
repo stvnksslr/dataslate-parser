@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from fastapi import FastAPI, File
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles

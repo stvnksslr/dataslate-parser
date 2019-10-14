@@ -5,7 +5,6 @@ from app.parsers.gametype.gametype import (
     find_gametype_parser,
     find_template,
 )
-from app.utils.constants import SUPPORTED_PARSERS
 
 
 def fetch_and_parse_roster(roster_file, gametype):
