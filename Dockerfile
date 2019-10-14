@@ -1,24 +1,16 @@
-FROM python:3.7-slim-stretch as build
-ENV PIPENV_VENV_IN_PROJECT=1
-ENV PATH=".venv/bin:$PATH"
+FROM python:3.7
 
-WORKDIR /build
-COPY Pipfile Pipfile.lock /build/
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
-RUN apt-get update -yq
-RUN apt-get install --no-install-recommends -yq gcc libxml2-dev libxmlsec1-dev zlib1g-dev
-RUN pip install pipenv
+WORKDIR /app
 
-RUN pipenv lock -r > requirements.txt  \
-    &&  pipenv lock -r --dev > dev-requirements.txt
+COPY ./app /app/app
+COPY pyproject.toml poetry.lock /app/
 
-RUN pip install -r requirements.txt && pip install -r dev-requirements.txt
+RUN pip install --no-cache-dir --pre poetry
+RUN poetry export -f requirements.txt > requirements.txt
+RUN pip install -r requirements.txt
 
-FROM python:3.7-slim-stretch as ci
+EXPOSE 80
 
-WORKDIR /application
-COPY --from=build /build/.venv /venv
-COPY . /application/
-
-ENV PATH="/venv/bin:$PATH"
-RUN python -m pytest
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]

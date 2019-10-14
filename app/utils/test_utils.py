@@ -7,7 +7,7 @@ from app.parsers.gametype.gametype import (
 )
 
 
-def fetch_and_parse_roster(roster_file, gametype):
+def fetch_and_parse_roster(roster_file):
     with open(roster_file, "r") as roster_file:
         contents = roster_file.read()
         gametype = detect_gametype(contents)
