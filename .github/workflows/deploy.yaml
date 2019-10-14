@@ -1,8 +1,11 @@
-name: Docker Image CI
+name: Image Build and Deploy
 
 on:
   push:
-    [tags]
+    tags:
+      - v1
+      - v1.*
+      - v0.*
 
 jobs:
   build:
