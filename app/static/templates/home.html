@@ -3,19 +3,18 @@
     <title>Dataslate</title>
 </head>
 <body>
-    <div class="uploader">
-        <h1>{{ msg }}</h1>
-        <p>
-            You're one stop shop for creating printer friendly outputs for
-            battlescribe lists
-        </p>
+<div class="uploader">
+    <h1>{{ msg }}</h1>
+    <p>
+        You're one stop shop for creating printer friendly outputs for
+        battlescribe lists
+    </p>
 
-        <form enctype="multipart/form-data" method="post" name="file" action="files/">
-            <label>upload roster: </label>
-            <input type="file" name="file"  accept=".ros, rosz" required/>
-            <input type="submit" value="upload the roster"/>
-        </form>
-
-    </div>
+    <form enctype="multipart/form-data" method="post" name="file" action="files/">
+        <label>upload roster: </label>
+        <input type="file" name="file" accept=".ros, rosz" required/>
+        <input type="submit" value="upload the roster"/>
+    </form>
+</div>
 </body>
 </html>

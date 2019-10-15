@@ -1,0 +1,83 @@
+<html lang="html">
+<head>
+    <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet">
+    <title>Roster</title>
+</head>
+<body>
+{% for unit in roster %}
+    <div class="clearfix faUnitCard">
+        <div class="clearfix faUnitHeader">
+            <div class="faRoleIcon"></div>
+            <div class="faUnitName">{{ unit.name }}</div>
+        </div>
+        <div class="clearfix faUnitStats">
+            <div class="clearfix faStatsHeader">
+                <div class="faStatHeader" data-stat="name">NAME</div>
+                <div class="faStatHeader" data-stat="movement">M</div>
+                <div class="faStatHeader" data-stat="weaponSkill">WS</div>
+                <div class="faStatHeader" data-stat="ballisticSkill">BS</div>
+                <div class="faStatHeader" data-stat="strength">S</div>
+                <div class="faStatHeader" data-stat="toughness">T</div>
+                <div class="faStatHeader" data-stat="wounds">W</div>
+                <div class="faStatHeader" data-stat="attacks">A</div>
+                <div class="faStatHeader" data-stat="leadership">Ld</div>
+                <div class="faStatHeader" data-stat="save">Sv</div>
+                <div class="faStatHeader" data-stat="points">Pts</div>
+            </div>
+            <div class="clearfix faStatsBody">
+                <div class="faStatBody" data-stat="name">{{ unit.name }}</div>
+                <div class="faStatBody" data-stat="movement">{{ unit.movement }}</div>
+                <div class="faStatBody" data-stat="weaponSkill">{{ unit.weapon_skill }}</div>
+                <div class="faStatBody" data-stat="ballisticSkill">{{ unit.ballistic_skill }}</div>
+                <div class="faStatBody" data-stat="strength">{{ unit.strength }}</div>
+                <div class="faStatBody" data-stat="toughness">{{ unit.toughness }}</div>
+                <div class="faStatBody" data-stat="wounds">{{ unit.wounds }}</div>
+                <div class="faStatBody" data-stat="attacks">{{ unit.attacks }}</div>
+                <div class="faStatBody" data-stat="leadership">{{ unit.leadership }}</div>
+                <div class="faStatBody" data-stat="save">{{ unit.save }}</div>
+                <div class="faStatBody" data-stat="points">{{ unit.point_cost }}</div>
+            </div>
+        </div>
+        <div class="clearfix faWeaponStats">
+            <div class="clearfix faWpnsHeader">
+                <div class="faWpnHeader" data-stat="weapon">WEAPON</div>
+                <div class="faWpnHeader" data-stat="range">RANGE</div>
+                <div class="faWpnHeader" data-stat="type">TYPE</div>
+                <div class="faWpnHeader" data-stat="strength">S</div>
+                <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
+                <div class="faWpnHeader" data-stat="damage">D</div>
+                <div class="faWpnHeader" data-stat="abilities">ABILITIES</div>
+            </div>
+            {% for name,weapon in unit.wargear.items() %}
+                <div class="clearfix faWpnsBody">
+                    <div class="faWpnBody" data-stat="weapon">{{ name }}</div>
+                    <div class="faWpnBody" data-stat="range">{{ weapon.Range }}</div>
+                    <div class="faWpnBody" data-stat="type">{{ weapon.Type }}</div>
+                    <div class="faWpnBody" data-stat="strength">{{ weapon.S }}</div>
+                    <div class="faWpnBody" data-stat="armorPiercing">{{ weapon.AP }}</div>
+                    <div class="faWpnBody" data-stat="damage">{{ weapon.D }}</div>
+                    <div class="faWpnBody" data-stat="abilities">{{ weapon.Abilities }}</div>
+                </div>
+            {% endfor %}
+        </div>
+        {% if unit.abilities %}
+            <div class="clearfix faAbilities">
+                <div class="faSectionTitle">ABILITIES:</div>
+                {% for name,ability in unit.abilities.items() %}
+                    <div class="clearfix faSectionBody">
+                        <span class="faAbilityName">{{ name }}</span> {{ ability }}.
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <div class="clearfix faFactKeyWords">
+            <div class="faSectionTitle">KEYWORDS:</div>
+            <div class="faSectionBody"> {% for keyword in unit.keywords %}
+                {{ keyword }},
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</body>
+</html>

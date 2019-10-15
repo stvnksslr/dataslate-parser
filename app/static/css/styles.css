@@ -1,3 +1,281 @@
-h1 {
-    color: green;
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CDC5B5;
+}
+
+.faArmy {
+    font-size: large;
+    font-weight: bold;
+    background-color: #000;
+    color: #FFF;
+    padding: 1em;
+    margin: 0.5em 0;
+    text-align: center;
+    width: 50em;
+    border: solid #000 1px;
+    border-radius: 1em;
+}
+
+.faDetachment {
+    font-size: large;
+    font-weight: bold;
+    background-color: #000;
+    color: #FFF;
+    padding: 1em;
+    margin: 0.5em 0;
+    text-align: center;
+    width: 50em;
+    border: solid #000 1px;
+    border-radius: 1em;
+}
+
+.faUnitCard {
+    width: 50em;
+    border: solid #000 1px;
+    border-radius: 1em;
+    background-color: #FFF;
+    font-size: large;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.faUnitHeader {
+    border: solid #000 1px;
+    border-radius: 1em 1em 0 0;
+    background-color: #000;
+    color: #FFF;
+    font-size: large;
+}
+
+.faRoleIcon {
+    float: left;
+}
+
+.faUnitName {
+    font-weight: bold;
+    text-align: center;
+}
+
+.faDamageBlock {
+    position: absolute;
+    z-index: 5;
+    width: 11em;
+    background-color: #FFF;
+    border: solid #000 1px;
+    border-radius: 0 0 1em 1em;
+    margin-top: -1.3em;
+    left: 45em;
+}
+
+.faDamageHeader {
+    font-size: small;
+    font-weight: bold;
+    padding: 0.25em 0 0 0.25em;
+    color: red;
+}
+
+.faDamageSubHeader {
+    font-size: x-small;
+    font-weight: bold;
+    padding: 0.25em 0 0 0.25em;
+    color: #000;
+}
+
+.faDamageStats {
+    margin-top: 0.25em;
+    padding-bottom: 0.5em;
+    font-size: x-small;
+    font-weight: bold;
+    color: #000;
+}
+
+.faDamageStatsHeader {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    background-color: #BBB;
+}
+
+.faDamageStatHeader {
+    float: left;
+    margin: 0.25em 1em;
+    width: 1em;
+}
+
+.faDamageStatHeader[data-stat="remainWounds"] {
+    width: 7em;
+    text-align: center;
+}
+
+.faDamageStatBody {
+    float: left;
+    margin: 0.25em 1em;
+    width: 1em;
+}
+
+.faDamageStatBody[data-stat="remainWounds"] {
+    width: 7em;
+    text-align: center;
+}
+
+.faUnitStats {
+    font-size: small;
+    font-weight: bold;
+    border-bottom: solid 1px #000;
+}
+
+.faStatsHeader {
+    background-color: #BBB;
+}
+
+.faStatHeader {
+    float: left;
+    margin: 0.25em 1em;
+    width: 1em;
+}
+
+.faStatHeader[data-stat="name"] {
+    width: 12em;
+}
+
+.faStatHeader[data-stat="points"] {
+    float: left;
+    width: 18em;
+    text-align: right;
+}
+
+.faStatBody {
+    float: left;
+    margin: 0.25em 1em;
+    width: 1em;
+}
+
+.faStatBody[data-stat="name"] {
+    width: 12em;
+}
+
+.faStatBody[data-stat="points"] {
+    float: left;
+    width: 18em;
+    text-align: right;
+}
+
+.faWeaponStats {
+    font-size: small;
+    font-weight: bold;
+    border-bottom: solid 1px #000;
+}
+
+.faWpnsHeader {
+    background-color: #BBB;
+}
+
+.faWpnHeader {
+    float: left;
+    margin: 0.25em 1em;
+    width: 1em;
+}
+
+.faWpnHeader[data-stat="weapon"] {
+    width: 12em;
+}
+
+.faWpnHeader[data-stat="range"], .faWpnHeader[data-stat="type"] {
+    width: 6em;
+}
+
+.faWpnHeader[data-stat="abilities"] {
+    width: 16.5em;
+}
+
+.faWpnHeader[data-stat="points"] {
+    float: left;
+    width: 1.5em;
+    text-align: right;
+}
+
+.faWpnBody {
+    float: left;
+    margin: 0.25em 1em;
+    width: 1em;
+}
+
+.faWpnBody[data-stat="weapon"] {
+    width: 12em;
+}
+
+.faWpnBody[data-stat="range"], .faWpnBody[data-stat="type"] {
+    width: 6em;
+}
+
+.faWpnBody[data-stat="abilities"] {
+    width: 16.5em;
+}
+
+.faWpnBody[data-stat="points"] {
+    float: left;
+    width: 1.5em;
+    text-align: right;
+}
+
+.faSectionTitle {
+    float: left;
+    font-weight: bold;
+    margin: 0.5em 0 0 1em;
+    width: 12em;
+    margin-right: 2em;
+}
+
+.faSectionBody {
+    margin: 0.5em 0 0 15em;
+}
+
+.faAbilities {
+    font-size: small;
+}
+
+.faAbilityName {
+    font-weight: bold;
+}
+
+.keyword {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.faPsyker {
+    border-top: solid 1px #000;
+    font-size: small;
+}
+
+.faPsyker .faSectionBody {
+    margin-left: 15em;
+}
+
+.faFactKeyWords {
+    border-top: solid 1px #000;
+    font-size: small;
+}
+
+.faFactKeyWords .faSectionBody {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.faKeyWords {
+    font-size: small;
+}
+
+@media print {
+    .faUnitCard {
+        page-break-after: always;
+    }
 }

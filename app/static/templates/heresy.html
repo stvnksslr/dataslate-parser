@@ -1,88 +1,88 @@
 <html lang="html">
 <head>
-    <link href="{{ url_for('static', path='/css/sandbox.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet">
     <title>Roster</title>
 </head>
 <body>
 {% for unit in roster %}
-<div class="clearfix faUnitCard">
-    <div class="clearfix faUnitHeader">
-        <div class="faRoleIcon"></div>
-        <div class="faUnitName">{{unit.name}}</div>
-    </div>
-    <div class="clearfix faUnitStats">
-        <div class="clearfix faStatsHeader">
-            <div class="faStatHeader" data-stat="name">NAME</div>
-            <div class="faStatHeader" data-stat="weaponSkill">WS</div>
-            <div class="faStatHeader" data-stat="ballisticSkill">BS</div>
-            <div class="faStatHeader" data-stat="strength">S</div>
-            <div class="faStatHeader" data-stat="toughness">T</div>
-            <div class="faStatHeader" data-stat="wounds">W</div>
-            <div class="faStatHeader" data-stat="attacks">A</div>
-            <div class="faStatHeader" data-stat="leadership">Ld</div>
-            <div class="faStatHeader" data-stat="save">Sv</div>
-            <div class="faStatHeader" data-stat="hp">Hp</div>
-            <div class="faStatHeader" data-stat="Front">Front</div>
-            <div class="faStatHeader" data-stat="Side">Side</div>
-            <div class="faStatHeader" data-stat="Rear">Rear</div>
-            <div class="faStatHeader" data-stat="Type">Type</div>
-
-
+    <div class="clearfix faUnitCard">
+        <div class="clearfix faUnitHeader">
+            <div class="faRoleIcon"></div>
+            <div class="faUnitName">{{ unit.name }}</div>
         </div>
-        {% for model in unit.list_of_units %}
-        <div class="clearfix faStatsBody">
-            <div class="faStatBody" data-stat="name">{{model.name}}</div>
-            <div class="faStatBody" data-stat="weaponSkill">{{model.weapon_skill}}</div>
-            <div class="faStatBody" data-stat="ballisticSkill">{{model.ballistic_skill}}</div>
-            <div class="faStatBody" data-stat="strength">{{model.strength}}</div>
-            <div class="faStatBody" data-stat="toughness">{{model.toughness}}</div>
-            <div class="faStatBody" data-stat="wounds">{{model.wounds}}</div>
-            <div class="faStatBody" data-stat="attacks">{{model.attacks}}</div>
-            <div class="faStatBody" data-stat="leadership">{{model.leadership}}</div>
-            <div class="faStatBody" data-stat="save">{{model.save}}</div>
-            <div class="faStatBody" data-stat="Hp">{{model.armor_facing.hp}}</div>
-            <div class="faStatBody" data-stat="Front">{{model.armor_facing.front}}</div>
-            <div class="faStatBody" data-stat="Side">{{model.armor_facing.side}}</div>
-            <div class="faStatBody" data-stat="Rear">{{model.armor_facing.rear}}</div>
-            <div class="faStatBody" data-stat="Type">{{model.unit_type}}</div>
+        <div class="clearfix faUnitStats">
+            <div class="clearfix faStatsHeader">
+                <div class="faStatHeader" data-stat="name">NAME</div>
+                <div class="faStatHeader" data-stat="weaponSkill">WS</div>
+                <div class="faStatHeader" data-stat="ballisticSkill">BS</div>
+                <div class="faStatHeader" data-stat="strength">S</div>
+                <div class="faStatHeader" data-stat="toughness">T</div>
+                <div class="faStatHeader" data-stat="wounds">W</div>
+                <div class="faStatHeader" data-stat="attacks">A</div>
+                <div class="faStatHeader" data-stat="leadership">Ld</div>
+                <div class="faStatHeader" data-stat="save">Sv</div>
+                <div class="faStatHeader" data-stat="hp">Hp</div>
+                <div class="faStatHeader" data-stat="Front">Front</div>
+                <div class="faStatHeader" data-stat="Side">Side</div>
+                <div class="faStatHeader" data-stat="Rear">Rear</div>
+                <div class="faStatHeader" data-stat="Type">Type</div>
 
-        </div>
-        {% endfor %}
-    </div>
 
-    {% if unit.list_of_units[0].wargear %}
-    <div class="clearfix faWeaponStats">
-        <div class="clearfix faWpnsHeader">
-            <div class="faWpnHeader" data-stat="weapon">WEAPON</div>
-            <div class="faWpnHeader" data-stat="range">RANGE</div>
-            <div class="faWpnHeader" data-stat="type">TYPE</div>
-            <div class="faWpnHeader" data-stat="strength">S</div>
-            <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
-        </div>
-        {% for name,weapon in unit.list_of_units[0].wargear.items() %}
-        <div class="clearfix faWpnsBody">
-            <div class="faWpnBody" data-stat="weapon">{{weapon.name}}</div>
-            <div class="faWpnBody" data-stat="range">{{weapon.range}}</div>
-            <div class="faWpnBody" data-stat="type">{{weapon.type}}</div>
-            <div class="faWpnBody" data-stat="strength">{{weapon.strength}}</div>
-            <div class="faWpnBody" data-stat="armorPiercing">{{weapon.ap}}</div>
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
+            </div>
+            {% for model in unit.list_of_units %}
+                <div class="clearfix faStatsBody">
+                    <div class="faStatBody" data-stat="name">{{ model.name }}</div>
+                    <div class="faStatBody" data-stat="weaponSkill">{{ model.weapon_skill }}</div>
+                    <div class="faStatBody" data-stat="ballisticSkill">{{ model.ballistic_skill }}</div>
+                    <div class="faStatBody" data-stat="strength">{{ model.strength }}</div>
+                    <div class="faStatBody" data-stat="toughness">{{ model.toughness }}</div>
+                    <div class="faStatBody" data-stat="wounds">{{ model.wounds }}</div>
+                    <div class="faStatBody" data-stat="attacks">{{ model.attacks }}</div>
+                    <div class="faStatBody" data-stat="leadership">{{ model.leadership }}</div>
+                    <div class="faStatBody" data-stat="save">{{ model.save }}</div>
+                    <div class="faStatBody" data-stat="Hp">{{ model.armor_facing.hp }}</div>
+                    <div class="faStatBody" data-stat="Front">{{ model.armor_facing.front }}</div>
+                    <div class="faStatBody" data-stat="Side">{{ model.armor_facing.side }}</div>
+                    <div class="faStatBody" data-stat="Rear">{{ model.armor_facing.rear }}</div>
+                    <div class="faStatBody" data-stat="Type">{{ model.unit_type }}</div>
 
-    {% if unit.list_of_units[0].abilities %}
-    <div class="clearfix faAbilities">
-        <div class="faSectionTitle">ABILITIES:</div>
-        <div class="clearfix faSectionBody">
-            {% for name,ability in unit.list_of_units[0].abilities.items() %}
-            <span class="faAbilityName">{{name}}</span>.
+                </div>
             {% endfor %}
         </div>
-    </div>
-    {% endif %}
 
-</div>
+        {% if unit.list_of_units[0].wargear %}
+            <div class="clearfix faWeaponStats">
+                <div class="clearfix faWpnsHeader">
+                    <div class="faWpnHeader" data-stat="weapon">WEAPON</div>
+                    <div class="faWpnHeader" data-stat="range">RANGE</div>
+                    <div class="faWpnHeader" data-stat="type">TYPE</div>
+                    <div class="faWpnHeader" data-stat="strength">S</div>
+                    <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
+                </div>
+                {% for name,weapon in unit.list_of_units[0].wargear.items() %}
+                    <div class="clearfix faWpnsBody">
+                        <div class="faWpnBody" data-stat="weapon">{{ weapon.name }}</div>
+                        <div class="faWpnBody" data-stat="range">{{ weapon.range }}</div>
+                        <div class="faWpnBody" data-stat="type">{{ weapon.type }}</div>
+                        <div class="faWpnBody" data-stat="strength">{{ weapon.strength }}</div>
+                        <div class="faWpnBody" data-stat="armorPiercing">{{ weapon.ap }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if unit.list_of_units[0].abilities %}
+            <div class="clearfix faAbilities">
+                <div class="faSectionTitle">ABILITIES:</div>
+                <div class="clearfix faSectionBody">
+                    {% for name,ability in unit.list_of_units[0].abilities.items() %}
+                        <span class="faAbilityName">{{ name }}</span>.
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+
+    </div>
 
 {% endfor %}
 </body>
