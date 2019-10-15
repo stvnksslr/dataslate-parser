@@ -12,6 +12,7 @@ class HeresyTest(TestCase):
         self.new_bs_format = str(self.base_path / "legion_astartes_roster_new.ros")
         self.full_list = str(self.base_path / "parser_test_full_list.ros")
         self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
+        self.mechanicum = str(self.base_path / "mech_hamslam_ZM.ros")
 
     def test__loop_through_test_folder_and_parse(self):
         """
@@ -98,3 +99,8 @@ class HeresyTest(TestCase):
         self.assertEqual(tactical_squad[0].unit_type, "infantry")
         self.assertEqual(tactical_squad[0].weapon_skill, "4")
         self.assertEqual(tactical_squad[0].wounds, "1")
+
+    def test__mechanicum_list(self):
+        parsed_roster = fetch_and_parse_roster(roster_file=self.mechanicum)
+        parsed_units = len(parsed_roster)
+        self.assertEqual(parsed_units, 5)

@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="2392-f5a5-ba0b-1e1e" name="mech_hamslam_ZM" battleScribeVersion="2.03" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemName="Warhammer 30,000 - The Horus Heresy" gameSystemRevision="108" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="pts" typeId="points" value="1000.0"/>
+  </costs>
+  <costLimits>
+    <costLimit name="pts" typeId="points" value="1000.0"/>
+  </costLimits>
+  <forces>
+    <force id="327c-06be-61a0-4578" name=" Zone Mortalis - Combatant" entryId="7e48-c376-8ffe-8ae7" catalogueId="cf03-f607-41dc-7545" catalogueRevision="86" catalogueName="Mechanicum: Taghmata Army List">
+      <selections>
+        <selection id="8dd1-c58a-fe8e-ac6d" name="Allegiance" entryId="2629-f745-a484-3119::4f6b-4baa-d1e2-9b03" number="1" type="upgrade">
+          <selections>
+            <selection id="b8d9-b595-a819-fe7d" name="Traitor" entryId="2629-f745-a484-3119::7441-34c0-5e21-eeaa" entryGroupId="2629-f745-a484-3119::4a73-2d91-36c1-f36e" number="1" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="f8b6-973a-d4c0-8732" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="204c-9e2e-1be6-4389" name="Use Playtest Rules" entryId="7d9f-d54b-09db-e954::5a90-c53e-42ca-b4ca" number="1" type="upgrade">
+          <selections>
+            <selection id="2b02-2313-77f9-e733" name="Playtest Rules On" entryId="7d9f-d54b-09db-e954::dace-8f0f-e696-8179" entryGroupId="7d9f-d54b-09db-e954::07c4-d0fe-fd44-2d95" number="1" type="upgrade">
+              <rules>
+                <rule id="7d9f-d54b-09db-e954::d94e-4b40-ced0-bd3e" name="Use Playtest Rules" publicationId="ca571888--pubN95649" hidden="false">
+                  <description>The following rules and profiles are designed to supplement, rather than replace those found in The Horus Heresy: Age of Darkness Campaign books and Rulebooks. While we consider the rules presented in this section of this document to be optional, we would encourage you to use them in your games and provide us with your opinions and feedback. This feedback will then help to inform the final rules in a future publication.
+Please let us know what worked well as a part of these rules and also what could be improved (and how), by sending us an email with the subject line “PLAYTEST” to HeresyFAQ@gwplc.com. We would appreciate if you could please ensure that you only use this subject line when referring to rules presented in this section of the document, and send us a separate email for any other feedback.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="7a47-5435-4168-c742" name="Use Playtest Rules" entryId="fdf4-0683-3e84-5a4b" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="0c0b-78ce-591d-bb5c" name="Castellax Class Battle-Automata Maniple" entryId="ec8a-2676-2661-296e::48db-84ca-2bad-520f" page="" number="1" type="unit">
+          <rules>
+            <rule id="ec8a-2676-2661-296e::7678-ae60-16f2-e948::988c-d4d0-9418-1165" name="Rage" publicationId="ca571888--pubN74807" page="170" hidden="false">
+              <description>In a turn in which a model with this special rule charges into combat, it gains +2 Attacks for charging, rather than +1. A model that has made a disordered charge that turn receives no benefit from Rage.</description>
+            </rule>
+            <rule id="ec8a-2676-2661-296e::a7f0-6bc1-ed4a-34dc::d5cf-bd98-2854-13cf" name="Reactor Blast" publicationId="ca571888--pubN66489" page="112" hidden="false">
+              <description>When losing its final wound, roll a D6.  On the result of a 6, the model explodes, inflicting a Str 4 AP - hit on all models within D6&quot;</description>
+            </rule>
+          </rules>
+          <selections>
+            <selection id="a5c9-0b06-8bf1-4e52" name="Support Unit" entryId="ec8a-2676-2661-296e::1351-345f-cd72-e42d::36c5-d6db-7224-1e47" number="1" type="upgrade">
+              <rules>
+                <rule id="ec8a-2676-2661-296e::1351-345f-cd72-e42d::3011-cc8f-8dfc-e95c" name="Support Unit" publicationId="cf03-f607-pubN76270" page="41" hidden="false">
+                  <description>This unit type may not be chosen as a compulsory Troops choice for the army.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="ed8b-b8cf-f17b-97f5" name="Cybernetica Cortex" entryId="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::0c9d-9eaa-d513-caa3" number="1" type="upgrade">
+              <rules>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::9eb2-b078-2e34-5199::f6c9-cdb7-c695-5b6b" name="Cybernetica Cortex" publicationId="ca571888--pubN66489" page="110" hidden="false">
+                  <description>Models the have Programmed Behaviour, Fearless, Cybernetic Resiliance, Fire Protocols, Machine Creature, and Adamantium Will special rules.</description>
+                </rule>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::e78d-f6e5-8886-3d6b::dc70-e199-5525-e78c" name="Fearless" publicationId="ca571888--pubN74807" page="164" hidden="false">
+                  <description>Units containing one or more models with the Fearless special rule automatically pass Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons are Useless rule. If a unit has Gone to Ground and then gains the Fearless special rule, all the effects of Going to Ground are immediately cancelled.</description>
+                </rule>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::84df-d3f3-0a23-fc9c::df87-e991-2d30-dc38" name="Adamantium Will" publicationId="ca571888--pubN74807" page="157" hidden="false">
+                  <description>A unit that contains at least one model with this special rule receives a +1 bonus to Deny the Witch tests.</description>
+                </rule>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::3a0f-5457-e332-dd19::2b99-07da-9fa6-48bf" name="Fire Protocols" publicationId="ca571888--pubN66489" page="110" hidden="false">
+                  <description>A model with this special rule may fire up to three of its weapons once each in the Shooting phase - this must be at the same target.</description>
+                </rule>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::b747-03d2-bdbc-afb5::9938-b5bd-56c9-e002" name="Machine Creature" publicationId="ca571888--pubN66489" page="110" hidden="false">
+                  <description>Units made up of models with a Cyberntica Cortex can never count as Scoring units, regardless of the Force Organization Chart being used or the rules for the mission being played.  They do count as Denial units.</description>
+                </rule>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::ac89-7dd4-1c74-daf0::3ebf-b52d-5006-2426" name="Cybernetic Resiliance" publicationId="ca571888--pubN69050" page="110" hidden="false">
+                  <description>Successful wounds by attacks with Poisoned or Fleshbane must be re-rolled against this model.  In addition to any other effects they cause, attacks with Haywire cause an additional wound on a D6 roll of 6.  Roll for this wound separately, saves may be taken as normal.</description>
+                </rule>
+                <rule id="ec8a-2676-2661-296e::b6c3-b1be-9ce6-cb2f::cb8c-6809-28d0-78c5::9975-1f8c-f78a-8fab" name="Programmed Behaviour" publicationId="ca571888--pubN66489" page="110" hidden="false">
+                  <description>Unless within range of a friendly model from the same detachment equipped with a Cortex Controller at the start of the controlling player&apos;s turn, the following restrictions are placed on the unit&apos;s use in that game turn.  These do not apply if the chosen model is already locked in assault.  
+
+- Methodical: May not make Sweeping Advances or Run moves
+- Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
+- Onslaught: If enemy units are within 12&quot; during their Assault phase, they must attempt to charge the closest enemy unit if able.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="062c-d5a5-9c8f-f396" name="Castellax class Battle-automata" entryId="ec8a-2676-2661-296e::09ad-ef83-4a62-46fe" page="" number="1" type="model">
+              <profiles>
+                <profile id="ec8a-2676-2661-296e::659d-11d2-faad-4259" name="Castellax" publicationId="cf03-f607-pubN76270" page="41" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Monstrous Creature</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">6</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">7</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">4</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="9dc5-a6c9-fefa-85c3" name="Mauler Bolt Cannon" entryId="ec8a-2676-2661-296e::11ea-37df-c659-bc84::5f67-828c-a452-e97e" entryGroupId="ec8a-2676-2661-296e::6564-7afd-3cef-078a" number="1" type="upgrade">
+                  <rules>
+                    <rule id="ec8a-2676-2661-296e::11ea-37df-c659-bc84::116d-4b1b-3701-0889::f624-f475-e5ec-0dfa" name="Pinning" publicationId="ca571888--pubN74807" page="168" hidden="false">
+                      <description>If a non-vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its shooting attacks for that phase. This is called a Pinning test.
+If the unit fails the test, it is Pinned and must immediately Go to Ground. As the unit has already taken its saves, Going to Ground does not protect it against the fire of the Pinning weapon that caused the test – it’s too late!
+As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken.
+If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::11ea-37df-c659-bc84::592e-b785-b9da-7c25::0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="091b-2139-1a93-aa83" name="Bolter" entryId="ec8a-2676-2661-296e::9f45-90b4-1220-dd2b" entryGroupId="ec8a-2676-2661-296e::c204-c9c9-9110-ca90" number="2" type="upgrade">
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::d67c-5172-026b-106f::09fd-8af1-a6b1-51f7" name="Boltgun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="f015-2910-21bf-62e7" name="Shock Chargers" entryId="ec8a-2676-2661-296e::4894-9e9e-82e5-b213" entryGroupId="ec8a-2676-2661-296e::c022-8531-3529-fe49" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::3303-0171-a45b-5ac5::3428-cbe9-fba3-955b" name="Shock Chargers" publicationId="ca571888--pubN66489" page="107" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">- Model equipped with Shock Chargers gains the Concussive special rule added to all their close combat attacks regardless of type (to include Hammer of Wrath).  - Stock Chargers are not a weapon and do not have a profile, nor do they add additional attacks in conjunction with other weapons. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" typeId="points" value="105.0"/>
+              </costs>
+            </selection>
+            <selection id="ac0f-8524-9a8e-4469" name="Castellax class Battle-automata" entryId="ec8a-2676-2661-296e::09ad-ef83-4a62-46fe" page="" number="1" type="model">
+              <profiles>
+                <profile id="ec8a-2676-2661-296e::659d-11d2-faad-4259" name="Castellax" publicationId="cf03-f607-pubN76270" page="41" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Monstrous Creature</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">6</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">7</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">4</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="2d6b-e6ca-2e18-84db" name="Mauler Bolt Cannon" entryId="ec8a-2676-2661-296e::11ea-37df-c659-bc84::5f67-828c-a452-e97e" entryGroupId="ec8a-2676-2661-296e::6564-7afd-3cef-078a" number="1" type="upgrade">
+                  <rules>
+                    <rule id="ec8a-2676-2661-296e::11ea-37df-c659-bc84::116d-4b1b-3701-0889::f624-f475-e5ec-0dfa" name="Pinning" publicationId="ca571888--pubN74807" page="168" hidden="false">
+                      <description>If a non-vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its shooting attacks for that phase. This is called a Pinning test.
+If the unit fails the test, it is Pinned and must immediately Go to Ground. As the unit has already taken its saves, Going to Ground does not protect it against the fire of the Pinning weapon that caused the test – it’s too late!
+As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken.
+If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::11ea-37df-c659-bc84::592e-b785-b9da-7c25::0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="acfc-925e-841b-2530" name="Bolter" entryId="ec8a-2676-2661-296e::9f45-90b4-1220-dd2b" entryGroupId="ec8a-2676-2661-296e::c204-c9c9-9110-ca90" number="2" type="upgrade">
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::d67c-5172-026b-106f::09fd-8af1-a6b1-51f7" name="Boltgun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="506e-e3b3-4441-16a3" name="Shock Chargers" entryId="ec8a-2676-2661-296e::4894-9e9e-82e5-b213" entryGroupId="ec8a-2676-2661-296e::c022-8531-3529-fe49" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::3303-0171-a45b-5ac5::3428-cbe9-fba3-955b" name="Shock Chargers" publicationId="ca571888--pubN66489" page="107" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">- Model equipped with Shock Chargers gains the Concussive special rule added to all their close combat attacks regardless of type (to include Hammer of Wrath).  - Stock Chargers are not a weapon and do not have a profile, nor do they add additional attacks in conjunction with other weapons. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" typeId="points" value="105.0"/>
+              </costs>
+            </selection>
+            <selection id="05cb-c183-8920-2e89" name="Enhanced Targeting Arrays" entryId="ec8a-2676-2661-296e::eafb-4aa0-594d-5dbc" entryGroupId="ec8a-2676-2661-296e::5a40-8fd5-37b7-8ec4" page="0" number="1" type="upgrade">
+              <profiles>
+                <profile id="ec8a-2676-2661-296e::08b8-4358-9110-c72a::c85c-3be5-d699-b6f3" name="Enhanced Targeting Array" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model with this upgrade increases its BS by +1 and the cover saves of enemy targets are reduced by -1. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="45.0"/>
+              </costs>
+            </selection>
+            <selection id="99d4-8805-86cd-e161" name="Castellax class Battle-automata" entryId="ec8a-2676-2661-296e::09ad-ef83-4a62-46fe" page="" number="1" type="model">
+              <profiles>
+                <profile id="ec8a-2676-2661-296e::659d-11d2-faad-4259" name="Castellax" publicationId="cf03-f607-pubN76270" page="41" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Monstrous Creature</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">6</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">7</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">4</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="20b4-819c-9525-1830" name="Mauler Bolt Cannon" entryId="ec8a-2676-2661-296e::11ea-37df-c659-bc84::5f67-828c-a452-e97e" entryGroupId="ec8a-2676-2661-296e::6564-7afd-3cef-078a" number="1" type="upgrade">
+                  <rules>
+                    <rule id="ec8a-2676-2661-296e::11ea-37df-c659-bc84::116d-4b1b-3701-0889::f624-f475-e5ec-0dfa" name="Pinning" publicationId="ca571888--pubN74807" page="168" hidden="false">
+                      <description>If a non-vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its shooting attacks for that phase. This is called a Pinning test.
+If the unit fails the test, it is Pinned and must immediately Go to Ground. As the unit has already taken its saves, Going to Ground does not protect it against the fire of the Pinning weapon that caused the test – it’s too late!
+As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken.
+If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::11ea-37df-c659-bc84::592e-b785-b9da-7c25::0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="0855-2d20-3761-f034" name="Bolter" entryId="ec8a-2676-2661-296e::9f45-90b4-1220-dd2b" entryGroupId="ec8a-2676-2661-296e::c204-c9c9-9110-ca90" number="2" type="upgrade">
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::d67c-5172-026b-106f::09fd-8af1-a6b1-51f7" name="Boltgun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="071b-904c-364c-4c0b" name="Shock Chargers" entryId="ec8a-2676-2661-296e::4894-9e9e-82e5-b213" entryGroupId="ec8a-2676-2661-296e::c022-8531-3529-fe49" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="ec8a-2676-2661-296e::3303-0171-a45b-5ac5::3428-cbe9-fba3-955b" name="Shock Chargers" publicationId="ca571888--pubN66489" page="107" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">- Model equipped with Shock Chargers gains the Concussive special rule added to all their close combat attacks regardless of type (to include Hammer of Wrath).  - Stock Chargers are not a weapon and do not have a profile, nor do they add additional attacks in conjunction with other weapons. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" typeId="points" value="105.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="5680-7445-00a4-12ab" name="Cybernetica Cortex" entryId="7fdd-2a97-d0e9-6524" primary="false"/>
+            <category id="0685-0a4f-d4c5-3123" name="Monstrous Creature" entryId="8ec4-17b5-7fea-c682" primary="false"/>
+            <category id="82fc-a816-62ce-a323" name="Automata" entryId="78ea-eea8-0ac5-b7de" primary="false"/>
+            <category id="e099-7546-697a-7705" name="Troops" entryId="54726f6f707323232344415441232323" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="648c-bd15-cfbd-9757" name="Myrmidon Secutors" entryId="004c-e012-5637-e09e::75ff-b7a9-dfbf-502e" publicationId="cf03-f607-pubN76979" page="220" number="1" type="unit">
+          <rules>
+            <rule id="004c-e012-5637-e09e::48cf-8f80-14e4-fbb2::8e53a9a8-1408-23bf-5be8-4601caec5d10" name="Fusillade Attack" publicationId="cf03-f607-pubN76979" page="220" hidden="false">
+              <description>May fire two ranged weapons in the shooting phase as long as they are at the same target</description>
+            </rule>
+            <rule id="004c-e012-5637-e09e::ee26-1bcb-47f4-a01a::797e55b1-251e-6606-9cb3-64661b0b18a3" name="Lumbering Advance" publicationId="cf03-f607-pubN76979" page="220" hidden="false">
+              <description>May not Run or make sweeping advances</description>
+            </rule>
+            <rule id="004c-e012-5637-e09e::d78e-5d0e-6f2c-f83b::3c7d-a1fa-c68b-caad" name="Relentless" publicationId="ca571888--pubN74807" page="170" hidden="false">
+              <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
+            </rule>
+            <rule id="004c-e012-5637-e09e::0d2f-4067-72e7-7dee::7be5-30af-1a02-0a89" name="Stubborn" publicationId="ca571888--pubN74807" page="173" hidden="false">
+              <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
+            </rule>
+            <rule id="004c-e012-5637-e09e::3bda-5958-f731-3c9c::38d5-b6eb-bda8-2497" name="Bulky" publicationId="ca571888--pubN74807" page="161" hidden="false">
+              <description>Bulky models count as two models for the purposes of Transport Capacity.</description>
+            </rule>
+          </rules>
+          <selections>
+            <selection id="0e99-9319-73f3-5a45" name="Myrmidon Secutor" entryId="004c-e012-5637-e09e::57e1-f506-4b94-3ec0" page="0" number="1" type="model">
+              <profiles>
+                <profile id="004c-e012-5637-e09e::7d00-15b4-62fd-3703" name="Myrmidon Secutors" publicationId="cf03-f607-pubN76979" page="220" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">5</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">4</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="a613-8c9e-068b-309c" name="Power axe" entryId="004c-e012-5637-e09e::66cb-85cf-2883-759d" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::2ce7-4317-b648-7b23::b3af-1eca-6629-4894" name="Power Axe" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="55f5-8064-0558-beef" name="Frag and Krak grenades" entryId="004c-e012-5637-e09e::909e-07ac-38f8-8149::e8ea-b5c1-7636-cbb3" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::909e-07ac-38f8-8149::03f4-2f82-8a70-1f19::d890-1b84-bbd9-12d3" name="Frag Grenades" publicationId="ca571888--pubN74807" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="004c-e012-5637-e09e::909e-07ac-38f8-8149::d52b-271a-5ac2-cc50::d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="d287-fd33-1791-5371" name="Infravisor" entryId="004c-e012-5637-e09e::b832-043d-777a-1276::f921-3533-183e-c741" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::b832-043d-777a-1276::6ea4-aa3a-441d-30a6::d94ec38f-20c8-84b8-79e6-6aba811aae26" name="Infravisor" publicationId="cf03-f607-pubN76979" page="208" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers Night Vision, but counts as I1 for blind tests.  </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="70c9-5401-dbc5-99f9" name="Refractor Field" entryId="004c-e012-5637-e09e::835b-30bc-6902-efa3::40e37f6e-a984-4232-4dc4-807ed9028f62" page="0" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::835b-30bc-6902-efa3::cff76a56-1184-1bfc-cc2c-10cc5a877c3e::4845-0bfe-2c22-883f" name="Refractor Field" publicationId="ca571888--pubN67227" page="91" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers 5++ Invulnerable Save</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="8558-06e1-1a96-5ac7" name="Phased Plasma-fusil" entryId="004c-e012-5637-e09e::c28a-1d4e-208e-c05f::d4ac-c006-b6fd-7901" entryGroupId="004c-e012-5637-e09e::b585-2a93-ae85-3d97" page="0" number="2" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::c28a-1d4e-208e-c05f::66a2-cd60-ecdc-b474::71ed050b-073d-852a-e50a-425b96eb71cd" name="Phased-Plasma Fusil" publicationId="cf03-f607-pubN143916" page="232" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 2/3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="40.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selection>
+            <selection id="aa51-faeb-b166-9906" name="Myrmidon Secutor" entryId="004c-e012-5637-e09e::57e1-f506-4b94-3ec0" page="0" number="1" type="model">
+              <profiles>
+                <profile id="004c-e012-5637-e09e::7d00-15b4-62fd-3703" name="Myrmidon Secutors" publicationId="cf03-f607-pubN76979" page="220" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">5</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">4</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="1202-473f-a268-2baf" name="Power axe" entryId="004c-e012-5637-e09e::66cb-85cf-2883-759d" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::2ce7-4317-b648-7b23::b3af-1eca-6629-4894" name="Power Axe" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="f00a-f63a-b219-e06d" name="Frag and Krak grenades" entryId="004c-e012-5637-e09e::909e-07ac-38f8-8149::e8ea-b5c1-7636-cbb3" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::909e-07ac-38f8-8149::03f4-2f82-8a70-1f19::d890-1b84-bbd9-12d3" name="Frag Grenades" publicationId="ca571888--pubN74807" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="004c-e012-5637-e09e::909e-07ac-38f8-8149::d52b-271a-5ac2-cc50::d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="7e96-3cb1-6b99-05c3" name="Infravisor" entryId="004c-e012-5637-e09e::b832-043d-777a-1276::f921-3533-183e-c741" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::b832-043d-777a-1276::6ea4-aa3a-441d-30a6::d94ec38f-20c8-84b8-79e6-6aba811aae26" name="Infravisor" publicationId="cf03-f607-pubN76979" page="208" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers Night Vision, but counts as I1 for blind tests.  </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="14ba-7a3c-0fcc-bd51" name="Refractor Field" entryId="004c-e012-5637-e09e::835b-30bc-6902-efa3::40e37f6e-a984-4232-4dc4-807ed9028f62" page="0" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::835b-30bc-6902-efa3::cff76a56-1184-1bfc-cc2c-10cc5a877c3e::4845-0bfe-2c22-883f" name="Refractor Field" publicationId="ca571888--pubN67227" page="91" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers 5++ Invulnerable Save</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="9e5d-02f3-7c3f-5e10" name="Phased Plasma-fusil" entryId="004c-e012-5637-e09e::c28a-1d4e-208e-c05f::d4ac-c006-b6fd-7901" entryGroupId="004c-e012-5637-e09e::b585-2a93-ae85-3d97" page="0" number="2" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::c28a-1d4e-208e-c05f::66a2-cd60-ecdc-b474::71ed050b-073d-852a-e50a-425b96eb71cd" name="Phased-Plasma Fusil" publicationId="cf03-f607-pubN143916" page="232" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 2/3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="40.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selection>
+            <selection id="e093-a713-efd1-1f36" name="Myrmidon Lord" entryId="004c-e012-5637-e09e::238a-c6a0-32a3-2fd4" page="0" number="1" type="model">
+              <profiles>
+                <profile id="004c-e012-5637-e09e::d772-2831-9ca7-7de8" name="Myrmidon Lord" publicationId="cf03-f607-pubN76979" page="220" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">5</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">4</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="36b7-688a-529b-b1ba" name="Power axe" entryId="004c-e012-5637-e09e::0c68-1b4f-2f25-a8ea" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::6e70-b6cd-54b8-6e6c::b3af-1eca-6629-4894" name="Power Axe" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="ea34-c18c-3a5b-d7d5" name="Frag and Krak grenades" entryId="004c-e012-5637-e09e::7f1e-fb0d-94d3-08a4::e8ea-b5c1-7636-cbb3" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::7f1e-fb0d-94d3-08a4::03f4-2f82-8a70-1f19::d890-1b84-bbd9-12d3" name="Frag Grenades" publicationId="ca571888--pubN74807" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="004c-e012-5637-e09e::7f1e-fb0d-94d3-08a4::d52b-271a-5ac2-cc50::d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="af55-3eca-bd41-eace" name="Infravisor" entryId="004c-e012-5637-e09e::00aa-4d63-68af-f44f::f921-3533-183e-c741" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::00aa-4d63-68af-f44f::6ea4-aa3a-441d-30a6::d94ec38f-20c8-84b8-79e6-6aba811aae26" name="Infravisor" publicationId="cf03-f607-pubN76979" page="208" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers Night Vision, but counts as I1 for blind tests.  </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="bb28-8b61-b4df-bbf6" name="Refractor Field" entryId="004c-e012-5637-e09e::c7eb-7961-691c-0cd0::40e37f6e-a984-4232-4dc4-807ed9028f62" page="0" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::c7eb-7961-691c-0cd0::cff76a56-1184-1bfc-cc2c-10cc5a877c3e::4845-0bfe-2c22-883f" name="Refractor Field" publicationId="ca571888--pubN67227" page="91" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers 5++ Invulnerable Save</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="5e03-7436-b04b-d8b7" name="Phased Plasma-fusil" entryId="004c-e012-5637-e09e::d1d0-3669-a365-dfca::d4ac-c006-b6fd-7901" entryGroupId="004c-e012-5637-e09e::0265-2351-def4-0381" page="0" number="2" type="upgrade">
+                  <profiles>
+                    <profile id="004c-e012-5637-e09e::d1d0-3669-a365-dfca::66a2-cd60-ecdc-b474::71ed050b-073d-852a-e50a-425b96eb71cd" name="Phased-Plasma Fusil" publicationId="cf03-f607-pubN143916" page="232" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 2/3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="40.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4bcc-358e-70eb-6c9c" name="Elites" entryId="456c6974657323232344415441232323" primary="true"/>
+            <category id="06af-b425-54a2-e4a1" name="Infantry" entryId="f74d-4679-75a6-1252" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="4b30-4720-1495-64b3" name="Magos Prime" entryId="2446-35f3-3f1b-e153::aa74-77f4-7266-36b6" publicationId="cf03-f607-pubN76780" page="26-27" number="1" type="model">
+          <rules>
+            <rule id="2446-35f3-3f1b-e153::d2b0-5d87-25aa-30bd::5aad03df-0fd0-5920-0aec-2aefbe5bcf5b" name="Battlesmith" publicationId="cf03-f607-pubN80892" page="81" hidden="false">
+              <description>If a Battlesmith is embarked on or in base contact with one or more damaged vehicles during the
+                shooting phase, they may attempt to repair one of them instead of firing a weapon. To attempt, roll a
+                D6. On a result of 5+ the Battlesmith may do one of the following:
+                - Restore a lost Hull Point
+                - Repair a Weapon Destroyed result
+                - Repair an Immobilised result
+                If a Weapon Destroyed result is repaired, that weapon may be fired in the following shooting phase. The
+                Battlesmith cannot use this ability if he has gone to ground or is falling back.</description>
+            </rule>
+            <rule id="2446-35f3-3f1b-e153::5d1e-d3a8-74df-f872::4771-b711-0e74-3aee" name="Precision Shots" publicationId="ca571888--pubN74807" page="169" hidden="false">
+              <description>If a model with this special rule rolls a 6 To Hit with a shooting weapon, that shot is a ‘Precision Shot’.
+
+Wounds from Precision Shots are allocated against a model (or models) of your choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. A character that has a Precision Shot Wound allocated to it can still make a Look Out, Sir roll.
+
+Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit, can never be Precision Shots.</description>
+            </rule>
+            <rule id="2446-35f3-3f1b-e153::2a18-a52b-2bdc-af35::7be5-30af-1a02-0a89" name="Stubborn" publicationId="ca571888--pubN74807" page="173" hidden="false">
+              <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
+            </rule>
+            <rule id="2446-35f3-3f1b-e153::a0ff-9692-0a8a-d004::3ad4-1c37-d60b-1a4e" name="Independent Character" publicationId="ca571888--pubN74807" page="165" hidden="false">
+              <description>Independent characters can join other units.  They cannot, however, join units that contain vehicles or Monstrous Creatures.  They can join other Independent Characters, though, to form a powerful multi-character unit!  Independent Characters pass Look Out, Sir rolls on a 2+. A unit that contains one or more Independent Characters does not need a double 1 to Regroup if reduced to below 25% of its starting numbres, but instead tests as if it had at least 25% remaining.
+
+Full details in BRB. Rule too long to copy verbatim.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="2446-35f3-3f1b-e153::494b-f6c5-1304-ab14" name="Magos Prime" publicationId="cf03-f607-pubN76979" page="214" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="db6d-58a4-2e9e-35fb" name="Mechanicum protectiva" entryId="2446-35f3-3f1b-e153::1268-f42c-aba2-a2a9" number="1" type="upgrade">
+              <profiles>
+                <profile id="2446-35f3-3f1b-e153::def6-5fee-872e-8f6d::ec8086ee-40ef-30cb-d8ed-2138991ab56b" name="Mechanicum Protectiva" publicationId="cf03-f607-pubN76979" page="207" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4++ Invulnerable save</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="445e-2bbc-8a4a-b50a" name="Myrmidax" entryId="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::3263-edb0-ab8e-4ebe::1b7f-df93-0cbf-cf8c" entryGroupId="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::70aa-19eb-c232-8e3d" page="0" number="1" type="upgrade">
+              <rules>
+                <rule id="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::3263-edb0-ab8e-4ebe::2328-012c-caf6-9ab5" name="Hatred (Everything)" page="0" hidden="false"/>
+                <rule id="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::3263-edb0-ab8e-4ebe::aff6-cf30-8c31-283c" name="Deathly Aim" publicationId="cf03-f607-pubN76979" page="215" hidden="false">
+                  <description>Inflicts Precision Hits on a 5+</description>
+                </rule>
+                <rule id="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::3263-edb0-ab8e-4ebe::1c9d-887f-0657-7fb5::797e55b1-251e-6606-9cb3-64661b0b18a3" name="Lumbering Advance" publicationId="cf03-f607-pubN76979" page="220" hidden="false">
+                  <description>May not Run or make sweeping advances</description>
+                </rule>
+                <rule id="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::3263-edb0-ab8e-4ebe::1b90-f2eb-f735-41f6::8e53a9a8-1408-23bf-5be8-4601caec5d10" name="Fusillade Attack" publicationId="cf03-f607-pubN76979" page="220" hidden="false">
+                  <description>May fire two ranged weapons in the shooting phase as long as they are at the same target</description>
+                </rule>
+                <rule id="2446-35f3-3f1b-e153::ebd2-ffe1-0095-0eff::3263-edb0-ab8e-4ebe::31af-69d8-948e-63ff::3c7d-a1fa-c68b-caad" name="Relentless" publicationId="ca571888--pubN74807" page="170" hidden="false">
+                  <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selection>
+            <selection id="4aa5-a897-a846-5597" name="Cyber-familiar" entryId="2446-35f3-3f1b-e153::ecfe-6bb7-bbdb-552d" entryGroupId="2446-35f3-3f1b-e153::c365-bcb4-95bf-2a07" page="0" number="1" type="upgrade">
+              <profiles>
+                <profile id="2446-35f3-3f1b-e153::e03e-a7d0-ae8e-7699::67e9d995-de3f-f033-9026-c1faa0a9433a" name="Cyber-familiar" publicationId="cf03-f607-pubN80892" page="89" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A Cyber-familiar adds +1 to its owners Invulnerable save (to a maximum of 3++) or provides an Invulnerable save of a 6++.   In addition they allow the owner to re-roll failed characteristic tests other than Leadership tests and failed Dangerous Terrain tests.  </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selection>
+            <selection id="806b-98cf-b243-016e" name="Cortex Controller" entryId="2446-35f3-3f1b-e153::6e05-7a93-5ef5-116e" entryGroupId="2446-35f3-3f1b-e153::c365-bcb4-95bf-2a07" page="0" number="1" type="upgrade">
+              <profiles>
+                <profile id="2446-35f3-3f1b-e153::b1ac-0a6e-0d33-9054::e135-8b23-7190-9f2c" name="Cortex Controller" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Presence of a Cortex Controller within 12&quot; of a unit of friendly models with the Programmed Behaviour special rule at the start of any phase means that special rule is negated for that phase and their controlling player is free to use them as any other unit.  </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selection>
+            <selection id="985b-611a-8776-d46e" name="Melta Bombs" entryId="2446-35f3-3f1b-e153::0528-9016-03a1-e977::acf4-096f-2127-80a3" entryGroupId="2446-35f3-3f1b-e153::c365-bcb4-95bf-2a07" page="0" number="1" type="upgrade">
+              <profiles>
+                <profile id="2446-35f3-3f1b-e153::0528-9016-03a1-e977::0093-d502-9efb-e4d0::a1d8-f9f3-865a-9faf" name="Melta Bombs" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Armourbane, Unwieldy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selection>
+            <selection id="2197-e9d5-c87a-0c1b" name="Rad Grenades" entryId="2446-35f3-3f1b-e153::1ae2-7d37-c6da-fb53" entryGroupId="2446-35f3-3f1b-e153::c365-bcb4-95bf-2a07" page="0" number="1" type="upgrade">
+              <profiles>
+                <profile id="2446-35f3-3f1b-e153::642c-8d22-0280-e204::bf7edb98-902e-c8a7-e818-4a6ba05f12f2" name="Rad Grenades" publicationId="cf03-f607-pubN80892" page="84" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">During a turn in which a unit equipped with Rad Grenades assaults or is assaulted, the enemy unit(s) suffer a -1 penalty to the Toughness until the end of the Assault Phase.  This does affect the victim&apos;s Instant Death thresholds.  </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="95.0"/>
+          </costs>
+          <categories>
+            <category id="79dd-2341-1e99-5f5c" name="Infantry" entryId="f74d-4679-75a6-1252" primary="false"/>
+            <category id="9e74-42ad-fab9-f4d0" name="Compulsory HQ" entryId="becd-7a6d-e80f-878e" primary="false"/>
+            <category id="09d0-6988-0aa7-3ae9" name="HQ" entryId="485123232344415441232323" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="cb75-4ed4-8cd9-fed5" name="Thallax Cohort" entryId="7f94-d779-b55e-3e78::b39b-9817-025c-62da" number="1" type="unit">
+          <selections>
+            <selection id="883f-ffda-31e4-0cea" name="Lightning gun" entryId="7f94-d779-b55e-3e78::c48f-5075-5087-8f48" number="1" type="upgrade">
+              <rules>
+                <rule id="7f94-d779-b55e-3e78::eeb3-a758-a9a3-ecbc::8269-2cd6-9236-16e7" name="Rending" publicationId="ca571888--pubN74807" page="170" hidden="false">
+                  <description>If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that his close combat attacks will strike a critical blow. For each To Wound roll of a 6, the target automatically suffers a Wound, regardless of its Toughness. These Wounds are resolved at AP2.
+Similarly, if a model makes a shooting attack with a weapon that has the Rending special rule, a To Wound roll of 6 Wounds automatically, regardless of Toughness, and is resolved at AP2.
+In either case, against vehicles, each armour penetration roll of 6 allows a further D3 to be rolled, with the result added to the total. These hits are not resolved at AP2, but are instead resolved using the model/weapon’s AP value.</description>
+                </rule>
+                <rule id="7f94-d779-b55e-3e78::7c4b-32db-91af-305a::89da-0cb5-bee4-8ec2" name="Shred" publicationId="ca571888--pubN74807" page="171" hidden="false">
+                  <description>If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred special rule, it re-rolls failed To Wound rolls in close combat.  Similarly, if a model makes a shooting attack with a weapon that has the Shred special rule, it re-rolls its failed To Wound rolls.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="7f94-d779-b55e-3e78::d97e-4c71-3b86-cc96::ec450cd6-6dba-ca68-091c-9c48fcbc2112" name="Lightning Gun" publicationId="cf03-f607-pubN123006" page="240" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Shred, Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="5195-664e-647a-5ef7" name="Thallax" entryId="7f94-d779-b55e-3e78::ff43-bada-c45f-3a9b" number="3" type="model">
+              <rules>
+                <rule id="7f94-d779-b55e-3e78::34d4-cec9-97d5-c520::988c7311-fd57-a973-0678-7545d8d58f48" name="Djinn-sight" publicationId="cf03-f607-pubN76979" page="222" hidden="false">
+                  <description>Reduces enemy benefit from cover by -2. Additionally infiltrators may not be deployed within
+                24&quot;.</description>
+                </rule>
+                <rule id="7f94-d779-b55e-3e78::8eb3-009d-01f0-0de0::7be5-30af-1a02-0a89" name="Stubborn" publicationId="ca571888--pubN74807" page="173" hidden="false">
+                  <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
+                </rule>
+                <rule id="7f94-d779-b55e-3e78::6f9c-a5e6-0654-d020::38d5-b6eb-bda8-2497" name="Bulky" publicationId="ca571888--pubN74807" page="161" hidden="false">
+                  <description>Bulky models count as two models for the purposes of Transport Capacity.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="7f94-d779-b55e-3e78::962c-1b0f-11ba-ab3b" name="Thallax" publicationId="cf03-f607-pubN99227" page="290" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jet Pack Infantry</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">3</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">4+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="7f94-d779-b55e-3e78::a217-f8df-28fc-2def::405d3ced-c3a6-9f99-2018-9ab90162b6b1" name="Lorica Thallax" publicationId="cf03-f607-pubN123006" page="240" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4+ Armour and FNP 6+ but may not make Sweeping Advances</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="120.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+          <categories>
+            <category id="1480-0bea-6b99-a279" name="Compulsory Troops" entryId="219d-aefa-dfa5-44db" primary="false"/>
+            <category id="bbc4-eecc-a365-9d5c" name="Troops" entryId="54726f6f707323232344415441232323" primary="true"/>
+            <category id="e1ef-30b4-7afc-7de5" name="Jetpack Infantry" entryId="afa3-c43a-c8c1-d8b6" primary="false"/>
+            <category id="c451-6d35-a3dd-4585" name="Lorica Thallax" entryId="37f2-7398-84ee-6fdf" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="fe92-2589-4913-c963" name="Legio" entryId="4107-f38f-37a0-131e::8352-9d62-82af-9642" number="1" type="upgrade">
+          <selections>
+            <selection id="ea9f-4a1d-4ed3-7a60" name="Taghmata Omnissiah" entryId="4107-f38f-37a0-131e::bdf2-b46d-0e0b-8062::66fa-9471-1b2a-7809::d76d-0097-d56b-e6bf" entryGroupId="4107-f38f-37a0-131e::bdf2-b46d-0e0b-8062::8ea4-951b-6a14-f20c" number="1" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+              <categories>
+                <category id="aead-d334-ab83-6893" name="Legion" entryId="258478de-d031-8a7e-dcb0-7d56bee86952" primary="true"/>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="6a85-884d-5e90-0097" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="b647-6a56-5f06-93be" name="Adsecularis Covenant" entryId="c113-055f-0a53-5b42::7e54-a6b2-1982-0706" publicationId="cf03-f607-pubN76780" page="37" number="1" type="unit">
+          <selections>
+            <selection id="8136-243c-cd2c-074a" name="Tech-thrall" entryId="c113-055f-0a53-5b42::9e7e-232f-e016-6ce8" number="15" type="model">
+              <rules>
+                <rule id="c113-055f-0a53-5b42::8c92-b98a-e0c9-939b" name="Feel no Pain (6+)" page="0" hidden="false"/>
+              </rules>
+              <profiles>
+                <profile id="c113-055f-0a53-5b42::2c45-82af-770e-2e12" name="Tech-thrall" publicationId="cf03-f607-pubN76270" page="37" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">2</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">4</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="45.0"/>
+              </costs>
+            </selection>
+            <selection id="1901-877e-c896-3b83" name="Las-lock" entryId="c113-055f-0a53-5b42::bb67-e4be-c96a-0bb6" entryGroupId="c113-055f-0a53-5b42::e62f-bd12-5353-b752" number="1" type="upgrade">
+              <profiles>
+                <profile id="c113-055f-0a53-5b42::1741-4fa4-53bd-b350::65bf6242-8fa0-55f7-92ac-71f4a8fba433" name="Las-lock" publicationId="cf03-f607-pubN76979" page="221" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="6586-cb72-4874-2e38" name="Induction Chargers" entryId="c113-055f-0a53-5b42::ca77-761d-d408-5321" entryGroupId="c113-055f-0a53-5b42::6401-0685-3898-3510" publicationId="cf03-f607-pubN76780" page="37" number="1" type="upgrade">
+              <rules>
+                <rule id="c113-055f-0a53-5b42::6db2-44ad-3bcb-b9df" name="Induction Chargers" publicationId="cf03-f607-pubN76270" page="37" hidden="false">
+                  <description>Laslocks and Mitra-locks fitted with Induction chargers are Assault 2 weapons.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selection>
+            <selection id="8b42-af09-e586-5ed1" name="The Rite of Pure Thought" entryId="c113-055f-0a53-5b42::b0e6-e078-45c7-18b5" entryGroupId="c113-055f-0a53-5b42::6401-0685-3898-3510" page="0" number="1" type="upgrade">
+              <rules>
+                <rule id="c113-055f-0a53-5b42::0f4a-6a0c-0fea-34af" name="The Rite of Pure Thought" publicationId="cf03-f607-pubN76270" page="37" hidden="false">
+                  <description>Gain Fearless, but may not make sweeping advances or perform Overwatch.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selection>
+            <selection id="faa3-f9a8-b47a-9828" name="Carapace Armour" entryId="c113-055f-0a53-5b42::457c-cdd9-a458-baa9" entryGroupId="c113-055f-0a53-5b42::6401-0685-3898-3510" number="1" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+          <categories>
+            <category id="cf5f-31d8-3f3e-cd1e" name="Infantry" entryId="f74d-4679-75a6-1252" primary="false"/>
+            <category id="41b0-7584-d9c7-502f" name="Compulsory Troops" entryId="219d-aefa-dfa5-44db" primary="false"/>
+            <category id="466e-d551-d160-5c6f" name="Troops" entryId="54726f6f707323232344415441232323" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <publications>
+        <publication id="cf03-f607-pubN146636" name="Imperial Armour Vol 1, 2nd Editio"/>
+        <publication id="cf03-f607-pubN141302" name="75"/>
+        <publication id="ca571888--pubN73996" name="AoD: Rulebook"/>
+        <publication id="ca571888--pubN89821" name="HH6: Retribution"/>
+        <publication id="ca571888--pubN92115" name="HH7: Infeno"/>
+        <publication id="ca571888--pubN66500" name="HH1: Betrayal"/>
+        <publication id="cf03-f607-pubN123157" name="HH1: Betraya"/>
+        <publication id="cf03-f607-pubN130172" name="Siege of Vraks, 2nd Edition"/>
+        <publication id="ca571888--pubN108377" name="HH6: Retibution"/>
+        <publication id="ca571888--pubN87368" name="C:IK"/>
+        <publication id="cf03-f607-pubN108169" name="Taghmata Army List "/>
+        <publication id="ca571888--pubN69050" name="HH:MTAL"/>
+        <publication id="cf03-f607-pubN76979" name="HH3: Extermination"/>
+        <publication id="ca571888--pubN74807" name="HH: AoD Rulebook"/>
+        <publication id="cf03-f607-pubN143724" name="BRB 7th"/>
+        <publication id="ca571888--pubN66580" name="HH: MT"/>
+        <publication id="ca571888--pubN68042" name="HH5: Tempest"/>
+        <publication id="ca571888--pubN107368" name="FAQ 2018"/>
+        <publication id="cf03-f607-pubN65563" name="AoDRB"/>
+        <publication id="ca571888--pubN82424" name="HH:AODAL"/>
+        <publication id="cf03-f607-pubN70679" name="HH-Questoris-Knight-Dominus Download"/>
+        <publication id="cf03-f607-pubN86172" name="HH2: Massacre"/>
+        <publication id="cf03-f607-pubN135015" name="Imperial Armour Vol 1, 2nd Edition"/>
+        <publication id="ca571888--pubN99753" name="LA:AODAL"/>
+        <publication id="cf03-f607-pubN134767" name="Siege of Vraks 2nd Edition"/>
+        <publication id="ca571888--pubN112761" name="LA:AoDAL"/>
+        <publication id="ca571888--pubN108209" name="Death from the Skies"/>
+        <publication id="cf03-f607-pubN76780" name="Taghmata Army List"/>
+        <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
+        <publication id="cf03-f607-pubN96051" name="HH7:Inferno"/>
+        <publication id="ca571888--pubN105613" name="HH:MAL"/>
+        <publication id="ca571888--pubN67227" name="HH:LACAL"/>
+        <publication id="ca571888--pubN106705" name="Forgeworld.co.uk"/>
+        <publication id="cf03-f607-pubN80487" name="HH6: Retribution"/>
+        <publication id="cf03-f607-pubN140385" name="LA:AODAL"/>
+        <publication id="ca571888--pubN106780" name="LA:AoDLA"/>
+        <publication id="cf03-f607-pubN82540" name="Mech Taghmata"/>
+        <publication id="cf03-f607-pubN108016" name="HH:AoDaL"/>
+        <publication id="ca571888--pubN106389" name="HH:GEAFAQV1.0"/>
+        <publication id="cf03-f607-pubN120279" name="HH:Taghmata Army List"/>
+        <publication id="ca571888--pubN103311" name="HH8"/>
+        <publication id="cf03-f607-pubN130235" name="Cadia - A Codex: Astra Militarum Supplement "/>
+        <publication id="cf03-f607-pubN89244" name="Inferno"/>
+        <publication id="ca571888--pubN82437" name="AODAL"/>
+        <publication id="ca571888--pubN113187" name="LA:AoDL"/>
+        <publication id="ca571888--pubN105292" name="BRB 7th"/>
+        <publication id="ca571888--pubN107350" name="BRB"/>
+        <publication id="ca571888--pubN84656" name="FAQ"/>
+        <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
+        <publication id="ca571888--pubN73893" name="Planetary Onslaught"/>
+        <publication id="ca571888--pubN94574" name="HH-Questoris-Knight-Dominus Download"/>
+        <publication id="ca571888--pubN91142" name="CI:AL"/>
+        <publication id="ca571888--pubN94477" name="AoD: Rulebook1"/>
+        <publication id="ca571888--pubN95649" name="Playtest Rules Errata V1.0 Warhammer Community Download"/>
+        <publication id="cf03-f607-pubN80892" name="HH:LACAL"/>
+        <publication id="ca571888--pubN67459" name="LA:ADL"/>
+        <publication id="ca571888--pubN67536" name="LA:CAL"/>
+        <publication id="ca571888--pubN95721" name="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Horus_Heresy/HH-Legio-Titanicus-Warbringer-Nemesis-Titan.pdf?fbclid=IwAR3LyUx_Bhf7-hxpR0uCkbOmVMu5pzHpAqjgwmb_4SStSrjeTILm49XO__c"/>
+        <publication id="ca571888--pubN66489" name="HH:MT"/>
+        <publication id="cf03-f607-pubN90339" name="Codex: Skitarii"/>
+        <publication id="ca571888--pubN79717" name="AoD: Rulebook "/>
+        <publication id="ca571888--pubN107025" name="Web"/>
+        <publication id="ca571888--pubN106650" name="White Dwarf"/>
+        <publication id="ca571888--pubN106257" name="HH: AoD Rulebook1"/>
+        <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
+        <publication id="cf03-f607-pubN92488" name="HH7: Inferno"/>
+        <publication id="cf03-f607-pubN130224" name="Cadia - A Codex: Astra Militarum Supplement"/>
+        <publication id="cf03-f607-pubN131159" name="Escalation"/>
+        <publication id="ca571888--pubN107062" name="AL:AoDAL"/>
+        <publication id="cf03-f607-pubN135510" name="Siege of Vraks, 2nd Editio"/>
+        <publication id="cf03-f607-pubN145694" name="HH7"/>
+        <publication id="cf03-f607-pubN80965" name="HH5: Tempest"/>
+        <publication id="cf03-f607-pubN76270" name="HH:MT"/>
+        <publication id="ca571888--pubN115656" name="HH: AoD 1st"/>
+        <publication id="cf03-f607-pubN76591" name="FAQ"/>
+        <publication id="cf03-f607-pubN137737" name="HH8"/>
+        <publication id="ca571888--pubN80309" name="Datasheet: Munitorium Armoured Container Cache"/>
+        <publication id="ca571888--pubN113873" name="HH: Rulebook"/>
+        <publication id="cf03-f607-pubN141373" name="HH:LAICL"/>
+        <publication id="cf03-f607-pubN143916" name="HH1:Betrayal"/>
+        <publication id="cf03-f607-pubN80382" name="HH: MT"/>
+        <publication id="cf03-f607-pubN102601" name="Forgeworld.co.uk - Downloads"/>
+        <publication id="cf03-f607-pubN123006" name="HH1: Betrayal"/>
+        <publication id="ca571888--pubN73904" name="Warhammer 40k rulebook"/>
+        <publication id="cf03-f607-pubN107623" name="LA:AoDAL"/>
+        <publication id="cf03-f607-pubN101285" name="HH3: Exterminatino"/>
+        <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
+        <publication id="ca571888--pubN85920" name="HH3: Extermination"/>
+        <publication id="ca571888--pubN84158" name="HH4: Conquest"/>
+        <publication id="cf03-f607-pubN93687" name="HH:MTAL"/>
+        <publication id="ca571888--pubN104183" name="hh8"/>
+        <publication id="cf03-f607-pubN99227" name="HH4: Conquest"/>
+        <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
+        <publication id="ca571888--pubN74520" name="Stronghold Assault"/>
+        <publication id="ca571888--pubN67636" name="Forgeworld.co.uk - Downloads"/>
+        <publication id="ca571888--pubN80998" name="HH: AoDAL"/>
+      </publications>
+      <categories>
+        <category id="333c-096d-975a-245f" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="aa4e-50c5-3ce0-54a0" name="Elites" entryId="456c6974657323232344415441232323" primary="false"/>
+        <category id="3007-bbf6-2cce-70f4" name="HQ" entryId="485123232344415441232323" primary="false"/>
+        <category id="5191-e6ee-cba3-b847" name="Fast Attack" entryId="466173742041747461636b23232344415441232323" primary="false"/>
+        <category id="bdf9-4186-e0ba-0590" name="Troops" entryId="54726f6f707323232344415441232323" primary="false"/>
+        <category id="0283-9c34-b669-91e4" name="Heavy Support" entryId="486561767920537570706f727423232344415441232323" primary="false"/>
+        <category id="8fd7-0b2e-2c79-bce1" name="Allegiance" entryId="5297-7e0f-fa0b-3537" primary="false"/>
+        <category id="513a-f3b8-8dd9-3e5a" name="Use Playtest Rules" entryId="fdf4-0683-3e84-5a4b" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>
