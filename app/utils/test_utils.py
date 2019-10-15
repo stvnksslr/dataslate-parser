@@ -1,4 +1,4 @@
-from app.parsers.gametype.gametype import (
+from app.utils.gametype import (
     detect_gametype,
     find_gametype_parser,
     find_template,

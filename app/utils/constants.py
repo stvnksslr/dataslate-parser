@@ -14,4 +14,8 @@ WARHAMMER_40K_NAME: str = ""
 AGE_OF_SIGMAR_ID: str = ""
 AGE_OF_SIGMAR_NAME: str = ""
 
-BATTLESCRIBE_VERSION = "2.02"
+SUPPORTED_BATTLESCRIBE_VERSION = "2.03"
+
+BATTLESCRIBE_VERSION_ERROR = {
+    "ERROR": "battlesrcibe version not supported please upgrade, the current supported version is {}".format(
+        SUPPORTED_BATTLESCRIBE_VERSION)}

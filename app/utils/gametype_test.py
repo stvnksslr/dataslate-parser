@@ -1,7 +1,8 @@
 from pathlib import Path
 from unittest import TestCase
 
-from app.parsers.gametype.gametype import detect_gametype, find_gametype_parser
+from app.utils.battlescribe_meta import check_battlescribe_version
+from app.utils.gametype import detect_gametype, find_gametype_parser
 from app.parsers.heresy import heresy
 from app.utils.constants import HORUS_HERESY_ID
 
@@ -30,3 +31,10 @@ class GametypeTest(TestCase):
         parser = find_gametype_parser(gametype)
 
         self.assertEqual(parser, heresy)
+
+    def test__check_battlescribe_version(self):
+        with open(self.heresy_roster, "r") as roster_file:
+            contents = roster_file.read()
+
+        supported_version = check_battlescribe_version(roster=contents)
+        self.assertTrue(supported_version)

@@ -3,6 +3,8 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
+from app.utils.battlescribe_meta import check_battlescribe_version
+from app.utils.constants import BATTLESCRIBE_VERSION_ERROR
 from app.utils.test_utils import get_parser_type_and_parse
 from app.utils.zip_utils import unzip
 
@@ -23,8 +25,10 @@ async def root(request: Request):
 
 
 @app.post("/files/")
-def create_file(request: Request, file: bytes = File(...)):
-    print("cats")
+async def create_file(request: Request, file: bytes = File(...)):
+    supported_battlescribe_version = check_battlescribe_version(roster=file)
+    if not supported_battlescribe_version:
+        return BATTLESCRIBE_VERSION_ERROR
     data = get_parser_type_and_parse(roster=file)
     parsed_roster = data.get("roster")
     template = data.get("template")
