@@ -1,4 +1,4 @@
-name: Deploy
+name: deploy
 on:
   push:
     tags:
@@ -11,7 +11,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: stvnksslr/dataslateg
+          name: stvnksslr/dataslate
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           snapshot: true
