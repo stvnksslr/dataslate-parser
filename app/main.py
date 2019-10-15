@@ -3,9 +3,8 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from app.utils.test_utils import (
-    get_parser_type_and_parse,
-)
+from app.utils.test_utils import get_parser_type_and_parse
+from app.utils.zip_utils import unzip
 
 app = FastAPI(
     title="Dataslate",
@@ -24,7 +23,8 @@ async def root(request: Request):
 
 
 @app.post("/files/")
-async def create_file(request: Request, file: bytes = File(...)):
+def create_file(request: Request, file: bytes = File(...)):
+    print("cats")
     data = get_parser_type_and_parse(roster=file)
     parsed_roster = data.get("roster")
     template = data.get("template")
