@@ -81,9 +81,17 @@
                 </div>
             </div>
         {% endif %}
-
     </div>
-
 {% endfor %}
+
+{% if False %}
+<style>
+    @media print {
+        .faUnitCard {
+            page-break-after: always;
+        }
+    }
+    {% endif %}
+</style>
 </body>
 </html>

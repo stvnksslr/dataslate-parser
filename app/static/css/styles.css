@@ -319,7 +319,7 @@ body {
 }
 
 @media print {
-    .faUnitCard {
-        page-break-after: always;
+    div {
+        page-break-inside: avoid;
     }
 }
