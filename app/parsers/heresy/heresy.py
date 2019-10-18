@@ -48,7 +48,6 @@ def create_parsed_unit(unit):
         wargear=unit.get("wargear"),
         abilities=unit.get("rules"),
         movement=HeresyUnit.get_movement(unit.get("unit type")),
-        cost=None,
         armor_facing=ArmorFacing(
             front=unit.get("front"),
             side=unit.get("side"),

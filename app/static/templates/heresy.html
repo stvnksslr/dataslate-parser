@@ -18,6 +18,7 @@
                 <div class="faStatHeader" data-stat="strength">S</div>
                 <div class="faStatHeader" data-stat="toughness">T</div>
                 <div class="faStatHeader" data-stat="wounds">W</div>
+                <div class="faStatHeader" data-stat="initiative">I</div>
                 <div class="faStatHeader" data-stat="attacks">A</div>
                 <div class="faStatHeader" data-stat="leadership">Ld</div>
                 <div class="faStatHeader" data-stat="save">Sv</div>
@@ -26,8 +27,6 @@
                 <div class="faStatHeader" data-stat="Side">Side</div>
                 <div class="faStatHeader" data-stat="Rear">Rear</div>
                 <div class="faStatHeader" data-stat="Type">Type</div>
-
-
             </div>
             {% for model in unit.list_of_units %}
                 <div class="clearfix faStatsBody">
@@ -37,6 +36,7 @@
                     <div class="faStatBody" data-stat="strength">{{ model.strength }}</div>
                     <div class="faStatBody" data-stat="toughness">{{ model.toughness }}</div>
                     <div class="faStatBody" data-stat="wounds">{{ model.wounds }}</div>
+                    <div class="faStatBody" data-stat="initiative">{{ model.initiative }}</div>
                     <div class="faStatBody" data-stat="attacks">{{ model.attacks }}</div>
                     <div class="faStatBody" data-stat="leadership">{{ model.leadership }}</div>
                     <div class="faStatBody" data-stat="save">{{ model.save }}</div>
