@@ -7,7 +7,13 @@ from app.models.unit_group import UnitGroup
 
 def parse_units(contents):
     soup = BeautifulSoup(contents, features="lxml")
-    rule_whitelist = ["Rite of War", "Legion and Allegiance", "Use Playtest Rules"]
+    rule_whitelist = [
+        "Rite of War",
+        "Legion and Allegiance",
+        "Use Playtest Rules",
+        "Allegiance",
+        "Legio",
+    ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list
 

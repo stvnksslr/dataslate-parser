@@ -13,7 +13,7 @@ TOUGHNESS = {
         "skimmer,fast",
         "artillery (immobile)",
         "monstrous creature",
-        "jump pack monstrous creature"
+        "jump pack monstrous creature",
     ],
 }
 ARMORED = {
