@@ -1,8 +1,4 @@
-from app.utils.gametype import (
-    detect_gametype,
-    find_gametype_parser,
-    find_template,
-)
+from app.utils.gametype import detect_gametype, find_gametype_parser, find_template
 
 
 def fetch_and_parse_roster(roster_file):

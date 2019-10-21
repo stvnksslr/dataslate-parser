@@ -3,6 +3,8 @@ from os.path import isfile, join
 from pathlib import Path
 from unittest import TestCase
 
+from app.models.heresy_unit import HeresyUnit
+from app.parsers.heresy.heresy_constants import TOUGHNESS
 from app.utils.test_utils import fetch_and_parse_roster
 
 
@@ -91,10 +93,14 @@ class HeresyTest(TestCase):
         self.assertEqual(tactical_squad[0].ballistic_skill, "4")
         self.assertEqual(tactical_squad[0].initiative, "4")
         self.assertEqual(tactical_squad[0].leadership, "8")
-        self.assertEqual(tactical_squad[0].movement, 6)
         self.assertEqual(tactical_squad[0].save, "3+")
         self.assertEqual(tactical_squad[0].strength, "4")
         self.assertEqual(tactical_squad[0].toughness, "4")
         self.assertEqual(tactical_squad[0].unit_type, "infantry")
         self.assertEqual(tactical_squad[0].weapon_skill, "4")
         self.assertEqual(tactical_squad[0].wounds, "1")
+
+    def test__stat_type_finder(self):
+        test_unit_type = "infantry"
+        stat_type = HeresyUnit.get_stat_type(test_unit_type)
+        self.assertEqual(stat_type, TOUGHNESS.get("name"))

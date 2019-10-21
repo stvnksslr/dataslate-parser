@@ -6,7 +6,6 @@ class Unit:
     name: str
     wargear: dict
     abilities: dict
-    movement: str
     weapon_skill: str
     ballistic_skill: str
     strength: str

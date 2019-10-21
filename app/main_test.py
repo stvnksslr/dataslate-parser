@@ -11,8 +11,12 @@ client = TestClient(app)
 class RenderingTests(TestCase):
     def setUp(self):
         self.base_path = Path.cwd() / "test_rosters"
-        self.zipped_roster = str(self.base_path / "zipped_rosters" / "elite_roster.rosz")
-        self.test_roster = str(self.base_path / "horus_heresy" / "legion_astartes_roster_new.ros")
+        self.zipped_roster = str(
+            self.base_path / "zipped_rosters" / "elite_roster.rosz"
+        )
+        self.test_roster = str(
+            self.base_path / "horus_heresy" / "legion_astartes_roster_new.ros"
+        )
 
     def test_read_main(self):
         response = client.get("/")

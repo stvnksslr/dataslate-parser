@@ -23,11 +23,29 @@ def data_cleanse(rule_whitelist, soup):
 def create_parsed_list(list_of_squads):
     parsed_list = []
     for squads in list_of_squads:
+        toughness = []
+        armored = []
+        hybrid = []
         parsed_squads = []
         for unit in squads:
             parsed_squads.append(create_parsed_unit(unit))
+
+        for parsed_unit in parsed_squads:
+            if parsed_unit.stat_type == "toughness":
+                toughness.append(parsed_unit)
+            elif parsed_unit.stat_type == "armored":
+                armored.append(parsed_unit)
+            elif parsed_unit.stat_type == "hybrid":
+                hybrid.append(parsed_unit)
+
         parsed_list.append(
-            UnitGroup(name=squads[0].get("unit_name"), list_of_units=parsed_squads)
+            UnitGroup(
+                name=squads[0].get("unit_name"),
+                list_of_units=parsed_squads,
+                toughness=toughness,
+                armored=armored,
+                hybrid=hybrid,
+            )
         )
     return parsed_list
 
@@ -35,7 +53,7 @@ def create_parsed_list(list_of_squads):
 def create_parsed_unit(unit):
     parsed_model = HeresyUnit(
         name=unit.get("name"),
-        unit_type=unit.get("unit type"),
+        unit_type=unit.get("unit type") or unit.get("type"),
         weapon_skill=unit.get("ws"),
         ballistic_skill=unit.get("bs"),
         strength=unit.get("s"),
@@ -46,9 +64,10 @@ def create_parsed_unit(unit):
         leadership=unit.get("ld"),
         save=unit.get("save"),
         wargear=unit.get("wargear"),
+        stat_type=HeresyUnit.get_stat_type(
+            unit_type=unit.get("unit type") or unit.get("type")
+        ),
         abilities=unit.get("rules"),
-        movement=HeresyUnit.get_movement(unit.get("unit type")),
-        cost=None,
         armor_facing=ArmorFacing(
             front=unit.get("front"),
             side=unit.get("side"),

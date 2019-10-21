@@ -6,7 +6,7 @@ from starlette.templating import Jinja2Templates
 from app.utils.battlescribe_meta import check_battlescribe_version
 from app.utils.constants import BATTLESCRIBE_VERSION_ERROR
 from app.utils.test_utils import get_parser_type_and_parse
-from app.utils.zip_utils import unzip
+import uvicorn
 
 app = FastAPI(
     title="Dataslate",
@@ -36,3 +36,7 @@ async def create_file(request: Request, file: bytes = File(...)):
     return templates.TemplateResponse(
         template, {"request": request, "roster": parsed_roster}
     )
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)

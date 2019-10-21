@@ -2,18 +2,19 @@ from dataclasses import dataclass
 
 from app.models.armor_facing import ArmorFacing
 from app.models.unit import Unit
+from app.parsers.heresy.heresy_constants import STAT_BLOCK_TYPES
 
 
 @dataclass
 class HeresyUnit(Unit):
-    cost: str
     initiative: str
     unit_type: str
     armor_facing: ArmorFacing
+    stat_type: str
 
     @staticmethod
-    def get_movement(unit_type):
-        movement = None
-        if unit_type == "infantry":
-            movement = 6
-        return movement
+    def get_stat_type(unit_type):
+        for category in STAT_BLOCK_TYPES:
+            for stat_type in category.get("categories"):
+                if unit_type == stat_type:
+                    return category.get("name")
