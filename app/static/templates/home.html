@@ -60,7 +60,11 @@
                     <li> Warhammer 40k</li>
                     <li> Age of Sigmar</li>
                 </ul>
+
                 <form enctype="multipart/form-data" method="post" name="file" action="files/">
+                    <label>
+                        <input type="checkbox" name="roster_options" value="True">
+                    </label> Individual Pages<br>
                     <label>Upload roster: </label>
                     <input type="file" name="file" accept=".ros" required/>
                     <input type="submit" value="upload the roster"/>
