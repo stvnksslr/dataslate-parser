@@ -83,6 +83,21 @@
                     <div class="faStatHeader" data-stat="hp">Hp</div>
                     <div class="faStatHeader" data-stat="Type">Type</div>
                 </div>
+                {% for model in unit.armored %}
+                    <div class="clearfix faStatsBody">
+                        <div class="faStatBody" data-stat="name">{{ model.name }}</div>
+                        <div class="faStatBody" data-stat="weaponSkill">{{ model.weapon_skill }}</div>
+                        <div class="faStatBody" data-stat="ballisticSkill">{{ model.ballistic_skill }}</div>
+                        <div class="faStatBody" data-stat="strength">{{ model.strength }}</div>
+                        <div class="faStatBody" data-stat="Front">{{ model.armor_facing.front }}</div>
+                        <div class="faStatBody" data-stat="Side">{{ model.armor_facing.side }}</div>
+                        <div class="faStatBody" data-stat="Rear">{{ model.armor_facing.rear }}</div>
+                        <div class="faStatBody" data-stat="initiative">{{ model.initiative }}</div>
+                        <div class="faStatBody" data-stat="attacks">{{ model.attacks }}</div>
+                        <div class="faStatBody" data-stat="Hp">{{ model.armor_facing.hp }}</div>
+                        <div class="faStatBody" data-stat="Type">{{ model.unit_type }}</div>
+                    </div>
+                {% endfor %}
             {% endif %}
 
         </div>
