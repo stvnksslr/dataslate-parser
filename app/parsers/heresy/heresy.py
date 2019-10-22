@@ -29,20 +29,7 @@ def data_cleanse(rule_whitelist, soup):
 def create_parsed_list(list_of_squads):
     parsed_list = []
     for squads in list_of_squads:
-        toughness = []
-        armored = []
-        hybrid = []
-        parsed_squads = []
-        for unit in squads:
-            parsed_squads.append(create_parsed_unit(unit))
-
-        for parsed_unit in parsed_squads:
-            if parsed_unit.stat_type == "toughness":
-                toughness.append(parsed_unit)
-            elif parsed_unit.stat_type == "armored":
-                armored.append(parsed_unit)
-            elif parsed_unit.stat_type == "hybrid":
-                hybrid.append(parsed_unit)
+        armored, hybrid, parsed_squads, toughness = sort_units_by_statline(squads)
 
         parsed_list.append(
             UnitGroup(
@@ -54,6 +41,23 @@ def create_parsed_list(list_of_squads):
             )
         )
     return parsed_list
+
+
+def sort_units_by_statline(squads):
+    toughness = []
+    armored = []
+    hybrid = []
+    parsed_squads = []
+    for unit in squads:
+        parsed_squads.append(create_parsed_unit(unit))
+    for parsed_unit in parsed_squads:
+        if parsed_unit.stat_type == "toughness":
+            toughness.append(parsed_unit)
+        elif parsed_unit.stat_type == "armored":
+            armored.append(parsed_unit)
+        elif parsed_unit.stat_type == "hybrid":
+            hybrid.append(parsed_unit)
+    return armored, hybrid, parsed_squads, toughness
 
 
 def create_parsed_unit(unit):
@@ -70,6 +74,7 @@ def create_parsed_unit(unit):
         leadership=unit.get("ld"),
         save=unit.get("save"),
         wargear=unit.get("wargear"),
+        weapon=unit.get("weapon"),
         stat_type=HeresyUnit.get_stat_type(
             unit_type=unit.get("unit type") or unit.get("type")
         ),
@@ -91,9 +96,21 @@ def get_squads(squads):
     return list_of_squads
 
 
+def get_weapons(unit):
+    dict_of_weapons = {}
+    weapons = unit.find_all(typename="Weapon")
+
+    for item in weapons:
+        gear = get_characteristics(item, unit_name=None)
+        name = gear.get("name")
+        dict_of_weapons.update({name: gear})
+    return dict_of_weapons
+
+
 def get_wargear(unit):
     dict_of_wargear = {}
-    wargear = unit.find_all(typename="Weapon")
+    wargear = unit.find_all(typename="Wargear Item")
+
     for item in wargear:
         gear = get_characteristics(item, unit_name=None)
         name = gear.get("name")
@@ -110,6 +127,7 @@ def parse_squad_characteristics(unit):
     list_of_profiles_in_squad = list_of_units + list_of_walkers + list_of_vehicles
     for profile in list_of_profiles_in_squad:
         parsed_unit = get_characteristics(profile, unit_name)
+        parsed_unit.update({"weapon": get_weapons(unit)})
         parsed_unit.update({"wargear": get_wargear(unit)})
         parsed_unit.update({"rules": get_rules(unit)})
         parsed_profiles.append(parsed_unit)

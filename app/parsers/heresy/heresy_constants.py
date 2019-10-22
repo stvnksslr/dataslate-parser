@@ -3,6 +3,9 @@ TOUGHNESS = {
     "categories": [
         "infantry",
         "infanty (character)",
+        "infanty (character",
+        "infanty(character",
+        'infantry (character',
         "jump infantry (character)",
         "jump infantry",
         "jet pack infantry",

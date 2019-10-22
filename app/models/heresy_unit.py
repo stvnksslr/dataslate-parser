@@ -11,6 +11,7 @@ class HeresyUnit(Unit):
     unit_type: str
     armor_facing: ArmorFacing
     stat_type: str
+    weapon: list
 
     @staticmethod
     def get_stat_type(unit_type):

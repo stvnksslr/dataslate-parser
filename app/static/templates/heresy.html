@@ -99,10 +99,9 @@
                     </div>
                 {% endfor %}
             {% endif %}
-
         </div>
 
-        {% if unit.list_of_units[0].wargear %}
+        {% if unit.list_of_units[0].weapon %}
             <div class="clearfix faWeaponStats">
                 <div class="clearfix faWpnsHeader">
                     <div class="faWpnHeader" data-stat="weapon">WEAPON</div>
@@ -111,7 +110,7 @@
                     <div class="faWpnHeader" data-stat="strength">S</div>
                     <div class="faWpnHeader" data-stat="armorPiercing">AP</div>
                 </div>
-                {% for name,weapon in unit.list_of_units[0].wargear.items() %}
+                {% for name,weapon in unit.list_of_units[0].weapon.items() %}
                     <div class="clearfix faWpnsBody">
                         <div class="faWpnBody" data-stat="weapon">{{ weapon.name }}</div>
                         <div class="faWpnBody" data-stat="range">{{ weapon.range }}</div>
@@ -123,16 +122,25 @@
             </div>
         {% endif %}
 
-        {% if unit.list_of_units[0].abilities %}
+        {% if unit.list_of_units[0].wargear %}
             <div class="clearfix faAbilities">
-                <div class="faSectionTitle">ABILITIES:</div>
-                <div class="clearfix faSectionBody">
-                    {% for name,ability in unit.list_of_units[0].abilities.items() %}
-                        <span class="faAbilityName">{{ name }}</span>.
-                    {% endfor %}
-                </div>
+                <div class="faSectionTitle">WARGEAR:</div>
+                {% for name,gear in unit.list_of_units[0].wargear.items() %}
+                    <div class="clearfix faSectionBody">
+                        <span class="faAbilityName">{{ name }}:</span> {{ gear.description }}.
+                    </div>
+                {% endfor %}
             </div>
         {% endif %}
+
+        <div class="clearfix faFactKeyWords">
+            <div class="faSectionTitle">ABILITIES:</div>
+            <div class="faSectionBody">
+                {% for name,ability in unit.list_of_units[0].abilities.items() %}
+                    {{ name }},
+                {% endfor %}
+            </div>
+        </div>
 
     </div>
 
