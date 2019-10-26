@@ -23,7 +23,7 @@ jobs:
           python -m poetry install
       - name: Linting
         run: |
-          poetry run flake8 . --count --show-source --statistics
+          poetry run flake8 .
       - name: Tests
         run: poetry run pytest
         env:
