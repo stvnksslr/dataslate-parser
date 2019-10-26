@@ -23,6 +23,7 @@ ARMORED = {
     "name": "armored",
     "categories": [
         "flyer",
+        "tank",
         "tank, transport",
         "open-topped , transport (special)",
         "vehicle (flyer, hover)",
