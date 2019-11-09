@@ -8,7 +8,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.7]
+        python-version: [3.8]
     steps:
       - uses: actions/checkout@v1
       - name: Set up Python ${{ matrix.python-version }}
@@ -23,7 +23,7 @@ jobs:
           python -m poetry install
       - name: Linting
         run: |
-          poetry run flake8 .
+          poetry run flake8
       - name: Tests
         run: poetry run pytest
         env:

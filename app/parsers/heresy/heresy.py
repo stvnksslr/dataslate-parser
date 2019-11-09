@@ -96,26 +96,15 @@ def get_squads(squads):
     return list_of_squads
 
 
-def get_weapons(unit):
-    dict_of_weapons = {}
-    weapons = unit.find_all(typename="Weapon")
+def find_unit_attachments(unit, search_term):
+    dict_of_attachments = {}
+    weapons = unit.find_all(typename=search_term)
 
     for item in weapons:
         gear = get_characteristics(item, unit_name=None)
         name = gear.get("name")
-        dict_of_weapons.update({name: gear})
-    return dict_of_weapons
-
-
-def get_wargear(unit):
-    dict_of_wargear = {}
-    wargear = unit.find_all(typename="Wargear Item")
-
-    for item in wargear:
-        gear = get_characteristics(item, unit_name=None)
-        name = gear.get("name")
-        dict_of_wargear.update({name: gear})
-    return dict_of_wargear
+        dict_of_attachments.update({name: gear})
+    return dict_of_attachments
 
 
 def parse_squad_characteristics(unit):
@@ -127,8 +116,8 @@ def parse_squad_characteristics(unit):
     list_of_profiles_in_squad = list_of_units + list_of_walkers + list_of_vehicles
     for profile in list_of_profiles_in_squad:
         parsed_unit = get_characteristics(profile, unit_name)
-        parsed_unit.update({"weapon": get_weapons(unit)})
-        parsed_unit.update({"wargear": get_wargear(unit)})
+        parsed_unit.update({"weapon": find_unit_attachments(unit, "Weapon")})
+        parsed_unit.update({"wargear": find_unit_attachments(unit, "Wargear Item")})
         parsed_unit.update({"rules": get_rules(unit)})
         parsed_profiles.append(parsed_unit)
     return parsed_profiles

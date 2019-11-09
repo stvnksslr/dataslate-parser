@@ -16,7 +16,7 @@ class HeresyTest(TestCase):
         self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
         self.list_with_wargear = str(self.base_path / "wargear_fix.ros")
 
-    def test__loop_through_test_folder_and_parse(self):
+    def test__heresy_loop_through_test_folder_and_parse(self):
         """
         method: fetch_and_parse_roster(horus heresy)
         prerequisite: given a unzipped roster file it will parse without errors
@@ -102,12 +102,33 @@ class HeresyTest(TestCase):
         self.assertEqual(tactical_squad[0].wounds, "1")
 
     def test__stat_type_finder(self):
+        """
+        method: get_stat_type
+        pre-req: should find the correct stat line for a unit
+        expected: should return the toughness stat line
+        """
         test_unit_type = "infantry"
         stat_type = HeresyUnit.get_stat_type(test_unit_type)
         self.assertEqual(stat_type, TOUGHNESS.get("name"))
 
     def test_wargear_additions(self):
+        """
+        method: fetch_and_parse_roster
+        pre-req: should take in an input and find the correct wargear for this specific unit
+        expected: should return 2 pieces of wargear
+        """
         parsed_roster = fetch_and_parse_roster(roster_file=self.list_with_wargear)
         unit_with_wargear = parsed_roster[0].list_of_units[0]
         self.assertTrue(parsed_roster)
         self.assertEqual(len(unit_with_wargear.wargear), 2)
+
+    def test_weapon_additions(self):
+        """
+        method: fetch_and_parse_roster
+        pre-req: should take in an input and find the correct weapons for this specific unit
+        expected: should return two weapons
+        """
+        parsed_roster = fetch_and_parse_roster(roster_file=self.list_with_wargear)
+        unit_with_weapon = parsed_roster[0].list_of_units[0]
+        self.assertTrue(parsed_roster)
+        self.assertEqual(len(unit_with_weapon.weapon), 2)

@@ -17,7 +17,7 @@ class KillteamTest(TestCase):
         self.new_bs_format = str(self.base_path / "test_roster_chaos_new.ros")
         self.commander_roster = str(self.base_path / "test_roster_commander.ros")
 
-    def test__loop_through_test_folder_and_parse(self):
+    def test__killteam_loop_through_test_folder_and_parse(self):
         """
         method: fetch_and_parse_roster(killteam)
         prerequisite: given a unzipped roster file it will parse without errors

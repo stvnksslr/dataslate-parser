@@ -29,11 +29,3 @@ class RenderingTests(TestCase):
         response = client.post("/files/", files=dict(file=contents))
 
         self.assertEqual(response.status_code, 200)
-
-    # def test_uploader_zipped_roster(self):
-    #     with open(self.zipped_roster, "r", encoding='utf-8',
-    #               errors='ignore') as roster_file:
-    #         contents = roster_file.read()
-    #
-    #     response = client.post("/files/", files=dict(file=contents))
-    #     self.assertEqual(response.status_code, 200)
