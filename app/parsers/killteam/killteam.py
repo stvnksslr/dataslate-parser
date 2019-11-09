@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 from app.models.killteam_unit import KillteamUnit
 
 
-def parse_units(contents):
-    soup = BeautifulSoup(contents, features="lxml")
+def parse_units(roster_file):
+    soup = BeautifulSoup(roster_file, features="lxml")
     model_list = soup.findAll("selection", {"type": "model"})
     parsed_models = []
     parsed_unit_list = create_list_of_units(model_list, parsed_models) or None
@@ -30,7 +30,7 @@ def create_list_of_units(model_list, parsed_models):
             attacks=characteristics.get("A"),
             leadership=characteristics.get("Ld"),
             save=characteristics.get("Sv"),
-            max=characteristics.get("Max"),
+            max_allowed=characteristics.get("Max"),
             keywords=keywords,
             wargear=wargear,
             abilities=abilities,

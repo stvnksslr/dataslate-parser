@@ -5,8 +5,8 @@ from app.models.heresy_unit import HeresyUnit
 from app.models.unit_group import UnitGroup
 
 
-def parse_units(contents):
-    soup = BeautifulSoup(contents, features="lxml")
+def parse_units(roster_file):
+    soup = BeautifulSoup(roster_file, features="lxml")
     rule_whitelist = [
         "Rite of War",
         "Legion and Allegiance",

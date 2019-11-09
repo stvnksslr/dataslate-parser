@@ -68,7 +68,7 @@ class KillteamTest(TestCase):
         self.assertEqual(aspiring_champion.attacks, "2")
         self.assertEqual(aspiring_champion.ballistic_skill, "3+")
         self.assertEqual(aspiring_champion.leadership, "8")
-        self.assertEqual(aspiring_champion.max, "1")
+        self.assertEqual(aspiring_champion.max_allowed, "1")
         self.assertEqual(aspiring_champion.movement, '6"')
         self.assertEqual(aspiring_champion.name, "Aspiring Champion")
         self.assertEqual(aspiring_champion.point_cost, 18.0)

@@ -24,8 +24,8 @@ class RenderingTests(TestCase):
 
     def test_upload_roster(self):
         with open(self.test_roster, "r") as roster_file:
-            contents = roster_file.read()
+            roster_file = roster_file.read()
 
-        response = client.post("/files/", files=dict(file=contents))
+        response = client.post("/files/", files=dict(file=roster_file))
 
         self.assertEqual(response.status_code, 200)

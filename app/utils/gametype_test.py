@@ -16,17 +16,17 @@ class GametypeTest(TestCase):
 
     def test__detect_gametype(self):
         with open(self.heresy_roster, "r") as roster_file:
-            contents = roster_file.read()
+            roster_file = roster_file.read()
 
-        gametype = detect_gametype(roster=contents)
+        gametype = detect_gametype(roster=roster_file)
 
         self.assertEqual(gametype, HORUS_HERESY_ID)
 
     def test__return_parser(self):
         with open(self.heresy_roster, "r") as roster_file:
-            contents = roster_file.read()
+            roster_file = roster_file.read()
 
-        gametype = detect_gametype(roster=contents)
+        gametype = detect_gametype(roster=roster_file)
 
         parser = find_gametype_parser(gametype)
 
@@ -34,7 +34,7 @@ class GametypeTest(TestCase):
 
     def test__check_battlescribe_version(self):
         with open(self.heresy_roster, "r") as roster_file:
-            contents = roster_file.read()
+            roster_file = roster_file.read()
 
-        supported_version = check_battlescribe_version(roster=contents)
+        supported_version = check_battlescribe_version(roster=roster_file)
         self.assertTrue(supported_version)
