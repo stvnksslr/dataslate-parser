@@ -1,12 +1,17 @@
 name: build
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - "*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
+      max-parallel: 2
       matrix:
         python-version: [3.7]
     steps:
