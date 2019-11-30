@@ -7,8 +7,6 @@ from app.utils.battlescribe_meta import check_battlescribe_version
 from app.utils.constants import BATTLESCRIBE_VERSION_ERROR
 from app.utils.test_utils import get_parser_type_and_parse
 import uvicorn
-import zipfile
-from io import StringIO
 
 app = FastAPI(
     title="Dataslate",
@@ -28,14 +26,14 @@ async def root(request: Request):
 
 @app.post("/files/")
 async def create_file(request: Request, file: UploadFile = File(...)):
-    contents = await file.read()
+    upload_contents = await file.read()
 
-    supported_battlescribe_version = check_battlescribe_version(roster=contents)
+    supported_battlescribe_version = check_battlescribe_version(roster=upload_contents)
 
     if not supported_battlescribe_version:
         return BATTLESCRIBE_VERSION_ERROR
 
-    data = get_parser_type_and_parse(roster=contents)
+    data = get_parser_type_and_parse(roster=upload_contents)
 
     parsed_roster = data.get("roster")
     template = data.get("template")
