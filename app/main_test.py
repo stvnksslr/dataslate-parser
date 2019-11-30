@@ -18,11 +18,11 @@ class RenderingTests(TestCase):
             self.base_path / "horus_heresy" / "legion_astartes_roster_new.ros"
         )
 
-    def test_read_main(self):
+    def test__read_main(self):
         response = client.get("/")
         self.assertEqual(response.status_code, 200)
 
-    def test_upload_roster(self):
+    def test__upload_roster(self):
         with open(self.test_roster, "r") as roster_file:
             roster_file = roster_file.read()
 
