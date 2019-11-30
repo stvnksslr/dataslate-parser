@@ -23,7 +23,7 @@
 <header class="bg-primary text-white">
     <div class="container text-center">
         <h1>Dataslate</h1>
-        <p class="lead">Currently supported battlescribe version 2.03 </p>
+        <p class="lead">Currently supported battlescribe version 2.03+ </p>
     </div>
 </header>
 
@@ -36,13 +36,6 @@
                 <p>
                     The one stop shop for creating printer friendly outputs for battlescribe lists
                 </p>
-                <p>
-                    Right now the app only supports ros files so either save as this format or unzip your .rosz roster
-                    file
-                    before
-                    uploading
-                </p>
-
                 <p>
                     <b> Currently supported game types are: </b>
                 </p>
@@ -66,7 +59,7 @@
                         <input type="checkbox" name="roster_options" value="True">
                     </label> Individual Pages<br>
                     <label>Upload roster: </label>
-                    <input type="file" name="file" accept=".ros" required/>
+                    <input type="file" name="file" accept=".ros, .rosz" required/>
                     <input type="submit" value="upload the roster"/>
                 </form>
             </div>
