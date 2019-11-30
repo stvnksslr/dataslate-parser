@@ -1,8 +1,3 @@
-import gzip
-import io
-import zipfile
-from gettext import find
-
 from fastapi import FastAPI, File, UploadFile
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
@@ -12,6 +7,8 @@ from app.utils.battlescribe_meta import check_battlescribe_version
 from app.utils.constants import BATTLESCRIBE_VERSION_ERROR
 from app.utils.test_utils import get_parser_type_and_parse
 import uvicorn
+
+from app.utils.zip_utils import check_if_zipped
 
 app = FastAPI(
     title="Dataslate",
@@ -31,14 +28,7 @@ async def root(request: Request):
 
 @app.post("/files/")
 async def create_file(request: Request, file: UploadFile = File(...)):
-    if file.filename.endswith("rosz"):
-        file_contents = await file.read()
-        # unzipped_contents = gzip.open(file_contents)
-        unzipped_contents = zipfile.ZipFile(io.BytesIO(file_contents))
-        upload_contents = unzipped_contents.read(unzipped_contents.infolist()[0])
-    else:
-        upload_contents = await file.read()
-
+    upload_contents = await check_if_zipped(file)
     supported_battlescribe_version = check_battlescribe_version(roster=upload_contents)
 
     if not supported_battlescribe_version:
