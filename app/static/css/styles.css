@@ -296,6 +296,11 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
+.faPsykerHeader {
+    background-color: #BBB;
+    -webkit-print-color-adjust: exact;
+}
+
 .faPsyker .faSectionBody {
     margin-left: 15em;
     -webkit-print-color-adjust: exact;

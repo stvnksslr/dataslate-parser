@@ -16,6 +16,7 @@ class KillteamTest(TestCase):
         self.gametype = "killteam"
         self.new_bs_format = str(self.base_path / "test_roster_chaos_new.ros")
         self.commander_roster = str(self.base_path / "test_roster_commander.ros")
+        self.psyker_roster = str(self.base_path / "psychic_roster_kt.ros")
 
     def test__killteam_loop_through_test_folder_and_parse(self):
         """
@@ -95,3 +96,15 @@ class KillteamTest(TestCase):
     def test__commander_roster(self):
         parsed_roster = fetch_and_parse_roster(roster_file=self.commander_roster)
         self.assertTrue(parsed_roster)
+
+    def test__psyker_roster(self):
+        """
+        method: fetch_and_parse_roster(killteam)
+        prerequisite: given a unzipped roster file it will parse psyker powers without errors
+        expected: parsed an exalted sorcerer correctly with 3 powers
+        """
+        parsed_roster = fetch_and_parse_roster(roster_file=self.psyker_roster)
+        exalted_sorcerer = parsed_roster[0]
+        expected_powers = 3
+        self.assertTrue(parsed_roster)
+        self.assertEqual(len(exalted_sorcerer.psyker_powers), expected_powers)
