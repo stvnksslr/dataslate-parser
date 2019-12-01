@@ -317,9 +317,3 @@ body {
     font-size: small;
     -webkit-print-color-adjust: exact;
 }
-
-@media print {
-    div {
-        page-break-inside: avoid;
-    }
-}

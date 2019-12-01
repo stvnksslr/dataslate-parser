@@ -56,8 +56,9 @@
 
                 <form enctype="multipart/form-data" method="post" name="file" action="files/">
                     <label>
-                        <input type="checkbox" name="roster_options" value="True">
-                    </label> Individual Pages<br>
+                        <input type="hidden" name="multiple_pages" value="False" />
+                        <input type="checkbox" name="multiple_pages" value="True">
+                    </label> Separate page per entry<br>
                     <label>Upload roster: </label>
                     <input type="file" name="file" accept=".ros, .rosz" required/>
                     <input type="submit" value="upload the roster"/>

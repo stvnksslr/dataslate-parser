@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Form
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
@@ -13,7 +13,7 @@ from app.utils.zip_utils import check_if_zipped
 app = FastAPI(
     title="Dataslate",
     description="Parsing tool to make more clean and easily printable outputs for battlescribe",
-    version="1.0.0",
+    version="1.1.10",
     redoc_url=None,
 )
 
@@ -27,7 +27,9 @@ async def root(request: Request):
 
 
 @app.post("/files/")
-async def create_file(request: Request, file: UploadFile = File(...)):
+async def upload_roster(
+    request: Request, multiple_pages: bool = Form(...), file: UploadFile = File(...)
+):
     upload_contents = await check_if_zipped(file)
     supported_battlescribe_version = check_battlescribe_version(roster=upload_contents)
 
@@ -40,7 +42,8 @@ async def create_file(request: Request, file: UploadFile = File(...)):
     template = data.get("template")
 
     return templates.TemplateResponse(
-        template, {"request": request, "roster": parsed_roster}
+        template,
+        {"request": request, "multiple_pages": multiple_pages, "roster": parsed_roster},
     )
 
 

@@ -14,8 +14,8 @@ class ZipUtilsTest(TestCase):
             self.base_path / "kill_team" / "elite_roster.ros"
         )
 
-    def test__zipped_roster(self):
-        roster_file = check_if_zipped(self.zipped_kill_team_roster)
+    async def test__zipped_roster(self):
+        roster_file = await check_if_zipped(self.zipped_kill_team_roster)
         self.assertTrue(roster_file)
 
     async def test__unzipped_roster_is_formatted_correctly(self):
