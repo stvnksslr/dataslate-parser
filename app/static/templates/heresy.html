@@ -31,6 +31,7 @@
                     <div class="faStatHeader" data-stat="attacks">A</div>
                     <div class="faStatHeader" data-stat="leadership">Ld</div>
                     <div class="faStatHeader" data-stat="save">Sv</div>
+                    <div class="faStatHeader" data-stat="Type">Type</div>
                 </div>
 
                 {% for model in unit.toughness %}
@@ -45,6 +46,7 @@
                         <div class="faStatBody" data-stat="attacks">{{ model.attacks }}</div>
                         <div class="faStatBody" data-stat="leadership">{{ model.leadership }}</div>
                         <div class="faStatBody" data-stat="save">{{ model.save }}</div>
+                        <div class="faStatBody" data-stat="Type">{{ model.unit_type }}</div>
                     </div>
                 {% endfor %}
 
