@@ -28,7 +28,9 @@ class RenderingTests(TestCase):
             roster_file = roster_file.read()
 
         response = client.post(
-            "/files/", files=dict(file=roster_file, multiple_pages=multiple_pages)
+            "/files/",
+            files=dict(file=roster_file),
+            data=dict(multiple_pages=multiple_pages),
         )
 
         self.assertEqual(response.status_code, 200)
