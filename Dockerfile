@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ./app /app/app
 COPY pyproject.toml poetry.lock /app/
 
-RUN pip install --no-cache-dir --pre poetry
+RUN pip install --no-cache-dir poetry
 RUN poetry export -f requirements.txt > requirements.txt
 RUN pip install -r requirements.txt
 
