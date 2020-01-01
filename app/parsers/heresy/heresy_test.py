@@ -5,6 +5,7 @@ from unittest import TestCase
 
 from app.models.heresy_unit import HeresyUnit
 from app.parsers.heresy.heresy_constants import TOUGHNESS
+from app.parsers.heresy.rules_summary import get_rules_summary
 from app.utils.test_utils import fetch_and_parse_roster
 
 
@@ -132,3 +133,13 @@ class HeresyTest(TestCase):
         unit_with_weapon = parsed_roster[0].list_of_units[0]
         self.assertTrue(parsed_roster)
         self.assertEqual(len(unit_with_weapon.weapon), 2)
+
+    def test_rules_summary(self):
+        """
+        method: get_rules_summary()
+        pre-req: take a parsed list and create a dict of rules no duplicates
+        expected: should return all the rules from the input list
+        """
+        parsed_roster = fetch_and_parse_roster(roster_file=self.list_with_wargear)
+        rules_summary = get_rules_summary(parsed_roster)
+        self.assertEqual(len(rules_summary), 16)

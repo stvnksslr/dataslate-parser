@@ -153,5 +153,19 @@
 
     </div>
 {% endfor %}
+
+{% if rules_summary %}
+    <div class="clearfix faUnitCard">
+        <div class="clearfix faUnitHeader">
+            <div class="faRoleIcon"></div>
+            <div class="faUnitName">Rules Summary</div>
+        </div>
+        {% for rule in rules_summary.items() %}
+            <div>
+                <div class="faAbilityName">{{ rule[0] }}:</div> {{ rule[1] }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
 </body>
 </html>
