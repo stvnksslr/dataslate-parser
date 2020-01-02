@@ -157,15 +157,18 @@
 {% if rules_summary %}
     <div class="clearfix faUnitCard">
         <div class="clearfix faUnitHeader">
-            <div class="faRoleIcon"></div>
             <div class="faUnitName">Rules Summary</div>
         </div>
+        <br>
         {% for rule in rules_summary.items() %}
             <div>
-                <div class="faAbilityName">{{ rule[0] }}:</div> {{ rule[1] }}
+                <div class="faAbilityName ">{{ rule[0] }}: </div>
+                <div class="clearfix faFactKeyWords"> {{ rule[1] }} </div>
             </div>
+            <br>
         {% endfor %}
     </div>
 {% endif %}
+
 </body>
 </html>

@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fc61199-660c-499b-afbf-72a2f488177c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/stvnksslr.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/stepwise" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/parsers/heresy/rules_summary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataslate-parser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parsers/heresy/heresy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parsers/heresy/heresy_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/static/templates/heresy.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/templates/heresy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,6 +201,7 @@
       <workItem from="1577678075840" duration="5751000" />
       <workItem from="1577738333822" duration="7135000" />
       <workItem from="1577831843232" duration="5792000" />
+      <workItem from="1577954167692" duration="4000" />
     </task>
     <servers />
   </component>
