@@ -35,4 +35,4 @@ jobs:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: pytest --cov=myproj tests/
+          coverageCommand: poetry run pytest --cov=app app/
