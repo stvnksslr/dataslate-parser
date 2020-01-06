@@ -30,6 +30,11 @@ jobs:
         run: |
           poetry run flake8
       - name: Tests
-        run: poetry run pytest
+        uses: paambaati/codeclimate-action@v2.3.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: pytest --cov=myproj tests/
         env:
           CI: "true"
+
