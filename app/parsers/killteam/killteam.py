@@ -14,8 +14,8 @@ def create_list_of_units(model_list, parsed_models):
     for model in model_list:
         name = get_model_name(model)
         characteristics = get_characteristics(model)
-        wargear = get_wargear(model)
-        psyker_powers = get_psyker_powers(model)
+        wargear = get_item_details(model, "Weapon")
+        psyker_powers = get_item_details(model, "Psychic Power")
         keywords = get_keywords(model)
         abilities = get_abilities(model)
         cost = get_cost(model)
@@ -70,41 +70,23 @@ def get_keywords(model):
     return categories
 
 
-def get_psyker_powers(model):
-    psyker_powers = model.findAll("profile", {"typename": "Psychic Power"})
-    dict_of_powers = {}
-    for item in psyker_powers:
+def get_item_details(model, search_type):
+    search_filter = model.findAll("profile", {"typename": search_type})
+    formatted_items = {}
+
+    for item in search_filter:
         dict_of_characteristics = {}
-        power_name = item.attrs.get("name")
-        power_stats = item.findAll("characteristic")
+        name = item.attrs.get("name")
+        stats = item.findAll("characteristic")
 
-        for characteristic in power_stats:
-            if characteristic.contents:
-                value = characteristic.contents[0].strip().split()
-                cleaned_value = " ".join(value)
-                dict_of_characteristics.update({power_name: cleaned_value})
-
-        dict_of_powers.update(dict_of_characteristics)
-    return dict_of_powers
-
-
-def get_wargear(model):
-    wargear = model.findAll("profile", {"typename": "Weapon"})
-    dict_of_wargear = {}
-    for item in wargear:
-        dict_of_characteristics = {}
-        wargear_name = item.attrs.get("name")
-        wargear_stats = item.findAll("characteristic")
-
-        for characteristic in wargear_stats:
-            name = characteristic.attrs.get("name")
+        for characteristic in stats:
             if characteristic.contents:
                 value = characteristic.contents[0].strip().split()
                 cleaned_value = " ".join(value)
                 dict_of_characteristics.update({name: cleaned_value})
 
-        dict_of_wargear.update({wargear_name: dict_of_characteristics})
-    return dict_of_wargear
+        formatted_items.update(dict_of_characteristics)
+    return formatted_items
 
 
 def get_model_name(model):
