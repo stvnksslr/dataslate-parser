@@ -30,8 +30,8 @@ class RenderingTests(TestCase):
 
         response = client.post(
             "/files/",
-            files=dict(file=roster_file),
-            data=dict(multiple_pages=multiple_pages, summary_page=summary_page),
+            files={"file": roster_file},
+            data={"multiple_pages": multiple_pages, "summary_page": summary_page},
         )
 
         self.assertEqual(response.status_code, 200)
@@ -44,8 +44,8 @@ class RenderingTests(TestCase):
 
         response = client.post(
             "/files/",
-            files=dict(file=roster_file),
-            data=dict(multiple_pages=multiple_pages, summary_page=summary_page),
+            files={"file": roster_file},
+            data={"multiple_pages": multiple_pages, "summary_page": summary_page},
         )
         multiple_pages_response = "single_page.css" in response.text
 
@@ -61,8 +61,8 @@ class RenderingTests(TestCase):
 
         response = client.post(
             "/files/",
-            files=dict(file=roster_file),
-            data=dict(multiple_pages=multiple_pages, summary_page=summary_page),
+            files={"file": roster_file},
+            data={"multiple_pages": multiple_pages, "summary_page": summary_page},
         )
 
         multiple_pages_response = "multiple_pages.css" in response.text
