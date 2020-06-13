@@ -16,6 +16,7 @@ class HeresyTest(TestCase):
         self.full_list = str(self.base_path / "parser_test_full_list.ros")
         self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
         self.list_with_wargear = str(self.base_path / "wargear_fix.ros")
+        self.porch_slam = str(self.base_path / "porch_slam_saux.ros")
 
     def test__heresy_loop_through_test_folder_and_parse(self):
         """
@@ -143,3 +144,17 @@ class HeresyTest(TestCase):
         parsed_roster = fetch_and_parse_roster(roster_file=self.list_with_wargear)
         rules_summary = get_rules_summary(parsed_roster)
         self.assertEqual(len(rules_summary), 16)
+
+    def test_latest_battlescribe_format(self):
+        """
+        method: fetch_and_parse_roster()
+        pre-req: check that latest battlescribe format works
+        expected: parses a list correctly
+        """
+        parsed_roster = fetch_and_parse_roster(roster_file=self.porch_slam)
+        rules_summary = get_rules_summary(parsed_roster)
+        cats = 'cats'
+
+
+
+

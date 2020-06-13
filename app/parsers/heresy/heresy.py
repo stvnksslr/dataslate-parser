@@ -13,6 +13,8 @@ def parse_units(roster_file):
         "Use Playtest Rules",
         "Allegiance",
         "Legio",
+        "Mournival Rules",
+        "Solar Aux Superheavy"
     ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list

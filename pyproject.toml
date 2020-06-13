@@ -7,16 +7,15 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-requests = "^2.22"
-beautifulsoup4 = "^4.8"
-lxml = "^4.4"
-weasyprint = "^50.0"
-fastapi = "^0.45.0"
-uvicorn = "^0.9.0"
-aiofiles = "^0.4.0"
-jinja2 = "^2.10"
+requests = "2.23.0"
+beautifulsoup4 = "4.9.1"
+lxml = "4.5.1"
+fastapi = "^0.56.1"
+uvicorn = "0.11.5"
+aiofiles = "0.5.0"
+jinja2 = "2.11.2"
 python-multipart = "^0.0.5"
-email-validator = "^1.0"
+email-validator = "1.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -32,7 +31,6 @@ flake8-bugbear = "^19.8.0"
 flake8-eradicate = "^0.2.3"
 pytest-asyncio = "^0.10.0"
 flake8-comprehensions = "^3.1.4"
-black = {version = "^19.10b0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry>=0.12"]
