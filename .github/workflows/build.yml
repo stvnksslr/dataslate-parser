@@ -2,10 +2,8 @@ name: build
 
 on:
   push:
-    branches:
-      - master
     tags-ignore:
-      - "*"
+      - '*.*'
 
 jobs:
   build:
