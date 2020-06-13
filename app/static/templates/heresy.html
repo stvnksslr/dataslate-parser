@@ -1,10 +1,10 @@
 <html lang="html">
 <head>
-    <link href="{{ url_for('static', path='/css/styles.css', _scheme="https") }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet">
     {% if not multiple_pages %}
-        <link href="{{ url_for('static', path='/css/single_page.css', _scheme="https") }}" rel="stylesheet">{% endif %}
+        <link href="{{ url_for('static', path='/css/single_page.css') }}" rel="stylesheet">{% endif %}
     {% if multiple_pages %}
-        <link href="{{ url_for('static', path='/css/multiple_pages.css', _scheme="https") }}" rel="stylesheet">{% endif %}
+        <link href="{{ url_for('static', path='/css/multiple_pages.css') }}" rel="stylesheet">{% endif %}
 
     <title>Roster</title>
 </head>
