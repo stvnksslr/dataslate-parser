@@ -144,17 +144,3 @@ class HeresyTest(TestCase):
         parsed_roster = fetch_and_parse_roster(roster_file=self.list_with_wargear)
         rules_summary = get_rules_summary(parsed_roster)
         self.assertEqual(len(rules_summary), 16)
-
-    def test_latest_battlescribe_format(self):
-        """
-        method: fetch_and_parse_roster()
-        pre-req: check that latest battlescribe format works
-        expected: parses a list correctly
-        """
-        parsed_roster = fetch_and_parse_roster(roster_file=self.porch_slam)
-        rules_summary = get_rules_summary(parsed_roster)
-        cats = 'cats'
-
-
-
-
