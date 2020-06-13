@@ -9,6 +9,7 @@ from app.utils.battlescribe_meta import check_battlescribe_version
 from app.utils.constants import BATTLESCRIBE_VERSION_ERROR
 from app.utils.test_utils import get_parser_type_and_parse
 from app.utils.zip_utils import check_if_zipped
+from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 
 app = FastAPI(
     title="Dataslate",
@@ -17,6 +18,7 @@ app = FastAPI(
     redoc_url=None,
 )
 
+app.add_middleware(HTTPSRedirectMiddleware)
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app//static/templates")
 

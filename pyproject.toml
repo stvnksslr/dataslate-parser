@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dataslate-parser"
-version = "1.0.0"
+version = "1.2.5"
 description = "a module for parsing battlescribe rosters and allowing them to be printed or displayed cleanly"
 authors = ["Steven Kessler <stvnksslr@gmail.com>"]
 license = "MIT"
