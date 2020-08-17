@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8-slim-buster
 
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
