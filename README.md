@@ -15,5 +15,9 @@ This project is to take in battlescribe roster files and output them into easily
 2. poetry shell
 3. pytest
 
+#### Run App
+* from base directory
+`uvicorn app.main:app`
+
 
 ###### Inspired by https://github.com/gregchiasson/warhams 
