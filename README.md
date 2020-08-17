@@ -8,16 +8,21 @@ This project is to take in battlescribe roster files and output them into easily
 
 #### Requirements
 * Python 3.7+
-* poetry 
 
 ##### Setup
+### Poetry
 1. poetry install
 2. poetry shell
+3. pytest
+
+### Pip
+1. python -m venv .venv
+2. activate with your preferred method
+2. pip install -r requirements-dev.txt
 3. pytest
 
 #### Run App
 * from base directory
 `uvicorn app.main:app`
-
 
 ###### Inspired by https://github.com/gregchiasson/warhams 
