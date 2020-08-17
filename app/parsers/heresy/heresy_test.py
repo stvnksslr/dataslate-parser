@@ -17,7 +17,9 @@ class HeresyTest(TestCase):
         self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
         self.list_with_wargear = str(self.base_path / "wargear_fix.ros")
         self.porch_slam = str(self.base_path / "porch_slam_saux.ros")
-        self.legion_list_8_19_20 = str(self.base_path / "updated_legions_roster_8_19-20.ros")
+        self.legion_list_8_19_20 = str(
+            self.base_path / "updated_legions_roster_8_19-20.ros"
+        )
 
     def test__heresy_loop_through_test_folder_and_parse(self):
         """
@@ -154,5 +156,3 @@ class HeresyTest(TestCase):
         """
         parsed_roster = fetch_and_parse_roster(roster_file=self.legion_list_8_19_20)
         self.assertEqual(len(parsed_roster), 3)
-
-
