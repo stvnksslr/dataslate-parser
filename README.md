@@ -13,7 +13,7 @@ This project is to take in battlescribe roster files and output them into easily
 #### Requirements
 * Python 3.7+
 
-##### Setup
+## Setup
 ### Poetry
 1. `poetry install`
 2. `poetry shell`
@@ -22,11 +22,10 @@ This project is to take in battlescribe roster files and output them into easily
 ### Pip
 1. `python -m venv .venv`
 2. `activate with your preferred method`
-2. `pip install -r requirements-dev.txt`
-3. `pytest`
+3. `pip install -r requirements-dev.txt`
+4. `pytest`
 
-#### Run App
-* from base directory
-`uvicorn app.main:app`
+### Run App
+* from base directory `uvicorn app.main:app`
 
 ###### Inspired by https://github.com/gregchiasson/warhams 
