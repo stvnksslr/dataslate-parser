@@ -24,7 +24,7 @@ jobs:
           create_virtualenvs: true
 
       - name: Set Poetry Configs
-        run: poetry config settings.virtualenvs.path ~/.virtualenvs
+        run: poetry config virtualenvs.path ~/.virtualenvs
 
       - name: Cache Poetry virtualenv
         uses: actions/cache@v2
