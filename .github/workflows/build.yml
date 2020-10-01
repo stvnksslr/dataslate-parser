@@ -18,13 +18,22 @@ jobs:
       matrix:
         python-version: [3.8]
     steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
       - name: Install Poetry
-        run: python -m pip install poetry
+        uses: dschep/install-poetry-action@v1.3
 
       - name: Set Poetry Configs
         run: |
-          python -m poetry config virtualenvs.path ~/.virtualenvs
-          python -m poetry config virtualenvs.in-project false
+          poetry config virtualenvs.path ~/.virtualenvs
+          poetry config virtualenvs.create true
 
       - name: Cache Poetry virtualenv
         uses: actions/cache@v2
@@ -36,11 +45,11 @@ jobs:
             poetry-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
-        run: python -m poetry install
+        run: poetry install
         if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Linting
-        run: python -m poetry run flake8
+        run: poetry run flake8
 
       - name: Tests
         uses: paambaati/codeclimate-action@v2.3.0
@@ -48,4 +57,4 @@ jobs:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: python -m poetry run pytest --cov-branch --cov-report xml --cov=app app
+          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=app app
