@@ -20,11 +20,11 @@ jobs:
     steps:
       - name: Install Poetry
         uses: dschep/install-poetry-action@v1.3
-        with:
-          create_virtualenvs: true
 
       - name: Set Poetry Configs
-        run: poetry config virtualenvs.path ~/.virtualenvs
+        run: |
+          poetry config virtualenvs.path ~/.virtualenvs
+          poetry config virtualenvs.in-project false
 
       - name: Cache Poetry virtualenv
         uses: actions/cache@v2
