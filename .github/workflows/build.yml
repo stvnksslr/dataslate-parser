@@ -1,7 +1,12 @@
 name: build
 
 on:
+  pull_request:
+    branches:
+      - master
   push:
+    branches:
+      - master
     tags-ignore:
       - "*.*"
 
@@ -38,7 +43,7 @@ jobs:
         run: poetry run flake8
 
       - name: Tests
-        uses: paambaati/codeclimate-action@v2.7.2
+        uses: paambaati/codeclimate-action@v2.3.0
         env:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
