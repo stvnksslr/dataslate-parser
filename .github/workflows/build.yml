@@ -23,8 +23,8 @@ jobs:
 
       - name: Set Poetry Configs
         run: |
-          poetry config virtualenvs.path ~/.virtualenvs
-          poetry config virtualenvs.in-project false
+          python -m poetry config virtualenvs.path ~/.virtualenvs
+          python -m poetry config virtualenvs.in-project false
 
       - name: Cache Poetry virtualenv
         uses: actions/cache@v2
@@ -36,11 +36,11 @@ jobs:
             poetry-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
-        run: poetry install
+        run: python -m poetry install
         if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Linting
-        run: poetry run flake8
+        run: python -m poetry run flake8
 
       - name: Tests
         uses: paambaati/codeclimate-action@v2.3.0
@@ -48,4 +48,4 @@ jobs:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=app app
+          coverageCommand: python -m poetry run pytest --cov-branch --cov-report xml --cov=app app
