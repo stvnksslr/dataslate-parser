@@ -10,7 +10,7 @@
 
 This project is to take in battlescribe roster files and output them into easily printable sheets or cards since the current output is awful.
 
-#### Requirements
+## Requirements
 
 - Python 3.7+
 
@@ -33,4 +33,4 @@ This project is to take in battlescribe roster files and output them into easily
 
 - from base directory `uvicorn app.main:app`
 
-###### Inspired by https://github.com/gregchiasson/warhams
+### Inspired by https://github.com/gregchiasson/warhams
