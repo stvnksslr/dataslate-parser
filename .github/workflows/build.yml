@@ -57,4 +57,4 @@ jobs:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=app app
+          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=src src
