@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from app.models.unit import Unit
+from src.models.unit import Unit
 
 
 @dataclass

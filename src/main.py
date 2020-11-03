@@ -4,11 +4,11 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from app.parsers.heresy.rules_summary import get_rules_summary
-from app.utils.battlescribe_meta import check_battlescribe_version
-from app.utils.constants import BATTLESCRIBE_VERSION_ERROR
-from app.utils.test_utils import get_parser_type_and_parse
-from app.utils.zip_utils import check_if_zipped
+from src.parsers.heresy.rules_summary import get_rules_summary
+from src.utils.battlescribe_meta import check_battlescribe_version
+from src.utils.constants import BATTLESCRIBE_VERSION_ERROR
+from src.utils.test_utils import get_parser_type_and_parse
+from src.utils.zip_utils import check_if_zipped
 
 app = FastAPI(
     title="Dataslate",
@@ -17,8 +17,8 @@ app = FastAPI(
     redoc_url=None,
 )
 
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
-templates = Jinja2Templates(directory="app//static/templates")
+app.mount("/static", StaticFiles(directory="src/static"), name="static")
+templates = Jinja2Templates(directory="src//static/templates")
 
 
 @app.get("/")

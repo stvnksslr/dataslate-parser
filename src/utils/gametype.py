@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-from app.utils.constants import SUPPORTED_PARSERS, TEMPLATES
+from src.utils.constants import SUPPORTED_PARSERS, TEMPLATES
 
 
 def detect_gametype(roster):

@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from app.models.killteam_unit import KillteamUnit
+from src.models.killteam_unit import KillteamUnit
 
 
 def parse_units(roster_file):

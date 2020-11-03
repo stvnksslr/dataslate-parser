@@ -1,6 +1,6 @@
 from unittest import TestCase
 from pathlib import Path
-from app.utils.test_utils import fetch_and_parse_roster
+from src.utils.test_utils import fetch_and_parse_roster
 from os import listdir
 from os.path import isfile, join
 

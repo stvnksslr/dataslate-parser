@@ -3,10 +3,10 @@ from os.path import isfile, join
 from pathlib import Path
 from unittest import TestCase
 
-from app.models.heresy_unit import HeresyUnit
-from app.parsers.heresy.heresy_constants import TOUGHNESS
-from app.parsers.heresy.rules_summary import get_rules_summary
-from app.utils.test_utils import fetch_and_parse_roster
+from src.models.heresy_unit import HeresyUnit
+from src.parsers.heresy.heresy_constants import TOUGHNESS
+from src.parsers.heresy.rules_summary import get_rules_summary
+from src.utils.test_utils import fetch_and_parse_roster
 
 
 class HeresyTest(TestCase):

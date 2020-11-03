@@ -1,7 +1,7 @@
 from pathlib import Path
 from unittest import TestCase
 
-from app.utils.zip_utils import check_if_zipped
+from src.utils.zip_utils import check_if_zipped
 
 
 class ZipUtilsTest(TestCase):

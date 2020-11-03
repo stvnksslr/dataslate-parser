@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-from app.utils.constants import SUPPORTED_BATTLESCRIBE_VERSION
+from src.utils.constants import SUPPORTED_BATTLESCRIBE_VERSION
 
 
 def check_battlescribe_version(roster):

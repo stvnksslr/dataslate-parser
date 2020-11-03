@@ -2,15 +2,15 @@ FROM python:3.8-slim-buster
 
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
-WORKDIR /app
+WORKDIR /src
 
-COPY ./app /app/app
-COPY pyproject.toml poetry.lock /app/
+COPY ./src /src/src
+COPY pyproject.toml poetry.lock /src/
 
 RUN pip install --no-cache-dir poetry
 RUN poetry export -f requirements.txt > requirements.txt
 RUN pip install -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080", "--proxy-headers", "--forwarded-allow-ips", "*"]
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080", "--proxy-headers", "--forwarded-allow-ips", "*"]

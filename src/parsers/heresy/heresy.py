@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 
-from app.models.armor_facing import ArmorFacing
-from app.models.heresy_unit import HeresyUnit
-from app.models.unit_group import UnitGroup
+from src.models.armor_facing import ArmorFacing
+from src.models.heresy_unit import HeresyUnit
+from src.models.unit_group import UnitGroup
 
 
 def parse_units(roster_file):

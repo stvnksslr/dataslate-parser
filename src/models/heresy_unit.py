@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
-from app.models.armor_facing import ArmorFacing
-from app.models.unit import Unit
-from app.parsers.heresy.heresy_constants import STAT_BLOCK_TYPES
+from src.models.armor_facing import ArmorFacing
+from src.models.unit import Unit
+from src.parsers.heresy.heresy_constants import STAT_BLOCK_TYPES
 
 
 @dataclass

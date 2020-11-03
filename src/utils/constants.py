@@ -1,5 +1,5 @@
-from app.parsers.heresy import heresy
-from app.parsers.killteam import killteam
+from src.parsers.heresy import heresy
+from src.parsers.killteam import killteam
 
 KILLTEAM_ID: str = "a467-5f42-d24c-6e5b"
 

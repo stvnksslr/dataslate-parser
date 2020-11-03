@@ -1,10 +1,10 @@
 from pathlib import Path
 from unittest import TestCase
 
-from app.utils.battlescribe_meta import check_battlescribe_version
-from app.utils.gametype import detect_gametype, find_gametype_parser
-from app.parsers.heresy import heresy
-from app.utils.constants import HORUS_HERESY_ID
+from src.utils.battlescribe_meta import check_battlescribe_version
+from src.utils.gametype import detect_gametype, find_gametype_parser
+from src.parsers.heresy import heresy
+from src.utils.constants import HORUS_HERESY_ID
 
 
 class GametypeTest(TestCase):
