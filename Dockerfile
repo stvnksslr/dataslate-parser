@@ -1,15 +1,17 @@
-FROM python:3.8-slim-buster
+FROM python:3.9-slim-buster
 
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
+    POETRY_VIRTUALENVS_CREATE=false \
+    PIP_NO_CACHE_DIR=off \
+    POETRY_VERSION=1.1.4
 
 WORKDIR /src
 
 COPY ./src /src/src
 COPY pyproject.toml poetry.lock /src/
 
-RUN pip install --no-cache-dir poetry
-RUN poetry export -f requirements.txt > requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install "poetry==$POETRY_VERSION"
+RUN poetry install --no-dev
 
 EXPOSE 8080
 
