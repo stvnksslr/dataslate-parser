@@ -1,10 +1,9 @@
+name: Deploy
+
 on:
   push:
     tags:
       - "*.*"
-
-name: Deploy
-
 jobs:
   deploy:
     runs-on: ubuntu-latest

@@ -411,7 +411,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "pyproject-flake8"
-version = "0.0.1a1"
+version = "0.0.1a2"
 description = "pyproject-flake8 (`pflake8`), a monkey patching wrapper to connect flake8 with pyproject.toml configuration"
 category = "dev"
 optional = false
@@ -631,7 +631,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "8c0bd3983f7244725ede1a1ebe52031f9d25fe4010bc25ec9f3e4cd327a3f7cf"
+content-hash = "a93c47992f832e55fc162edc5e8d94356c19024fc18b038c633a6065a2bae218"
 
 [metadata.files]
 aiofiles = [
@@ -942,8 +942,8 @@ pyparsing = [
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
 ]
 pyproject-flake8 = [
-    {file = "pyproject-flake8-0.0.1a1.tar.gz", hash = "sha256:1f0b44fa01e3ceab50caefa7bf6cfc814997bb33832daa687047a611515d7989"},
-    {file = "pyproject_flake8-0.0.1a1-py2.py3-none-any.whl", hash = "sha256:185a6d6d10105b15e54b4904fbb2a01a9512c25a0cc622479fbe37ce8fe758a1"},
+    {file = "pyproject-flake8-0.0.1a2.tar.gz", hash = "sha256:bdeca37f78ecd34bd64a49d3657d53d099f5445831071a31c46e1fe20cd61461"},
+    {file = "pyproject_flake8-0.0.1a2-py2.py3-none-any.whl", hash = "sha256:e61ed1dc088e9f9f8a7170967ac4ec135acfef3a59ab9738c7b58cc11f294a7e"},
 ]
 pytest = [
     {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},

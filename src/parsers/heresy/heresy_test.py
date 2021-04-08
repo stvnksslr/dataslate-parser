@@ -17,9 +17,7 @@ class HeresyTest(TestCase):
         self.tac_squad_with_dt = str(self.base_path / "tac_squad_with_dt.ros")
         self.list_with_wargear = str(self.base_path / "wargear_fix.ros")
         self.porch_slam = str(self.base_path / "porch_slam_saux.ros")
-        self.legion_list_8_19_20 = str(
-            self.base_path / "updated_legions_roster_8_19-20.ros"
-        )
+        self.legion_list_8_19_20 = str(self.base_path / "updated_legions_roster_8_19-20.ros")
 
     def test__heresy_loop_through_test_folder_and_parse(self):
         """
@@ -28,16 +26,10 @@ class HeresyTest(TestCase):
         expected: successfully parses all roster files in the test folder
         """
         parsed_rosters = []
-        list_of_rosters = [
-            file
-            for file in listdir(str(self.base_path))
-            if isfile(join(str(self.base_path), file))
-        ]
+        list_of_rosters = [file for file in listdir(str(self.base_path)) if isfile(join(str(self.base_path), file))]
 
         for roster in list_of_rosters:
-            parsed_roster = fetch_and_parse_roster(
-                roster_file=str(self.base_path) + "/" + roster
-            )
+            parsed_roster = fetch_and_parse_roster(roster_file=str(self.base_path) + "/" + roster)
             parsed_rosters.append(parsed_roster)
 
         self.assertTrue(parsed_rosters)
@@ -74,12 +66,8 @@ class HeresyTest(TestCase):
 
         self.assertTrue(parsed_roster)
         self.assertEqual(len(parsed_roster[0].list_of_units), 3)
-        self.assertEqual(
-            parsed_roster[0].list_of_units[0].name, "legion tactical space marine"
-        )
-        self.assertEqual(
-            parsed_roster[0].list_of_units[1].name, "legion tactical sergeant"
-        )
+        self.assertEqual(parsed_roster[0].list_of_units[0].name, "legion tactical space marine")
+        self.assertEqual(parsed_roster[0].list_of_units[1].name, "legion tactical sergeant")
         self.assertEqual(parsed_roster[0].list_of_units[2].name, "legion rhino")
 
     def test__tac_squad_with_dt_characteristics(self):
@@ -92,9 +80,7 @@ class HeresyTest(TestCase):
         parsed_roster = fetch_and_parse_roster(roster_file=self.tac_squad_with_dt)
         tactical_squad = parsed_roster[0].list_of_units
         self.assertTrue(parsed_roster)
-        self.assertEqual(
-            parsed_roster[0].list_of_units[0].name, "legion tactical space marine"
-        )
+        self.assertEqual(parsed_roster[0].list_of_units[0].name, "legion tactical space marine")
         self.assertEqual(tactical_squad[0].attacks, "1")
         self.assertEqual(tactical_squad[0].ballistic_skill, "4")
         self.assertEqual(tactical_squad[0].initiative, "4")

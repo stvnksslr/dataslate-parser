@@ -78,9 +78,7 @@ def create_parsed_unit(unit):
         save=unit.get("save"),
         wargear=unit.get("wargear"),
         weapon=unit.get("weapon"),
-        stat_type=HeresyUnit.get_stat_type(
-            unit_type=unit.get("unit type") or unit.get("type")
-        ),
+        stat_type=HeresyUnit.get_stat_type(unit_type=unit.get("unit type") or unit.get("type")),
         abilities=unit.get("rules"),
         armor_facing=ArmorFacing(
             front=unit.get("front"),
