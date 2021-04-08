@@ -42,13 +42,13 @@ jobs:
           key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: poetry install
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
 
       - name: Linting
         run: |
           source .venv/bin/activate
-          pflake8 .
+          poetry run pflake8 .
 
       - name: Tests
         uses: paambaati/codeclimate-action@v2.3.0
@@ -58,4 +58,4 @@ jobs:
         with:
           coverageCommand: |
             source .venv/bin/activate
-            pytest --cov-branch --cov-report xml --cov=src src
+            poetry run pytest --cov-branch --cov-report xml --cov=src src
