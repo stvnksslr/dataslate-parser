@@ -32,24 +32,23 @@ jobs:
         with:
           version: 1.1.5
           virtualenvs-create: true
-          virtualenvs-in-project: false
-          virtualenvs-path: ~/.virtualenvs
+          virtualenvs-in-project: true
 
       - name: Cache Poetry virtualenv
+        id: cached-poetry-dependencies
         uses: actions/cache@v2
-        id: cache
         with:
-          path: ~/.virtualenvs
-          key: poetry-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: |
-            poetry-${{ hashFiles('**/poetry.lock') }}
+          path: .venv
+          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
-        run: poetry install
         if: steps.cache.outputs.cache-hit != 'true'
+        run: poetry install
 
       - name: Linting
-        run: poetry run pflake8
+        run: |
+          source .venv/bin/activate
+          pflake8 .
 
       - name: Tests
         uses: paambaati/codeclimate-action@v2.3.0
@@ -57,4 +56,6 @@ jobs:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=src src
+          coverageCommand: |
+            source .venv/bin/activate
+            pytest --cov-branch --cov-report xml --cov=src src
