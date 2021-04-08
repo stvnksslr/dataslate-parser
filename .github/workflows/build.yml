@@ -46,9 +46,7 @@ jobs:
         run: poetry install --no-interaction --no-root
 
       - name: Linting
-        run: |
-          source .venv/bin/activate
-          poetry run pflake8 .
+        run:  poetry run pflake8 .
 
       - name: Tests
         uses: paambaati/codeclimate-action@v2.3.0
@@ -56,6 +54,4 @@ jobs:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageCommand: |
-            source .venv/bin/activate
-            poetry run pytest --cov-branch --cov-report xml --cov=src src
+          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=src src
