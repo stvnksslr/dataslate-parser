@@ -50,7 +50,9 @@ jobs:
       #              run linter suite   
       #----------------------------------------------
       - name: Run linters
-        run: poetry run pflake8
+        run: |
+          ls 
+          poetry run pflake8
       #----------------------------------------------
       #              run test suite   
       #----------------------------------------------
