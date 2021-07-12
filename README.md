@@ -32,5 +32,3 @@ This project is to take in battlescribe roster files and output them into easily
 ### Run App
 
 - from base directory `uvicorn app.main:app`
-
-### Inspired by https://github.com/gregchiasson/warhams
