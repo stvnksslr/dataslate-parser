@@ -16,6 +16,8 @@ def parse_units(roster_file):
         "Mournival Rules",
         "Solar Aux Superheavy",
         "Use Playtest Rules Errata 1.0 (From FAQ 1.1 Feb/2019)",
+        "Warlord Traits",
+        "Dedicated Transports Restrictions"
     ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list

@@ -18,6 +18,7 @@ class HeresyTest(TestCase):
         self.list_with_wargear = str(self.base_path / "wargear_fix.ros")
         self.porch_slam = str(self.base_path / "porch_slam_saux.ros")
         self.legion_list_8_19_20 = str(self.base_path / "updated_legions_roster_8_19-20.ros")
+        self.legion_list_9_5_21 = str(self.base_path / "2021_9_5_test_roster.ros")
 
     def test__heresy_loop_through_test_folder_and_parse(self):
         """
@@ -141,4 +142,13 @@ class HeresyTest(TestCase):
         expected: new mounrival and super heavy categories should parse correctly and not break the parse
         """
         parsed_roster = fetch_and_parse_roster(roster_file=self.legion_list_8_19_20)
+        self.assertEqual(len(parsed_roster), 3)
+
+    def test_legion_list_5_5_2021(self):
+        """
+        method: get_rules_summary()
+        pre-req: take a parsed list and create a dict of rules no duplicates
+        expected: new mounrival and super heavy categories should parse correctly and not break the parse
+        """
+        parsed_roster = fetch_and_parse_roster(roster_file=self.legion_list_9_5_21)
         self.assertEqual(len(parsed_roster), 3)

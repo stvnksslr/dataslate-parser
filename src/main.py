@@ -1,4 +1,4 @@
-import uvicorn
+from uvicorn import run
 from fastapi import FastAPI, File, UploadFile, Form
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
@@ -60,4 +60,4 @@ async def upload_roster(
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    run(app, host="0.0.0.0", port=8000)
