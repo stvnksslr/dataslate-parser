@@ -17,7 +17,7 @@ def parse_units(roster_file):
         "Solar Aux Superheavy",
         "Use Playtest Rules Errata 1.0 (From FAQ 1.1 Feb/2019)",
         "Warlord Traits",
-        "Dedicated Transports Restrictions"
+        "Dedicated Transports Restrictions",
     ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list
@@ -83,10 +83,7 @@ def create_parsed_unit(unit):
         stat_type=HeresyUnit.get_stat_type(unit_type=unit.get("unit type") or unit.get("type")),
         abilities=unit.get("rules"),
         armor_facing=ArmorFacing(
-            front=unit.get("front"),
-            side=unit.get("side"),
-            rear=unit.get("rear"),
-            hp=unit.get("hp"),
+            front=unit.get("front"), side=unit.get("side"), rear=unit.get("rear"), hp=unit.get("hp")
         ),
     )
     return parsed_model

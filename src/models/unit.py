@@ -1,16 +1,18 @@
 from dataclasses import dataclass
+from typing import Optional
+
+from pydantic import BaseModel
 
 
-@dataclass
-class Unit:
+class Unit(BaseModel):
     name: str
     wargear: dict
     abilities: dict
-    weapon_skill: str
-    ballistic_skill: str
-    strength: str
-    toughness: str
-    wounds: str
-    attacks: str
-    leadership: str
-    save: str
+    weapon_skill: Optional[str]
+    ballistic_skill: Optional[str]
+    strength: Optional[str]
+    toughness: Optional[str]
+    wounds: Optional[str]
+    attacks: Optional[str]
+    leadership: Optional[str]
+    save: Optional[str]
