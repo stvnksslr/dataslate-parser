@@ -41,7 +41,7 @@ def get_rules(model):
     dict_of_abilities = {}
     for rule in list_of_rules:
         name = rule.attrs.get("name")
-        value = rule.text.strip('\n')
+        value = rule.text.strip("\n")
         dict_of_abilities.update({name: value})
     return dict_of_abilities
 

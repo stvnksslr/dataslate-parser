@@ -30,7 +30,7 @@ def test__killteam_parse_chaos_killteam():
 
     assert bool(parsed_roster)
     assert len(parsed_roster) == 11
-    assert parsed_roster[0].name == 'Aspiring Champion'
+    assert parsed_roster[0].name == "Aspiring Champion"
     assert len(parsed_roster[0].wargear) == 3
 
 
@@ -40,5 +40,5 @@ def test__killteam_parse_vet_guardsman_killteam():
 
     assert bool(parsed_roster)
     assert len(parsed_roster) == 10
-    assert parsed_roster[0].name == 'Gunner Veteran'
+    assert parsed_roster[0].name == "Gunner Veteran"
     assert len(parsed_roster[0].wargear) == 3
