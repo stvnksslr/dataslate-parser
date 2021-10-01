@@ -1,5 +1,4 @@
 from pathlib import Path
-from unittest import TestCase
 
 from src.utils.battlescribe_meta import check_battlescribe_version
 from src.utils.gametype import detect_gametype, find_gametype_parser
