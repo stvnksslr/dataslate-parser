@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="ba74-ffe8-668d-eb48" name="t_sons" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <forces>
+    <force id="70ab-07d2-24d8-ef4a" name="Rubric Marine Kill Team" entryId="812d-731d-5da3-7bc8" catalogueId="030c-2911-213e-56de" catalogueRevision="3" catalogueName="Thousand Sons">
+      <selections>
+        <selection id="6e2f-4a1c-0a9c-5a38" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="daf1-4029-c0ca-c9be" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="5815-aba3-f5f5-6aba" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="34aa-c947-9eca-7c17" name="Psychic Power Reference" entryId="ddd1-ccd3-0bfb-0de4::d816-04f8-1a97-745f" number="1" type="upgrade">
+          <selections>
+            <selection id="684c-ecf5-08eb-0a6f" name="Doombolt" entryId="ddd1-ccd3-0bfb-0de4::9bc2-6394-11ed-6888" number="1" type="upgrade">
+              <rules>
+                <rule id="ddd1-ccd3-0bfb-0de4::4909-b70f-87c0-6cbc::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+                <rule id="ddd1-ccd3-0bfb-0de4::9bff-8683-ac4c-2657::0d4b-7a76-d266-bcc1" name="MWx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each critical hit retained, inflict x mortal wounds on the target. x is the number after the weapon&apos;s MW, e.g. MW3.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ddd1-ccd3-0bfb-0de4::41e5-a7d2-01d6-8024" name="Doombolt" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3895-3533-1c76-676a">Perform a free Shoot action using the ranged weapon below.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="ddd1-ccd3-0bfb-0de4::924e-b632-13ab-6ca5" name="Doombolt" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="4b91-f9c4-76fd-8e0d" name="Firestorm" entryId="ddd1-ccd3-0bfb-0de4::6073-05ae-2897-56a5" number="1" type="upgrade">
+              <rules>
+                <rule id="ddd1-ccd3-0bfb-0de4::b689-4227-df5e-c363::653d-16a5-eefb-8b71" name="Indirect" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the select valid target step of that shooting attack, enemy operatives are not in Cover.</description>
+                </rule>
+                <rule id="ddd1-ccd3-0bfb-0de4::32dd-cdb6-707d-4791::8529-c5c2-53c2-94bb" name="Barrage" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, for that shooting attack, the automatic retention of defence dice as a result of cover is determined differently. Instead, if any part of the operative&apos;s base is hidden by a terrain feature from directly above, the defender can retain defence dice as if they were in cover.</description>
+                </rule>
+                <rule id="ddd1-ccd3-0bfb-0de4::1a4a-74eb-c70b-0f23::d848-be09-6d6d-4708" name="Blast x" hidden="false">
+                  <description>Each time a friendly operative performs a Shoot action and selects this weapon (or, in the case of profiles, this weapon&apos;s profile), after making the shooting attack against the target, make a shooting attack with this weapon (using the same profile) against each other operative within x of the original target. When determining if each other operative is a valid target or in Cover, treat the original target as the active operative. An operative cannot make a shooting attack with this weapon by performing an Overwatch action.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ddd1-ccd3-0bfb-0de4::9141-8f93-ede4-6f75" name="Firestorm" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3895-3533-1c76-676a">Perform a free Shoot action using the ranged weapon below.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="ddd1-ccd3-0bfb-0de4::3077-b45c-7245-677b" name="Firestorm" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/2</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Indirect, Barrage, Blast ⬤</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="551e-087a-d429-f16b" name="Immaterial Surge" entryId="ddd1-ccd3-0bfb-0de4::f71e-e4c1-a83b-2a40" number="1" type="upgrade">
+              <profiles>
+                <profile id="ddd1-ccd3-0bfb-0de4::03bb-d486-0583-4532" name="Immaterial Surge" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one other friendly THOUSAND SONS operative Visible to this operative. Add 1 to its APL.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="1a20-6ac6-59c4-0e1a" name="Twist of Fate" entryId="ddd1-ccd3-0bfb-0de4::4b19-f917-8652-a5db" number="1" type="upgrade">
+              <profiles>
+                <profile id="ddd1-ccd3-0bfb-0de4::d639-e4e1-b23b-ab1f" name="Twist of Fate" hidden="false" typeId="031c-1555-fc2c-3d40" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="3895-3533-1c76-676a">Select one enemy operative Visible to this operative. Until the end of the Turning Point, each time a friendly THOUSAND SONS operative fights in combat or makes a shooting attack against that enemy operative, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll one of your attack dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="ff6e-59c1-182c-713b" name="Reference" entryId="322e-38ea-bf3e-c785" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="31a9-5934-d734-f716" name="Aspiring Sorcerer" entryId="84b0-25cb-edd7-41bb::cb22-ce50-e321-93a6" number="1" type="model">
+          <profiles>
+            <profile id="84b0-25cb-edd7-41bb::3f26-9bef-1e61-1f74" name="Aspiring Sorcerer" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">13</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="84b0-25cb-edd7-41bb::d12c-fccc-10bd-d9de" name="Manifest Psychic Power (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Psychic action. Resolve a THOUSAND SONS psychic power. An operative can perform this action twice during its activation.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="84b0-25cb-edd7-41bb::4f8e-a017-207e-bef8::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="663c-0167-a814-aa8a" name="Force stave" entryId="84b0-25cb-edd7-41bb::825a-0ca0-3232-537f" number="1" type="upgrade">
+              <rules>
+                <rule id="84b0-25cb-edd7-41bb::56a3-af66-0eb0-02aa::a1e3-4e0b-f7c2-eb59" name="Stun" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, subtract 1 from the target&apos;s APL.
+
+Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat:
+- The first time you strike with a critical hit, select one of your opponent&apos;s normal hits from that combat to be discarded.
+- The second time you strike with a critical hit, subtract 1 from the target&apos;s APL.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="84b0-25cb-edd7-41bb::0b4c-5e40-c1a3-080d" name="⚔ Force stave" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="b8c6-6ef7-7eee-cf62" name="Inferno bolt pistol" entryId="84b0-25cb-edd7-41bb::3bb4-fa4e-88bb-90ab" entryGroupId="84b0-25cb-edd7-41bb::c3d5-e7c1-b9af-86bc" number="1" type="upgrade">
+              <rules>
+                <rule id="84b0-25cb-edd7-41bb::46fc-e5e8-e00b-169e::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="84b0-25cb-edd7-41bb::3cb3-2f65-8182-7aad::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="84b0-25cb-edd7-41bb::96a7-58d2-eaf2-4588" name="⌖ Inferno bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="2661-a937-bf8a-2e50" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="b451-c08a-b839-067e" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="b35d-3994-b113-8dae" name="Arcana Astartes" entryId="068e-3abc-9324-4740" primary="false"/>
+            <category id="6955-3b9e-233c-c2e7" name="Psyker" entryId="55b9-413d-e975-492a" primary="false"/>
+            <category id="750f-5bac-34aa-13c8" name="Rubric Marine, Aspiring Sorcerer" entryId="3993-42c5-4025-f59d" primary="false"/>
+            <category id="b2af-2d42-9d99-1476" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="427f-5220-21f8-1997" name="Rubric Marine (Warrior)" entryId="fbba-54cc-449f-a71c::4faa-2f6e-873b-1ae9" number="1" type="model">
+          <profiles>
+            <profile id="fbba-54cc-449f-a71c::6069-c2c7-f360-cb05::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fbba-54cc-449f-a71c::698e-e0e1-30e2-5519::4ba9-8b14-56e7-87b3" name="All Is Dust" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against this operative, if the ranged weapon has a Normal Damage characteristic of 3 or less, this operative is treated as having a Save characteristic of 2+ for that shooting attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fbba-54cc-449f-a71c::f60b-f351-bb7c-3d85::5e3c-ba15-8253-f67f" name="Rubric Marine" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="d6f9-85c7-7a7e-2077" name="Inferno bolt gun" entryId="fbba-54cc-449f-a71c::433b-2485-1443-d969" number="1" type="upgrade">
+              <rules>
+                <rule id="fbba-54cc-449f-a71c::b4ac-b8e4-0f3e-8d29::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="fbba-54cc-449f-a71c::ceff-0a2b-58b9-ac1e" name="⌖ Inferno bolt gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="40d6-fccd-ac50-0ea6" name="Fists" entryId="fbba-54cc-449f-a71c::8508-e88b-9f79-b7c5::62f1-4f72-8725-dfd7" number="1" type="upgrade">
+              <profiles>
+                <profile id="fbba-54cc-449f-a71c::8508-e88b-9f79-b7c5::3856-276f-a1a4-1583" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="f3d0-2e16-e0e3-0ebf" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="5a52-421b-5ce7-e4df" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="9970-fedf-19ec-7219" name="Arcana Astartes" entryId="068e-3abc-9324-4740" primary="false"/>
+            <category id="6300-4cbc-32ed-327b" name="Rubric Marine" entryId="56f4-f969-5d17-db4e" primary="false"/>
+            <category id="e61c-d51f-7110-083f" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="5625-2e55-be8c-8250" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="e156-f8a6-0ad2-7bed" name="Rubric Marine (Warrior)" entryId="fbba-54cc-449f-a71c::4faa-2f6e-873b-1ae9" number="1" type="model">
+          <profiles>
+            <profile id="fbba-54cc-449f-a71c::6069-c2c7-f360-cb05::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fbba-54cc-449f-a71c::698e-e0e1-30e2-5519::4ba9-8b14-56e7-87b3" name="All Is Dust" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time a shooting attack is made against this operative, if the ranged weapon has a Normal Damage characteristic of 3 or less, this operative is treated as having a Save characteristic of 2+ for that shooting attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="fbba-54cc-449f-a71c::f60b-f351-bb7c-3d85::5e3c-ba15-8253-f67f" name="Rubric Marine" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="79cd-ba22-afd3-337b" name="Fists" entryId="fbba-54cc-449f-a71c::8508-e88b-9f79-b7c5::62f1-4f72-8725-dfd7" number="1" type="upgrade">
+              <profiles>
+                <profile id="fbba-54cc-449f-a71c::8508-e88b-9f79-b7c5::3856-276f-a1a4-1583" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="2482-6503-f6a5-21d3" name="Inferno bolt gun" entryId="fbba-54cc-449f-a71c::433b-2485-1443-d969" number="1" type="upgrade">
+              <rules>
+                <rule id="fbba-54cc-449f-a71c::b4ac-b8e4-0f3e-8d29::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="fbba-54cc-449f-a71c::ceff-0a2b-58b9-ac1e" name="⌖ Inferno bolt gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="cc39-4a20-a625-f8f5" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="9707-e44f-3e64-25ac" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="d50e-4480-de1f-d62e" name="Arcana Astartes" entryId="068e-3abc-9324-4740" primary="false"/>
+            <category id="6848-c9c1-6881-e251" name="Rubric Marine" entryId="56f4-f969-5d17-db4e" primary="false"/>
+            <category id="5843-4afa-2411-5612" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="3cdb-3324-1082-959e" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="81a9-956a-f364-3a8d" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="2ba1-72c7-92a7-eb5b" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="2e85-758e-d37b-76b5" name="Reference" entryId="322e-38ea-bf3e-c785" primary="false"/>
+        <category id="4c2a-e1d1-865f-5013" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="41c1-0960-fb68-de76" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="a0c2-a4c9-73a1-ca50" name="Rubric Marine" entryId="56f4-f969-5d17-db4e" primary="false"/>
+        <category id="bc49-0b1e-6005-62a8" name="Gunner" entryId="ee8c-cc44-acc3-40f0" primary="false"/>
+      </categories>
+    </force>
+    <force id="c4bb-c0fe-f136-fe77" name="Tzaangor Fire Team" entryId="4e1f-d9ed-39e7-abe8" catalogueId="030c-2911-213e-56de" catalogueRevision="3" catalogueName="Thousand Sons">
+      <selections>
+        <selection id="a7a1-7e0a-5341-62d2" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="d108-e0ee-7008-513b" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="f77e-210e-5cc4-685b" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="2e28-45da-6f0c-52bf" name="Tzaangor (Fighter)" entryId="3f7a-5646-ea18-90f6::f559-8366-9d85-60cd" number="1" type="model">
+          <profiles>
+            <profile id="3f7a-5646-ea18-90f6::5b96-ddf3-63d5-d28b::e4b6-1131-1def-fe07" name="Tzaangor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3f7a-5646-ea18-90f6::0619-2af3-5295-3c3d::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="a32b-faf5-5a77-baa1" name="Autopistol and chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::8f18-0530-902d-caf5" entryGroupId="3f7a-5646-ea18-90f6::30a1-006e-6e80-d2c3" number="1" type="upgrade">
+              <selections>
+                <selection id="e664-ebeb-4f09-b980" name="Autopistol" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::df1f-5e18-7940-d293" number="1" type="upgrade">
+                  <rules>
+                    <rule id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::6092-e518-a1c3-90f1::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::cc83-9e0a-995c-8e16" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="e41b-32c5-d6ae-39f2" name="Chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::1bcf-51e8-38b1-4173" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::737b-e1d7-5657-c467" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="808f-6fc1-d44f-3e10" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="21f0-49be-540a-5c48" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="1028-488d-238b-c851" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+            <category id="8b78-7392-7b77-a181" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="d7be-02d5-8e16-f9f7" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="0655-0446-29d9-2f98" name="Tzaangor (Horn Bearer)" entryId="5656-35a5-5541-8487::2052-5f13-e33e-446a" number="1" type="model">
+          <profiles>
+            <profile id="5656-35a5-5541-8487::50d8-ed52-3932-a183" name="Brayhorn (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the Turning Point, each time a friendly TZAANGOR operative performs a Normal Move or Charge action, it can move an additional ▲.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5656-35a5-5541-8487::7f12-e777-6256-7767::e4b6-1131-1def-fe07" name="Tzaangor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5656-35a5-5541-8487::4b85-2ec1-56a8-c733::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="c284-6dc9-ad73-e1ad" name="Dagger" entryId="5656-35a5-5541-8487::14e4-d5a7-e317-eb3f::73e0-52f2-7c5c-a8c2" number="1" type="upgrade">
+              <profiles>
+                <profile id="5656-35a5-5541-8487::14e4-d5a7-e317-eb3f::9383-7f0a-83a8-0812" name="⚔ Dagger" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="9143-a3e8-bb1d-399e" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="9b1f-66d3-9d9e-f5e7" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="b6d9-a7a8-8795-55a5" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+            <category id="aecd-873c-1e11-551a" name="Icon Bearer" entryId="9f56-4f62-6d62-1de9" primary="false"/>
+            <category id="ac91-e01f-3dcc-ae4a" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="0cb7-acd0-c6ec-7114" name="Tzaangor (Fighter)" entryId="3f7a-5646-ea18-90f6::f559-8366-9d85-60cd" number="1" type="model">
+          <profiles>
+            <profile id="3f7a-5646-ea18-90f6::5b96-ddf3-63d5-d28b::e4b6-1131-1def-fe07" name="Tzaangor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3f7a-5646-ea18-90f6::0619-2af3-5295-3c3d::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="020e-2d75-1d86-804e" name="Autopistol and chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::8f18-0530-902d-caf5" entryGroupId="3f7a-5646-ea18-90f6::30a1-006e-6e80-d2c3" number="1" type="upgrade">
+              <selections>
+                <selection id="2fd8-9d4f-3dfe-5b6c" name="Autopistol" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::df1f-5e18-7940-d293" number="1" type="upgrade">
+                  <rules>
+                    <rule id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::6092-e518-a1c3-90f1::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::cc83-9e0a-995c-8e16" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="de2a-976e-0046-7a01" name="Chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::1bcf-51e8-38b1-4173" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::737b-e1d7-5657-c467" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="f21c-eee1-8c86-f2a7" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="148c-e5f2-75ec-be49" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="e9a7-5898-454d-670b" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+            <category id="3a8c-3d47-7651-4528" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="a634-6117-b88a-a35d" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="c02b-a2ab-8105-d975" name="Tzaangor (Fighter)" entryId="3f7a-5646-ea18-90f6::f559-8366-9d85-60cd" number="1" type="model">
+          <profiles>
+            <profile id="3f7a-5646-ea18-90f6::5b96-ddf3-63d5-d28b::e4b6-1131-1def-fe07" name="Tzaangor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3f7a-5646-ea18-90f6::0619-2af3-5295-3c3d::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="1552-f492-c9ae-16fd" name="Autopistol and chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::8f18-0530-902d-caf5" entryGroupId="3f7a-5646-ea18-90f6::30a1-006e-6e80-d2c3" number="1" type="upgrade">
+              <selections>
+                <selection id="32b1-4b32-69a4-e321" name="Autopistol" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::df1f-5e18-7940-d293" number="1" type="upgrade">
+                  <rules>
+                    <rule id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::6092-e518-a1c3-90f1::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::cc83-9e0a-995c-8e16" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="f27b-794c-7586-e0f2" name="Chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::1bcf-51e8-38b1-4173" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::737b-e1d7-5657-c467" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="d9d5-9b72-e20d-94c2" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="d452-2db9-b6f9-ba77" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="808c-3db2-ecc5-5d32" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+            <category id="c946-b643-bac3-eb39" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="dc4b-77c3-13e8-c3f9" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="14af-2812-38e0-8957" name="Tzaangor (Fighter)" entryId="3f7a-5646-ea18-90f6::f559-8366-9d85-60cd" number="1" type="model">
+          <profiles>
+            <profile id="3f7a-5646-ea18-90f6::5b96-ddf3-63d5-d28b::e4b6-1131-1def-fe07" name="Tzaangor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3f7a-5646-ea18-90f6::0619-2af3-5295-3c3d::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="4a75-438e-c7ac-719c" name="Autopistol and chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::8f18-0530-902d-caf5" entryGroupId="3f7a-5646-ea18-90f6::30a1-006e-6e80-d2c3" number="1" type="upgrade">
+              <selections>
+                <selection id="42f3-42b0-a820-ebde" name="Autopistol" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::df1f-5e18-7940-d293" number="1" type="upgrade">
+                  <rules>
+                    <rule id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::6092-e518-a1c3-90f1::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::cc83-9e0a-995c-8e16" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="736e-8d13-5e48-5a64" name="Chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::1bcf-51e8-38b1-4173" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::737b-e1d7-5657-c467" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="a21d-3b20-ea7d-6c7c" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="3fce-f04d-9b72-947e" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="91e9-74be-76c0-5051" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+            <category id="fe00-f881-d2da-4136" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="4c8e-33ed-dcef-119b" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="1d70-008e-2332-baf6" name="Tzaangor (Fighter)" entryId="3f7a-5646-ea18-90f6::f559-8366-9d85-60cd" number="1" type="model">
+          <profiles>
+            <profile id="3f7a-5646-ea18-90f6::5b96-ddf3-63d5-d28b::e4b6-1131-1def-fe07" name="Tzaangor" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3f7a-5646-ea18-90f6::0619-2af3-5295-3c3d::3091-24b0-2f5c-6904" name="Favoured by Change" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="763b-bb90-117d-e6cb" name="Autopistol and chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::8f18-0530-902d-caf5" entryGroupId="3f7a-5646-ea18-90f6::30a1-006e-6e80-d2c3" number="1" type="upgrade">
+              <selections>
+                <selection id="b270-05db-595c-fb76" name="Autopistol" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::df1f-5e18-7940-d293" number="1" type="upgrade">
+                  <rules>
+                    <rule id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::6092-e518-a1c3-90f1::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::cc83-9e0a-995c-8e16" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="5958-34d0-99a1-deb4" name="Chainsword" entryId="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::1bcf-51e8-38b1-4173" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="3f7a-5646-ea18-90f6::4bbf-ff5e-589c-775e::737b-e1d7-5657-c467" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="cac0-0b6f-74ce-3e1b" name="THOUSAND SONS" entryId="fd70-de19-3d96-ca29" primary="false"/>
+            <category id="139a-7e77-8c13-0439" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="2e2b-c8d2-4ad7-f643" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+            <category id="4b13-ae4b-62f3-ed32" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="3b48-ae6c-9c19-3fba" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="3d1c-1a87-a9e3-7499" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="a562-2d6d-8812-3597" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="f4d3-78ae-ee84-dd9d" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="4371-ddd6-78e5-6c75" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="9b44-03f9-f72d-51a3" name="Tzaangor" entryId="5770-50c2-6588-a81c" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>

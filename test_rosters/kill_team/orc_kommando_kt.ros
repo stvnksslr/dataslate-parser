@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="4de7-05f3-05b4-8374" name="New Roster" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <forces>
+    <force id="58a3-c9d3-4048-9db2" name="Kommando Kill Team" entryId="a5e0-30a2-ee0a-a762" catalogueId="9210-4d15-82ce-4526" catalogueRevision="2" catalogueName="Kommando">
+      <selections>
+        <selection id="c09a-2617-94c5-738a" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="fd79-cf26-8a55-ac6d" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="999f-6151-e7c9-ff6a" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="1aa7-ce71-31f4-f32e" name="Nob w/ power klaw" entryId="308f-41eb-a0f3-5723::1ea0-bc33-96e9-29d3" number="1" type="model">
+          <profiles>
+            <profile id="308f-41eb-a0f3-5723::37dc-f2ab-b8d5-b320::746e-c0d6-2258-75af" name="Get it Dun!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, you can select one friendly KOMMANDO💀 operative within ⬟ of and visible to it. Add 1 to the selected operative&apos;s APL.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="308f-41eb-a0f3-5723::bfd7-c937-b07c-cbd5::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="308f-41eb-a0f3-5723::ce02-a0d2-0845-95b3::8780-1364-be24-d810" name="Kommando Nob" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">13</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="1ffc-63c0-a2a9-7b74" name="Power klaw" entryId="308f-41eb-a0f3-5723::4c2d-8627-6844-715c" number="1" type="upgrade">
+              <rules>
+                <rule id="308f-41eb-a0f3-5723::da83-3714-ecfa-b308::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="308f-41eb-a0f3-5723::3ff2-aedc-362e-303e" name="⚔ Power klaw" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/7</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="2405-36dc-7a08-d509" name="Slugga" entryId="308f-41eb-a0f3-5723::aca3-10ff-4d17-a795::c9ee-4ebe-26ec-050e" number="1" type="upgrade">
+              <rules>
+                <rule id="308f-41eb-a0f3-5723::aca3-10ff-4d17-a795::ecfb-48ca-3000-ddf3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="308f-41eb-a0f3-5723::aca3-10ff-4d17-a795::299f-8cfc-ea08-d238" name="⌖ Slugga" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="add2-e9e6-195c-f952" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="d328-1dd9-724c-19af" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="26ab-6728-b951-164f" name="Kommando Nob" entryId="7c33-5897-9860-0d86" primary="false"/>
+            <category id="8807-3980-5971-a36b" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="3b71-0dc3-cbc5-b874" name="Snipa Boy" entryId="ad13-16cc-82e3-ccdf::c7da-483a-3f7e-8dd5" number="1" type="model">
+          <profiles>
+            <profile id="ad13-16cc-82e3-ccdf::2dca-6bbf-9f57-d224" name="Snipa Boy" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ad13-16cc-82e3-ccdf::6472-d502-323e-fe01" name="&apos;Av it! (2AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Shoot action with this operative using its scoped big shoota. After making the shooting attack against the target, this operative can make a shooting attack against each other valid target within ⬤ of the original target. Each time this operative makes a shooting attack for this action, subtract 2 from the Attacks characteristic of its scoped big shoota for that shooting attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ad13-16cc-82e3-ccdf::defb-1f16-c8f0-872c" name="Da Best Spot (2AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Shoot action with this operative using its scoped big shoota, even if it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ad13-16cc-82e3-ccdf::5ac6-cc8f-b25d-e3e2::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="c375-8f7e-82ab-20ec" name="Scoped big shoota" entryId="ad13-16cc-82e3-ccdf::b1ca-c3ad-f4ed-123d" number="1" type="upgrade">
+              <rules>
+                <rule id="ad13-16cc-82e3-ccdf::75ae-9104-67c0-d45d::0d4b-7a76-d266-bcc1" name="MWx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each critical hit retained, inflict x mortal wounds on the target. x is the number after the weapon&apos;s MW, e.g. MW3.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ad13-16cc-82e3-ccdf::c387-a35f-ad72-32c7" name="⌖ Scoped big shoota" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">6</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/2</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="cd98-8ac4-3161-2ead" name="Fists" entryId="ad13-16cc-82e3-ccdf::51c8-9665-8691-721c::0b03-8967-fc87-3480" number="1" type="upgrade">
+              <profiles>
+                <profile id="ad13-16cc-82e3-ccdf::51c8-9665-8691-721c::5f04-e544-f68a-8b09" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="8aeb-feb9-7f3c-311a" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="3a69-e5e9-9bf1-5e2c" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="9639-349b-788b-920b" name="Snipa Boy" entryId="4b8e-20e5-f8eb-0f21" primary="false"/>
+            <category id="95e5-e53b-5b6d-a7e0" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="ccee-4771-c641-f847" name="Slasha Boy" entryId="47bb-212d-eef7-82a1::0b3c-3ead-0178-0609" number="1" type="model">
+          <profiles>
+            <profile id="47bb-212d-eef7-82a1::1dff-5966-9c10-f562" name="Slasha Boy" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="47bb-212d-eef7-82a1::5958-e6be-85bb-f9ea" name="Dat All You Got?" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time after this operative fights in combat, if it lost any wounds in that combat but was not incapacitated, you can roll one D6: on a 4+, the enemy operative that fought it in that combat suffers 2 mortal wounds.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="47bb-212d-eef7-82a1::f369-4f04-461b-8ad2::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b4c7-01b5-4e2c-328f" name="Throwing knives" entryId="47bb-212d-eef7-82a1::1491-56af-71a8-09da" number="1" type="upgrade">
+              <rules>
+                <rule id="47bb-212d-eef7-82a1::8a23-4398-edbe-5fb7::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+                <rule id="47bb-212d-eef7-82a1::586e-3259-65c2-47b6::ce60-8109-69c9-3908" name="Silent" hidden="false">
+                  <description>While an operative has a Conceal order, it can perform Shoot actions if this is the ranged weapon (or weapon profile) that is selected for the shooting attack(s).</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="47bb-212d-eef7-82a1::0c72-b8fb-b388-d867" name="Throwing knives" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, Silent</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="e6fe-cbc3-a300-7129" name="Twin choppas" entryId="47bb-212d-eef7-82a1::01fb-fba5-90ba-7423" number="1" type="upgrade">
+              <rules>
+                <rule id="47bb-212d-eef7-82a1::c914-5fea-d826-911a::1875-9b07-2a07-aacc" name="Relentless" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll any or all of your attack dice.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="47bb-212d-eef7-82a1::c536-1718-7897-c509" name="Twin choppas" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Relentless</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="c59d-23ab-1799-7a77" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="19ed-7e32-7871-e0a7" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="2c2a-95d4-6c7f-8f4f" name="Slasha Boy" entryId="002d-52b4-5629-1c01" primary="false"/>
+            <category id="ce69-b17b-1361-0ec0" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="f83b-39c6-31a3-ded9" name="Grot" entryId="95cc-df96-fd37-4b92::8425-4dd8-3cb1-90fc" number="1" type="model">
+          <profiles>
+            <profile id="95cc-df96-fd37-4b92::465b-68f1-9f27-50d9" name="Grot" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">5</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="95cc-df96-fd37-4b92::7612-e83c-2770-b5ca" name="Sneaky Zogger" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot have an Engage order. In addition, this operative is always treated as having a Conceal order, regardless of any other rules (e.g. Vantage Point).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="95cc-df96-fd37-4b92::0d7e-472b-6875-615c" name="Grappling Hook (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select a point on a terrain feature that is Visible to this operative (treat that point as an intended target). Perform a free Normal Move action with this operative, moving in a single straight line with an unlimited Movement as though it can FLY. It must finish that move within ▲ of that point.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="95cc-df96-fd37-4b92::2626-87be-6ebe-269d::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="3e72-32c8-95fb-d958" name="Grot choppa" entryId="95cc-df96-fd37-4b92::3925-021e-387d-85c0" number="1" type="upgrade">
+              <profiles>
+                <profile id="95cc-df96-fd37-4b92::5cd4-48f0-f3dd-2af3" name="⚔ Grot choppa" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">5+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">1/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="7c33-cbfb-9aad-cfc1" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="22a6-c1c8-c9ed-a6bf" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="a7f4-e87b-9a9b-e3f3" name="Kommando Grot" entryId="27c3-6016-6b60-a2d3" primary="false"/>
+            <category id="6d17-1c5e-0d13-a44e" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="6f0f-406e-e2ad-a0fd" name="Comms Boy" entryId="3b2e-246e-77f7-0005::3ba5-0660-edb1-d020" number="1" type="model">
+          <profiles>
+            <profile id="3b2e-246e-77f7-0005::f404-ccbc-b583-4efb" name="Comms Boy" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3b2e-246e-77f7-0005::a21e-480e-9386-5049" name="I Got a Plan, Ladz" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, during this operative&apos;s activation, it can perform a mission or Pick Up action for one less AP (to a minimum of 0AP).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3b2e-246e-77f7-0005::b60d-52c0-8d9c-bcd8" name="Listen In (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly KOMMANDO operative within ⬟ of and Visible to this operative. Add 1 to its APL. This operative cannot perform this action if it is within Engagement Range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3b2e-246e-77f7-0005::1eb9-9a92-ca12-493d::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="1f93-4916-2694-1372" name="Shokka pistol" entryId="3b2e-246e-77f7-0005::af85-6f33-a425-213a" number="1" type="upgrade">
+              <rules>
+                <rule id="3b2e-246e-77f7-0005::2dfc-9778-958e-7f45::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+                <rule id="3b2e-246e-77f7-0005::6d26-c008-4c56-ce66::a1e3-4e0b-f7c2-eb59" name="Stun" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, subtract 1 from the target&apos;s APL.
+
+Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat:
+- The first time you strike with a critical hit, select one of your opponent&apos;s normal hits from that combat to be discarded.
+- The second time you strike with a critical hit, subtract 1 from the target&apos;s APL.</description>
+                </rule>
+                <rule id="3b2e-246e-77f7-0005::fe94-f970-ee1b-8ce1::0d4b-7a76-d266-bcc1" name="MWx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each critical hit retained, inflict x mortal wounds on the target. x is the number after the weapon&apos;s MW, e.g. MW3.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="3b2e-246e-77f7-0005::3ede-8633-3573-275a" name="⌖ Shokka pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">6</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">1/1</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Stun, MW2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="0d77-252d-35db-c058" name="Fists" entryId="3b2e-246e-77f7-0005::a979-25ac-d444-fa40::0b03-8967-fc87-3480" number="1" type="upgrade">
+              <profiles>
+                <profile id="3b2e-246e-77f7-0005::a979-25ac-d444-fa40::5f04-e544-f68a-8b09" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3db9-b748-1a4f-3244" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="179d-bc7c-a300-a5f5" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="4ce9-1f08-3a99-d3b1" name="Comms Boy" entryId="346d-8675-ff7f-80ff" primary="false"/>
+            <category id="815a-77e9-c750-ccad" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="f6e9-95a7-1d84-1d2b" name="Bomb Squig" entryId="4cd0-1921-0970-cd9c::254b-70c4-40f8-0556" number="1" type="model">
+          <profiles>
+            <profile id="4cd0-1921-0970-cd9c::0573-2e2d-56a6-4847" name="Bomb Squig" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">6</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4cd0-1921-0970-cd9c::4616-4a99-c585-232a" name="BOOM!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">If this operative is incapacitated, roll one D6: on a 3+, it makes a shooting attack using its dynamite.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4cd0-1921-0970-cd9c::d53d-7afa-1b90-8783" name="Stoopid" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot perform mission actions, cannot perform the Pick Up action and cannot have a Conceal order. It cannot be equipped with equipment. In narrative play, it cannot gain (or lose) experience and automatically passes Casualty tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="06a9-df40-00c9-0797" name="Dynamite" entryId="4cd0-1921-0970-cd9c::f0ad-3ac7-22f2-8973" number="1" type="upgrade">
+              <rules>
+                <rule id="4cd0-1921-0970-cd9c::5e22-528f-beb0-22a1::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="4cd0-1921-0970-cd9c::93e5-2979-7583-c98f::1f11-c169-2746-13cf" name="Px" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, the weapon gains the APx rule for that shooting attack. x is the number after the weapon&apos;s P, e.g. P1.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="4cd0-1921-0970-cd9c::f75f-a951-4257-1828" name="⌖ Dynamite" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1, Bomb Squig*</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">P2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4cd0-1921-0970-cd9c::9494-b28f-3c5f-3a67" name="*Bomb Squig" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Shoot action with this weapon if it is within Engagement Range of an enemy operative. When this operative performs a Shoot action and selects this ranged weapon, make a shooting attack against each other operative Visible to and within of it (even if it has friendly operatives within its Engagement Range) with this weapon - each of them is a valid target and cannot be in Cover. After all of those shooting attacks have been made, this operative is incapacitated and does not roll for its BOOM! ability. This operative cannot make a shooting attack with this weapon by performing an Overwatch action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="14bd-e837-665a-c521" name="Vicious Bite" entryId="4cd0-1921-0970-cd9c::a37f-d047-9693-69f3" number="1" type="upgrade">
+              <profiles>
+                <profile id="4cd0-1921-0970-cd9c::d6b2-0648-8524-bbb5" name="⚔ Vicious Bite" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3287-dead-fa2f-323a" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="0439-3f73-6381-b648" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="2509-5b6d-5b16-d676" name="Bomb Squig" entryId="4152-b68f-0cbd-9b3d" primary="false"/>
+            <category id="59b6-4246-88a3-07e6" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="dc78-dcd2-5fd8-e901" name="Breacha Boy" entryId="3b2a-9978-7218-68bd::277f-a5f5-d3c6-ab2e" number="1" type="model">
+          <profiles>
+            <profile id="3b2a-9978-7218-68bd::9088-b37a-6260-5a24" name="Bull Charge" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative fights in combat, if it made a charge move during that activation, its breacha ram gains the critical hit rule for that combat.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3b2a-9978-7218-68bd::3cfb-9d67-1dd9-bc35" name="Breacha Boy" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3b2a-9978-7218-68bd::0cdb-a35e-7090-59a8" name="Breach" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative performs a Normal Move, Dash or Charge action, it can move through parts of terrain features that are no more than ▲ thick as if they were not there.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="3b2a-9978-7218-68bd::815e-d702-4f03-bbcd::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="e31a-6522-ff68-143a" name="Breacha ram" entryId="3b2a-9978-7218-68bd::f7f4-54c5-66d6-b1d3" number="1" type="upgrade">
+              <rules>
+                <rule id="3b2a-9978-7218-68bd::dd3b-f93a-8cb9-6c05::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="3b2a-9978-7218-68bd::5a76-02bc-41c8-162f" name="⚔ Breacha ram" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Brutal</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="94a0-036d-34f4-3e15" name="Slugga" entryId="3b2a-9978-7218-68bd::e736-710c-8e5a-4007::c9ee-4ebe-26ec-050e" number="1" type="upgrade">
+              <rules>
+                <rule id="3b2a-9978-7218-68bd::e736-710c-8e5a-4007::ecfb-48ca-3000-ddf3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="3b2a-9978-7218-68bd::e736-710c-8e5a-4007::299f-8cfc-ea08-d238" name="⌖ Slugga" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="b89e-2b25-b205-abaa" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="cf97-0f49-aa7c-a3f8" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="de30-b777-1a9f-cc0f" name="Breacha Boy" entryId="c1a6-ba11-1d1f-7809" primary="false"/>
+            <category id="5a8b-4404-1bcd-d5a0" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="503e-081f-5535-bce2" name="Rokkit Boy" entryId="5311-acf6-c00d-e0b1::f67f-2de3-daef-1fbf" number="1" type="model">
+          <profiles>
+            <profile id="5311-acf6-c00d-e0b1::2114-18ca-6420-ebc5" name="Rokkit Boy" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5311-acf6-c00d-e0b1::ea4e-f0ae-5950-485a" name="Boom Boy" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative performs a Shoot action during its activation, in the Roll Attack Dice step of that action&apos;s shooting attack, if it has not moved during that activation, you can re-roll any or all of your attack dice.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5311-acf6-c00d-e0b1::2ec3-4283-f0a4-78a9::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="957c-87a9-055f-3f56" name="Rokkit launcha" entryId="5311-acf6-c00d-e0b1::fa8f-2e56-ba1a-dc00" number="1" type="upgrade">
+              <rules>
+                <rule id="5311-acf6-c00d-e0b1::86ab-f88c-f43c-c872::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="5311-acf6-c00d-e0b1::f46f-74f1-2547-4974::eab8-73f5-feed-5924" name="Splash x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each critical hit retained, inflict x mortal wounds on the target and each other operative Visible to and within ⬤ of it. x is the number after the weapon&apos;s Splash, e.g. Splash 1.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="5311-acf6-c00d-e0b1::800b-7d03-849f-fc0e" name="⌖ Rokkit launcha" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Splash 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="eb4d-3bc4-e849-ec2f" name="Fists" entryId="5311-acf6-c00d-e0b1::e28f-888b-e921-f08a::0b03-8967-fc87-3480" number="1" type="upgrade">
+              <profiles>
+                <profile id="5311-acf6-c00d-e0b1::e28f-888b-e921-f08a::5f04-e544-f68a-8b09" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="10d9-ce37-bebd-b92a" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="99fa-14ac-f25a-7163" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="7e86-33fc-7a2d-be44" name="Rokkit Boy" entryId="b90d-e593-2aa6-36d5" primary="false"/>
+            <category id="4d6c-fd57-c8e3-2974" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="220b-34c2-2156-c5f6" name="Dakka Boy" entryId="c80b-06a5-e38b-84a1::94ab-c60d-d426-0fdf" number="1" type="model">
+          <profiles>
+            <profile id="c80b-06a5-e38b-84a1::24a9-b80e-1181-137b" name="Dakka Boy" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">10</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c80b-06a5-e38b-84a1::116c-4a97-219f-55ff" name="*Unload Slugs" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if the target is within ⬟ of it, you can re-roll any or all of your attack dice.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c80b-06a5-e38b-84a1::8259-3c40-22eb-6891" name="Dakka Dash (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Perform a free Shoot action and free Dash action with this operative in any order.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c80b-06a5-e38b-84a1::f91c-c887-9da6-14e1::97ad-1fce-6e13-c943" name="Throat Slitta" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative can perform a Charge action while it has a Conceal order.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="fc6a-3ece-868d-7a40" name="Dakka shoota" entryId="c80b-06a5-e38b-84a1::3814-f104-ad3e-bf46" number="1" type="upgrade">
+              <profiles>
+                <profile id="c80b-06a5-e38b-84a1::a5df-0b33-d014-30ff" name="⌖ Dakka shoota" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Unload Slugs*</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="7096-28de-72a1-b78e" name="Fists" entryId="c80b-06a5-e38b-84a1::5145-bda7-5c2a-c2dc::0b03-8967-fc87-3480" number="1" type="upgrade">
+              <profiles>
+                <profile id="c80b-06a5-e38b-84a1::5145-bda7-5c2a-c2dc::5f04-e544-f68a-8b09" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="f9f3-55e1-678a-1d89" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+            <category id="914d-3884-cc3e-1a17" name="Ork" entryId="fff5-e805-1699-7f74" primary="false"/>
+            <category id="6d58-07ca-0e1e-9249" name="Dakka Boy" entryId="f28e-5ad9-3d14-dd19" primary="false"/>
+            <category id="760a-2b64-2029-e0e7" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="3ac3-274f-18b9-41ef" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="ea83-90b5-6796-7a39" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="269a-94c3-b479-201e" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="33b3-8044-f6f1-b4e7" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="d8dc-cb15-8f65-f7ae" name="Kommando Grot" entryId="27c3-6016-6b60-a2d3" primary="false"/>
+        <category id="2a16-c22d-9d5f-e3d0" name="Slasha Boy" entryId="002d-52b4-5629-1c01" primary="false"/>
+        <category id="34c0-d848-b2f7-f063" name="Bomb Squig" entryId="4152-b68f-0cbd-9b3d" primary="false"/>
+        <category id="d3d4-c02c-e035-fb05" name="Breacha Boy" entryId="c1a6-ba11-1d1f-7809" primary="false"/>
+        <category id="a6b0-7039-67d3-d53b" name="Burna Boy" entryId="589f-07cd-c552-ff24" primary="false"/>
+        <category id="cdfa-74c3-0ed0-ad7d" name="Comms Boy" entryId="346d-8675-ff7f-80ff" primary="false"/>
+        <category id="97ad-5622-0df7-6dfc" name="Dakka Boy" entryId="f28e-5ad9-3d14-dd19" primary="false"/>
+        <category id="e396-e46b-d640-f98c" name="Rokkit Boy" entryId="b90d-e593-2aa6-36d5" primary="false"/>
+        <category id="9516-8e14-6ab3-dd2d" name="Snipa Boy" entryId="4b8e-20e5-f8eb-0f21" primary="false"/>
+        <category id="8374-5c15-5300-707e" name="KOMMANDO" entryId="dde5-2643-f81c-96f5" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>
