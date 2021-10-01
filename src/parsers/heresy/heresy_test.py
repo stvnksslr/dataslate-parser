@@ -30,7 +30,7 @@ def test__heresy_loop_through_test_folder_and_parse():
         parsed_roster = fetch_and_parse_roster(roster_file=str(base_path) + "/" + roster)
         parsed_rosters.append(parsed_roster)
 
-    assert bool(parsed_rosters) == True
+    assert bool(parsed_rosters)
 
 
 def test__new_bs_format():
@@ -40,7 +40,7 @@ def test__new_bs_format():
     expected: successfully parses all three entries in the roster
     """
     parsed_roster = fetch_and_parse_roster(roster_file=new_bs_format)
-    assert bool(parsed_roster) == True
+    assert bool(parsed_roster)
     assert len(parsed_roster) == 3
 
 
@@ -65,7 +65,7 @@ def test__tac_squad_with_dt():
     """
     parsed_roster = fetch_and_parse_roster(roster_file=tac_squad_with_dt)
 
-    assert bool(parsed_roster) == True
+    assert bool(parsed_roster)
     assert len(parsed_roster[0].list_of_units) == 3
     assert parsed_roster[0].list_of_units[0].name == "legion tactical space marine"
     assert parsed_roster[0].list_of_units[1].name == "legion tactical sergeant"
@@ -82,7 +82,7 @@ def test__tac_squad_with_dt_characteristics():
     parsed_roster = fetch_and_parse_roster(roster_file=tac_squad_with_dt)
     tactical_squad = parsed_roster[0].list_of_units
 
-    assert bool(parsed_roster) == True
+    assert bool(parsed_roster)
     assert parsed_roster[0].list_of_units[0].name == "legion tactical space marine"
     assert tactical_squad[0].attacks == "1"
     assert tactical_squad[0].ballistic_skill == "4"
@@ -115,7 +115,7 @@ def test_wargear_additions():
     """
     parsed_roster = fetch_and_parse_roster(roster_file=list_with_wargear)
     unit_with_wargear = parsed_roster[0].list_of_units[0]
-    assert bool(parsed_roster) == True
+    assert bool(parsed_roster)
     assert len(unit_with_wargear.wargear) == 2
 
 
@@ -128,7 +128,7 @@ def test_weapon_additions():
     parsed_roster = fetch_and_parse_roster(roster_file=list_with_wargear)
     unit_with_weapon = parsed_roster[0].list_of_units[0]
 
-    assert bool(parsed_roster) == True
+    assert bool(parsed_roster)
     assert len(unit_with_weapon.weapon) == 2
 
 
