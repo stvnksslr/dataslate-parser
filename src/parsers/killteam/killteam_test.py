@@ -21,14 +21,14 @@ def test__killteam_loop_through_test_folder_and_parse():
         parsed_roster = fetch_and_parse_roster(roster_file=str(base_path) + "/" + roster)
         parsed_rosters.append(parsed_roster)
 
-    assert bool(parsed_rosters)
+    assert parsed_rosters
 
 
 def test__killteam_parse_chaos_killteam():
     chaos_killteam_path = str(base_path / "chaos_killteam.ros")
     parsed_roster = fetch_and_parse_roster(roster_file=chaos_killteam_path)
 
-    assert bool(parsed_roster)
+    assert parsed_roster
     assert len(parsed_roster) == 11
     assert parsed_roster[0].name == "Aspiring Champion"
     assert len(parsed_roster[0].wargear) == 3
@@ -38,7 +38,35 @@ def test__killteam_parse_vet_guardsman_killteam():
     vet_guardsmen_path = str(base_path / "vet_guard.ros")
     parsed_roster = fetch_and_parse_roster(roster_file=vet_guardsmen_path)
 
-    assert bool(parsed_roster)
+    assert parsed_roster
     assert len(parsed_roster) == 10
     assert parsed_roster[0].name == "Gunner Veteran"
     assert len(parsed_roster[0].wargear) == 3
+
+
+def test__killteam_tsons():
+    t_sons_path = base_path / 't_sons.ros'
+    parsed_roster = fetch_and_parse_roster(roster_file=t_sons_path)
+    assert bool(parsed_roster)
+    assert parsed_roster[0].name == 'Aspiring Sorcerer'
+
+
+def test__killteam_brood_coven():
+    brood_coven_path = base_path / 'brood_coven_kt.ros'
+    parsed_roster = fetch_and_parse_roster(roster_file=brood_coven_path)
+    assert bool(parsed_roster)
+    assert parsed_roster[0].name == 'Acolyte Hybrid (Leader)'
+
+
+def test__killteam_cadre_mercenary():
+    cadre_mercenary_kt = base_path / 'cadre_mercenary_kt.ros'
+    parsed_roster = fetch_and_parse_roster(roster_file=cadre_mercenary_kt)
+    assert bool(parsed_roster)
+    assert parsed_roster[0].name == 'Kroot Carnivore (Warrior)'
+
+
+def test__killteam_sm_reiver():
+    sm_reiver_kt = base_path / 'sm_reiver_kt.ros'
+    parsed_roster = fetch_and_parse_roster(roster_file=sm_reiver_kt)
+    assert bool(parsed_roster)
+    assert parsed_roster[0].name == 'Reiver Sergeant'

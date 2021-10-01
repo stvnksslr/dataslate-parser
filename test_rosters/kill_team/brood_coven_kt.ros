@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="bdeb-0904-d096-9cb5" name="brood_coven_kt" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <forces>
+    <force id="10e9-e2cd-a877-5457" name="Acolyte Hybrid Fire Team" entryId="072c-8b10-0bd4-bdbc" catalogueId="8688-f7bc-228f-3b98" catalogueRevision="3" catalogueName="Brood Coven">
+      <selections>
+        <selection id="e768-5690-c07a-f51b" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="bb93-9fe3-d3aa-4da5" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="22e2-4b46-1766-1f23" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="2f7d-fa15-ed5a-32af" name="Acolyte Hybrid (Leader)" entryId="5eac-5cdc-6dfc-3230::8b36-7734-4af1-aa72" number="1" type="model">
+          <profiles>
+            <profile id="5eac-5cdc-6dfc-3230::233d-9e76-a64d-eda9::05ae-638b-86f3-6b1b" name="Acolyte Hybrid (Leader)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="dd24-4f15-56cc-c392" name="Cult bonesword and claw" entryId="5eac-5cdc-6dfc-3230::401f-c543-ae8e-b9e3" entryGroupId="5eac-5cdc-6dfc-3230::3e47-b7e7-d3fd-ce66" number="1" type="upgrade">
+              <rules>
+                <rule id="5eac-5cdc-6dfc-3230::db46-24dd-4eb7-4202::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+                <rule id="5eac-5cdc-6dfc-3230::d4a0-3ae0-a71e-4210::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="5eac-5cdc-6dfc-3230::2afa-ac98-2a76-0444" name="⚔ Cult bonesword and claw" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="cf73-2611-b728-89c9" name="Autopistol" entryId="5eac-5cdc-6dfc-3230::f695-93b7-84be-70a4::070a-b013-e41d-8106" entryGroupId="5eac-5cdc-6dfc-3230::5a87-1a8f-e4ad-6e79" number="1" type="upgrade">
+              <rules>
+                <rule id="5eac-5cdc-6dfc-3230::f695-93b7-84be-70a4::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="5eac-5cdc-6dfc-3230::f695-93b7-84be-70a4::4bd9-0768-eddf-11ee" name="⌖ Autopistol (Leader)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="ad1b-22b3-eab3-4393" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="4f82-5d8a-a4e2-ccd7" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="9325-c226-d462-e182" name="Acolyte Hybrid" entryId="690f-82a0-dc9a-d86f" primary="false"/>
+            <category id="7a6b-d6cb-1832-b5a6" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="70e9-011e-2679-20ec" name="Acolyte Hybrid (Trooper)" entryId="32c1-1b4e-0089-d7f8::ec52-b7de-2b47-58e2" number="1" type="model">
+          <profiles>
+            <profile id="32c1-1b4e-0089-d7f8::2550-0b07-69e9-3fcd::05ae-638b-86f3-6b1b" name="Acolyte Hybrid" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="ec10-0a6c-95aa-0f09" name="Autopistol" entryId="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="8992-7c3e-4158-1dfd" name="Cult knife and claw" entryId="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c6f4-8374-a83e-5fa0" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::710f-a4c1-eaef-20fb::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::9a93-155c-36fe-c548::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c2e9-ba1e-e94a-b9cc" name="⚔ Cult knife and claw" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="709f-2f9c-e5d7-59e2" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="7f72-ccb8-20b6-ecc1" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="de25-7199-5d7e-88ec" name="Acolyte Hybrid" entryId="690f-82a0-dc9a-d86f" primary="false"/>
+            <category id="3060-08cd-69b8-2060" name="Trooper" entryId="5c5d-787d-c9dc-a697" primary="false"/>
+            <category id="f65b-3413-0ab0-55ad" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="1238-4270-a8d1-fc8f" name="Acolyte Hybrid (Trooper)" entryId="32c1-1b4e-0089-d7f8::ec52-b7de-2b47-58e2" number="1" type="model">
+          <profiles>
+            <profile id="32c1-1b4e-0089-d7f8::2550-0b07-69e9-3fcd::05ae-638b-86f3-6b1b" name="Acolyte Hybrid" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="be96-db2d-0235-696b" name="Autopistol" entryId="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="4bdf-111a-778a-49ba" name="Cult knife and claw" entryId="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c6f4-8374-a83e-5fa0" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::710f-a4c1-eaef-20fb::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::9a93-155c-36fe-c548::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c2e9-ba1e-e94a-b9cc" name="⚔ Cult knife and claw" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e8ac-bf0a-676c-d43c" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="7d20-5f08-d667-f603" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="70b4-94a5-244f-a1f7" name="Acolyte Hybrid" entryId="690f-82a0-dc9a-d86f" primary="false"/>
+            <category id="921d-8014-24b8-1192" name="Trooper" entryId="5c5d-787d-c9dc-a697" primary="false"/>
+            <category id="e1ea-6832-f369-8ebf" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="dc91-faea-17cb-0456" name="Acolyte Hybrid (Trooper)" entryId="32c1-1b4e-0089-d7f8::ec52-b7de-2b47-58e2" number="1" type="model">
+          <profiles>
+            <profile id="32c1-1b4e-0089-d7f8::2550-0b07-69e9-3fcd::05ae-638b-86f3-6b1b" name="Acolyte Hybrid" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7751-88c3-893c-4c1c" name="Autopistol" entryId="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="8110-9f40-1cee-9141" name="Cult knife and claw" entryId="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c6f4-8374-a83e-5fa0" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::710f-a4c1-eaef-20fb::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::9a93-155c-36fe-c548::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c2e9-ba1e-e94a-b9cc" name="⚔ Cult knife and claw" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="7e30-ba10-ac30-9cd9" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="5905-8b52-2b2d-61a7" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="e06d-99cf-3749-6c09" name="Acolyte Hybrid" entryId="690f-82a0-dc9a-d86f" primary="false"/>
+            <category id="0cab-4e4a-17d2-3043" name="Trooper" entryId="5c5d-787d-c9dc-a697" primary="false"/>
+            <category id="9ca0-2384-4398-2b46" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="2a11-c62d-338e-a5f0" name="Acolyte Hybrid (Trooper)" entryId="32c1-1b4e-0089-d7f8::ec52-b7de-2b47-58e2" number="1" type="model">
+          <profiles>
+            <profile id="32c1-1b4e-0089-d7f8::2550-0b07-69e9-3fcd::05ae-638b-86f3-6b1b" name="Acolyte Hybrid" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="26e9-e0db-3f7a-cc8b" name="Autopistol" entryId="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::5152-bf87-d8e7-0afc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="94ef-ba59-f4e5-193f" name="Cult knife and claw" entryId="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c6f4-8374-a83e-5fa0" number="1" type="upgrade">
+              <rules>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::710f-a4c1-eaef-20fb::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::9a93-155c-36fe-c548::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="32c1-1b4e-0089-d7f8::7262-7138-5ceb-3d51::c2e9-ba1e-e94a-b9cc" name="⚔ Cult knife and claw" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1008-b5fb-875b-a971" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="72a2-a86f-9965-a063" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="a250-f524-acaf-007b" name="Acolyte Hybrid" entryId="690f-82a0-dc9a-d86f" primary="false"/>
+            <category id="12e4-78d4-c5cf-d85a" name="Trooper" entryId="5c5d-787d-c9dc-a697" primary="false"/>
+            <category id="6d2f-c9f9-9a70-bcdc" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="c49a-bde3-3c42-4969" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="af7b-b6f6-91bd-ac11" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="c3d6-b8de-5f01-4566" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="45be-ff97-2190-c5af" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="9024-70bd-ba1a-ae00" name="Gunner" entryId="ee8c-cc44-acc3-40f0" primary="false"/>
+        <category id="0921-2c10-1c15-3715" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+      </categories>
+    </force>
+    <force id="3223-f96d-5ad5-6e24" name="Hybrid Metamorph Fire Team" entryId="5f4a-40bc-4bed-a15f" catalogueId="8688-f7bc-228f-3b98" catalogueRevision="3" catalogueName="Brood Coven">
+      <selections>
+        <selection id="5dd8-7f36-cf67-55c5" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="ef7f-3de9-e95f-8344" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="73af-d696-7eed-fd42" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="835b-d608-3ee3-4fc7" name="Hybrid Metamorph (Fighter)" entryId="27bc-73e3-f454-993a::0322-a5a2-669a-d875" number="1" type="model">
+          <profiles>
+            <profile id="27bc-73e3-f454-993a::f01e-2121-781d-d179::4a4f-8d2f-3d81-88b1" name="Hybrid Metamorph" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7a9d-531b-3677-b971" name="Autopistol" entryId="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="dd5d-5c68-8983-d8bd" name="Metamorph mutations" entryId="27bc-73e3-f454-993a::c9c9-f199-555a-295a::9143-8a4a-9d72-4d64" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::12b7-6342-01fc-b510::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::c9a3-6541-f5b7-4a91::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::60c9-a996-8b4e-7e88::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::0bc1-c8af-4c1c-5d3e" name="⚔ Metamorph mutations" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="d9fe-525e-d8b3-28f6" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="7d88-3153-417b-1d68" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="1a28-7f71-e6ec-bd7e" name="Hybrid Metamorph" entryId="5a97-df71-65fe-232d" primary="false"/>
+            <category id="1323-f929-b239-2f9f" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="fee9-f80e-98b3-bb65" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="2f94-7dad-8492-1e89" name="Hybrid Metamorph (Fighter)" entryId="27bc-73e3-f454-993a::0322-a5a2-669a-d875" number="1" type="model">
+          <profiles>
+            <profile id="27bc-73e3-f454-993a::f01e-2121-781d-d179::4a4f-8d2f-3d81-88b1" name="Hybrid Metamorph" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7b3f-a8bb-cda5-0153" name="Autopistol" entryId="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="ec5e-8883-e63d-7f45" name="Metamorph mutations" entryId="27bc-73e3-f454-993a::c9c9-f199-555a-295a::9143-8a4a-9d72-4d64" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::12b7-6342-01fc-b510::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::c9a3-6541-f5b7-4a91::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::60c9-a996-8b4e-7e88::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::0bc1-c8af-4c1c-5d3e" name="⚔ Metamorph mutations" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="9d14-9bff-5b2b-365c" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="a46c-793f-7b1f-ea2b" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="5a0e-7781-225f-7d39" name="Hybrid Metamorph" entryId="5a97-df71-65fe-232d" primary="false"/>
+            <category id="f136-7447-e324-3014" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="1cdd-e07e-82ae-4056" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="75bd-72d5-d65a-0609" name="Hybrid Metamorph (Fighter)" entryId="27bc-73e3-f454-993a::0322-a5a2-669a-d875" number="1" type="model">
+          <profiles>
+            <profile id="27bc-73e3-f454-993a::f01e-2121-781d-d179::4a4f-8d2f-3d81-88b1" name="Hybrid Metamorph" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b00e-bc9b-063d-a483" name="Autopistol" entryId="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="961f-e831-975f-2913" name="Metamorph mutations" entryId="27bc-73e3-f454-993a::c9c9-f199-555a-295a::9143-8a4a-9d72-4d64" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::12b7-6342-01fc-b510::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::c9a3-6541-f5b7-4a91::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::60c9-a996-8b4e-7e88::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::0bc1-c8af-4c1c-5d3e" name="⚔ Metamorph mutations" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1e3a-eafb-ef89-2350" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="a6c0-cee9-48fc-e258" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="9e83-cafa-9ea0-65ba" name="Hybrid Metamorph" entryId="5a97-df71-65fe-232d" primary="false"/>
+            <category id="e261-dcab-28d6-44c9" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="44ed-1dba-fbd9-7f55" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="f58c-361a-a13b-5ce8" name="Hybrid Metamorph (Fighter)" entryId="27bc-73e3-f454-993a::0322-a5a2-669a-d875" number="1" type="model">
+          <profiles>
+            <profile id="27bc-73e3-f454-993a::f01e-2121-781d-d179::4a4f-8d2f-3d81-88b1" name="Hybrid Metamorph" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="c62c-7372-457a-5167" name="Autopistol" entryId="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="fb76-cfc8-a309-71c5" name="Metamorph mutations" entryId="27bc-73e3-f454-993a::c9c9-f199-555a-295a::9143-8a4a-9d72-4d64" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::12b7-6342-01fc-b510::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::c9a3-6541-f5b7-4a91::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::60c9-a996-8b4e-7e88::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::0bc1-c8af-4c1c-5d3e" name="⚔ Metamorph mutations" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="0b9f-1a54-2321-b93a" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="1bab-6f95-2067-721a" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="796e-cd06-a4bf-abc7" name="Hybrid Metamorph" entryId="5a97-df71-65fe-232d" primary="false"/>
+            <category id="5e8e-2454-218e-4fca" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="5073-8124-5656-d9e3" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="6415-eb8a-332e-d970" name="Hybrid Metamorph (Fighter)" entryId="27bc-73e3-f454-993a::0322-a5a2-669a-d875" number="1" type="model">
+          <profiles>
+            <profile id="27bc-73e3-f454-993a::f01e-2121-781d-d179::4a4f-8d2f-3d81-88b1" name="Hybrid Metamorph" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="fbf6-dbc8-7ac0-f046" name="Autopistol" entryId="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::070a-b013-e41d-8106" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::7802-7ad7-6589-fcc3::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::0512-17cd-fa76-2bdc::4bd9-0768-eddf-11ee" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="bddc-d5ad-916f-c11a" name="Metamorph mutations" entryId="27bc-73e3-f454-993a::c9c9-f199-555a-295a::9143-8a4a-9d72-4d64" number="1" type="upgrade">
+              <rules>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::12b7-6342-01fc-b510::547c-e6e5-64d4-a519" name="Balanced" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice stop of that combat or shooting attack, you can re-roll one of your attack dice.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::c9a3-6541-f5b7-4a91::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+                <rule id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::60c9-a996-8b4e-7e88::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="27bc-73e3-f454-993a::c9c9-f199-555a-295a::0bc1-c8af-4c1c-5d3e" name="⚔ Metamorph mutations" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Balanced, Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="6e4d-0bdb-0e61-b0dd" name="BROOD COVEN" entryId="b163-e801-3fdf-09e3" primary="false"/>
+            <category id="de38-fd9a-d1a5-a28a" name="Genestealer Cults" entryId="7e2a-1473-532f-9b94" primary="false"/>
+            <category id="6042-6ded-cdf5-09b0" name="Hybrid Metamorph" entryId="5a97-df71-65fe-232d" primary="false"/>
+            <category id="be04-8bd0-d40b-bf3d" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="0361-f045-065a-8196" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="e02a-12e4-28ff-3761" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="ee32-8cfa-c8c4-1a83" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="3334-4297-10b7-0f82" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="24f9-305d-c35d-02eb" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="84d8-8ce8-fbd7-6cd2" name="Hybrid Metamorph" entryId="5a97-df71-65fe-232d" primary="false"/>
+        <category id="0752-23a4-fb97-3a59" name="Gunner" entryId="ee8c-cc44-acc3-40f0" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>

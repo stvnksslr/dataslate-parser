@@ -65,7 +65,10 @@ def get_item_details(model, search_type):
 
         for characteristic in stats:
             name = characteristic.attrs.get("name")
-            value = characteristic.contents[0]
+            if characteristic.contents:
+                value = characteristic.contents[0]
+            else:
+                value = None
             characteristic_dict.update({name: value})
 
         formatted_items.update({item_name: characteristic_dict})

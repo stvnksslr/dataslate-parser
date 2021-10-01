@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="bc06-039a-045d-5563" name="dark_eldar_kt" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <forces>
+    <force id="59ae-2f5e-a75c-bda7" name="Kabalite Fire Team" entryId="2e68-0f7b-3cbb-655d" catalogueId="5a19-a6e8-8c74-0287" catalogueRevision="3" catalogueName="Commorrite">
+      <selections>
+        <selection id="d93b-c001-ae3b-5b7d" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="7bdf-c2bd-f029-e6dc" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4a0b-0515-5201-1e4d" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="24ff-3ca1-6971-b8b2" name="Kabalite (Gunner)" entryId="5c0a-38ca-ccf2-d164::af74-d1c1-568c-6254" number="1" type="model">
+          <profiles>
+            <profile id="5c0a-38ca-ccf2-d164::4abf-7171-58cd-aca1::0c24-e2fa-67f6-b9ef" name="Kabalite" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="f246-51cf-096d-ba25" name="Array of blades" entryId="5c0a-38ca-ccf2-d164::27b3-3471-ce0c-8a9b::6eb6-8453-6741-6a49" number="1" type="upgrade">
+              <rules>
+                <rule id="5c0a-38ca-ccf2-d164::27b3-3471-ce0c-8a9b::c2ad-4dcb-b82d-ba06::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="5c0a-38ca-ccf2-d164::27b3-3471-ce0c-8a9b::a50f-a929-378f-710d" name="⚔ Array of blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="1f9c-3bbc-2124-b93d" name="Blaster" entryId="5c0a-38ca-ccf2-d164::95f8-5100-ce50-8745" entryGroupId="5c0a-38ca-ccf2-d164::66f8-b688-edf7-5862" number="1" type="upgrade">
+              <rules>
+                <rule id="5c0a-38ca-ccf2-d164::f431-ea66-c032-66c2::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="5c0a-38ca-ccf2-d164::f19c-e67d-6c76-5771" name="Blaster" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e249-6002-2049-c0a0" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="b6cd-5f3b-e812-039a" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="8d5d-9f45-4a8b-df87" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="413b-53e3-b575-6c76" name="Kabalite" entryId="542a-7002-4008-0b38" primary="false"/>
+            <category id="eb0e-fba9-e48a-0335" name="Gunner" entryId="ee8c-cc44-acc3-40f0" primary="false"/>
+            <category id="b348-f243-c799-7e95" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="332f-567f-f920-3f17" name="Kabalite (Warrior)" entryId="9b40-8e4b-f628-5c72::f115-7165-a4e7-d7a4" number="1" type="model">
+          <profiles>
+            <profile id="9b40-8e4b-f628-5c72::a13e-e4f3-461a-2ecf::0c24-e2fa-67f6-b9ef" name="Kabalite" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="7fd4-7d35-ffd9-3db3" name="Splinter rifle" entryId="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::41de-4ca6-51db-7d2a" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::ae3a-b8b0-6f43-63e4::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::2636-6cd2-9850-12fd" name="⌖ Splinter rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="0274-c533-4f9b-cda6" name="Array of blades" entryId="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::6eb6-8453-6741-6a49" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::c2ad-4dcb-b82d-ba06::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::a50f-a929-378f-710d" name="⚔ Array of blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1290-0248-b67d-db86" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="8411-bf95-c1cc-0c8b" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="54e1-af44-1baa-1a31" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="a41d-4713-53ec-efd8" name="Kabalite" entryId="542a-7002-4008-0b38" primary="false"/>
+            <category id="1257-e402-b95b-9c39" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="2209-8afb-d66e-5e32" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="7017-6c3d-98a0-d420" name="Kabalite (Warrior)" entryId="9b40-8e4b-f628-5c72::f115-7165-a4e7-d7a4" number="1" type="model">
+          <profiles>
+            <profile id="9b40-8e4b-f628-5c72::a13e-e4f3-461a-2ecf::0c24-e2fa-67f6-b9ef" name="Kabalite" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="6d82-8425-db36-3ff2" name="Array of blades" entryId="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::6eb6-8453-6741-6a49" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::c2ad-4dcb-b82d-ba06::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::a50f-a929-378f-710d" name="⚔ Array of blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="8509-f77c-e2a8-5ebd" name="Splinter rifle" entryId="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::41de-4ca6-51db-7d2a" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::ae3a-b8b0-6f43-63e4::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::2636-6cd2-9850-12fd" name="⌖ Splinter rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="0e80-a6f9-1d7e-baaa" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="6127-da82-4ebf-9dd3" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="def0-36c9-8415-6393" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="6e47-dd54-a3c1-a5bf" name="Kabalite" entryId="542a-7002-4008-0b38" primary="false"/>
+            <category id="4aca-da51-fde5-1652" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="8c2c-49a8-396d-1555" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="920d-25b2-609b-95e1" name="Kabalite (Warrior)" entryId="9b40-8e4b-f628-5c72::f115-7165-a4e7-d7a4" number="1" type="model">
+          <profiles>
+            <profile id="9b40-8e4b-f628-5c72::a13e-e4f3-461a-2ecf::0c24-e2fa-67f6-b9ef" name="Kabalite" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="4714-7a6f-e1f4-0d5d" name="Array of blades" entryId="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::6eb6-8453-6741-6a49" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::c2ad-4dcb-b82d-ba06::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::a50f-a929-378f-710d" name="⚔ Array of blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9344-e195-e0c6-414a" name="Splinter rifle" entryId="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::41de-4ca6-51db-7d2a" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::ae3a-b8b0-6f43-63e4::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::2636-6cd2-9850-12fd" name="⌖ Splinter rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="922e-ffde-5604-609c" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="0666-a606-41f6-5495" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="9dd7-add2-5f42-03dd" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="b685-ac49-d1d5-9cf5" name="Kabalite" entryId="542a-7002-4008-0b38" primary="false"/>
+            <category id="0894-7f3f-c580-7cdf" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="6ce1-5f6f-2bac-20b9" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="729f-50fc-cee2-268e" name="Kabalite (Warrior)" entryId="9b40-8e4b-f628-5c72::f115-7165-a4e7-d7a4" number="1" type="model">
+          <profiles>
+            <profile id="9b40-8e4b-f628-5c72::a13e-e4f3-461a-2ecf::0c24-e2fa-67f6-b9ef" name="Kabalite" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">4+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="1f58-e56d-7521-258d" name="Array of blades" entryId="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::6eb6-8453-6741-6a49" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::c2ad-4dcb-b82d-ba06::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::bbd1-cfd4-b177-a219::a50f-a929-378f-710d" name="⚔ Array of blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="306c-4782-d180-bcef" name="Splinter rifle" entryId="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::41de-4ca6-51db-7d2a" number="1" type="upgrade">
+              <rules>
+                <rule id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::ae3a-b8b0-6f43-63e4::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9b40-8e4b-f628-5c72::1f7d-4f00-8053-a248::2636-6cd2-9850-12fd" name="⌖ Splinter rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="cd62-675a-1a72-41c3" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="9b72-aa4c-c7f1-8514" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="2651-3ecb-986c-acc5" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="367b-6938-53b6-698f" name="Kabalite" entryId="542a-7002-4008-0b38" primary="false"/>
+            <category id="d188-ae3a-0129-3465" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="bbec-1533-411b-c586" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="d969-ba10-b2f4-5a33" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="cc49-8841-f972-e4e6" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="0115-1bf5-e38c-a760" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="6fc8-441f-fb55-8375" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="e3ec-3493-7ce4-c5f5" name="Kabalite" entryId="542a-7002-4008-0b38" primary="false"/>
+        <category id="422f-b994-83e8-86ca" name="Heavy Gunner" entryId="0e59-07ae-65c2-2de6" primary="false"/>
+        <category id="92d1-4754-97f0-89aa" name="Gunner" entryId="ee8c-cc44-acc3-40f0" primary="false"/>
+      </categories>
+    </force>
+    <force id="a848-cb9d-74e0-a868" name="Wych Fire Team" entryId="5712-d76a-d17c-3dd3" catalogueId="5a19-a6e8-8c74-0287" catalogueRevision="3" catalogueName="Commorrite">
+      <selections>
+        <selection id="34c8-1ec2-a513-4473" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="e521-dec5-1564-c7c6" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3c78-aa78-8de1-676d" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="0609-530a-6498-126a" name="Hekatrix" entryId="c01d-b25c-dc44-db7e::0d5d-aab6-e06c-3b24" number="1" type="model">
+          <profiles>
+            <profile id="c01d-b25c-dc44-db7e::bb73-35b1-0eb5-5738" name="Hekatrix" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">9</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c01d-b25c-dc44-db7e::9012-5bf1-3580-d813::e363-9c7a-c3c6-d592" name="Dodge" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="a64d-58cb-8905-ea58" name="Agoniser" entryId="c01d-b25c-dc44-db7e::6b41-6091-4809-cbb8::17df-e207-9224-14c7" entryGroupId="c01d-b25c-dc44-db7e::e645-e587-acf3-fda6" number="1" type="upgrade">
+              <rules>
+                <rule id="c01d-b25c-dc44-db7e::6b41-6091-4809-cbb8::521c-1599-cfea-d5c8::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+                <rule id="c01d-b25c-dc44-db7e::6b41-6091-4809-cbb8::98c0-ba67-86e9-8caa::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                  <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="c01d-b25c-dc44-db7e::6b41-6091-4809-cbb8::d1cd-b452-c67e-ac95" name="⚔ Agoniser" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+, Brutal</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="f635-6c40-8d5d-da7f" name="Blast pistol" entryId="c01d-b25c-dc44-db7e::4ee4-675a-c6f3-8bbf::0fbd-be56-cabb-78cb" entryGroupId="c01d-b25c-dc44-db7e::929d-fa14-5c39-f6d7" number="1" type="upgrade">
+              <rules>
+                <rule id="c01d-b25c-dc44-db7e::4ee4-675a-c6f3-8bbf::2b81-5dbd-fa3c-8f26::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+                <rule id="c01d-b25c-dc44-db7e::4ee4-675a-c6f3-8bbf::e4fe-aa31-5ea5-8bd8::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="c01d-b25c-dc44-db7e::4ee4-675a-c6f3-8bbf::6a91-2aaa-9139-098a" name="⌖ Blast pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="8302-619d-11b1-43cd" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="b7ce-e334-8b23-7aae" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="c2dd-901e-3fcc-c0a4" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="e91c-0e92-fe0f-99e6" name="Wych" entryId="341a-154e-74bf-4f52" primary="false"/>
+            <category id="d955-ccb3-d8ae-0dad" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="5fdc-31b8-ac72-7de8" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="a532-0adf-1e28-d970" name="Wych (Fighter)" entryId="bf79-e773-1c51-eb26::4261-503b-ed3b-3372" number="1" type="model">
+          <profiles>
+            <profile id="bf79-e773-1c51-eb26::71e2-f436-85ce-4727::e363-9c7a-c3c6-d592" name="Dodge" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="bf79-e773-1c51-eb26::c1e8-b92e-b0ef-57ae::4497-be0a-3e42-555d" name="Wych" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="f145-fedc-93ec-ce29" name="Hydra gauntlets" entryId="bf79-e773-1c51-eb26::989c-8296-a90b-2f38" entryGroupId="bf79-e773-1c51-eb26::9774-4a20-8be4-a638" number="1" type="upgrade">
+              <profiles>
+                <profile id="bf79-e773-1c51-eb26::4075-7bfd-008f-cecb" name="Hydra gauntlets" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="b2cd-c3ac-23bc-23c9" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="8a59-0495-3896-0d81" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="d773-01d6-dfa1-2d52" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="2cc5-9481-40fa-2d6a" name="Wych" entryId="341a-154e-74bf-4f52" primary="false"/>
+            <category id="ab5f-21f7-4b14-e9dc" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="abc3-0d7e-8deb-a7f1" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="7847-2cbc-58a2-6b8f" name="Wych (Warrior)" entryId="e575-6dd6-1968-d2af::9449-8a21-1c56-4327" number="1" type="model">
+          <profiles>
+            <profile id="e575-6dd6-1968-d2af::ce8e-f737-14c7-5f36::e363-9c7a-c3c6-d592" name="Dodge" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e575-6dd6-1968-d2af::238a-4f1f-d94b-482f::4497-be0a-3e42-555d" name="Wych" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="efd5-c112-99e2-d86c" name="Splinter pistol" entryId="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::f152-6982-39b1-ac1a" number="1" type="upgrade">
+              <rules>
+                <rule id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::c474-7c4c-4f0f-2598::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+                <rule id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::fdd5-680d-d3e8-116b::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::ec33-c339-8f69-777c" name="⌖ Splinter pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+, Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="b2bf-cdcc-46a5-03ef" name="Hekatarii blade" entryId="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::5715-01d4-2660-f8bb" number="1" type="upgrade">
+              <rules>
+                <rule id="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::198c-82c5-361a-f0ef::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::86a9-017a-557f-6cb5" name="⚔ Hekatarii blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="2d4d-c5c8-edfd-02cd" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="e782-7915-958e-9704" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="533e-8fa8-82e0-6362" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="2271-6b30-8ad7-ab53" name="Wych" entryId="341a-154e-74bf-4f52" primary="false"/>
+            <category id="f5ac-eab2-b3bb-9917" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="13c0-71b2-734a-8196" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="e253-718e-b22b-01e1" name="Wych (Warrior)" entryId="e575-6dd6-1968-d2af::9449-8a21-1c56-4327" number="1" type="model">
+          <profiles>
+            <profile id="e575-6dd6-1968-d2af::ce8e-f737-14c7-5f36::e363-9c7a-c3c6-d592" name="Dodge" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e575-6dd6-1968-d2af::238a-4f1f-d94b-482f::4497-be0a-3e42-555d" name="Wych" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="6d68-9053-2d6c-9fbc" name="Hekatarii blade" entryId="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::5715-01d4-2660-f8bb" number="1" type="upgrade">
+              <rules>
+                <rule id="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::198c-82c5-361a-f0ef::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::86a9-017a-557f-6cb5" name="⚔ Hekatarii blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="5301-fe59-200a-50b6" name="Splinter pistol" entryId="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::f152-6982-39b1-ac1a" number="1" type="upgrade">
+              <rules>
+                <rule id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::c474-7c4c-4f0f-2598::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+                <rule id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::fdd5-680d-d3e8-116b::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::ec33-c339-8f69-777c" name="⌖ Splinter pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+, Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="f31b-cef2-d8c0-3b74" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="532b-3fb8-ae79-952b" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="d726-d7db-8a95-5cc6" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="c0c5-f9b6-f19d-45a0" name="Wych" entryId="341a-154e-74bf-4f52" primary="false"/>
+            <category id="d969-f348-a505-0f44" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="68c2-bbdf-f8c8-d2de" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="ba08-0e0d-d1da-7df8" name="Wych (Warrior)" entryId="e575-6dd6-1968-d2af::9449-8a21-1c56-4327" number="1" type="model">
+          <profiles>
+            <profile id="e575-6dd6-1968-d2af::ce8e-f737-14c7-5f36::e363-9c7a-c3c6-d592" name="Dodge" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative has a 5+ invulnerable save.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e575-6dd6-1968-d2af::238a-4f1f-d94b-482f::4497-be0a-3e42-555d" name="Wych" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="4039-5b96-becf-ddf2" name="Hekatarii blade" entryId="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::5715-01d4-2660-f8bb" number="1" type="upgrade">
+              <rules>
+                <rule id="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::198c-82c5-361a-f0ef::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e575-6dd6-1968-d2af::3196-bdca-b6af-fd25::86a9-017a-557f-6cb5" name="⚔ Hekatarii blade" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="e7c2-aa78-4cde-b895" name="Splinter pistol" entryId="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::f152-6982-39b1-ac1a" number="1" type="upgrade">
+              <rules>
+                <rule id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::c474-7c4c-4f0f-2598::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+                <rule id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::fdd5-680d-d3e8-116b::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e575-6dd6-1968-d2af::355e-455d-1329-7e6d::ec33-c339-8f69-777c" name="⌖ Splinter pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+, Rng ⬟</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="79d9-a79e-4a44-1c9c" name="COMMORRITE" entryId="bfad-2e48-1ed7-e687" primary="false"/>
+            <category id="a872-7094-1680-29f7" name="Aeldari" entryId="c62e-f54d-e0bb-6940" primary="false"/>
+            <category id="5965-6fda-9241-27fe" name="Drukhari" entryId="db5b-bf75-5058-17ab" primary="false"/>
+            <category id="06f7-50bd-59c9-dae1" name="Wych" entryId="341a-154e-74bf-4f52" primary="false"/>
+            <category id="2f02-f4a9-d4a0-9501" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="4955-f44b-39e9-959a" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="1f19-257b-d24f-c936" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="4091-8fd4-9cd9-a04a" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="edca-fc39-e82f-00bc" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="13df-ebcc-eda9-0eb5" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="3269-a5ae-cc22-e9e7" name="Wych" entryId="341a-154e-74bf-4f52" primary="false"/>
+        <category id="dad9-dd34-f277-2cc3" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>
