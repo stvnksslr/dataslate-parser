@@ -31,4 +31,6 @@ This project is to take in battlescribe roster files and output them into easily
 
 ### Run App
 
-- from base directory `uvicorn app.main:app`
+To run application from python environment :
+
+- from base directory `uvicorn src.main:app`
