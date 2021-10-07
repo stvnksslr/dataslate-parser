@@ -1,11 +1,13 @@
 name: dataslate-parser
-image: okteto/python:3
 command: bash
 volumes:
 - /root/.cache/pip
 sync:
-- .:/usr/src/app
+  - .:/src
+  - .:/test_rosters
 forward:
 - 8080:8080
 reverse:
 - 9000:9000
+persistentVolume:
+  enabled: false
