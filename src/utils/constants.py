@@ -1,7 +1,7 @@
 from src.parsers.heresy import heresy
 from src.parsers.killteam import killteam
 
-KILLTEAM_ID: str = "a467-5f42-d24c-6e5b"
+KILLTEAM_ID: str = "3b7e-7dab-f79f-2e74"
 
 HORUS_HERESY_ID: str = "ca571888-56a9-c58e-ddaf-54f4713538bc"
 

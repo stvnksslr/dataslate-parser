@@ -28,10 +28,7 @@ async def root(request: Request):
 
 @app.post("/files/")
 async def upload_roster(
-    request: Request,
-    multiple_pages: bool = Form(...),
-    summary_page: bool = Form(...),
-    file: UploadFile = File(...),
+    request: Request, multiple_pages: bool = Form(...), summary_page: bool = Form(...), file: UploadFile = File(...)
 ):
     upload_contents = await check_if_zipped(file)
     supported_battlescribe_version = check_battlescribe_version(roster=upload_contents)
@@ -50,12 +47,7 @@ async def upload_roster(
 
     return templates.TemplateResponse(
         template,
-        {
-            "request": request,
-            "multiple_pages": multiple_pages,
-            "rules_summary": rules_summary,
-            "roster": parsed_roster,
-        },
+        {"request": request, "multiple_pages": multiple_pages, "rules_summary": rules_summary, "roster": parsed_roster},
     )
 
 

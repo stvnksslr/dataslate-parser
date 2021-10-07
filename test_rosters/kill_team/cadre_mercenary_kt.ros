@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="8403-4f72-e830-abce" name="cadre_mercenary" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <forces>
+    <force id="1d31-6fdd-31f9-cfaf" name="Cadre Mercenary Kill Team" entryId="6fff-a0f4-8cab-facd" catalogueId="399f-3c25-a4fe-d4be" catalogueRevision="2" catalogueName="Cadre Mercenary">
+      <selections>
+        <selection id="dc44-f0b2-7fa9-e070" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="2920-0743-5bf9-aa28" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e334-5884-8eee-26ff" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="eaba-a075-2cfb-1fa8" name="Kroot Carnivore (Leader)" entryId="6c55-7322-a7e5-c787::4eb1-2921-1f03-fb63" number="1" type="model">
+          <profiles>
+            <profile id="6c55-7322-a7e5-c787::003a-a13a-8f7c-f52e" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="6c55-7322-a7e5-c787::78db-8e86-a621-e56d::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="af48-9e15-62aa-815d" name="Kroot rifle" entryId="6c55-7322-a7e5-c787::beaa-c392-b14c-d789::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="6c55-7322-a7e5-c787::beaa-c392-b14c-d789::9560-6942-0ed2-7182" name="⌖ Kroot rifle (Leader)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="6e51-bd2d-85b8-ae3b" name="Rifle blades" entryId="6c55-7322-a7e5-c787::7081-494d-69e8-803a::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="6c55-7322-a7e5-c787::7081-494d-69e8-803a::0eb6-5465-2569-912d" name="⚔ Rifle blades (Leader)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4389-a470-f803-dda4" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="44bd-b954-87ed-0801" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="6c9f-63e7-5d35-89ed" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="3c72-a175-3424-6646" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="108e-3d04-8671-a12f" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="6558-31b0-b7b9-3fc1" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="d186-3f14-c294-0f11" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="6c3d-267a-184f-7be8" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="eef7-c2a8-75f1-d356" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="08af-450f-e6a2-2ce9" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="2981-2e65-482b-4d4a" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="adb7-6c4f-c390-37ff" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="7a1e-4dfd-5277-fb99" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="a247-2bb5-743e-f5e5" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="0fcb-4fba-80ec-857a" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="fef3-ff5a-f98a-e988" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="d218-32a0-3fc2-8100" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="7873-74e2-7a4a-8867" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="5aed-9cb7-ab18-32b0" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="b186-e26e-2264-747b" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="c42e-7913-6f06-4101" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="c6e1-b7e8-8483-c6ca" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="2079-e032-e1e6-94eb" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="ada3-b14d-2f63-f77d" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="bdea-c2aa-ee30-30ae" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9d13-3204-2fc0-d73a" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="5e75-8bac-8064-d6e7" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="d910-e847-9608-3d2b" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="f601-aeb9-d256-d7d7" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="8648-f17d-ff97-7666" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="89f7-ee04-e2e8-3703" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="e4c3-69c7-821e-a636" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="9881-9d63-b664-c853" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="4bee-fa62-f11a-cff4" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="d153-c877-76eb-e1b0" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="451b-9552-487f-d95b" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="c66a-3018-b594-2649" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="1b47-bd7c-a2dd-bed6" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="4f58-0e25-c191-69cf" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="4726-7c61-afe1-9ae6" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="f7f8-cffe-189b-31fa" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="cbbe-7973-959f-068a" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="89dc-78ed-f592-2d48" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="7fef-fdc7-ce03-26be" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1fc9-60e4-5811-7e93" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="df08-5909-70ba-b85a" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="a063-c1bc-f8a9-c746" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="ef44-b633-91b0-f045" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="4999-c9f3-6051-2386" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="3dec-9578-7491-42ac" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="e590-f2df-4917-f8ca" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="5103-2490-ebf9-ebbc" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="e764-e6c1-0e5f-aa85" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="b920-da5f-caa6-a526" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="d061-bafd-3b8e-71f2" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="71b1-cb69-a63b-86a8" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="a892-045f-bc35-a5b7" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="d27d-d6f1-17cf-7fd4" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="90fb-4afc-b180-f8b5" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="aea0-7980-8188-5002" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="bf12-9a2b-2e12-0183" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="c965-b632-c3a5-b151" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="2aa2-762e-fcbf-43d1" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="a25f-fe5a-2e63-4508" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="2a58-4bc5-a608-0929" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="e68b-9fec-94bd-558d" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="b0da-4680-a45b-ca99" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="ccca-61cb-27e4-1538" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="aadd-b23d-c78a-3928" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="bb0b-911c-2966-f25a" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="c4b3-f319-2cbb-8795" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1b38-8566-c50f-4593" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="5dd6-0a42-4d26-cf7c" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="c58c-2a17-cf02-99cd" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="3e67-e62a-aff0-1737" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="655f-32a5-a5a4-d347" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="98c2-047c-ca89-73ab" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="3b53-e943-470a-9703" name="Kroot Carnivore (Warrior)" entryId="d681-d123-82f6-ebc9::4610-8b6b-f1d5-7899" number="1" type="model">
+          <profiles>
+            <profile id="d681-d123-82f6-ebc9::450d-1d46-df04-bd95" name="Kroot Carnivore (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d681-d123-82f6-ebc9::de4c-5f42-0681-9478::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="8180-a3ad-b859-34fe" name="Kroot rifle" entryId="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::ae59-fe22-6fe3-1ab5" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::25bf-bac0-06c7-fcd2::9560-6942-0ed2-7182" name="⌖ Kroot rifle" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="f8c0-9b03-415f-e1cc" name="Rifle blades" entryId="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::8afb-70c0-c6c1-86d9" number="1" type="upgrade">
+              <profiles>
+                <profile id="d681-d123-82f6-ebc9::8ead-965b-15cb-673e::0eb6-5465-2569-912d" name="⚔ Rifle blades" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="411c-a85b-37c3-969a" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="f6c9-2d9e-c781-8583" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="0de4-ed28-06e2-9d93" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="ef87-093f-4b4a-efed" name="Carnivore" entryId="ef70-b683-a42d-fe29" primary="false"/>
+            <category id="6a2c-b594-2318-b04d" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="4c36-addb-789a-f43c" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="68da-ce65-2d22-2fbd" name="Kroot Hound" entryId="aaa0-fb5e-f9ba-4518::ef16-f02a-05f8-c3f0" number="1" type="model">
+          <profiles>
+            <profile id="aaa0-fb5e-f9ba-4518::73cd-ae52-2ebb-6c26" name="Kroot Hound" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aaa0-fb5e-f9ba-4518::eacf-3a24-498f-bc6e" name="Hunting Beast" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot perform mission actions and cannot be equipped with equipment.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aaa0-fb5e-f9ba-4518::189c-09bd-849a-4679::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="f6a4-f565-b657-da3c" name="Ripping fangs" entryId="aaa0-fb5e-f9ba-4518::bcbc-c4e4-d2e8-1bfb" number="1" type="upgrade">
+              <rules>
+                <rule id="aaa0-fb5e-f9ba-4518::d367-b111-e24b-46a2::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="aaa0-fb5e-f9ba-4518::3ef8-c81e-dcd3-3bc6" name="⚔ Ripping fangs" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="80e6-4983-2ed0-4d5a" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="f229-6532-6d8a-58aa" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="5e35-fa24-5cf0-41be" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="702f-c944-8a8d-e521" name="Hound" entryId="aa8b-08d8-22ca-714f" primary="false"/>
+            <category id="e3d2-57cf-6323-07ad" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="b41b-2228-1f14-effc" name="Kroot Hound" entryId="aaa0-fb5e-f9ba-4518::ef16-f02a-05f8-c3f0" number="1" type="model">
+          <profiles>
+            <profile id="aaa0-fb5e-f9ba-4518::73cd-ae52-2ebb-6c26" name="Kroot Hound" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aaa0-fb5e-f9ba-4518::eacf-3a24-498f-bc6e" name="Hunting Beast" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot perform mission actions and cannot be equipped with equipment.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aaa0-fb5e-f9ba-4518::189c-09bd-849a-4679::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="5f8a-573e-836c-d034" name="Ripping fangs" entryId="aaa0-fb5e-f9ba-4518::bcbc-c4e4-d2e8-1bfb" number="1" type="upgrade">
+              <rules>
+                <rule id="aaa0-fb5e-f9ba-4518::d367-b111-e24b-46a2::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="aaa0-fb5e-f9ba-4518::3ef8-c81e-dcd3-3bc6" name="⚔ Ripping fangs" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="874a-7da7-0fc0-7b2b" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="18b9-96be-096d-e162" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="67d1-b14b-0023-906d" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="c4bb-bdc9-5731-4b89" name="Hound" entryId="aa8b-08d8-22ca-714f" primary="false"/>
+            <category id="a557-44f8-c5bf-9d4b" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="d206-2ac8-828a-19f7" name="Kroot Hound" entryId="aaa0-fb5e-f9ba-4518::ef16-f02a-05f8-c3f0" number="1" type="model">
+          <profiles>
+            <profile id="aaa0-fb5e-f9ba-4518::73cd-ae52-2ebb-6c26" name="Kroot Hound" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">4⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">6+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aaa0-fb5e-f9ba-4518::eacf-3a24-498f-bc6e" name="Hunting Beast" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">This operative cannot perform mission actions and cannot be equipped with equipment.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="aaa0-fb5e-f9ba-4518::189c-09bd-849a-4679::0994-6395-0ef0-d581" name="Masters of Camouflage" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">While this operative is in Cover, it has a Save characteristic of 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="6d67-10a3-bfc1-fba7" name="Ripping fangs" entryId="aaa0-fb5e-f9ba-4518::bcbc-c4e4-d2e8-1bfb" number="1" type="upgrade">
+              <rules>
+                <rule id="aaa0-fb5e-f9ba-4518::d367-b111-e24b-46a2::0550-3332-7a93-ab5b" name="Rending" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits you can retain one normal hit as a critical hit.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="aaa0-fb5e-f9ba-4518::3ef8-c81e-dcd3-3bc6" name="⚔ Ripping fangs" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">Rending</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e605-aeac-5d51-90f8" name="CADRE MERCENARY" entryId="17cc-8d13-74d5-21f0" primary="false"/>
+            <category id="14ff-eb1d-c4c6-e39c" name="T&apos;au Empire" entryId="6fbb-f054-7e20-1333" primary="false"/>
+            <category id="93ca-d372-441e-ffc2" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+            <category id="e2fc-d5bc-e739-cb8c" name="Hound" entryId="aa8b-08d8-22ca-714f" primary="false"/>
+            <category id="4e8b-410d-9327-7de2" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="5572-7ee2-e10d-d90a" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="51c8-5e60-2377-c9da" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="6e03-5b8b-8156-1c4c" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="e9cb-619c-473b-1872" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="66f8-5b41-8e53-c9da" name="Kroot" entryId="baa9-98be-400d-0c04" primary="false"/>
+        <category id="bf1b-a14d-c44a-7400" name="Hound" entryId="aa8b-08d8-22ca-714f" primary="false"/>
+        <category id="0333-ff05-9eb8-abc1" name="Krootox" entryId="ec57-1c03-a3a6-8ba3" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>

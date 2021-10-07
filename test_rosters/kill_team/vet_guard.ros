@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="8462-0882-1e94-615b" name="New Roster" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="7.0"/>
+  </costs>
+  <forces>
+    <force id="b1d2-d172-8d01-2d05" name="Veteran Guardsman Kill Team" entryId="23da-9b6a-4eeb-a87e" catalogueId="8e62-da18-67f9-c594" catalogueRevision="3" catalogueName="Veteran Guardsmen">
+      <selections>
+        <selection id="e87b-b1ce-c323-8a2a" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="c4c7-d330-d8b4-28b1" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="0fd9-800f-2032-e01c" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="6745-86bb-91fe-e6f9" name="Gunner Veteran w/ plasma gun" entryId="a781-aa48-d4dd-7845::f6e0-202d-7d02-90ab" number="1" type="model">
+          <profiles>
+            <profile id="a781-aa48-d4dd-7845::db97-7034-ac05-6579::7e09-61f7-e55b-ff2d" name="Gunner Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="96fb-8763-ac19-3c77" name="Plasma gun" entryId="a781-aa48-d4dd-7845::278f-dcab-5e7b-a30e" number="1" type="upgrade">
+              <rules>
+                <rule id="a781-aa48-d4dd-7845::a9bf-2edd-26fa-2551::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="a781-aa48-d4dd-7845::4084-a88d-96c7-518d::83c3-fce7-8ac1-9872" name="Hot" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each attack dice result of 1 that is discarded, that operative suffers 3 mortal wounds.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="a781-aa48-d4dd-7845::4c43-0c30-519a-c86f" name="⌖ Plasma gun - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="a781-aa48-d4dd-7845::b0f2-ed5e-3af9-ae84" name="⌖ Plasma gun - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">AP2, Hot</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="2d75-2ba7-9a64-855b" name="Bayonet" entryId="a781-aa48-d4dd-7845::71d5-9dd1-61a3-a231::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="a781-aa48-d4dd-7845::71d5-9dd1-61a3-a231::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="e821-6376-9b93-a930" name="Rosary*" entryId="a781-aa48-d4dd-7845::12b8-21c1-d1c9-db5d::6384-bb9a-b067-4c6e" entryGroupId="a781-aa48-d4dd-7845::12b8-21c1-d1c9-db5d::7509-328c-ba71-6725" number="1" type="upgrade">
+              <profiles>
+                <profile id="a781-aa48-d4dd-7845::12b8-21c1-d1c9-db5d::64da-1d03-e663-acbf" name="Rosary" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Once per battle, in the Resolve Successful Hits step of a shooting attack or combat, you can ignore the damage inflicted on this operative from one attack dice.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e01e-7d1a-f1db-ca82" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="84be-d0e2-2c36-3b98" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="c592-eb82-f538-ab4e" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="a0cd-52ef-5027-1dbf" name="Gunner Veteran" entryId="900c-91f5-1f16-b811" primary="false"/>
+            <category id="bfb0-1937-8d54-2299" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="cce1-d035-d903-96c3" name="Sergeant Veteran w/ pistol and melee weapon" entryId="41aa-f484-95a8-5804::9c02-7fdc-44e5-af95" number="1" type="model">
+          <profiles>
+            <profile id="41aa-f484-95a8-5804::38ed-e2c5-b2c2-1970::ec83-eec3-126a-6207" name="Sergeant Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">8</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="41aa-f484-95a8-5804::bddb-cb84-a595-ff18::8152-db38-7fc8-8011" name="Guardsman Orders" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once in each Strategy phase, when it is your turn to use a Strategic Ploy, if this operative is in the killzone, it can issue a Guardsman Order: if it does, all friendly VETERAN GUARDSMAN operatives within ⬟ of and Visible to it are issued a Guardsman Order.
+
+Each time a friendly operative issues a Guardsman Order, select one Guardsman Order to take effect until the end of the Turning Point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="f138-d1bd-851a-1b56" name="Power weapon" entryId="41aa-f484-95a8-5804::9493-3bf5-fcb7-7478" entryGroupId="41aa-f484-95a8-5804::f12e-2379-69f7-0b20" number="1" type="upgrade">
+              <rules>
+                <rule id="41aa-f484-95a8-5804::4664-9b79-f7d4-fad5::be29-25db-e215-b3b0" name="Lethal x" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, your attack dice results of equal to or greater than x that are successful hits are critical hits. x is the number after the weapon&apos;s Lethal, e.g. Lethal 5+.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="41aa-f484-95a8-5804::611e-715a-161e-8b64" name="⚔ Power weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Lethal 5+</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="cdf8-b529-4f33-7c3b" name="Plasma pistol" entryId="41aa-f484-95a8-5804::e914-deaa-da56-a4c3" entryGroupId="41aa-f484-95a8-5804::c9dc-71a1-b5a6-dd8f" number="1" type="upgrade">
+              <rules>
+                <rule id="41aa-f484-95a8-5804::526d-6f0f-dd42-604e::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="41aa-f484-95a8-5804::1682-66cf-5a1a-3e59::83c3-fce7-8ac1-9872" name="Hot" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each attack dice result of 1 that is discarded, that operative suffers 3 mortal wounds.</description>
+                </rule>
+                <rule id="41aa-f484-95a8-5804::f770-d410-9cf8-b9e9::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="41aa-f484-95a8-5804::cd03-bfea-f96b-2db1" name="⌖ Plasma pistol - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="41aa-f484-95a8-5804::e047-0937-52a4-5585" name="⌖ Plasma pistol - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2, Hot</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e20b-2927-58ae-62bc" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="0d73-91d9-c05c-4410" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="5145-9915-c2ba-9655" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="6744-d85c-4588-fb31" name="Sergeant Veteran" entryId="2de5-ea5c-3735-de87" primary="false"/>
+            <category id="87ae-def0-1346-c9ae" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="8d8c-c7bb-92ae-bc8e" name="Sniper Veteran" entryId="ee89-dc98-84d9-b447::592b-b629-b07e-b4ed" number="1" type="model">
+          <profiles>
+            <profile id="ee89-dc98-84d9-b447::4256-3829-1634-e981" name="Sniper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ee89-dc98-84d9-b447::eaab-601f-0cb3-66d3" name="Sniper" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Each time this operative is activated, so long as it does not perform a Normal Move, Charge or Fall Back action during that activation, its long-las gains the Silent rule for that activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="0fbe-4564-0661-125a" name="Long-las" entryId="ee89-dc98-84d9-b447::6eb6-b242-a3b8-775e" number="1" type="upgrade">
+              <rules>
+                <rule id="ee89-dc98-84d9-b447::cd16-a5b6-c8e6-0c9f::0d4b-7a76-d266-bcc1" name="MWx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each critical hit retained, inflict x mortal wounds on the target. x is the number after the weapon&apos;s MW, e.g. MW3.</description>
+                </rule>
+                <rule id="ee89-dc98-84d9-b447::bb98-5d6b-7fca-214d::ce60-8109-69c9-3908" name="Silent" hidden="false">
+                  <description>While an operative has a Conceal order, it can perform Shoot actions if this is the ranged weapon (or weapon profile) that is selected for the shooting attack(s).</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ee89-dc98-84d9-b447::cfb3-b969-361a-cbd2" name="⌖ Long-las" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">MW3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9737-f9f4-b745-69ea" name="Bayonet" entryId="ee89-dc98-84d9-b447::ac1d-3a07-1380-a5be::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="ee89-dc98-84d9-b447::ac1d-3a07-1380-a5be::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9e66-7e4e-a630-f9ff" name="Hot-shot capacitor pack" entryId="ee89-dc98-84d9-b447::414a-d8d4-a400-4abf::13f8-5e7f-04ee-5e26" entryGroupId="ee89-dc98-84d9-b447::414a-d8d4-a400-4abf::7509-328c-ba71-6725" number="1" type="upgrade">
+              <profiles>
+                <profile id="ee89-dc98-84d9-b447::414a-d8d4-a400-4abf::73af-17ea-1293-1b18" name="Hot-shot capacitor pack" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Modify the operative&apos;s ranged weapons for the battle as follows:
+- Add 1 to both Damage characteristics of lasguns and laspistols this operative is equipped with.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="2.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="1150-59c5-ac82-417a" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="b0c2-417f-f0ca-e77b" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="2797-04b2-3318-3ace" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="c392-a1bd-8f35-aaef" name="Sniper Veteran" entryId="b1ff-4296-787b-39c3" primary="false"/>
+            <category id="b08a-8dfa-e5e6-dbdb" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="c2e2-262a-e15e-8aed" name="Trooper Veteran" entryId="7523-ccdf-2755-7e4d::0cf8-8e64-3967-af72" number="1" type="model">
+          <profiles>
+            <profile id="7523-ccdf-2755-7e4d::9d57-8ed2-b0e7-6068" name="Trooper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="59f5-dba1-2ab7-190a" name="Lasgun" entryId="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9dcd-6cfd-36eb-90af" name="Bayonet" entryId="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="2c66-982d-e460-0fba" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="fd65-77cd-cce4-ad86" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="7e02-d2dc-42ee-b4d6" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="e1a4-661d-5118-d7ae" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+            <category id="a80d-f086-ea06-76fc" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="2996-2b20-8bf5-8888" name="Trooper Veteran" entryId="7523-ccdf-2755-7e4d::0cf8-8e64-3967-af72" number="1" type="model">
+          <profiles>
+            <profile id="7523-ccdf-2755-7e4d::9d57-8ed2-b0e7-6068" name="Trooper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="6460-6872-b5cd-c5f2" name="Bayonet" entryId="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="5a60-7ad8-9ef9-b717" name="Lasgun" entryId="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="552c-283d-bcd4-dcc5" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="9e62-8669-d05e-7afe" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="2719-24ff-b42e-5717" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="533f-579f-7184-fb56" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+            <category id="814c-83b8-c7b2-97c0" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="114b-4f93-5ccf-c364" name="Trooper Veteran" entryId="7523-ccdf-2755-7e4d::0cf8-8e64-3967-af72" number="1" type="model">
+          <profiles>
+            <profile id="7523-ccdf-2755-7e4d::9d57-8ed2-b0e7-6068" name="Trooper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="9426-d3b2-c7dc-f686" name="Bayonet" entryId="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="d89a-45e7-5d3d-cc9e" name="Lasgun" entryId="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="64a0-0625-ac62-6fb4" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="1f11-81f4-cf76-3e94" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="e349-aeda-d25b-1050" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="4397-e2d2-90ff-c19e" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+            <category id="2835-f31d-de8d-4a52" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="3cae-fb9b-b0a2-64ef" name="Trooper Veteran" entryId="7523-ccdf-2755-7e4d::0cf8-8e64-3967-af72" number="1" type="model">
+          <profiles>
+            <profile id="7523-ccdf-2755-7e4d::9d57-8ed2-b0e7-6068" name="Trooper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="1abc-3928-a3c4-87c9" name="Bayonet" entryId="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="66a6-ed04-9b0e-e08c" name="Lasgun" entryId="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="aefe-4a34-4eb5-61d9" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="c379-ebdb-6d0b-7598" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="0b39-a352-43cd-3a54" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="2dd7-6329-7227-ff94" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+            <category id="8c16-6758-bbe1-edeb" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="36be-fdd5-7a40-593b" name="Trooper Veteran" entryId="7523-ccdf-2755-7e4d::0cf8-8e64-3967-af72" number="1" type="model">
+          <profiles>
+            <profile id="7523-ccdf-2755-7e4d::9d57-8ed2-b0e7-6068" name="Trooper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="08b5-92a2-a3cf-0b13" name="Bayonet" entryId="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="f4f4-1421-1191-ae37" name="Lasgun" entryId="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="0c80-7acc-e215-4a30" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="c80c-b613-69a3-f735" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="84cd-9739-717c-b0d6" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="21bf-b7e5-dc63-c568" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+            <category id="53f1-fffa-57cc-810e" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="4741-c1d7-3cb7-eeb7" name="Trooper Veteran" entryId="7523-ccdf-2755-7e4d::0cf8-8e64-3967-af72" number="1" type="model">
+          <profiles>
+            <profile id="7523-ccdf-2755-7e4d::9d57-8ed2-b0e7-6068" name="Trooper Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="ebaa-ad24-9542-6ee8" name="Bayonet" entryId="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::4753-38b2-85cc-18b6::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="40a2-b9f0-d036-6a30" name="Lasgun" entryId="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="7523-ccdf-2755-7e4d::ef13-15be-4285-4de1::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="744b-ad7a-785a-a039" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="1cdf-277e-8463-3756" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="16cc-66f2-21de-c409" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="a4ee-f5c3-07dd-fc2c" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+            <category id="b5ac-9986-e00b-46ef" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="54d5-9334-fb92-f193" name="Medic Veteran" entryId="e2bd-71a3-e189-64bf::6923-10c2-770e-29ce" number="1" type="model">
+          <profiles>
+            <profile id="e2bd-71a3-e189-64bf::da7b-10dc-ec9f-22a9" name="Medic Veteran" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e2bd-71a3-e189-64bf::abcf-eaa6-37ce-8fca" name="Medic!" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">Once per Turning Point, the first time a friendly VETERAN GUARDSMAN operative would be incapacitated while Visible to and within ⬛ of this operative and not within Engagement Range of an enemy operative, if this operative is not within Engagement Range of an enemy operative, this operative can revive it. That operative is not incapacitated, has 1 wound remaining, and if it was a shooting attack, any remaining attack dice are discarded. That other friendly operative can then perform a free Dash action, but must finish that move within ▲ of this operative. Subtract 1 from both operatives&apos; APL.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e2bd-71a3-e189-64bf::d1e1-8b6b-27e3-fd2f" name="Medikit (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Select one friendly VETERAN GUARDSMAN operative within ▲ of and Visible to this operative. That operative regains 2D3 lost wounds. An operative cannot be selected for this if it was revived using the Medic! ability during the same Turning Point. This operative cannot perform this action if it is within Engagement Range of an enemy operative.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="fed5-330d-fc96-8e2d" name="Bayonet" entryId="e2bd-71a3-e189-64bf::b66b-db67-5a05-70a2::d4e8-fa0c-0ead-0ed8" number="1" type="upgrade">
+              <profiles>
+                <profile id="e2bd-71a3-e189-64bf::b66b-db67-5a05-70a2::ec8d-7b47-bfd8-7c5e" name="⚔ Bayonet" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="63f5-8b7c-8136-d77e" name="Lasgun" entryId="e2bd-71a3-e189-64bf::3d64-9ffd-f925-e803::111c-c0ee-38c1-b67b" number="1" type="upgrade">
+              <profiles>
+                <profile id="e2bd-71a3-e189-64bf::3d64-9ffd-f925-e803::1df2-2525-5533-26de" name="⌖ Lasgun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="33e0-613d-70e8-b896" name="Topographical Chart*" entryId="e2bd-71a3-e189-64bf::ff13-5bb3-60c9-8e58::539b-8d26-0eed-5df0" entryGroupId="e2bd-71a3-e189-64bf::ff13-5bb3-60c9-8e58::7509-328c-ba71-6725" number="1" type="upgrade">
+              <profiles>
+                <profile id="e2bd-71a3-e189-64bf::ff13-5bb3-60c9-8e58::de3f-8164-87dc-7f34" name="Topographical Chart" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">During the mission sequence, if this friendly operative was selected for deployment, after resolving your selected option in the Scouting step, you can select and resolve an additional scouting option. It must be a different option to your original selection, and initiative is still determined by your original selection.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="85f7-c260-8b12-305b" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+            <category id="f2b1-afd8-1777-1e50" name="Astra Militarum" entryId="51d2-f096-47a9-1956" primary="false"/>
+            <category id="32f3-e3d9-8da7-d313" name="Medic" entryId="8e1d-1094-f504-d8cd" primary="false"/>
+            <category id="36dd-3e6d-a1f7-0c30" name="Medic Veteran" entryId="c44a-2ec6-3764-e5f4" primary="false"/>
+            <category id="0a5a-db4c-ce31-af5a" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="ebc3-482b-cebc-932a" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="971b-c8aa-bdae-4693" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="1b0f-a45f-8b26-a580" name="Reference" entryId="322e-38ea-bf3e-c785" primary="false"/>
+        <category id="d52d-7c30-a126-d2fc" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="52be-4df3-4e41-c4a0" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="4182-9cb6-15d1-81a9" name="Veteran Guardsman" entryId="e2e3-78d3-0b08-9d27" primary="false"/>
+        <category id="b884-d152-477d-8c9f" name="Bruiser Veteran" entryId="b590-f8ac-02b1-a5e5" primary="false"/>
+        <category id="b9ed-96f1-30be-3a05" name="Confidant Veteran" entryId="5cae-0173-65fc-4139" primary="false"/>
+        <category id="d708-cca8-1163-42ad" name="Demolition Veteran" entryId="dc5e-7a69-2c1d-12bb" primary="false"/>
+        <category id="9bc9-86ae-1cf5-59c6" name="Hardened Veteran" entryId="3e9d-eaef-1b8e-d9c5" primary="false"/>
+        <category id="75ec-673d-a6ca-d8e4" name="Medic Veteran" entryId="c44a-2ec6-3764-e5f4" primary="false"/>
+        <category id="6f20-06b6-c9f3-866a" name="Sniper Veteran" entryId="b1ff-4296-787b-39c3" primary="false"/>
+        <category id="6fcc-fd4d-a0ca-2030" name="Spotter Veteran" entryId="9255-8bf6-7b07-e2a0" primary="false"/>
+        <category id="2364-8358-668c-2bea" name="Zealot Veteran" entryId="5e0d-a324-98e7-6fb7" primary="false"/>
+        <category id="ae10-39eb-9fde-cc6e" name="Comms Veteran" entryId="6790-22ed-c8fa-6309" primary="false"/>
+        <category id="7fa9-08c0-e1eb-257c" name="Trooper Veteran" entryId="ef4a-6883-982a-2b4b" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>

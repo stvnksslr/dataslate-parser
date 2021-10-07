@@ -1,5 +1,4 @@
 from pathlib import Path
-from unittest import TestCase
 
 from starlette.testclient import TestClient
 
@@ -8,60 +7,56 @@ from src.main import app
 client = TestClient(app)
 
 
-class RenderingTests(TestCase):
-    def setUp(self):
-        self.base_path = Path.cwd() / "test_rosters"
-        self.zipped_roster = str(self.base_path / "zipped_rosters" / "elite_roster.rosz")
-        self.test_roster = str(self.base_path / "horus_heresy" / "legion_astartes_roster_new.ros")
+base_path = Path.cwd() / "test_rosters"
+zipped_roster = str(base_path / "zipped_rosters" / "elite_roster.rosz")
+test_roster = str(base_path / "horus_heresy" / "legion_astartes_roster_new.ros")
 
-    def test__read_main(self):
-        response = client.get("/")
-        self.assertEqual(response.status_code, 200)
 
-    def test__upload_roster(self):
-        multiple_pages = False
-        summary_page = False
-        with open(self.test_roster, "r") as roster_file:
-            roster_file = roster_file.read()
+def test__read_main():
+    response = client.get("/")
+    assert response.status_code == 200
 
-        response = client.post(
-            "/files/",
-            files={"file": roster_file},
-            data={"multiple_pages": multiple_pages, "summary_page": summary_page},
-        )
 
-        self.assertEqual(response.status_code, 200)
+def test__upload_roster():
+    multiple_pages = False
+    summary_page = False
+    with open(test_roster, "r") as roster_file:
+        roster_file = roster_file.read()
 
-    def test__upload_roster_multipart_false(self):
-        multiple_pages = False
-        summary_page = False
-        with open(self.test_roster, "r") as roster_file:
-            roster_file = roster_file.read()
+    response = client.post(
+        "/files/", files={"file": roster_file}, data={"multiple_pages": multiple_pages, "summary_page": summary_page}
+    )
 
-        response = client.post(
-            "/files/",
-            files={"file": roster_file},
-            data={"multiple_pages": multiple_pages, "summary_page": summary_page},
-        )
-        multiple_pages_response = "single_page.css" in response.text
+    assert response.status_code == 200
 
-        self.assertEqual(response.status_code, 200)
-        self.assertTrue(multiple_pages_response)
 
-    def test__upload_roster_multipart_true(self):
-        multiple_pages = True
-        summary_page = False
+def test__upload_roster_multipart_false():
+    multiple_pages = False
+    summary_page = False
+    with open(test_roster, "r") as roster_file:
+        roster_file = roster_file.read()
 
-        with open(self.test_roster, "r") as roster_file:
-            roster_file = roster_file.read()
+    response = client.post(
+        "/files/", files={"file": roster_file}, data={"multiple_pages": multiple_pages, "summary_page": summary_page}
+    )
+    multiple_pages_response = "single_page.css" in response.text
 
-        response = client.post(
-            "/files/",
-            files={"file": roster_file},
-            data={"multiple_pages": multiple_pages, "summary_page": summary_page},
-        )
+    assert response.status_code == 200
+    assert multiple_pages_response
 
-        multiple_pages_response = "multiple_pages.css" in response.text
 
-        self.assertEqual(response.status_code, 200)
-        self.assertTrue(multiple_pages_response)
+def test__upload_roster_multipart_true():
+    multiple_pages = True
+    summary_page = False
+
+    with open(test_roster, "r") as roster_file:
+        roster_file = roster_file.read()
+
+    response = client.post(
+        "/files/", files={"file": roster_file}, data={"multiple_pages": multiple_pages, "summary_page": summary_page}
+    )
+
+    multiple_pages_response = "multiple_pages.css" in response.text
+
+    assert response.status_code == 200
+    assert multiple_pages_response

@@ -1,17 +1,16 @@
-from dataclasses import dataclass
+from typing import Optional
 
 from src.models.armor_facing import ArmorFacing
 from src.models.unit import Unit
 from src.parsers.heresy.heresy_constants import STAT_BLOCK_TYPES
 
 
-@dataclass
 class HeresyUnit(Unit):
-    initiative: str
+    initiative: Optional[str]
     unit_type: str
-    armor_facing: ArmorFacing
-    stat_type: str
-    weapon: list
+    armor_facing: Optional[ArmorFacing]
+    stat_type: Optional[str]
+    weapon: Optional[dict]
 
     @staticmethod
     def get_stat_type(unit_type):

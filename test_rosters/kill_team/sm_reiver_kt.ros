@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="910e-7b14-52ab-b036" name="sm_reiver_kt" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <forces>
+    <force id="9f30-3cc7-cae8-79c5" name="Reiver Fire Team" entryId="3a23-b924-647e-e9cc" catalogueId="78ae-9b9e-d839-725c" catalogueRevision="7" catalogueName="Space Marine">
+      <selections>
+        <selection id="036d-5be0-9bf7-de13" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="8ee5-6654-ff52-f11b" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="642a-d06d-16fa-7b72" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="ae00-77dc-f014-33fe" name="Reiver Sergeant" entryId="168a-d64c-2cf7-eca0::9460-22ae-bc2e-3880" number="1" type="model">
+          <profiles>
+            <profile id="168a-d64c-2cf7-eca0::657a-6c1f-530e-1a99" name="Reiver Sergeant" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">13</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="f543-ccd4-464f-bd8c" name="Special issue bolt pistol" entryId="168a-d64c-2cf7-eca0::a699-c88f-e395-2b8b::bb7b-f8d2-cd60-2fe7" number="1" type="upgrade">
+              <rules>
+                <rule id="168a-d64c-2cf7-eca0::a699-c88f-e395-2b8b::c30e-f6d0-f79c-6610::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="168a-d64c-2cf7-eca0::a699-c88f-e395-2b8b::d8a8-dad3-f024-a2f9::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="168a-d64c-2cf7-eca0::a699-c88f-e395-2b8b::2f53-493e-cfaa-a864" name="⌖ Special issue bolt pistol (Sergeant)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="7bc3-f336-3a2e-422d" name="Combat knife" entryId="168a-d64c-2cf7-eca0::5d28-9eee-903e-9314::9a00-6ea3-2514-6b7a" entryGroupId="168a-d64c-2cf7-eca0::c552-3803-8ba2-c68c" number="1" type="upgrade">
+              <profiles>
+                <profile id="168a-d64c-2cf7-eca0::5d28-9eee-903e-9314::1671-4aca-5cdf-246a" name="⚔ Combat knife (Sergeant)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="bfc7-210e-3401-5045" name="Bolt carbine" entryId="168a-d64c-2cf7-eca0::6b24-eace-5707-836e::8fc2-a6c2-558f-7ab7" entryGroupId="168a-d64c-2cf7-eca0::09ae-b200-2b9b-2b46" number="1" type="upgrade">
+              <profiles>
+                <profile id="168a-d64c-2cf7-eca0::6b24-eace-5707-836e::5b20-7bad-6696-bdb7" name="⌖ Bolt carbine (Sergeant)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4ce8-851f-f8ef-62ac" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="d015-c9c2-7f3e-4b5d" name="Adeptus Astartes" entryId="c6d4-8f35-b8e5-d319" primary="false"/>
+            <category id="4b90-76aa-bce5-6128" name="Primaris" entryId="09fb-fa9f-6d29-e39d" primary="false"/>
+            <category id="b2c2-9ab6-7a2f-6297" name="Reiver" entryId="67ae-e9d9-af1a-2ce6" primary="false"/>
+            <category id="42ef-6964-a188-fca6" name="Sergeant" entryId="e7ee-9db5-1fc6-c728" primary="false"/>
+            <category id="2e8b-758a-5d21-e39d" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="9362-e1c3-117e-6070" name="Reiver (Warrior)" entryId="91d5-fd3c-791f-aa5c::f595-4b72-ab7d-194d" number="1" type="model">
+          <profiles>
+            <profile id="91d5-fd3c-791f-aa5c::529c-7bec-589b-31b2" name="Reiver (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="ed02-fddd-c532-4cc8" name="Special issue bolt pistol" entryId="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::bb7b-f8d2-cd60-2fe7" number="1" type="upgrade">
+              <rules>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::c30e-f6d0-f79c-6610::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::d8a8-dad3-f024-a2f9::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::2f53-493e-cfaa-a864" name="⌖ Special issue bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="4606-6987-3a69-e7be" name="Bolt carbine and fists" entryId="91d5-fd3c-791f-aa5c::5095-7a4b-8200-a03e" entryGroupId="91d5-fd3c-791f-aa5c::6b2a-b4a7-e5d6-fdbf" number="1" type="upgrade">
+              <selections>
+                <selection id="2fca-7214-c583-6598" name="Bolt carbine" entryId="91d5-fd3c-791f-aa5c::b056-7f12-b26e-dadc::8fc2-a6c2-558f-7ab7" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="91d5-fd3c-791f-aa5c::b056-7f12-b26e-dadc::5b20-7bad-6696-bdb7" name="⌖ Bolt carbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="833a-ab14-eaec-00f9" name="Fists" entryId="91d5-fd3c-791f-aa5c::a8a7-949a-8b5c-d861::9228-ec93-787f-9eab" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="91d5-fd3c-791f-aa5c::a8a7-949a-8b5c-d861::d192-976c-e276-b051" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="562b-3d4c-8e97-22a9" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="c88a-57b4-9311-06e8" name="Adeptus Astartes" entryId="c6d4-8f35-b8e5-d319" primary="false"/>
+            <category id="7944-6693-eccb-1081" name="Primaris" entryId="09fb-fa9f-6d29-e39d" primary="false"/>
+            <category id="fde5-8944-01d4-bcfb" name="Reiver" entryId="67ae-e9d9-af1a-2ce6" primary="false"/>
+            <category id="7414-1e00-318a-9405" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="970b-9c90-0eae-d0f9" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="30d6-6dc3-65a1-7722" name="Reiver (Warrior)" entryId="91d5-fd3c-791f-aa5c::f595-4b72-ab7d-194d" number="1" type="model">
+          <profiles>
+            <profile id="91d5-fd3c-791f-aa5c::529c-7bec-589b-31b2" name="Reiver (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="f2e3-444c-cd66-ac7e" name="Special issue bolt pistol" entryId="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::bb7b-f8d2-cd60-2fe7" number="1" type="upgrade">
+              <rules>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::c30e-f6d0-f79c-6610::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::d8a8-dad3-f024-a2f9::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::2f53-493e-cfaa-a864" name="⌖ Special issue bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="94b5-413f-1f00-42bb" name="Bolt carbine and fists" entryId="91d5-fd3c-791f-aa5c::5095-7a4b-8200-a03e" entryGroupId="91d5-fd3c-791f-aa5c::6b2a-b4a7-e5d6-fdbf" number="1" type="upgrade">
+              <selections>
+                <selection id="e5b3-2ef3-8258-26a9" name="Bolt carbine" entryId="91d5-fd3c-791f-aa5c::b056-7f12-b26e-dadc::8fc2-a6c2-558f-7ab7" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="91d5-fd3c-791f-aa5c::b056-7f12-b26e-dadc::5b20-7bad-6696-bdb7" name="⌖ Bolt carbine" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="988b-6b8b-e4c0-8fc8" name="Fists" entryId="91d5-fd3c-791f-aa5c::a8a7-949a-8b5c-d861::9228-ec93-787f-9eab" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="91d5-fd3c-791f-aa5c::a8a7-949a-8b5c-d861::d192-976c-e276-b051" name="⚔ Fists" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="af79-b62c-45fa-2269" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="74ec-6799-4812-fbaa" name="Adeptus Astartes" entryId="c6d4-8f35-b8e5-d319" primary="false"/>
+            <category id="4393-8c73-0cd0-b559" name="Primaris" entryId="09fb-fa9f-6d29-e39d" primary="false"/>
+            <category id="a29e-c928-8496-771b" name="Reiver" entryId="67ae-e9d9-af1a-2ce6" primary="false"/>
+            <category id="ff20-54a8-8d96-80ae" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="8b29-97d0-7e5b-a977" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="eee3-f241-5634-802a" name="Reiver (Warrior)" entryId="91d5-fd3c-791f-aa5c::f595-4b72-ab7d-194d" number="1" type="model">
+          <profiles>
+            <profile id="91d5-fd3c-791f-aa5c::529c-7bec-589b-31b2" name="Reiver (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="99a1-692a-a933-50c0" name="Special issue bolt pistol" entryId="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::bb7b-f8d2-cd60-2fe7" number="1" type="upgrade">
+              <rules>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::c30e-f6d0-f79c-6610::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::d8a8-dad3-f024-a2f9::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::2f53-493e-cfaa-a864" name="⌖ Special issue bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="1455-8999-bb4b-3201" name="Combat knife" entryId="91d5-fd3c-791f-aa5c::6d82-3778-b8ac-43fc::9a00-6ea3-2514-6b7a" entryGroupId="91d5-fd3c-791f-aa5c::6b2a-b4a7-e5d6-fdbf" number="1" type="upgrade">
+              <profiles>
+                <profile id="91d5-fd3c-791f-aa5c::6d82-3778-b8ac-43fc::1671-4aca-5cdf-246a" name="⚔ Combat knife" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="495b-8ed7-b73d-bd6a" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="b07d-ed3a-d17d-0bc2" name="Adeptus Astartes" entryId="c6d4-8f35-b8e5-d319" primary="false"/>
+            <category id="d0f6-ceba-3f3d-f8dd" name="Primaris" entryId="09fb-fa9f-6d29-e39d" primary="false"/>
+            <category id="25c6-1c8c-cb55-8787" name="Reiver" entryId="67ae-e9d9-af1a-2ce6" primary="false"/>
+            <category id="f3ff-1c9e-dd99-910b" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="5c92-06b9-a790-24b7" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="33a7-cb88-b358-1cea" name="Reiver (Warrior)" entryId="91d5-fd3c-791f-aa5c::f595-4b72-ab7d-194d" number="1" type="model">
+          <profiles>
+            <profile id="91d5-fd3c-791f-aa5c::529c-7bec-589b-31b2" name="Reiver (Warrior)" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="2990-f831-334f-c013" name="Special issue bolt pistol" entryId="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::bb7b-f8d2-cd60-2fe7" number="1" type="upgrade">
+              <rules>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::c30e-f6d0-f79c-6610::db98-339e-d0a2-e042" name="APx" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                </rule>
+                <rule id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::d8a8-dad3-f024-a2f9::92de-2ad3-3554-0b3e" name="Rng x" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, only operatives within x are a valid target. x is the distance after the weapon&apos;s Rng, e.g. Rng ⬟. All other rules for selecting a valid target still apply.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="91d5-fd3c-791f-aa5c::2fb8-0c54-4c22-cf0c::2f53-493e-cfaa-a864" name="⌖ Special issue bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="a057-daca-7a5d-a596" name="Combat knife" entryId="91d5-fd3c-791f-aa5c::6d82-3778-b8ac-43fc::9a00-6ea3-2514-6b7a" entryGroupId="91d5-fd3c-791f-aa5c::6b2a-b4a7-e5d6-fdbf" number="1" type="upgrade">
+              <profiles>
+                <profile id="91d5-fd3c-791f-aa5c::6d82-3778-b8ac-43fc::1671-4aca-5cdf-246a" name="⚔ Combat knife" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="addf-1fd4-0979-49c1" name="Imperium" entryId="15ae-553e-01d1-23a9" primary="false"/>
+            <category id="898f-2c08-af66-0738" name="Adeptus Astartes" entryId="c6d4-8f35-b8e5-d319" primary="false"/>
+            <category id="a1b5-f305-654c-2ff4" name="Primaris" entryId="09fb-fa9f-6d29-e39d" primary="false"/>
+            <category id="02d6-ce33-2e89-69e8" name="Reiver" entryId="67ae-e9d9-af1a-2ce6" primary="false"/>
+            <category id="88b9-7aee-3c88-5348" name="Warrior" entryId="b9a4-31a5-b4ed-b4c7" primary="false"/>
+            <category id="7ef8-b2d9-587b-7b1e" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="24d9-480a-8c22-820d" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="82c4-4f04-a74d-83f3" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="f351-da52-f9be-5178" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="b3b4-54a2-848c-a1b0" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="5c15-5d71-fc2c-1e2b" name="Reiver" entryId="67ae-e9d9-af1a-2ce6" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="303e-ceeb-96b1-f206" name="chaos_killteam" battleScribeVersion="2.03" gameSystemId="3b7e-7dab-f79f-2e74" gameSystemName="Warhammer 40,000: Kill Team (2021)" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+  </costs>
+  <forces>
+    <force id="e904-cb6e-bc0b-0aa9" name="Chaos Space Marine Fire Team" entryId="262d-a61b-8669-ed10" catalogueId="228f-66c4-e3e0-2b01" catalogueRevision="4" catalogueName="Traitor Space Marine">
+      <selections>
+        <selection id="d8f3-ad1a-ec3a-9283" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="bab4-4a6d-83c0-8dd6" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="4daa-db01-e43e-2f7d" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="ca6d-7f9f-c308-53c4" name="Aspiring Champion" entryId="9e08-46d0-5598-9918::b532-b9b4-af08-5935" number="1" type="upgrade">
+          <profiles>
+            <profile id="9e08-46d0-5598-9918::b5ba-bd17-1581-9b9a" name="Aspiring Champion" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">13</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="880a-6161-fe1a-8ae3" name="Melee and pistol" entryId="9e08-46d0-5598-9918::f6ab-a55c-66d0-5aaa" entryGroupId="9e08-46d0-5598-9918::ab92-12c0-91be-78b4" number="1" type="upgrade">
+              <selections>
+                <selection id="afe3-683d-f328-c1ba" name="Power fist" entryId="9e08-46d0-5598-9918::29b2-3b4d-d6ee-591e" entryGroupId="9e08-46d0-5598-9918::93de-276d-f11b-1ada" number="1" type="upgrade">
+                  <rules>
+                    <rule id="9e08-46d0-5598-9918::6ec0-8a8b-24af-84ed::16e9-a975-03a1-91c0" name="Brutal" hidden="false">
+                      <description>Each time a friendly operative fights in combat with this weapon, in the Resolve Successful Hits step of that combat, your opponent can only parry with critical hits.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="9e08-46d0-5598-9918::98ba-109c-8a72-2b79" name="⚔ Power fist" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/7</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Brutal</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="ce4f-d634-b10a-ea3b" name="Plasma pistol" entryId="9e08-46d0-5598-9918::fe5a-4411-e390-fc5d" entryGroupId="9e08-46d0-5598-9918::fde9-f16a-ad60-fe24" number="1" type="upgrade">
+                  <rules>
+                    <rule id="9e08-46d0-5598-9918::2c4b-5cbb-b61f-34ce::db98-339e-d0a2-e042" name="APx" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, subtract x from the Defence of the target for that shooting attack. x is the number after the weapon&apos;s AP, e.g. AP1. If two different APx special rules would be in effect for a shooting attack, they are not cumulative - the attacker selects which one to use.</description>
+                    </rule>
+                    <rule id="9e08-46d0-5598-9918::e387-f0d9-06f7-789e::83c3-fce7-8ac1-9872" name="Hot" hidden="false">
+                      <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, for each attack dice result of 1 that is discarded, that operative suffers 3 mortal wounds.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="9e08-46d0-5598-9918::aa79-5a04-5388-a03d" name="⌖ Plasma pistol - Standard" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP1</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="9e08-46d0-5598-9918::afaa-ddc1-1b42-51e4" name="⌖ Plasma pistol - Supercharge" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">2+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">5/6</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟, AP2, Hot</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="aca6-2538-3032-aeca" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="11ce-fe67-1473-438d" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="0e20-b225-286e-e139" name="Heretic Astartes" entryId="4a3c-ccf5-3b89-51c1" primary="false"/>
+            <category id="148f-dc55-d8e1-9c71" name="Chaos Space Marine" entryId="dc01-4030-c1e5-8e9a" primary="false"/>
+            <category id="b7f3-0268-216c-efd0" name="Aspiring Champion" entryId="0d1c-da70-ba63-27e5" primary="false"/>
+            <category id="5ee0-8a6e-912a-e47f" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="b518-ca1f-380c-0a1e" name="Chaos Space Marine (Icon Bearer)" entryId="9d68-cd8d-1572-bb77::7f5c-2c1c-41a1-5604" number="1" type="model">
+          <profiles>
+            <profile id="9d68-cd8d-1572-bb77::9cb7-525a-1d28-83cd" name="Icon Bearer" hidden="false" typeId="f52d-76ec-b279-093b" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Ability" typeId="dff3-a2cc-d103-683d">When determining control of an objective marker, treat this operative&apos;s APL characteristic as being 1 higher. Note that this is not a modifier. In narrative play, this is cumulative with the Focused Battle Honour.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9d68-cd8d-1572-bb77::0f2e-d335-5f71-907b" name="Icon of Vengeance (1AP)" hidden="false" typeId="17cd-eb4c-f9cd-36f2" typeName="Unique Actions">
+              <characteristics>
+                <characteristic name="Unique Action" typeId="8d9f-0a91-4133-bc4a">Until the end of the Turning Point, while this operative is Visible to and within ⬛ of a friendly HERETIC ASTARTES operative, that friendly operative is inspired by vengeance. While an operative is inspired by vengeance, each time it fights in combat or makes a shooting attack, in the Roll Attack Dice step of that combat or shooting attack, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9d68-cd8d-1572-bb77::c1c8-46dc-2fa4-018b::5fcf-cfed-a30d-386d" name="Chaos Space Marine" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="c731-2a18-f928-1215" name="Chainsword and bolt pistol" entryId="9d68-cd8d-1572-bb77::d10d-99ca-d16e-059d" entryGroupId="9d68-cd8d-1572-bb77::c99a-f387-d863-5044" number="1" type="upgrade">
+              <selections>
+                <selection id="71e3-158c-db21-3947" name="Bolt pistol" entryId="9d68-cd8d-1572-bb77::f001-1d6f-4c62-6b85::238a-2d6d-b4e1-54a7" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="9d68-cd8d-1572-bb77::f001-1d6f-4c62-6b85::88c5-713b-868e-03b5" name="⌖ Bolt pistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="0db8-6552-4a76-37df" name="Chainsword" entryId="9d68-cd8d-1572-bb77::2504-0cb5-c7cb-598c::f4a2-6882-9fc9-2f03" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="9d68-cd8d-1572-bb77::2504-0cb5-c7cb-598c::4f20-fa7b-cfb8-63ad" name="⚔ Chainsword" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="bcdd-ad60-4804-43fa" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="4710-73cd-b29e-a626" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="ae18-e078-719a-510d" name="Heretic Astartes" entryId="4a3c-ccf5-3b89-51c1" primary="false"/>
+            <category id="3582-c74d-ea0a-2243" name="Chaos Space Marine" entryId="dc01-4030-c1e5-8e9a" primary="false"/>
+            <category id="995a-016e-cfb7-305f" name="Icon Bearer" entryId="fe8e-272e-1160-c2ce" primary="false"/>
+            <category id="c631-1e5c-2b0d-844a" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="8141-1bd2-6a57-f45c" name="Chaos Space Marine (Heavy Gunner)" entryId="ec89-db05-c0d0-9cf2::e1f7-3b36-e807-f50c" number="1" type="model">
+          <profiles>
+            <profile id="ec89-db05-c0d0-9cf2::2909-7884-98dc-935f::5fcf-cfed-a30d-386d" name="Chaos Space Marine" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">3</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">1</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">3+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="ccce-783b-5d54-2085" name="Fists" entryId="ec89-db05-c0d0-9cf2::a8f1-b5f8-167a-cfdc::bc7c-88b7-63fa-b468" number="1" type="upgrade">
+              <profiles>
+                <profile id="ec89-db05-c0d0-9cf2::a8f1-b5f8-167a-cfdc::1453-9959-e1c9-339b" name="⚔ Fists (Heavy Gunner)" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">3/4</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="3a67-0fea-4bc4-be31" name="Heavy bolter" entryId="ec89-db05-c0d0-9cf2::2585-09c0-9b94-6aea" entryGroupId="ec89-db05-c0d0-9cf2::4134-511d-daee-52b7" number="1" type="upgrade">
+              <rules>
+                <rule id="ec89-db05-c0d0-9cf2::6545-c462-8308-2677::1e77-6974-cf90-6008" name="Heavy" hidden="false">
+                  <description>An Operative cannot perform a Charge, Fall Back or Normal Move action in the same activation in which it performs a Shoot action with this ranged weapon.</description>
+                </rule>
+                <rule id="ec89-db05-c0d0-9cf2::ee22-4127-465d-47cd::e2ae-574a-94ab-3550" name="Fusillade" hidden="false">
+                  <description>Each time a friendly operative performs a Shoot action and selects this weapon, after selecting a valid target, you can select any number of other valid targets within ⬤ of the original target. Distribute your attack dice between the targets you have selected. Make a shooting attack with this weapon (using the same profile) against each of the targets you have selected using the attack dice you have distributed to each of them.</description>
+                </rule>
+                <rule id="ec89-db05-c0d0-9cf2::0915-2c24-7648-ff99::1f11-c169-2746-13cf" name="Px" hidden="false">
+                  <description>Each time a friendly operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, the weapon gains the APx rule for that shooting attack. x is the number after the weapon&apos;s P, e.g. P1.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ec89-db05-c0d0-9cf2::3781-b5e5-8521-c1f2" name="⌖ Heavy bolter" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="A" typeId="5f37-25bb-661b-5c9c">5</characteristic>
+                    <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">3+</characteristic>
+                    <characteristic name="D" typeId="337a-2e5b-e4e3-f489">4/5</characteristic>
+                    <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Heavy, Fusillade</characteristic>
+                    <characteristic name="!" typeId="c495-8d08-b6b8-b434">P1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="c7b0-0c2e-0f5b-0998" name="Belt Feed" entryId="ec89-db05-c0d0-9cf2::c495-3f0f-6300-262e::65c2-2614-56e4-b429" entryGroupId="ec89-db05-c0d0-9cf2::c495-3f0f-6300-262e::fb15-1448-aff7-7c3b" number="1" type="upgrade">
+              <rules>
+                <rule id="ec89-db05-c0d0-9cf2::c495-3f0f-6300-262e::fd4c-94b2-b282-66f0::ce9a-aa0d-7b46-3d04" name="Ceaseless" hidden="false">
+                  <description>Each time a friendly operative fights in combat or makes a shooting attack with this weapon, in the Roll Attack Dice step of that combat or shooting attack, you can re-roll any or all of your attack dice results of 1.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ec89-db05-c0d0-9cf2::c495-3f0f-6300-262e::1055-a029-907d-60e5" name="Belt Feed" hidden="false" typeId="ef4d-f12f-036e-9f14" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Equipment" typeId="f20a-32bc-0370-b877">Select one boltgun, bolt pistol or heavy bolter the operative is equipped with. That weapon gains the Ceaseless rule for the battle. If you selected a heavy bolter, this equipment costs 3EP, otherwise it costs 2EP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="3.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="8d80-d774-0c41-71ad" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="722c-33a0-2f9f-62c1" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="c514-d65a-3479-c194" name="Heretic Astartes" entryId="4a3c-ccf5-3b89-51c1" primary="false"/>
+            <category id="5267-9c0d-dcf1-5e4a" name="Chaos Space Marine" entryId="dc01-4030-c1e5-8e9a" primary="false"/>
+            <category id="7c36-b003-c8fb-d2f4" name="Heavy Gunner" entryId="0e59-07ae-65c2-2de6" primary="false"/>
+            <category id="978f-5288-b71d-f0c5" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="ac65-f125-5826-8192" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="4895-9dff-ad24-0168" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="7faa-1fe9-3425-09f9" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="c61b-8753-3706-28ca" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="6c3b-5a7a-5da4-5fb7" name="Chaos Space Marine" entryId="dc01-4030-c1e5-8e9a" primary="false"/>
+        <category id="34b0-a761-b8b4-d8a3" name="Icon Bearer" entryId="fe8e-272e-1160-c2ce" primary="false"/>
+        <category id="8c9e-3788-d3f3-fdef" name="Gunner" entryId="ee8c-cc44-acc3-40f0" primary="false"/>
+        <category id="a282-a881-72b9-3955" name="Heavy Gunner" entryId="0e59-07ae-65c2-2de6" primary="false"/>
+      </categories>
+    </force>
+    <force id="49cb-c3fc-1c38-2ece" name="Chaos Cultist Fire Team" entryId="fc17-3b1c-8002-6fbb" catalogueId="228f-66c4-e3e0-2b01" catalogueRevision="4" catalogueName="Traitor Space Marine">
+      <selections>
+        <selection id="6caa-dc16-5a11-04fe" name="Game Type" entryId="728e-edbd-09b7-433b::ce6c-1c61-35c2-8202" number="1" type="upgrade">
+          <selections>
+            <selection id="1d76-f8d2-4d9d-2264" name="Matched" entryId="728e-edbd-09b7-433b::d576-59ea-7df7-cf3e" entryGroupId="728e-edbd-09b7-433b::66d7-369b-5646-9bfe" number="1" type="upgrade">
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="a7cf-3e5f-2cff-aafa" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="2cb9-6ac5-ed80-9e0e" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="eb3c-b3b6-2477-567c" name="Brutal assault weapon and autopistol" entryId="6aa1-8bcb-2aff-98d8::9b91-d4ce-dce9-f7f2" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="5050-dce8-211a-a51a" name="Autopistol" entryId="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::917e-4947-d6a0-8482" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::b410-3b6c-403a-3787" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="be99-5364-7957-2242" name="Brutal assault weapon" entryId="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::0ddd-2041-453c-0e9f" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::76db-18b8-0cec-dbb2" name="⚔ Brutal assault weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e5ae-c1d4-0165-eb6a" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="64b5-2b3a-8954-6566" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="a91d-4cee-d26c-8e54" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="d4fc-f10e-ac7d-81af" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="d29b-a945-8d77-04ff" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="9fac-0023-9bac-94c1" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="c4bb-5fe7-d63d-7316" name="Brutal assault weapon and autopistol" entryId="6aa1-8bcb-2aff-98d8::9b91-d4ce-dce9-f7f2" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="4cc6-3a42-6a6f-9d08" name="Autopistol" entryId="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::917e-4947-d6a0-8482" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::b410-3b6c-403a-3787" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="fb2c-8258-b27c-b89a" name="Brutal assault weapon" entryId="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::0ddd-2041-453c-0e9f" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::76db-18b8-0cec-dbb2" name="⚔ Brutal assault weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="16a6-0525-e27b-9ea7" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="2243-cd03-0108-edeb" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="b02a-d522-908b-d0de" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="3863-92b7-d993-905a" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="3626-629c-3f62-44f7" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="e748-f480-0c67-82a7" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="dda1-3b4a-0ce7-3e22" name="Brutal assault weapon and autopistol" entryId="6aa1-8bcb-2aff-98d8::9b91-d4ce-dce9-f7f2" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="5d80-c728-457f-f70d" name="Autopistol" entryId="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::917e-4947-d6a0-8482" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::b410-3b6c-403a-3787" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="772a-7747-8503-1a06" name="Brutal assault weapon" entryId="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::0ddd-2041-453c-0e9f" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::76db-18b8-0cec-dbb2" name="⚔ Brutal assault weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3162-2243-a28e-6c7d" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="f365-6328-ac0c-25cd" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="e295-c192-2fc5-6401" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="4642-35b0-60b7-387f" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="0f80-1b6f-6753-e1db" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="b077-7f62-1813-dad5" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b352-f17a-0f7e-ee9a" name="Brutal assault weapon and autopistol" entryId="6aa1-8bcb-2aff-98d8::9b91-d4ce-dce9-f7f2" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="b44e-747e-428d-0634" name="Autopistol" entryId="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::917e-4947-d6a0-8482" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::ac21-6b21-ea84-c5bf::b410-3b6c-403a-3787" name="⌖ Autopistol" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">Rng ⬟</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="0293-803c-9a2b-4739" name="Brutal assault weapon" entryId="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::0ddd-2041-453c-0e9f" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e309-8567-a400-0a55::76db-18b8-0cec-dbb2" name="⚔ Brutal assault weapon" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="c11f-071d-c0d5-d9e2" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="9d57-bc2d-5cc8-9b79" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="6dca-0584-b05b-3030" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="00ad-1cdc-6e4c-e0cb" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="ede6-6e51-81f2-32f3" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="a9c9-a773-74b5-1114" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="ea1f-50d8-9ed7-80e9" name="Autogun and gun butt" entryId="6aa1-8bcb-2aff-98d8::5635-af3b-4166-398d" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="4adc-f026-28df-8f56" name="Autogun" entryId="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::3f80-1b71-a82b-2976" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::84ee-bfa6-86a5-222d" name="⌖ Autogun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="b3ea-6391-2547-e4ec" name="Gun butt" entryId="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::8ecd-7b05-c088-6728" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::b436-9686-3e44-1fa5" name="⚔ Gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="df9d-1736-9cd9-f3c5" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="94d9-9932-a46b-a27f" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="28f2-05a5-a8da-8b52" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="01ba-deaf-9bcd-277e" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="af03-23e5-94c1-78cd" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="f783-cff1-c79c-6e1b" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="fb3b-2acc-e6f0-63cc" name="Autogun and gun butt" entryId="6aa1-8bcb-2aff-98d8::5635-af3b-4166-398d" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="d2da-bf2b-b916-747f" name="Autogun" entryId="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::3f80-1b71-a82b-2976" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::84ee-bfa6-86a5-222d" name="⌖ Autogun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="6bbd-ab2c-e86b-fadd" name="Gun butt" entryId="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::8ecd-7b05-c088-6728" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::b436-9686-3e44-1fa5" name="⚔ Gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3242-5ebb-2ec7-9a59" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="ab59-fe31-0f62-6281" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="81cd-389f-555c-e193" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="6e4b-de0d-f030-a8c5" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="89da-bb17-621f-ed49" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="1efc-506e-eb65-fca6" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="bb71-e85c-e44a-4f29" name="Autogun and gun butt" entryId="6aa1-8bcb-2aff-98d8::5635-af3b-4166-398d" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="6335-7c18-5555-93df" name="Autogun" entryId="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::3f80-1b71-a82b-2976" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::84ee-bfa6-86a5-222d" name="⌖ Autogun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="057e-3218-87f9-c541" name="Gun butt" entryId="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::8ecd-7b05-c088-6728" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::b436-9686-3e44-1fa5" name="⚔ Gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="e421-2d03-5f9e-d6ae" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="63a2-707b-134c-157a" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="877e-b6fa-7e4d-727d" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="5cb0-b04e-b589-87d1" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="cf0b-8eeb-5db9-9d25" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="a0ad-9ad5-c092-813b" name="Chaos Cultist (Fighter)" entryId="6aa1-8bcb-2aff-98d8::9cf5-b475-e570-6810" number="1" type="model">
+          <profiles>
+            <profile id="6aa1-8bcb-2aff-98d8::1078-bc54-70a5-42aa::03ff-f605-2201-bd6d" name="Chaos Cultist" hidden="false" typeId="350c-2ddd-8a24-377b" typeName="Operative">
+              <characteristics>
+                <characteristic name="M" typeId="c36f-3952-a91d-5a06">3⬤</characteristic>
+                <characteristic name="APL" typeId="c84a-a042-6fe6-519b">2</characteristic>
+                <characteristic name="GA" typeId="7a85-5063-6d1a-2a0b">2</characteristic>
+                <characteristic name="DF" typeId="4a18-41c1-51f2-c88c">3</characteristic>
+                <characteristic name="SV" typeId="dd03-76d2-dda8-eca2">5+</characteristic>
+                <characteristic name="W" typeId="db11-738c-048c-759e">7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="e144-9787-dafc-d7f3" name="Autogun and gun butt" entryId="6aa1-8bcb-2aff-98d8::5635-af3b-4166-398d" entryGroupId="6aa1-8bcb-2aff-98d8::5ea6-1d46-56c4-0126" number="1" type="upgrade">
+              <selections>
+                <selection id="89da-c66e-8e5f-e801" name="Autogun" entryId="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::3f80-1b71-a82b-2976" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::27aa-06cb-30dc-6740::84ee-bfa6-86a5-222d" name="⌖ Autogun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">4</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="e261-9f93-7bb9-e19e" name="Gun butt" entryId="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::8ecd-7b05-c088-6728" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="6aa1-8bcb-2aff-98d8::e67d-f07f-c6b8-75f8::b436-9686-3e44-1fa5" name="⚔ Gun" hidden="false" typeId="a917-3c2e-f7b8-1bdc" typeName="Weapons">
+                      <characteristics>
+                        <characteristic name="A" typeId="5f37-25bb-661b-5c9c">3</characteristic>
+                        <characteristic name="WS/BS" typeId="32b4-9a0e-e740-6031">4+</characteristic>
+                        <characteristic name="D" typeId="337a-2e5b-e4e3-f489">2/3</characteristic>
+                        <characteristic name="SR" typeId="c9c0-f6c9-c787-e650">-</characteristic>
+                        <characteristic name="!" typeId="c495-8d08-b6b8-b434">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name=" EP" typeId="c61a-51a3-370d-bf55" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="ca95-8c92-4638-8102" name="Traitor Space Marine💀" entryId="2e87-8f94-62f7-9457" primary="false"/>
+            <category id="22b3-1a29-e59b-b3af" name="Chaos" entryId="ba61-d304-9352-ec15" primary="false"/>
+            <category id="4c21-86ac-8f8f-c4fd" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+            <category id="eadb-6f80-d130-1049" name="Fighter" entryId="4470-2839-f56b-81ec" primary="false"/>
+            <category id="70bf-74cb-8cdf-288b" name="Operative" entryId="f98b-0289-0f1f-b233" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="ab8d-e1fc-3587-3cbf" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="f47e-cc4b-dd95-3370" name="Configuration" entryId="fb89-efb1-54e4-59c5" primary="false"/>
+        <category id="a4bc-7e24-6113-e465" name="Leader" entryId="3198-c1ce-dfd0-fb4f" primary="false"/>
+        <category id="074a-9fbc-382a-34d1" name="Operative" entryId="f98b-0289-0f1f-b233" primary="false"/>
+        <category id="86d8-1898-abbe-99c2" name="Cultist" entryId="ce37-ee47-8f1a-985c" primary="false"/>
+        <category id="7fa7-7689-f3fc-961a" name="Cultist, Gunner" entryId="94d7-e38a-85e4-3df4" primary="false"/>
+      </categories>
+    </force>
+  </forces>
+</roster>

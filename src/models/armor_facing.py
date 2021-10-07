@@ -1,9 +1,10 @@
 from dataclasses import dataclass
+from typing import Optional
 
 
 @dataclass
 class ArmorFacing:
-    front: str
-    side: str
-    rear: str
-    hp: str
+    front: Optional[str]
+    side: Optional[str]
+    rear: Optional[str]
+    hp: Optional[str]
