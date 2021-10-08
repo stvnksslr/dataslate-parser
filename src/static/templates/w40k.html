@@ -1,0 +1,122 @@
+<html lang="html">
+<head>
+    <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet">
+    {% if not multiple_pages %}
+        <link href="{{ url_for('static', path='/css/single_page.css') }}" rel="stylesheet">{% endif %}
+    {% if multiple_pages %}
+        <link href="{{ url_for('static', path='/css/multiple_pages.css') }}" rel="stylesheet">{% endif %}
+    <title>Roster</title>
+</head>
+<body>
+{% for selection in roster %}
+    <div class="clearfix faUnitCard">
+        <div class="clearfix faUnitHeader">
+            <div class="faRoleIcon"></div>
+            <div class="faUnitName">{{ selection.name }}</div>
+        </div>
+
+        <div class="clearfix faUnitStats">
+            <div class="clearfix faStatsHeader">
+                <div class="faStatHeader" data-stat="name">Unit</div>
+                <div class="faStatHeader" data-stat="movement">M</div>
+                <div class="faStatHeader" data-stat="weapon_skill">WS</div>
+                <div class="faStatHeader" data-stat="ballistic_skill">BS</div>
+                <div class="faStatHeader" data-stat="strength">S</div>
+                <div class="faStatHeader" data-stat="toughness">T</div>
+                <div class="faStatHeader" data-stat="wounds">W</div>
+                <div class="faStatHeader" data-stat="attacks">A</div>
+                <div class="faStatHeader" data-stat="leadership">Ld</div>
+                <div class="faStatHeader" data-stat="save">Sv</div>
+            </div>
+            {% for unit in selection.units %}
+            <div class="clearfix faStatsBody">
+                <div class="faStatBody" data-stat="name">{{ unit.name }}</div>
+                <div class="faStatBody" data-stat="movement">{{ unit.movement }}</div>
+                <div class="faStatBody" data-stat="weapon_skill">{{ unit.weapon_skill }}</div>
+                <div class="faStatBody" data-stat="ballistic_skill">{{ unit.ballistic_skill }}</div>
+                <div class="faStatBody" data-stat="strength">{{ unit.strength }}</div>
+                <div class="faStatBody" data-stat="toughness">{{ unit.toughness }}</div>
+                <div class="faStatBody" data-stat="wounds">{{ unit.wounds }}</div>
+                <div class="faStatBody" data-stat="attacks">{{ unit.attacks }}</div>
+                <div class="faStatBody" data-stat="leadership">{{ unit.leadership }}</div>
+                <div class="faStatBody" data-stat="save">{{ unit.save }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="clearfix faWeaponStats">
+            <div class="clearfix faWpnsHeader">
+                <div class="faWpnHeader" data-stat="weapon">Weapons</div>
+                <div class="faWpnHeader" data-stat="range">Range</div>
+                <div class="faWpnHeader" data-stat="type">Type</div>
+                <div class="faWpnHeader" data-stat="strength">S</div>
+                <div class="faWpnHeader" data-stat="penetration">AP</div>
+                <div class="faWpnHeader" data-stat="damage">D</div>
+                <div class="faWpnHeader" data-stat="abilities">Abilities</div>
+            </div>
+            {% for name,weapon in selection.wargear.items() %}
+                <div class="clearfix faWpnsBody">
+                    <div class="faWpnBody" data-stat="weapon">{{ name }}</div>
+                    <div class="faWpnBody" data-stat="range">{{ weapon.get('Range') }}</div>
+                    <div class="faWpnBody" data-stat="type">{{ weapon.get('Type') }}</div>
+                    <div class="faWpnBody" data-stat="strength">{{ weapon.get('S') }}</div>
+                    <div class="faWpnBody" data-stat="penetration">{{ weapon.get('AP') }}</div>
+                    <div class="faWpnBody" data-stat="damage">{{ weapon.get('D') }}</div>
+                    <div class="faWpnBody" data-stat="abilities">{{ weapon.get('Abilities') }}</div>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if selection.psyker_powers %}
+        <div class="clearfix faWeaponStats">
+            <div class="clearfix faWpnsHeader">
+                <div class="faWpnHeader" data-stat="psychic">Pychic power</div>
+                <div class="faWpnHeader" data-stat="charge">Warp Charge</div>
+                <div class="faWpnHeader" data-stat="range">Range</div>
+                <div class="faWpnHeader" data-stat="abilities">Details</div>
+            </div>
+            {% for name,ability in selection.psyker_powers.items() %}
+                <div class="clearfix faWpnsBody">
+                    <div class="faWpnBody" data-stat="psychic">{{ name }}</div>
+                    <div class="faWpnBody" data-stat="charge">{{ ability.Warp_Charge }}</div>
+                    <div class="faWpnBody" data-stat="range">{{ ability.Range }}</div>
+                    <div class="faWpnBody" data-stat="details">{{ ability.Details }}</div>
+                </div>
+            {% endfor %}                
+        </div>
+        {% endif %}
+
+        {% if selection.rules %}
+            <div class="clearfix faAbilities">
+                <div class="faSectionTitle">RULES:</div>
+                {% for name,ability in selection.rules.items() %}
+                    <div class="clearfix faSectionBody">
+                        <span class="faAbilityName">{{ name }}</span> {{ ability }}.
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if selection.abilities %}
+            <div class="clearfix faAbilities">
+                <div class="faSectionTitle">ABILITIES:</div>
+                {% for name,ability in selection.abilities.items() %}
+                    <div class="clearfix faSectionBody">
+                        <span class="faAbilityName">{{ name }}</span> {{ ability }}.
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+
+        <div class="clearfix faFactKeyWords">
+            <div class="faSectionTitle">KEYWORDS:</div>
+            <div class="faSectionBody"> {% for keyword in selection.keywords %}
+                {{ keyword }},
+            {% endfor %}
+            </div>
+        </div>
+
+    </div>
+{% endfor %}
+</body>
+</html>

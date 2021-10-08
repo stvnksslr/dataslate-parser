@@ -210,12 +210,14 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
-.faWpnHeader[data-stat="weapon"] {
+.faWpnHeader[data-stat="weapon"],
+.faWpnHeader[data-stat="psychic"] {
     width: 12em;
     -webkit-print-color-adjust: exact;
 }
 
-.faWpnHeader[data-stat="range"], .faWpnHeader[data-stat="type"] {
+.faWpnHeader[data-stat="range"], .faWpnHeader[data-stat="type"],
+.faWpnHeader[data-stat="charge"] {
     width: 6em;
     -webkit-print-color-adjust: exact;
 }
@@ -239,18 +241,25 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
-.faWpnBody[data-stat="weapon"] {
+.faWpnBody[data-stat="weapon"],
+.faWpnBody[data-stat="psychic"] {
     width: 12em;
     -webkit-print-color-adjust: exact;
 }
 
-.faWpnBody[data-stat="range"], .faWpnBody[data-stat="type"] {
+.faWpnBody[data-stat="range"], .faWpnBody[data-stat="type"],
+.faWpnBody[data-stat="charge"] {
     width: 6em;
     -webkit-print-color-adjust: exact;
 }
 
 .faWpnBody[data-stat="abilities"] {
     width: 16.5em;
+    -webkit-print-color-adjust: exact;
+}
+
+.faWpnBody[data-stat="details"] {
+    width: 37em;
     -webkit-print-color-adjust: exact;
 }
 
