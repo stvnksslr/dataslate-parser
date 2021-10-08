@@ -6,8 +6,9 @@ sync:
   - .:/src
   - .:/test_rosters
 forward:
-- 8080:8080
+- 8080:80
 reverse:
-- 9000:9000
+  - 9000:9001
+  - 8080:8080
 persistentVolume:
   enabled: false
