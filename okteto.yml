@@ -1,14 +1,15 @@
 name: dataslate-parser
-command: bash
+command: fish
+image: stvnksslr/python-dev:latest
+autocreate: true
 volumes:
 - /root/.cache/pip
 sync:
-  - .:/src
-  - .:/test_rosters
+  - .:/usr/src/app
 forward:
 - 8080:80
 reverse:
   - 9000:9001
-  - 8080:8080
 persistentVolume:
-  enabled: false
+  enabled: true
+  size: 1G
