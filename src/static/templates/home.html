@@ -44,26 +44,34 @@
                     <li>Killteam</li>
                     <li>Warhammer 30k / Horus Heresy</li>
                 </ul>
-
+                
                 <p>
                     <b>Coming Soon: </b>
                 </p>
-
+                
                 <ul>
                     <li> Warhammer 40k</li>
                     <li> Age of Sigmar</li>
                 </ul>
 
                 <form enctype="multipart/form-data" method="post" name="file" action="files/">
-                    <label>
+                    <div>
                         <input type="hidden" name="multiple_pages" value="False"/>
                         <input type="checkbox" name="multiple_pages" value="True">
-                    </label> Separate page per entry<br>
+                        <label for="multiple_pages">Separate page per entry</label>
+                    </div>
 
-                    <label>
+                    <div>
                         <input type="hidden" name="summary_page" value="False"/>
                         <input type="checkbox" name="summary_page" value="True">
-                    </label> Rules Summary Page<br>
+                        <label for="summary_page">Rules Summary Page</label>
+                    </div>
+
+                    <div>
+                        <input type="hidden" name="use_icons" value="False">
+                        <input type="checkbox" name="use_icons" value="True">
+                        <label for="use_icons">Use Icons</label>
+                    </div>
 
                     <label>Upload roster: </label>
                     <input type="file" name="file" accept=".ros, .rosz" required/>

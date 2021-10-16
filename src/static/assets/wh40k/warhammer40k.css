@@ -1,0 +1,789 @@
+@font-face {
+  font-family: "warhammer40k";
+  src: url('./warhammer40k.eot');
+  src:
+    url('./warhammer40k.eot?#iefix') format('embedded-opentype'),
+    url('./warhammer40k.woff2') format('woff2'),
+    url('./warhammer40k.woff') format('woff'),
+    url('./warhammer40k.ttf') format('truetype'),
+    url('./warhammer40k.svg#warhammer40k') format('svg');
+}
+
+.wh40k {
+  font-family: warhammer40k !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: normal;
+}
+
+.wh40k-1-move::before {
+  content: "\ea01";
+}
+
+.wh40k-10-range::before {
+  content: "\ea02";
+}
+
+.wh40k-11-type::before {
+  content: "\ea03";
+}
+
+.wh40k-12-strength::before {
+  content: "\ea04";
+}
+
+.wh40k-13-penetration::before {
+  content: "\ea05";
+}
+
+.wh40k-14-damage::before {
+  content: "\ea06";
+}
+
+.wh40k-2-weapon_skill::before {
+  content: "\ea07";
+}
+
+.wh40k-3-balistic_skill::before {
+  content: "\ea08";
+}
+
+.wh40k-4-strength::before {
+  content: "\ea09";
+}
+
+.wh40k-5-toughness::before {
+  content: "\ea0a";
+}
+
+.wh40k-6-wounds::before {
+  content: "\ea0b";
+}
+
+.wh40k-7-attacks::before {
+  content: "\ea0c";
+}
+
+.wh40k-8-leadership::before {
+  content: "\ea0d";
+}
+
+.wh40k-9-save::before {
+  content: "\ea0e";
+}
+
+.wh40k-sword-01::before {
+  content: "\ea0f";
+}
+
+.wh40k-sword-02::before {
+  content: "\ea10";
+}
+
+.wh40k-sword-03::before {
+  content: "\ea11";
+}
+
+.wh40k-sword-04::before {
+  content: "\ea12";
+}
+
+.wh40k-HQ::before {
+  content: "\ea13";
+}
+
+.wh40k-dedicated-transport::before {
+  content: "\ea14";
+}
+
+.wh40k-elites::before {
+  content: "\ea15";
+}
+
+.wh40k-fast-attack::before {
+  content: "\ea16";
+}
+
+.wh40k-flyer::before {
+  content: "\ea17";
+}
+
+.wh40k-fortification::before {
+  content: "\ea18";
+}
+
+.wh40k-heavy-support::before {
+  content: "\ea19";
+}
+
+.wh40k-lord-of-war::before {
+  content: "\ea1a";
+}
+
+.wh40k-troops::before {
+  content: "\ea1b";
+}
+
+.wh40k-bloodmaws::before {
+  content: "\ea1c";
+}
+
+.wh40k-mephrit::before {
+  content: "\ea1d";
+}
+
+.wh40k-mephrit-dark::before {
+  content: "\ea1e";
+}
+
+.wh40k-mephrit-lord-glyphs-1::before {
+  content: "\ea1f";
+}
+
+.wh40k-mephrit-lord-glyphs-2::before {
+  content: "\ea20";
+}
+
+.wh40k-mephrit-lord-glyphs-3::before {
+  content: "\ea21";
+}
+
+.wh40k-mephrit-lord-glyphs-4::before {
+  content: "\ea22";
+}
+
+.wh40k-mephrit-overlord-glyphs-1::before {
+  content: "\ea23";
+}
+
+.wh40k-mephrit-overlord-glyphs-2::before {
+  content: "\ea24";
+}
+
+.wh40k-mephrit-overlord-glyphs-3::before {
+  content: "\ea25";
+}
+
+.wh40k-mephrit-overlord-glyphs-4::before {
+  content: "\ea26";
+}
+
+.wh40k-mephrit-phalanx-glyphs-1::before {
+  content: "\ea27";
+}
+
+.wh40k-mephrit-phalanx-glyphs-2::before {
+  content: "\ea28";
+}
+
+.wh40k-mephrit-phalanx-glyphs-3::before {
+  content: "\ea29";
+}
+
+.wh40k-mephrit-phalanx-glyphs-4::before {
+  content: "\ea2a";
+}
+
+.wh40k-necrons::before {
+  content: "\ea2b";
+}
+
+.wh40k-necrons-dark::before {
+  content: "\ea2c";
+}
+
+.wh40k-nephrekh::before {
+  content: "\ea2d";
+}
+
+.wh40k-nephrekh-dark::before {
+  content: "\ea2e";
+}
+
+.wh40k-nephrekh-lord-glyphs-1::before {
+  content: "\ea2f";
+}
+
+.wh40k-nephrekh-lord-glyphs-2::before {
+  content: "\ea30";
+}
+
+.wh40k-nephrekh-lord-glyphs-3::before {
+  content: "\ea31";
+}
+
+.wh40k-nephrekh-lord-glyphs-4::before {
+  content: "\ea32";
+}
+
+.wh40k-nephrekh-overlord-glyphs-1::before {
+  content: "\ea33";
+}
+
+.wh40k-nephrekh-overlord-glyphs-2::before {
+  content: "\ea34";
+}
+
+.wh40k-nephrekh-overlord-glyphs-3::before {
+  content: "\ea35";
+}
+
+.wh40k-nephrekh-overlord-glyphs-4::before {
+  content: "\ea36";
+}
+
+.wh40k-nephrekh-phalanx-glyphs-1::before {
+  content: "\ea37";
+}
+
+.wh40k-nephrekh-phalanx-glyphs-2::before {
+  content: "\ea38";
+}
+
+.wh40k-nephrekh-phalanx-glyphs-3::before {
+  content: "\ea39";
+}
+
+.wh40k-nephrekh-phalanx-glyphs-4::before {
+  content: "\ea3a";
+}
+
+.wh40k-nihilakh::before {
+  content: "\ea3b";
+}
+
+.wh40k-nihilakh-dark::before {
+  content: "\ea3c";
+}
+
+.wh40k-nihilakh-lord-glyphs-1::before {
+  content: "\ea3d";
+}
+
+.wh40k-nihilakh-lord-glyphs-2::before {
+  content: "\ea3e";
+}
+
+.wh40k-nihilakh-lord-glyphs-3::before {
+  content: "\ea3f";
+}
+
+.wh40k-nihilakh-lord-glyphs-4::before {
+  content: "\ea40";
+}
+
+.wh40k-nihilakh-overlord-glyphs-1::before {
+  content: "\ea41";
+}
+
+.wh40k-nihilakh-overlord-glyphs-2::before {
+  content: "\ea42";
+}
+
+.wh40k-nihilakh-overlord-glyphs-3::before {
+  content: "\ea43";
+}
+
+.wh40k-nihilakh-overlord-glyphs-4::before {
+  content: "\ea44";
+}
+
+.wh40k-nihilakh-phalanx-glyphs-1::before {
+  content: "\ea45";
+}
+
+.wh40k-nihilakh-phalanx-glyphs-2::before {
+  content: "\ea46";
+}
+
+.wh40k-nihilakh-phalanx-glyphs-3::before {
+  content: "\ea47";
+}
+
+.wh40k-nihilakh-phalanx-glyphs-4::before {
+  content: "\ea48";
+}
+
+.wh40k-novokh::before {
+  content: "\ea49";
+}
+
+.wh40k-novokh-dark::before {
+  content: "\ea4a";
+}
+
+.wh40k-novokh-lord-glyphs-1::before {
+  content: "\ea4b";
+}
+
+.wh40k-novokh-lord-glyphs-2::before {
+  content: "\ea4c";
+}
+
+.wh40k-novokh-lord-glyphs-3::before {
+  content: "\ea4d";
+}
+
+.wh40k-novokh-lord-glyphs-4::before {
+  content: "\ea4e";
+}
+
+.wh40k-novokh-overlord-glyphs-1::before {
+  content: "\ea4f";
+}
+
+.wh40k-novokh-overlord-glyphs-2::before {
+  content: "\ea50";
+}
+
+.wh40k-novokh-overlord-glyphs-3::before {
+  content: "\ea51";
+}
+
+.wh40k-novokh-overlord-glyphs-4::before {
+  content: "\ea52";
+}
+
+.wh40k-novokh-phalanx-glyphs-1::before {
+  content: "\ea53";
+}
+
+.wh40k-novokh-phalanx-glyphs-2::before {
+  content: "\ea54";
+}
+
+.wh40k-novokh-phalanx-glyphs-3::before {
+  content: "\ea55";
+}
+
+.wh40k-novokh-phalanx-glyphs-4::before {
+  content: "\ea56";
+}
+
+.wh40k-sautekh::before {
+  content: "\ea57";
+}
+
+.wh40k-sautekh-dark::before {
+  content: "\ea58";
+}
+
+.wh40k-sautekh-lord-glyphs-1::before {
+  content: "\ea59";
+}
+
+.wh40k-sautekh-lord-glyphs-2::before {
+  content: "\ea5a";
+}
+
+.wh40k-sautekh-lord-glyphs-3::before {
+  content: "\ea5b";
+}
+
+.wh40k-sautekh-lord-glyphs-4::before {
+  content: "\ea5c";
+}
+
+.wh40k-sautekh-overlord-glyphs-1::before {
+  content: "\ea5d";
+}
+
+.wh40k-sautekh-overlord-glyphs-2::before {
+  content: "\ea5e";
+}
+
+.wh40k-sautekh-overlord-glyphs-3::before {
+  content: "\ea5f";
+}
+
+.wh40k-sautekh-overlord-glyphs-4::before {
+  content: "\ea60";
+}
+
+.wh40k-air-caste::before {
+  content: "\ea61";
+}
+
+.wh40k-autaal::before {
+  content: "\ea62";
+}
+
+.wh40k-borkan::before {
+  content: "\ea63";
+}
+
+.wh40k-dalyth::before {
+  content: "\ea64";
+}
+
+.wh40k-dyanoi::before {
+  content: "\ea65";
+}
+
+.wh40k-earth-caste::before {
+  content: "\ea66";
+}
+
+.wh40k-elsyeir::before {
+  content: "\ea67";
+}
+
+.wh40k-ethereal-caste::before {
+  content: "\ea68";
+}
+
+.wh40k-falshia::before {
+  content: "\ea69";
+}
+
+.wh40k-farsight-enclave::before {
+  content: "\ea6a";
+}
+
+.wh40k-fesaan-sept::before {
+  content: "\ea6b";
+}
+
+.wh40k-fire-caste::before {
+  content: "\ea6c";
+}
+
+.wh40k-firios::before {
+  content: "\ea6d";
+}
+
+.wh40k-kelshan::before {
+  content: "\ea6e";
+}
+
+.wh40k-kortal-sept::before {
+  content: "\ea6f";
+}
+
+.wh40k-ksimyen::before {
+  content: "\ea70";
+}
+
+.wh40k-mugulath-bay::before {
+  content: "\ea71";
+}
+
+.wh40k-ndras::before {
+  content: "\ea72";
+}
+
+.wh40k-sacea::before {
+  content: "\ea73";
+}
+
+.wh40k-tashvar::before {
+  content: "\ea74";
+}
+
+.wh40k-tau::before {
+  content: "\ea75";
+}
+
+.wh40k-tau-num0::before {
+  content: "\ea76";
+}
+
+.wh40k-tau-num1::before {
+  content: "\ea77";
+}
+
+.wh40k-tau-num2::before {
+  content: "\ea78";
+}
+
+.wh40k-tau-num3::before {
+  content: "\ea79";
+}
+
+.wh40k-tau-num4::before {
+  content: "\ea7a";
+}
+
+.wh40k-tau-num5::before {
+  content: "\ea7b";
+}
+
+.wh40k-tau-num6::before {
+  content: "\ea7c";
+}
+
+.wh40k-tau-num7::before {
+  content: "\ea7d";
+}
+
+.wh40k-taun::before {
+  content: "\ea7e";
+}
+
+.wh40k-tolku::before {
+  content: "\ea7f";
+}
+
+.wh40k-vashya::before {
+  content: "\ea80";
+}
+
+.wh40k-viorla::before {
+  content: "\ea81";
+}
+
+.wh40k-water-caste::before {
+  content: "\ea82";
+}
+
+.wh40k-yovai-sept::before {
+  content: "\ea83";
+}
+
+.wh40k-adeptus-arbites::before {
+  content: "\ea84";
+}
+
+.wh40k-adeptus-astartes::before {
+  content: "\ea85";
+}
+
+.wh40k-adeptus-astronomica::before {
+  content: "\ea86";
+}
+
+.wh40k-adeptus-custodes::before {
+  content: "\ea87";
+}
+
+.wh40k-adeptus-mechanicus::before {
+  content: "\ea88";
+}
+
+.wh40k-adeptus-ministorum::before {
+  content: "\ea89";
+}
+
+.wh40k-adeptus-terra::before {
+  content: "\ea8a";
+}
+
+.wh40k-administratum::before {
+  content: "\ea8b";
+}
+
+.wh40k-alpha-legion::before {
+  content: "\ea8c";
+}
+
+.wh40k-angels-of-redemption::before {
+  content: "\ea8d";
+}
+
+.wh40k-angels-of-retributio::before {
+  content: "\ea8e";
+}
+
+.wh40k-angels-of-vengance::before {
+  content: "\ea8f";
+}
+
+.wh40k-angels-of-vigilance::before {
+  content: "\ea90";
+}
+
+.wh40k-apothecarium-01::before {
+  content: "\ea91";
+}
+
+.wh40k-apothecarium-02::before {
+  content: "\ea92";
+}
+
+.wh40k-assassinorum::before {
+  content: "\ea93";
+}
+
+.wh40k-astra-militarum::before {
+  content: "\ea94";
+}
+
+.wh40k-black-legion::before {
+  content: "\ea95";
+}
+
+.wh40k-blood-angels::before {
+  content: "\ea96";
+}
+
+.wh40k-bolter-mkv::before {
+  content: "\ea97";
+}
+
+.wh40k-bolter-mkv-02::before {
+  content: "\ea98";
+}
+
+.wh40k-chaos-star-01::before {
+  content: "\ea99";
+}
+
+.wh40k-consecrators::before {
+  content: "\ea9a";
+}
+
+.wh40k-crux-terminatus-01::before {
+  content: "\ea9b";
+}
+
+.wh40k-dark-angels::before {
+  content: "\ea9c";
+}
+
+.wh40k-death-guard::before {
+  content: "\ea9d";
+}
+
+.wh40k-disciples-of-caliban::before {
+  content: "\ea9e";
+}
+
+.wh40k-emperors-children::before {
+  content: "\ea9f";
+}
+
+.wh40k-guardians-of-the-covenant::before {
+  content: "\eaa0";
+}
+
+.wh40k-imperial-aquila::before {
+  content: "\eaa1";
+}
+
+.wh40k-imperial-aquila-02::before {
+  content: "\eaa2";
+}
+
+.wh40k-imperial-fists::before {
+  content: "\eaa3";
+}
+
+.wh40k-imperial-navy::before {
+  content: "\eaa4";
+}
+
+.wh40k-inqusition-01::before {
+  content: "\eaa5";
+}
+
+.wh40k-inqusition-02::before {
+  content: "\eaa6";
+}
+
+.wh40k-iron-hands::before {
+  content: "\eaa7";
+}
+
+.wh40k-iron-warrioes::before {
+  content: "\eaa8";
+}
+
+.wh40k-khorne-symbol-01::before {
+  content: "\eaa9";
+}
+
+.wh40k-knight-lords::before {
+  content: "\eaaa";
+}
+
+.wh40k-librarian-codicier::before {
+  content: "\eaab";
+}
+
+.wh40k-librarian-epistolary::before {
+  content: "\eaac";
+}
+
+.wh40k-librarian-lexicanum::before {
+  content: "\eaad";
+}
+
+.wh40k-librarius-01::before {
+  content: "\eaae";
+}
+
+.wh40k-librarius-02::before {
+  content: "\eaaf";
+}
+
+.wh40k-navis-nobilite::before {
+  content: "\eab0";
+}
+
+.wh40k-nurgle-icon-01::before {
+  content: "\eab1";
+}
+
+.wh40k-raven-guard::before {
+  content: "\eab2";
+}
+
+.wh40k-rogue-trader::before {
+  content: "\eab3";
+}
+
+.wh40k-salamanders::before {
+  content: "\eab4";
+}
+
+.wh40k-sisters-of-battle::before {
+  content: "\eab5";
+}
+
+.wh40k-skull-01::before {
+  content: "\eab6";
+}
+
+.wh40k-skull-laurals::before {
+  content: "\eab7";
+}
+
+.wh40k-slaanesh-icon-01::before {
+  content: "\eab8";
+}
+
+.wh40k-space-wolfs::before {
+  content: "\eab9";
+}
+
+.wh40k-the-fallen::before {
+  content: "\eaba";
+}
+
+.wh40k-thousand-sons::before {
+  content: "\eabb";
+}
+
+.wh40k-tzeentch-icon-01::before {
+  content: "\eabc";
+}
+
+.wh40k-ultramarines::before {
+  content: "\eabd";
+}
+
+.wh40k-white-scars::before {
+  content: "\eabe";
+}
+
+.wh40k-word-bearers::before {
+  content: "\eabf";
+}
+
+.wh40k-world-eaters::before {
+  content: "\eac0";
+}
