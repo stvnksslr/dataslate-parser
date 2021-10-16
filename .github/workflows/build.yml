@@ -54,7 +54,7 @@ jobs:
       #----------------------------------------------
       #              run test suite   
       #----------------------------------------------
-      - name: Run linters
+      - name: Run tests
         run: poetry run pytest
       #----------------------------------------------
       #      Send code coverage to code climate   
