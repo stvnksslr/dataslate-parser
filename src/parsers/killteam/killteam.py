@@ -1,10 +1,7 @@
-from bs4 import BeautifulSoup
-
 from src.models.killteam_unit import KillteamUnit
 
 
-def parse_units(roster_file):
-    soup = BeautifulSoup(roster_file, features="lxml")
+def parse_units(soup):
     operative_list = soup.find_all("profile", {"typename": "Operative"})
     parsed_unit_list = create_list_of_units(operative_list)
     return parsed_unit_list
@@ -92,3 +89,7 @@ def get_characteristics(model):
             elif name in ["M", "APL", "GA", "DF", "W", "SV"]:
                 dict_of_characteristics.update({name: value})
     return dict_of_characteristics
+
+
+def get_rules_summary(parsed_list, soup):
+    return {}

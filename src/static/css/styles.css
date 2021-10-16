@@ -331,3 +331,16 @@ body {
     font-size: small;
     -webkit-print-color-adjust: exact;
 }
+
+.faRuleName {
+    padding-left: 0.5em;
+    font-weight: bold;
+    -webkit-print-color-adjust: exact;
+}
+
+.faRuleDescription {
+    padding-left: 0.5em;
+    border-top: solid 1px #000;
+    font-size: small;
+    -webkit-print-color-adjust: exact;
+}

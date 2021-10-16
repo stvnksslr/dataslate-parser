@@ -79,7 +79,7 @@
                     <div class="faWpnBody" data-stat="psychic">{{ name }}</div>
                     <div class="faWpnBody" data-stat="charge">{{ ability.Warp_Charge }}</div>
                     <div class="faWpnBody" data-stat="range">{{ ability.Range }}</div>
-                    <div class="faWpnBody" data-stat="details">{{ ability.Details }}</div>
+                    <div class="faWpnBody" data-stat="details">{{ ability.Details|safe }}</div>
                 </div>
             {% endfor %}                
         </div>
@@ -90,7 +90,7 @@
                 <div class="faSectionTitle">RULES:</div>
                 {% for name,ability in selection.rules.items() %}
                     <div class="clearfix faSectionBody">
-                        <span class="faAbilityName">{{ name }}</span> {{ ability }}.
+                        <span class="faAbilityName">{{ name }}</span> {{ ability|safe }}.
                     </div>
                 {% endfor %}
             </div>
@@ -101,7 +101,7 @@
                 <div class="faSectionTitle">ABILITIES:</div>
                 {% for name,ability in selection.abilities.items() %}
                     <div class="clearfix faSectionBody">
-                        <span class="faAbilityName">{{ name }}</span> {{ ability }}.
+                        <span class="faAbilityName">{{ name }}</span> {{ ability|safe }}.
                     </div>
                 {% endfor %}
             </div>
@@ -118,5 +118,21 @@
 
     </div>
 {% endfor %}
+
+{% if rules_summary %}
+    <div class="clearfix faUnitCard">
+        <div class="clearfix faUnitHeader">
+            <div class="faUnitName">Rules Summary</div>
+        </div>
+        <br>
+        {% for rule in rules_summary.items() %}
+            <div>
+                <div class="faRuleName">{{ rule[0] }}: </div>
+                <div class="clearfix faRuleDescription">{{ rule[1]|safe }}</div>
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+{% endif %}
 </body>
 </html>

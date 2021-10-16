@@ -4,8 +4,7 @@ from pathlib import Path
 
 from src.models.heresy_unit import HeresyUnit
 from src.parsers.heresy.heresy_constants import TOUGHNESS
-from src.parsers.heresy.rules_summary import get_rules_summary
-from src.utils.test_utils import fetch_and_parse_roster
+from src.utils.test_utils import fetch_and_parse_roster, fetch_and_parse_rules
 
 base_path = Path.cwd() / "test_rosters" / "horus_heresy"
 new_bs_format = str(base_path / "legion_astartes_roster_new.ros")
@@ -138,8 +137,7 @@ def test_rules_summary():
     pre-req: take a parsed list and create a dict of rules no duplicates
     expected: should return all the rules from the input list
     """
-    parsed_roster = fetch_and_parse_roster(roster_file=list_with_wargear)
-    rules_summary = get_rules_summary(parsed_roster)
+    rules_summary = fetch_and_parse_rules(roster_file=list_with_wargear)
     assert len(rules_summary) == 16
 
 
