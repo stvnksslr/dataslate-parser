@@ -1,11 +1,8 @@
-from bs4 import BeautifulSoup
-
 from src.models.w40k_unit import W40kSelection, W40kUnit
 
 
-def parse_units(roster_file):
+def parse_units(soup):
     parsed_units = []
-    soup = BeautifulSoup(roster_file, features="lxml")
 
     forces = soup.find_all("force")
     for force in forces:
@@ -87,7 +84,7 @@ def get_rules(model):
     dict_of_rules = {}
     for rule in list_of_rules:
         name = rule.attrs.get("name")
-        value = rule.text.strip("\n")
+        value = rule.text.strip("\n").replace('\n', '<br>')
         dict_of_rules.update({name: value})
     return dict_of_rules
 
@@ -97,7 +94,7 @@ def get_abilities(model):
     dict_of_rules = {}
     for rule in list_of_rules:
         name = rule.attrs.get("name")
-        value = rule.text.strip("\n")
+        value = rule.text.strip("\n").replace('\n', '<br>')
         dict_of_rules.update({name: value})
     return dict_of_rules
 
@@ -145,7 +142,7 @@ def get_psychic(model):
             value = ""
             if len(characteristic.contents) > 0:
                 value = characteristic.contents[0]
-            characteristic_dict.update({name: value})
+            characteristic_dict.update({name: value.replace('\n', '<br>')})
 
         formatted_items.update({item_name: characteristic_dict})
 
@@ -168,3 +165,16 @@ def get_characteristics(model):
             elif name in ["M", "WS", "BS", "S", "T", "W", "A", "Ld", "Save"]:
                 dict_of_characteristics.update({name: value})
     return dict_of_characteristics
+
+
+def get_rules_summary(parsed_list, soup):
+    rules_summary = {}
+    rules = soup.find_all("rule")
+
+    for rule in rules:
+        print(rule.description)
+        name = get_model_name(rule)
+        description = rule.description.string
+        rules_summary.update({name: description.replace('\n', '<br>')})
+
+    return rules_summary

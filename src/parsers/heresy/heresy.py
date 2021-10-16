@@ -1,12 +1,9 @@
-from bs4 import BeautifulSoup
-
 from src.models.armor_facing import ArmorFacing
 from src.models.heresy_unit import HeresyUnit
 from src.models.unit_group import UnitGroup
 
 
-def parse_units(roster_file):
-    soup = BeautifulSoup(roster_file, features="lxml")
+def parse_units(soup):
     rule_whitelist = [
         "Rite of War",
         "Legion and Allegiance",
@@ -159,3 +156,11 @@ def filter_out_non_unit_entries(rule_whitelist, selections):
                 dict_of_rules.update({name: selection})
                 selections.pop(idx)
     return dict_of_rules
+
+
+def get_rules_summary(parsed_list, soup):
+    rules_summary = {}
+    for squad in parsed_list:
+        for unit in squad.list_of_units:
+            rules_summary.update(unit.abilities)
+    return rules_summary

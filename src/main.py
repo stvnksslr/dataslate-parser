@@ -4,7 +4,6 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from src.parsers.heresy.rules_summary import get_rules_summary
 from src.utils.battlescribe_meta import check_battlescribe_version
 from src.utils.constants import BATTLESCRIBE_VERSION_ERROR
 from src.utils.test_utils import get_parser_type_and_parse
@@ -36,14 +35,11 @@ async def upload_roster(
     if not supported_battlescribe_version:
         return BATTLESCRIBE_VERSION_ERROR
 
-    data = get_parser_type_and_parse(roster=upload_contents)
+    data = get_parser_type_and_parse(roster=upload_contents, summary_page=summary_page)
 
     parsed_roster = data.get("roster")
     template = data.get("template")
-
-    rules_summary = {}
-    if summary_page:
-        rules_summary = get_rules_summary(parsed_roster)
+    rules_summary = data.get("rules_summary")
 
     return templates.TemplateResponse(
         template,
