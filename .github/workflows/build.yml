@@ -54,7 +54,12 @@ jobs:
       #----------------------------------------------
       #              run test suite   
       #----------------------------------------------
-      - name: Run tests
+      - name: Run linters
+        run: poetry run pytest
+      #----------------------------------------------
+      #      Send code coverage to code climate   
+      #----------------------------------------------        
+      - name: Submit coverage to code climate
         uses: paambaati/codeclimate-action@v2.3.0
         env:
           CI: "true"
