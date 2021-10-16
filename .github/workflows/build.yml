@@ -61,6 +61,7 @@ jobs:
       #----------------------------------------------        
       - name: Submit coverage to code climate
         uses: paambaati/codeclimate-action@v2.3.0
+        continue-on-error: true
         env:
           CI: "true"
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
