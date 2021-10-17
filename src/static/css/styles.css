@@ -223,7 +223,7 @@ body {
 }
 
 .faWpnHeader[data-stat="abilities"] {
-    width: 16.5em;
+    width: 26.5em;
     -webkit-print-color-adjust: exact;
 }
 
@@ -254,7 +254,7 @@ body {
 }
 
 .faWpnBody[data-stat="abilities"] {
-    width: 16.5em;
+    width: 26.5em;
     -webkit-print-color-adjust: exact;
 }
 
