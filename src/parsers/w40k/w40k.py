@@ -36,6 +36,8 @@ def parse_selection(unit):
     rules = get_rules(unit)
     abilities = get_abilities(unit)
 
+    transport = get_transport(unit)
+
     psyker_powers = get_psychic(unit)
 
     parsed_unit = W40kSelection(
@@ -45,7 +47,8 @@ def parse_selection(unit):
         rules=rules,
         abilities=abilities,
         wargear=wargear,
-        psyker_powers=psyker_powers
+        psyker_powers=psyker_powers,
+        transport=transport
     )
 
     return parsed_unit
@@ -90,13 +93,23 @@ def get_rules(model):
 
 
 def get_abilities(model):
-    list_of_rules = model.find_all("profile", {"typename": "Abilities"})
-    dict_of_rules = {}
-    for rule in list_of_rules:
+    list_of_abilities = model.find_all("profile", {"typename": "Abilities"})
+    dict_of_abilities = {}
+    for rule in list_of_abilities:
         name = rule.attrs.get("name")
         value = rule.text.strip("\n").replace('\n', '<br>')
-        dict_of_rules.update({name: value})
-    return dict_of_rules
+        dict_of_abilities.update({name: value})
+    return dict_of_abilities
+
+
+def get_transport(model):
+    list_of_transports = model.find_all("profile", {"typename": "Transport"})
+    dict_of_transports = {}
+    for rule in list_of_transports:
+        name = rule.attrs.get("name")
+        value = rule.text.strip("\n").replace('\n', '<br>')
+        dict_of_transports.update({name: value})
+    return dict_of_transports
 
 
 def get_keywords(model):

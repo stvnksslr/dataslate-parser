@@ -19,6 +19,7 @@ class W40kSelection(BaseModel):
     abilities: dict = None
     keywords: list
     psyker_powers: Optional[dict]
+    transport: Optional[dict]
 
 
 class W40kUnit(Unit):

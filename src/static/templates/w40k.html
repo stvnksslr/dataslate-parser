@@ -85,6 +85,18 @@
         </div>
         {% endif %}
 
+
+        {% if selection.transport %}
+            <div class="clearfix faAbilities">
+                <div class="faSectionTitle">TRANSPORT:</div>
+                {% for name,ability in selection.transport.items() %}
+                    <div class="clearfix faSectionBody">
+                        <span class="faAbilityName">{{ name }}</span> {{ ability|safe }}.
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif%}
+
         {% if selection.rules %}
             <div class="clearfix faAbilities">
                 <div class="faSectionTitle">RULES:</div>
