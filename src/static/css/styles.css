@@ -222,6 +222,11 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
+.faWpnHeader[data-stat="weaponskill"] {
+    width: 26.5em;
+    -webkit-print-color-adjust: exact;
+}
+
 .faWpnHeader[data-stat="abilities"] {
     width: 26.5em;
     -webkit-print-color-adjust: exact;
