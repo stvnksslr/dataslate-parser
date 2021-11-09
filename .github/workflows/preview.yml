@@ -13,6 +13,11 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     steps:
+      - uses: okteto/login@latest
+        env:
+          OKTETO_URL: https://okteto.stvnksslr.com
+        with:
+          token: ${{ secrets.OKTETO_TOKEN }}
       - name: "Deploy the preview environment"
         uses: okteto/deploy-preview@latest
         env:
