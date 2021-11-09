@@ -5,4 +5,4 @@ services:
     image: stvnksslr/dataslate:1.6.0
     command: uvicorn src.main:app --host 0.0.0.0 --port 8080
     ports:
-      - 8008:8000
+      - 8080:8080
