@@ -10,4 +10,4 @@ services:
 endpoints:
   - path: /
     service: parser
-    port: 80
+    port: 8080
