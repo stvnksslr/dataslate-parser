@@ -1,0 +1,29 @@
+# file: .github/workflows/preview.yaml
+name: preview
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    tags-ignore:
+      - "*.*"
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Context
+        uses: okteto/context@latest
+        with:
+          token: ${{ secrets.OKTETO }}
+      - name: Deploy preview environment
+        uses: okteto/deploy-preview@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          name: pr-${{ github.event.number }}-cindylopez
+          scope: personal
+          timeout: 15m
