@@ -6,8 +6,6 @@ on:
     branches:
       - main
   push:
-    branches:
-      - main
     tags-ignore:
       - "*.*"
 
@@ -22,6 +20,7 @@ jobs:
       - name: Deploy preview environment
         uses: okteto/deploy-preview@latest
         env:
+          OKTETO_URL: https://okteto.stvnksslr.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           name: pr-${{ github.event.number }}-cindylopez
