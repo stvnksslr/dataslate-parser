@@ -14,8 +14,3 @@ reverse:
 persistentVolume:
   enabled: true
   size: 2G
-
-endpoints:
-  - path: /
-    service: parser
-    port: 8080
