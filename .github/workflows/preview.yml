@@ -23,6 +23,6 @@ jobs:
           OKTETO_URL: https://okteto.stvnksslr.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: pr-${{ github.event.number }}-cindylopez
-          scope: personal
+          name: pr-${{ github.event.number }}-dataslate
+          scope: global
           timeout: 15m
