@@ -13,16 +13,15 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     steps:
-      - name: Context
-        uses: okteto/context@latest
+      - uses: okteto/login@latest
         with:
           token: ${{ secrets.OKTETO }}
-      - name: Deploy preview environment
+          url: ${{secrets.OKTETO_URL}}
+      - name: "Deploy the preview environment"
         uses: okteto/deploy-preview@latest
         env:
-          OKTETO_URL: https://okteto.stvnksslr.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: pr-${{ github.event.number }}-cindylopez
-          scope: personal
+          name: pr-${{ github.event.number }}
+          scope: global
           timeout: 15m
