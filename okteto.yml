@@ -3,7 +3,7 @@ command: fish
 image: stvnksslr/python-dev:latest
 autocreate: true
 volumes:
-- /root/.cache/pip
+  - /root/.cache/pip
 workdir: /usr/src/app
 sync:
   - .:/usr/src/app
@@ -14,3 +14,8 @@ reverse:
 persistentVolume:
   enabled: true
   size: 2G
+
+endpoints:
+  - path: /
+    service: parser
+    port: 8080
