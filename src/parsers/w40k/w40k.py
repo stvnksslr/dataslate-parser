@@ -11,8 +11,10 @@ def parse_units(soup):
             if str(selection).strip() == "":
                 continue
 
-            if selection.attrs.get("type") in ["model", "unit"]:
-                parsed_units.append(parse_selection(selection))
+            if selection.attrs.get("type") in ["model", "unit", "upgrade"]:
+                parsed_unit = parse_selection(selection)
+                if parsed_unit is not None:
+                    parsed_units.append(parsed_unit)
 
     return parsed_units
 
@@ -29,6 +31,9 @@ def parse_selection(unit):
     res = create_list_of_units(unit.find_all("profile", {"typename": "Unit"}))
     if len(res) > 0:
         units.extend(res)
+
+    if len(res) == 0:
+        return None
 
     wargear = get_item_details(unit, "Weapon")
 

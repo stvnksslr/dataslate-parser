@@ -34,7 +34,7 @@ def test__w40k_parse_ultramar_test1():
     parsed_roster = fetch_and_parse_roster(roster_file=ultramar_test1_path)
 
     assert bool(parsed_roster)
-    assert len(parsed_roster) == 4
+    assert len(parsed_roster) == 5
     assert parsed_roster[0].name == "Intercessor Squad"
     assert len(parsed_roster[0].wargear) == 4
 
