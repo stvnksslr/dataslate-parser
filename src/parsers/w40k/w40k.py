@@ -185,7 +185,6 @@ def get_rules_summary(parsed_list, soup):
     rules = soup.find_all("rule")
 
     for rule in rules:
-        print(rule.description)
         name = get_model_name(rule)
         description = rule.description.string
         rules_summary.update({name: description.replace('\n', '<br>')})
