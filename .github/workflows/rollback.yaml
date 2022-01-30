@@ -25,17 +25,15 @@ jobs:
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.KUBECONFIG }}
-      - name: 'Get Previous tag'
-        id: previoustag
-        uses: "WyriHaximus/github-action-get-previous-tag@v1"
-        with:
-          fallback: 1.0.0 # Optional fallback tag to use when no tag can be found
+      - name: Get previous release tag
+        id: previous-release
+        uses: sammcoe/get-previous-release-action@v1
       - name: "Install Flux"
         run: curl -s https://fluxcd.io/install.sh | sudo bash
       - name: "Suspend Dataslate Deployments"
         run: flux suspend image repository dataslate-repo
       - name: "Roll back deployment"
-        run: flux create image policy dataslate-policy --image-ref=dataslate-repo --select-semver= ${{ previoustag }}
+        run: flux create image policy dataslate-policy --image-ref=dataslate-repo --select-semver= ${{ steps.previous-release.output.release }}
         continue-on-error: true
 
 
