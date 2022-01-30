@@ -42,7 +42,7 @@ jobs:
         run: flux suspend image repository dataslate-repo
       
       - name: "Roll back deployment"
-        run: flux create image policy dataslate-policy --image-ref=dataslate-repo --select-semver= ${{ previous-version }}
+        run: flux create image policy dataslate-policy --image-ref=dataslate-repo --select-semver= ${{ steps.previous-version }}
         continue-on-error: true
 
 
