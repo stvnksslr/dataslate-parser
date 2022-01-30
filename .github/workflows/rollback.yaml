@@ -4,14 +4,7 @@ on:
   push:
     tags:
       - "*.*"
-
-# steps to roll back a release via flux cli
-# 1. flux suspend image repository dataslate-repo
-# 2. flux create image policy dataslate-policy --image-ref=dataslate-repo --select-semver=1.7.4
-
-# step to resume automation
-# 1. flux resume image repository dataslate-repo
-
+      
 jobs:
   rollback:
     runs-on: ubuntu-latest
