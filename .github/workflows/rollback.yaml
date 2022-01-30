@@ -30,7 +30,7 @@ jobs:
           kubeconfig: ${{ secrets.KUBECONFIG }}
       
       - name: Get previous release tag
-        uses: SOLIDSoftworks/semver-tags@latest
+        uses: SOLIDSoftworks/semver-tags@1.0.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
           default-version: '1.7.5'
