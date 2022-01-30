@@ -13,11 +13,12 @@ on:
 # 1. flux resume image repository dataslate-repo
 
 jobs:
-  fluxctl:
+  rollback:
     runs-on: ubuntu-latest
     environment:
       name: prod
     steps:
+      - uses: actions/checkout@master
       - name: "Setup Kubectl"
         uses: azure/setup-kubectl@v2.0
       - name: "Set Context"
