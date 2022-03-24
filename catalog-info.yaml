@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dataslate-parser
+  description: parsing application to convert battlescribe roster files to customizable and printable unit cards.
+  annotations:
+    github.com/project-slug: dataslate/parser
+spec:
+  type: website
+  owner: backstage/dataslate
+  lifecycle: production
