@@ -45,28 +45,28 @@ def test__killteam_parse_vet_guardsman_killteam():
 
 
 def test__killteam_tsons():
-    t_sons_path = base_path / 't_sons.ros'
+    t_sons_path = base_path / "t_sons.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=t_sons_path)
     assert bool(parsed_roster)
-    assert parsed_roster[0].name == 'Aspiring Sorcerer'
+    assert parsed_roster[0].name == "Aspiring Sorcerer"
 
 
 def test__killteam_brood_coven():
-    brood_coven_path = base_path / 'brood_coven_kt.ros'
+    brood_coven_path = base_path / "brood_coven_kt.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=brood_coven_path)
     assert bool(parsed_roster)
-    assert parsed_roster[0].name == 'Acolyte Hybrid (Leader)'
+    assert parsed_roster[0].name == "Acolyte Hybrid (Leader)"
 
 
 def test__killteam_cadre_mercenary():
-    cadre_mercenary_kt = base_path / 'cadre_mercenary_kt.ros'
+    cadre_mercenary_kt = base_path / "cadre_mercenary_kt.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=cadre_mercenary_kt)
     assert bool(parsed_roster)
-    assert parsed_roster[0].name == 'Kroot Carnivore (Warrior)'
+    assert parsed_roster[0].name == "Kroot Carnivore (Warrior)"
 
 
 def test__killteam_sm_reiver():
-    sm_reiver_kt = base_path / 'sm_reiver_kt.ros'
+    sm_reiver_kt = base_path / "sm_reiver_kt.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=sm_reiver_kt)
     assert bool(parsed_roster)
-    assert parsed_roster[0].name == 'Reiver Sergeant'
+    assert parsed_roster[0].name == "Reiver Sergeant"

@@ -6,14 +6,14 @@ def fetch_and_parse_roster(roster_file):
     with open(roster_file, "r") as roster_file:
         roster_file = roster_file.read()
 
-        return get_parser_type_and_parse(roster_file, False).get('roster')
+        return get_parser_type_and_parse(roster_file, False).get("roster")
 
 
 def fetch_and_parse_rules(roster_file):
     with open(roster_file, "r") as roster_file:
         roster_file = roster_file.read()
 
-        return get_parser_type_and_parse(roster_file, True).get('rules_summary')
+        return get_parser_type_and_parse(roster_file, True).get("rules_summary")
 
 
 def get_parser_type_and_parse(roster, summary_page):

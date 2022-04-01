@@ -27,7 +27,7 @@ def test__upload_roster():
     response = client.post(
         "/files/",
         files={"file": roster_file},
-        data={"multiple_pages": multiple_pages, "summary_page": summary_page, "use_icons": use_icons}
+        data={"multiple_pages": multiple_pages, "summary_page": summary_page, "use_icons": use_icons},
     )
 
     assert response.status_code == 200
@@ -43,7 +43,7 @@ def test__upload_roster_multipart_false():
     response = client.post(
         "/files/",
         files={"file": roster_file},
-        data={"multiple_pages": multiple_pages, "summary_page": summary_page, "use_icons": use_icons}
+        data={"multiple_pages": multiple_pages, "summary_page": summary_page, "use_icons": use_icons},
     )
     multiple_pages_response = "single_page.css" in response.text
 
@@ -62,7 +62,7 @@ def test__upload_roster_multipart_true():
     response = client.post(
         "/files/",
         files={"file": roster_file},
-        data={"multiple_pages": multiple_pages, "summary_page": summary_page, "use_icons": use_icons}
+        data={"multiple_pages": multiple_pages, "summary_page": summary_page, "use_icons": use_icons},
     )
 
     multiple_pages_response = "multiple_pages.css" in response.text

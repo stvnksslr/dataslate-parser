@@ -6,8 +6,11 @@ from starlette.templating import Jinja2Templates
 
 from src.utils.battlescribe_meta import check_battlescribe_version
 from src.utils.constants import BATTLESCRIBE_VERSION_ERROR
+from src.utils.logger_manager import init_logging
 from src.utils.test_utils import get_parser_type_and_parse
 from src.utils.zip_utils import check_if_zipped
+
+init_logging()
 
 app = FastAPI(
     title="Dataslate",
@@ -31,7 +34,7 @@ async def upload_roster(
     multiple_pages: bool = Form(...),
     summary_page: bool = Form(...),
     use_icons: bool = Form(...),
-    file: UploadFile = File(...)
+    file: UploadFile = File(...),
 ):
     upload_contents = await check_if_zipped(file)
     supported_battlescribe_version = check_battlescribe_version(roster=upload_contents)
@@ -55,4 +58,4 @@ async def upload_roster(
 
 
 if __name__ == "__main__":
-    run(app, host="0.0.0.0", port=8000)
+    run("__main__:app", host="localhost", port=8080, reload=True)

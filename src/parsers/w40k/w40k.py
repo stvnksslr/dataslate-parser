@@ -48,7 +48,7 @@ def parse_selection(unit):
         abilities=abilities,
         wargear=wargear,
         psyker_powers=psyker_powers,
-        transport=transport
+        transport=transport,
     )
 
     return parsed_unit
@@ -87,7 +87,7 @@ def get_rules(model):
     dict_of_rules = {}
     for rule in list_of_rules:
         name = rule.attrs.get("name")
-        value = rule.text.strip("\n").replace('\n', '<br>')
+        value = rule.text.strip("\n").replace("\n", "<br>")
         dict_of_rules.update({name: value})
     return dict_of_rules
 
@@ -97,7 +97,7 @@ def get_abilities(model):
     dict_of_abilities = {}
     for rule in list_of_abilities:
         name = rule.attrs.get("name")
-        value = rule.text.strip("\n").replace('\n', '<br>')
+        value = rule.text.strip("\n").replace("\n", "<br>")
         dict_of_abilities.update({name: value})
     return dict_of_abilities
 
@@ -107,7 +107,7 @@ def get_transport(model):
     dict_of_transports = {}
     for rule in list_of_transports:
         name = rule.attrs.get("name")
-        value = rule.text.strip("\n").replace('\n', '<br>')
+        value = rule.text.strip("\n").replace("\n", "<br>")
         dict_of_transports.update({name: value})
     return dict_of_transports
 
@@ -155,7 +155,7 @@ def get_psychic(model):
             value = ""
             if len(characteristic.contents) > 0:
                 value = characteristic.contents[0]
-            characteristic_dict.update({name: value.replace('\n', '<br>')})
+            characteristic_dict.update({name: value.replace("\n", "<br>")})
 
         formatted_items.update({item_name: characteristic_dict})
 
@@ -187,6 +187,6 @@ def get_rules_summary(parsed_list, soup):
     for rule in rules:
         name = get_model_name(rule)
         description = rule.description.string
-        rules_summary.update({name: description.replace('\n', '<br>')})
+        rules_summary.update({name: description.replace("\n", "<br>")})
 
     return rules_summary
