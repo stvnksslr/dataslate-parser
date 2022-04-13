@@ -11,5 +11,5 @@ metadata:
       icon: dashboard
 spec:
   type: website
-  owner: backstage/dataslate
+  owner: stvnksslr
   lifecycle: production
