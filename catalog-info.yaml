@@ -4,7 +4,7 @@ metadata:
   name: dataslate-parser
   description: parsing application to convert battlescribe roster files to customizable and printable unit cards.
   annotations:
-    github.com/project-slug: dataslate/parser
+    github.com/project-slug: stvnksslr/dataslate-parser
   links:
     - url: https://dataslate.dev
       title: parser
