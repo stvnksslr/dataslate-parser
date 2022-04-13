@@ -6,7 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: stvnksslr/dataslate-parser
     backstage.io/kubernetes-namespace: dataslate
-    backstage.io/kubernetes-id: dataslate
+    backstage.io/kubernetes-id: parser
   links:
     - url: https://dataslate.dev
       title: parser
