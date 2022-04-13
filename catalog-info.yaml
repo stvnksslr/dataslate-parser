@@ -5,6 +5,7 @@ metadata:
   description: parsing application to convert battlescribe roster files to customizable and printable unit cards.
   annotations:
     github.com/project-slug: stvnksslr/dataslate-parser
+    backstage.io/kubernetes-namespace': "dataslate"
     backstage.io/kubernetes-label-selector: "app=dataslate"
   links:
     - url: https://dataslate.dev
