@@ -11,7 +11,7 @@ metadata:
       title: parser
       icon: dashboard
 spec:
-  type: website
+  type: api
   owner: stvnksslr
   lifecycle: production
 
