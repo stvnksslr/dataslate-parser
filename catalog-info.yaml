@@ -14,3 +14,5 @@ spec:
   type: website
   owner: stvnksslr
   lifecycle: production
+  definition:
+    $text: https://dataslate.dev/openapi.json
