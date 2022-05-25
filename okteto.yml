@@ -1,16 +1,39 @@
-name: dataslate-parser
-command: fish
-image: stvnksslr/python-dev:latest
-autocreate: true
-volumes:
-  - /root/.cache/pip
-workdir: /usr/src/app
-sync:
-  - .:/usr/src/app
-forward:
-  - 8080:8080
-reverse:
-  - 9000:9001
-persistentVolume:
-  enabled: true
-  size: 2G
+# name: dataslate-parser
+# command: fish
+# image: stvnksslr/python-dev:latest
+# autocreate: true
+# volumes:
+#   - /root/.cache/pip
+# workdir: /usr/src/app
+# sync:
+#   - .:/usr/src/app
+# forward:
+#   - 8080:8080
+# reverse:
+#   - 9000:9001
+# persistentVolume:
+#   enabled: true
+#   size: 2G
+
+build:
+  app:
+    context: parser
+  frontend:
+    context: frontend
+deploy:
+  commands:
+    - poetry install
+  compose: docker-compose.yaml
+  endpoints:
+    - path: /
+      service: parser
+      port: 8080
+dev:
+  parser:
+    image: stvnksslr/python-dev:latest
+    command: ["fish"]
+    forward:
+      - 8080:8080
+      - 9229:9229
+    sync:
+      - .:/usr/src/app
