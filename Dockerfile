@@ -1,9 +1,9 @@
-FROM python:3.9-slim-buster
+FROM python:3.10-slim-buster
 
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     POETRY_VIRTUALENVS_CREATE=false \
     PIP_NO_CACHE_DIR=off \
-    POETRY_VERSION=1.1.4
+    POETRY_VERSION=1.2.1
 
 WORKDIR /src
 
