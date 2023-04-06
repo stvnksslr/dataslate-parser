@@ -1,5 +1,3 @@
-from typing import Optional
-
 from pydantic import BaseModel
 
 from src.models.unit import Unit
@@ -18,8 +16,8 @@ class W40kSelection(BaseModel):
     rules: dict = None
     abilities: dict = None
     keywords: list
-    psyker_powers: Optional[dict]
-    transport: Optional[dict]
+    psyker_powers: dict | None
+    transport: dict | None
 
 
 class W40kUnit(Unit):

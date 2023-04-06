@@ -7,8 +7,7 @@ def parse_units(soup):
     forces = soup.find_all("force")
     for force in forces:
         for selection in force.selections.children:
-
-            if str(selection).strip() == "":
+            if not str(selection).strip():
                 continue
 
             if selection.attrs.get("type") in ["model", "unit"]:
@@ -57,7 +56,6 @@ def parse_selection(unit):
 def create_list_of_units(model_list):
     parsed_models = []
     for model in model_list:
-
         unit_name = get_model_name(model)
 
         characteristics = get_characteristics(model)

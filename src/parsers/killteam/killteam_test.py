@@ -1,5 +1,4 @@
 from os import listdir
-from os.path import isfile, join
 from pathlib import Path
 
 from src.utils.test_utils import fetch_and_parse_roster
@@ -9,13 +8,12 @@ gametype = "killteam"
 
 
 def test__killteam_loop_through_test_folder_and_parse():
-    """
-    method: fetch_and_parse_roster(killteam)
+    """method: fetch_and_parse_roster(killteam)
     prerequisite: given a unzipped roster file it will parse without errors
-    expected: successfully parses all roster files in the test folder
+    expected: successfully parses all roster files in the test folder.
     """
     parsed_rosters = []
-    list_of_rosters = [file for file in listdir(str(base_path)) if isfile(join(str(base_path), file))]
+    list_of_rosters = [file for file in listdir(str(base_path)) if Path.is_file(base_path / file)]
 
     for roster in list_of_rosters:
         parsed_roster = fetch_and_parse_roster(roster_file=str(base_path) + "/" + roster)

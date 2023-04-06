@@ -1,8 +1,8 @@
-from uvicorn import run
-from fastapi import FastAPI, File, UploadFile, Form
+from fastapi import FastAPI, File, Form, UploadFile
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
+from uvicorn import run
 
 from src.utils.battlescribe_meta import check_battlescribe_version
 from src.utils.constants import BATTLESCRIBE_VERSION_ERROR

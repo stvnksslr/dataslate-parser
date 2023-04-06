@@ -7,7 +7,7 @@ license = "MIT"
 
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
 requests = "^2.27"
 beautifulsoup4 = "^4.10"
 lxml = "^4.8"
@@ -15,28 +15,16 @@ fastapi = "^0.85.0"
 aiofiles = "^0.8.0"
 jinja2 = "^3.1"
 python-multipart = "^0.0.5"
-uvicorn = "^0.17"
 loguru = "^0.6.0"
+uvicorn = {extras = ["standard"], version = "^0.21.1"}
 
-
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.261"
 pytest = "^7.1"
 pytest-cov = "^3.0"
 pytest-sugar = "^0.9.4"
 pytest-asyncio = "^0.18"
-flake8 = "^4.0"
-flake8-bugbear = "^22.3"
-flake8-comprehensions = "^3.8.0"
-flake8-eradicate = "^1.2.0"
-flake8-functions-names = "^0.3.0"
-flake8-pep3101 = "^1.3.0"
-flake8-pytest-style = "^1.6.0"
-flake8-return = "^1.1.3"
-flake8-simplify = "^0.19"
-flake8-variables-names = "^0.0.5"
-flake8-cognitive-complexity = "^0.1.0"
-flake8-functions = "^0.0.7"
-
+black = "^23.3.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
@@ -44,6 +32,51 @@ build-backend = "poetry.masonry.api"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 120
+ignore = ["B008", "S101", "RET504", "PLR2004", "ARG001"]
+select = [
+  "A",
+  "B",
+  "E",
+  "F",
+  "N",
+  "RET",
+  "S",
+  "W",
+  "Q",
+  "C90",
+  "I",
+  "UP",
+  "BLE",
+  "C4",
+  "ISC",
+  "ICN",
+  "PT",
+  "PIE",
+  "T20",
+  "SIM",
+  "TCH",
+  "ARG",
+  "PTH",
+  "ERA",
+  "PL",
+  "PLE",
+  "PLR",
+  "PLW",
+  "RUF",
+]
+exclude = [
+  ".eggs",
+  ".git",
+  ".pytype",
+  ".ruff_cache",
+  ".venv",
+  "__pypackages__",
+  ".venv",
+]
+
 
 [tool.black]
 line-length = 120

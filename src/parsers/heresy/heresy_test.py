@@ -1,5 +1,4 @@
 from os import listdir
-from os.path import isfile, join
 from pathlib import Path
 
 from src.models.heresy_unit import HeresyUnit
@@ -17,13 +16,12 @@ legion_list_9_5_21 = str(base_path / "2021_9_5_test_roster.ros")
 
 
 def test__heresy_loop_through_test_folder_and_parse():
-    """
-    method: fetch_and_parse_roster(horus heresy)
+    """method: fetch_and_parse_roster(horus heresy)
     prerequisite: given a unzipped roster file it will parse without errors
-    expected: successfully parses all roster files in the test folder
+    expected: successfully parses all roster files in the test folder.
     """
     parsed_rosters = []
-    list_of_rosters = [file for file in listdir(str(base_path)) if isfile(join(str(base_path), file))]
+    list_of_rosters = [file for file in listdir(str(base_path)) if Path.is_file(base_path / file)]
 
     for roster in list_of_rosters:
         parsed_roster = fetch_and_parse_roster(roster_file=str(base_path) + "/" + roster)
@@ -33,10 +31,9 @@ def test__heresy_loop_through_test_folder_and_parse():
 
 
 def test__new_bs_format():
-    """
-    method: fetch_and_parse_roster(heresy)
+    """method: fetch_and_parse_roster(heresy)
     prerequisite: given a 2.02+ format roster
-    expected: successfully parses all three entries in the roster
+    expected: successfully parses all three entries in the roster.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=new_bs_format)
     assert bool(parsed_roster)
@@ -44,10 +41,9 @@ def test__new_bs_format():
 
 
 def test__full_list():
-    """
-    method: fetch_and_parse_roster(killteam)
+    """method: fetch_and_parse_roster(killteam)
     prerequisite: given a 2.02+ format roster that contains infantry, vehicles, fliers
-    expected: successfully parses all 12 entries in the roster
+    expected: successfully parses all 12 entries in the roster.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=full_list)
 
@@ -56,11 +52,10 @@ def test__full_list():
 
 
 def test__tac_squad_with_dt():
-    """
-    method: fetch_and_parse_roster(heresy)
+    """method: fetch_and_parse_roster(heresy)
     prerequisite: given a 2.02+ format roster that contains an infantry unit
     with a dedicated transport
-    expected: successfully parses both the infantry unit and the dedicated transport
+    expected: successfully parses both the infantry unit and the dedicated transport.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=tac_squad_with_dt)
 
@@ -72,11 +67,10 @@ def test__tac_squad_with_dt():
 
 
 def test__tac_squad_with_dt_characteristics():
-    """
-    method: fetch_and_parse_roster(heresy)
+    """method: fetch_and_parse_roster(heresy)
     prerequisite: given a 2.02+ format roster that contains an infantry unit
     with a dedicated transport
-    expected: successfully parses both the infantry unit and the dedicated transport
+    expected: successfully parses both the infantry unit and the dedicated transport.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=tac_squad_with_dt)
     tactical_squad = parsed_roster[0].list_of_units
@@ -96,10 +90,9 @@ def test__tac_squad_with_dt_characteristics():
 
 
 def test__stat_type_finder():
-    """
-    method: get_stat_type
+    """method: get_stat_type
     pre-req: should find the correct stat line for a unit
-    expected: should return the toughness stat line
+    expected: should return the toughness stat line.
     """
     test_unit_type = "infantry"
     stat_type = HeresyUnit.get_stat_type(test_unit_type)
@@ -107,10 +100,9 @@ def test__stat_type_finder():
 
 
 def test_wargear_additions():
-    """
-    method: fetch_and_parse_roster
+    """method: fetch_and_parse_roster
     pre-req: should take in an input and find the correct wargear for this specific unit
-    expected: should return 2 pieces of wargear
+    expected: should return 2 pieces of wargear.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=list_with_wargear)
     unit_with_wargear = parsed_roster[0].list_of_units[0]
@@ -119,10 +111,9 @@ def test_wargear_additions():
 
 
 def test_weapon_additions():
-    """
-    method: fetch_and_parse_roster
+    """method: fetch_and_parse_roster
     pre-req: should take in an input and find the correct weapons for this specific unit
-    expected: should return two weapons
+    expected: should return two weapons.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=list_with_wargear)
     unit_with_weapon = parsed_roster[0].list_of_units[0]
@@ -132,30 +123,27 @@ def test_weapon_additions():
 
 
 def test_rules_summary():
-    """
-    method: get_rules_summary()
+    """method: get_rules_summary()
     pre-req: take a parsed list and create a dict of rules no duplicates
-    expected: should return all the rules from the input list
+    expected: should return all the rules from the input list.
     """
     rules_summary = fetch_and_parse_rules(roster_file=list_with_wargear)
     assert len(rules_summary) == 16
 
 
 def test_legion_list_8_19_20():
-    """
-    method: get_rules_summary()
+    """method: get_rules_summary()
     pre-req: take a parsed list and create a dict of rules no duplicates
-    expected: new mounrival and super heavy categories should parse correctly and not break the parse
+    expected: new mounrival and super heavy categories should parse correctly and not break the parse.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=legion_list_8_19_20)
     assert len(parsed_roster) == 3
 
 
 def test_legion_list_5_5_2021():
-    """
-    method: get_rules_summary()
+    """method: get_rules_summary()
     pre-req: take a parsed list and create a dict of rules no duplicates
-    expected: new mounrival and super heavy categories should parse correctly and not break the parse
+    expected: new mounrival and super heavy categories should parse correctly and not break the parse.
     """
     parsed_roster = fetch_and_parse_roster(roster_file=legion_list_9_5_21)
     assert len(parsed_roster) == 3

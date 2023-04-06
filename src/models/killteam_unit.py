@@ -1,5 +1,3 @@
-from typing import Optional
-
 from src.models.unit import Unit
 
 
@@ -9,4 +7,4 @@ class KillteamUnit(Unit):
     ga: str
     df: str
     keywords: list
-    psyker_powers: Optional[dict]
+    psyker_powers: dict | None

@@ -1,5 +1,3 @@
-from typing import Optional
-
 from pydantic import BaseModel
 
 
@@ -7,11 +5,11 @@ class Unit(BaseModel):
     name: str
     wargear: dict
     abilities: dict
-    weapon_skill: Optional[str]
-    ballistic_skill: Optional[str]
-    strength: Optional[str]
-    toughness: Optional[str]
-    wounds: Optional[str]
-    attacks: Optional[str]
-    leadership: Optional[str]
-    save: Optional[str]
+    weapon_skill: str | None
+    ballistic_skill: str | None
+    strength: str | None
+    toughness: str | None
+    wounds: str | None
+    attacks: str | None
+    leadership: str | None
+    save: str | None

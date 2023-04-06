@@ -9,12 +9,11 @@ def detect_gametype(roster):
     return game_system
 
 
-def find_gametype_parser(gametype):
+def find_gametype_parser(gametype) -> str:
     parser = SUPPORTED_PARSERS.get(gametype)
     if parser:
         return parser
-    else:
-        return "gametype not supported"
+    return "gametype not supported"
 
 
 def find_template(gametype):
