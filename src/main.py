@@ -58,4 +58,4 @@ async def upload_roster(
 
 
 if __name__ == "__main__":
-    run("__main__:app", host="localhost", port=8080, reload=True)
+    run("__main__:app", host="localhost", port=8080, reload=True, proxy_headers=True, forwarded_allow_ips="*")
