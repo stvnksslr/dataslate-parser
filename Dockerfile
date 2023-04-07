@@ -17,6 +17,7 @@ RUN poetry install --no-dev
 
 FROM python:3.11-slim-bullseye AS app
 
+EXPOSE 8080
 COPY --from=build /src/ ./
 
 ENV VIRTUAL_ENV=/.venv
