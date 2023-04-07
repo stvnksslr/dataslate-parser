@@ -23,14 +23,14 @@ jobs:
       - name: Set up python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.10"
+          python-version: "3.11"
       #----------------------------------------------
       #  -----  install & configure poetry  -----
       #----------------------------------------------
       - name: Install Poetry
         uses: snok/install-poetry@v1.3.2
         with:
-          version: 1.2.1
+          version: 1.4.2
           virtualenvs-create: true
           virtualenvs-in-project: true
       #----------------------------------------------
@@ -52,7 +52,7 @@ jobs:
       #              run linter suite
       #----------------------------------------------
       - name: Run linters
-        run: poetry run flake8
+        run: poetry run ruff check .
       #----------------------------------------------
       #              run test suite
       #----------------------------------------------
