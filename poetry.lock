@@ -492,6 +492,31 @@ htmlsoup = ["BeautifulSoup4"]
 source = ["Cython (>=0.29.7)"]
 
 [[package]]
+name = "markdown-it-py"
+version = "2.2.0"
+description = "Python port of markdown-it. Markdown parsing, done right!"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "markdown-it-py-2.2.0.tar.gz", hash = "sha256:7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1"},
+    {file = "markdown_it_py-2.2.0-py3-none-any.whl", hash = "sha256:5a35f8d1870171d9acc47b99612dc146129b631baf04970128b568f190d0cc30"},
+]
+
+[package.dependencies]
+mdurl = ">=0.1,<1.0"
+
+[package.extras]
+benchmarking = ["psutil", "pytest", "pytest-benchmark"]
+code-style = ["pre-commit (>=3.0,<4.0)"]
+compare = ["commonmark (>=0.9,<1.0)", "markdown (>=3.4,<4.0)", "mistletoe (>=1.0,<2.0)", "mistune (>=2.0,<3.0)", "panflute (>=2.3,<3.0)"]
+linkify = ["linkify-it-py (>=1,<3)"]
+plugins = ["mdit-py-plugins"]
+profiling = ["gprof2dot"]
+rtd = ["attrs", "myst-parser", "pyyaml", "sphinx", "sphinx-copybutton", "sphinx-design", "sphinx_book_theme"]
+testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
+
+[[package]]
 name = "markupsafe"
 version = "2.1.2"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -550,6 +575,58 @@ files = [
     {file = "MarkupSafe-2.1.2-cp39-cp39-win_amd64.whl", hash = "sha256:0576fe974b40a400449768941d5d0858cc624e3249dfd1e0c33674e5c7ca7aed"},
     {file = "MarkupSafe-2.1.2.tar.gz", hash = "sha256:abcabc8c2b26036d62d4c746381a6f7cf60aafcc653198ad678306986b09450d"},
 ]
+
+[[package]]
+name = "mdurl"
+version = "0.1.2"
+description = "Markdown URL utilities"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"},
+    {file = "mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"},
+]
+
+[[package]]
+name = "memray"
+version = "1.7.0"
+description = "A memory profiler for Python applications"
+category = "dev"
+optional = false
+python-versions = ">=3.7.0"
+files = [
+    {file = "memray-1.7.0-cp310-cp310-macosx_10_14_x86_64.whl", hash = "sha256:0de3b27e1bbea325794b6dff276d3ce9081b6e1c485836e9fe271c4691bd8523"},
+    {file = "memray-1.7.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:9a1b9c11e2dd34594a20764228f281599eb2191f1e52944eb3ec44d4c0e9d5fd"},
+    {file = "memray-1.7.0-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:6c69636e423a7acd20d2d8ab21d992dbb2ca78db48221438ea7ebfcbcc7f323c"},
+    {file = "memray-1.7.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e9a79389d1b75b27073db661f0a8add700540f08d6ab359d8714850c4edd0854"},
+    {file = "memray-1.7.0-cp311-cp311-macosx_10_14_x86_64.whl", hash = "sha256:7571c1ba6e70249d81731b7d48d7e8c380ea84fc812df850ce783c906b9cff68"},
+    {file = "memray-1.7.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:df3da7c0291ee93815d97532cd9498d9410f8848ca00a3001ff676edb35f85eb"},
+    {file = "memray-1.7.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:6f3b239309a10fcf8d48b0f4e444d0d51846cacd44bf12125c46e458887d0b21"},
+    {file = "memray-1.7.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f6caa30fab38fb512278e637de2ccc503d6edafec3e8ad840c2876dcd15060e6"},
+    {file = "memray-1.7.0-cp37-cp37m-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:b27f012773bebeeecde9e7a605503e9c0ffb74d9f08e96eea55758d3f9598baf"},
+    {file = "memray-1.7.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:29c62eb9d81617eaa933d303b3cf91a5e4ea891805a6c692f5a7c970b43e6929"},
+    {file = "memray-1.7.0-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:7a3192523db97b63be964e85d161e398906533d22450c594489f4837e610c54b"},
+    {file = "memray-1.7.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:7812ba658b308eed384e1c132694bc285709fe72704e829be3d5a54e1054d95f"},
+    {file = "memray-1.7.0-cp38-cp38-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:e8acd651712c6e18a78bae187cc694229dbaa56b3584a4d525019dff53b81d00"},
+    {file = "memray-1.7.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:0756988f68d49a13b07b52bab7d9bdf6ab3dc52b0590e54f37172072bbb45d3b"},
+    {file = "memray-1.7.0-cp39-cp39-macosx_10_14_x86_64.whl", hash = "sha256:c5eeb74f75bfc8560c0f5c3911cd3a2c55c852a048b35fab8fc12c5f7f1f5cd8"},
+    {file = "memray-1.7.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:22ad635849243b7059b60996a9c159de182f12dd2012161943131a01118e1a0f"},
+    {file = "memray-1.7.0-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:43ece36d2235558defae1912de8f12bf1e6bbfbf635fc19ac1c211488c22bd32"},
+    {file = "memray-1.7.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:ed9e35ad16421f01ea6ddadbeeb8a6e260d830edbce2b4d4066e8ef24a429cc7"},
+    {file = "memray-1.7.0.tar.gz", hash = "sha256:cc3b114d24828edaafc31bc19effb90530e7df38e37f100a0f6f03a2584976d4"},
+]
+
+[package.dependencies]
+jinja2 = ">=2.9"
+rich = ">=11.2.0"
+
+[package.extras]
+benchmark = ["asv"]
+dev = ["Cython", "IPython", "asv", "black", "bump2version", "check-manifest", "flake8", "furo", "greenlet", "ipython", "isort", "mypy", "pytest", "pytest-cov", "sphinx", "sphinx-argparse", "towncrier"]
+docs = ["IPython", "bump2version", "furo", "sphinx", "sphinx-argparse", "towncrier"]
+lint = ["black", "check-manifest", "flake8", "isort", "mypy"]
+test = ["Cython", "greenlet", "ipython", "pytest", "pytest-cov"]
 
 [[package]]
 name = "mypy-extensions"
@@ -673,6 +750,21 @@ dotenv = ["python-dotenv (>=0.10.4)"]
 email = ["email-validator (>=1.0.3)"]
 
 [[package]]
+name = "pygments"
+version = "2.15.0"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "Pygments-2.15.0-py3-none-any.whl", hash = "sha256:77a3299119af881904cd5ecd1ac6a66214b6e9bed1f2db16993b54adede64094"},
+    {file = "Pygments-2.15.0.tar.gz", hash = "sha256:f7e36cffc4c517fbc252861b9a6e4644ca0e5abadf9a113c72d1358ad09b9500"},
+]
+
+[package.extras]
+plugins = ["importlib-metadata"]
+
+[[package]]
 name = "pytest"
 version = "7.3.0"
 description = "pytest: simple powerful testing with Python"
@@ -732,21 +824,45 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtualenv"]
 
 [[package]]
+name = "pytest-memray"
+version = "1.4.0"
+description = "A simple plugin to use with pytest"
+category = "dev"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pytest_memray-1.4.0-py3-none-any.whl", hash = "sha256:cbac61c0a278011e77d57f0afc72ae08de41e59600d2a3f5406874251ed89785"},
+    {file = "pytest_memray-1.4.0.tar.gz", hash = "sha256:7cafd374dbf0da2968852c20c6342df1fb2a334df842afd6f274af7722c7462c"},
+]
+
+[package.dependencies]
+memray = ">=1.4.1"
+pytest = ">=7.2"
+
+[package.extras]
+docs = ["furo (>=2022.9.29)", "sphinx (>=5.3)", "sphinx-argparse (>=0.4)", "sphinx-inline-tabs (>=2022.1.2b11)", "sphinxcontrib-programoutput (>=0.17)", "towncrier (>=22.8)"]
+lint = ["black (==22.10)", "flake8 (==6)", "isort (==5.10.1)", "mypy (==0.991)"]
+test = ["covdefaults (>=2.2)", "coverage (>=6.5)", "flaky (>=3.7)", "pytest (>=7.2)", "pytest-xdist (>=3.0.2)"]
+
+[[package]]
 name = "pytest-sugar"
-version = "0.9.6"
+version = "0.9.7"
 description = "pytest-sugar is a plugin for pytest that changes the default look and feel of pytest (e.g. progressbar, show tests that fail instantly)."
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pytest-sugar-0.9.6.tar.gz", hash = "sha256:c4793495f3c32e114f0f5416290946c316eb96ad5a3684dcdadda9267e59b2b8"},
-    {file = "pytest_sugar-0.9.6-py2.py3-none-any.whl", hash = "sha256:30e5225ed2b3cc988a8a672f8bda0fc37bcd92d62e9273937f061112b3f2186d"},
+    {file = "pytest-sugar-0.9.7.tar.gz", hash = "sha256:f1e74c1abfa55f7241cf7088032b6e378566f16b938f3f08905e2cf4494edd46"},
+    {file = "pytest_sugar-0.9.7-py2.py3-none-any.whl", hash = "sha256:8cb5a4e5f8bbcd834622b0235db9e50432f4cbd71fef55b467fe44e43701e062"},
 ]
 
 [package.dependencies]
-packaging = ">=14.1"
-pytest = ">=2.9"
-termcolor = ">=1.1.0"
+packaging = ">=21.3"
+pytest = ">=6.2.0"
+termcolor = ">=2.1.0"
+
+[package.extras]
+dev = ["black", "flake8", "pre-commit"]
 
 [[package]]
 name = "python-dotenv"
@@ -844,6 +960,25 @@ idna = {version = "*", optional = true, markers = "extra == \"idna2008\""}
 
 [package.extras]
 idna2008 = ["idna"]
+
+[[package]]
+name = "rich"
+version = "13.3.3"
+description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
+category = "dev"
+optional = false
+python-versions = ">=3.7.0"
+files = [
+    {file = "rich-13.3.3-py3-none-any.whl", hash = "sha256:540c7d6d26a1178e8e8b37e9ba44573a3cd1464ff6348b99ee7061b95d1c6333"},
+    {file = "rich-13.3.3.tar.gz", hash = "sha256:dc84400a9d842b3a9c5ff74addd8eb798d155f36c1c91303888e0a66850d2a15"},
+]
+
+[package.dependencies]
+markdown-it-py = ">=2.2.0,<3.0.0"
+pygments = ">=2.13.0,<3.0.0"
+
+[package.extras]
+jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
 [[package]]
 name = "ruff"
@@ -1157,4 +1292,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4944d644dedf10b18e8c63b1f0336114faf24f2f547e13322ad680b084001f39"
+content-hash = "88ca746ff0519eab358ef2f39d3c49f35a1c8049294e1c83908bf47720837123"
