@@ -3,6 +3,7 @@
 *~
 
 .ruff_cache
+deprecated_warnings.log
 
 .vscode/
 .idea/
