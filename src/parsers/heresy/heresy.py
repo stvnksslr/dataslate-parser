@@ -1,4 +1,3 @@
-from lxml import etree
 
 from src.models.armor_facing import ArmorFacing
 from src.models.heresy_unit import HeresyUnit
@@ -35,7 +34,10 @@ def parse_units(soup):
         "XVII: Word Bearers",
         "XVIII: Salamanders",
         "XIX: Raven Guard",
-        "XX: Alpha Legion"
+        "XX: Alpha Legion",
+        "Solar Auxilia",
+        "Mechanicum",
+        "Legio Custodes"
     ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list
@@ -117,7 +119,7 @@ def get_squads(squads):
 
 def find_unit_attachments(unit, search_term):
     dict_of_attachments = {}
-    weapons = unit.find_all(typename=search_term)
+    weapons = unit.find_all(typeName=search_term)
 
     for item in weapons:
         gear = get_characteristics(item, unit_name=None)
@@ -132,7 +134,7 @@ def parse_squad_characteristics(unit):
 
     # todo: find some way to handle command squads / attachments its totally broken now
     list_of_units = unit.find_all(typeName=" Unit")
-    list_of_walkers = unit.find_all(typeName=" Walker")
+    list_of_walkers = unit.find_all(typeName=" Dreadnaught")
     list_of_vehicles = unit.find_all(typeName=" Vehicle")
 
     list_of_profiles_in_squad = list_of_units + list_of_walkers + list_of_vehicles

@@ -6,7 +6,6 @@ from src.parsers.heresy.heresy_constants import TOUGHNESS
 from src.utils.test_utils import fetch_and_parse_roster
 
 base_path = Path.cwd() / "test_rosters" / "horus_heresy"
-hhv2_night_lords_zm = base_path / "hhv2.nightlords_zm.ros"
 
 
 def test__heresy_loop_through_test_folder_and_parse():
@@ -34,11 +33,42 @@ def test__stat_type_finder():
     assert stat_type == TOUGHNESS.get("name")
 
 
-def test_hhv2_legion_zm_list():
+def test_legion_zm_list():
     """
     Test a basic 1000 points night lords list
     contains and HQ with a command squad + a contemptor + several infantry units
     """
+    hhv2_night_lords_zm = base_path / "hhv2.nightlords_zm.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=hhv2_night_lords_zm)
 
-    assert "cats" is True
+    assert bool(parsed_roster) is True
+
+
+def test_solar_aux_zm_list():
+    """
+
+    """
+    hhv2_solar_aux_zm = base_path / "hhv2.solar_aux_zm.ros"
+    parsed_roster = fetch_and_parse_roster(roster_file=hhv2_solar_aux_zm)
+
+    assert bool(parsed_roster) is True
+
+
+def test_mechanicum_zm_list():
+    """
+
+    """
+    hhv2_mechanicum_zm = base_path / "hhv2.mechanicum_zm.ros"
+    parsed_roster = fetch_and_parse_roster(roster_file=hhv2_mechanicum_zm)
+
+    assert bool(parsed_roster) is True
+
+
+def test_custodes_zm_list():
+    """
+
+    """
+    hhv2_custodes_zm = base_path / "hhv2.custodes_zm.ros"
+    parsed_roster = fetch_and_parse_roster(roster_file=hhv2_custodes_zm)
+
+    assert bool(parsed_roster) is True
