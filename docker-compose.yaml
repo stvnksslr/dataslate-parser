@@ -2,13 +2,7 @@ version: '3.8'
 
 services:
   parser:
-    image: stvnksslr/dataslate:1.7.2
+    image: stvnksslr/dataslate:latest
     command: uvicorn src.main:app --host 0.0.0.0 --port 8080
     ports:
-      - 8080:8080
-
-
-endpoints:
-  - path: /
-    service: parser
-    port: 8080
+      - "8080:8080"

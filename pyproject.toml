@@ -39,37 +39,46 @@ addopts = "-vv --random-order"
 
 [tool.ruff]
 line-length = 120
-ignore = ["B008", "S101", "RET504", "PLR2004", "ARG001"]
+ignore = [
+  "B008",    # function-call-in-default-argument (B008)
+  "S101",    # Use of `assert` detected
+  "RET504",  # Unnecessary variable assignment before `return` statement
+  "PLR2004", # Magic value used in comparison, consider replacing {value} with a constant variable
+  "ARG001",  # Unused function argument: `{name}`
+  "S311",    # Standard pseudo-random generators are not suitable for cryptographic purposes
+]
 select = [
-  "A",
-  "B",
-  "E",
-  "F",
-  "N",
-  "RET",
-  "S",
-  "W",
-  "Q",
-  "C90",
-  "I",
-  "UP",
-  "BLE",
-  "C4",
-  "ISC",
-  "ICN",
-  "PT",
-  "PIE",
-  "T20",
-  "SIM",
-  "TCH",
-  "ARG",
-  "PTH",
-  "ERA",
-  "PL",
-  "PLE",
-  "PLR",
-  "PLW",
-  "RUF",
+  "A",    # flake8-builtins
+  "B",    # flake8-bugbear
+  "E",    # pycodestyle
+  "F",    # Pyflakes
+  "N",    # pep8-naming
+  "RET",  # flake8-return
+  "S",    # flake8-bandit
+  "W",    # pycodestyle
+  "Q",    # flake8-quotes
+  "C90",  # mccabe
+  "I",    # isort
+  "UP",   # pyupgrade
+  "BLE",  # flake8-blind-except
+  "C4",   # flake8-comprehensions
+  "ISC",  # flake8-implicit-str-concat
+  "ICN",  # flake8-import-conventions
+  "PT",   # flake8-pytest-style
+  "PIE",  # flake8-pie
+  "T20",  # flake8-print
+  "SIM",  # flake8-simplify
+  "TCH",  # flake8-type-checking
+  "ARG",  # flake8-unused-arguments
+  "PTH",  # flake8-use-pathlib
+  "ERA",  # eradicate
+  "PL",   # Pylint
+  "NPY",  # NumPy-specific rules
+  "PLE",  # Pylint
+  "PLR",  # Pylint
+  "PLW",  # Pylint
+  "RUF",  # Ruff-specific rules
+  "PD"    # pandas-vet
 ]
 exclude = [
   ".eggs",
