@@ -6,10 +6,9 @@ from src.main import app
 
 client = TestClient(app)
 
-
 base_path = Path.cwd() / "test_rosters"
 zipped_roster = str(base_path / "zipped_rosters" / "elite_roster.rosz")
-test_roster = str(base_path / "horus_heresy" / "legion_astartes_roster_new.ros")
+test_roster = str(base_path / "horus_heresy" / "hhv2.nightlords_zm.ros")
 
 SUCCESS: int = 200
 

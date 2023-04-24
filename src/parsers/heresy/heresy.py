@@ -1,3 +1,4 @@
+
 from src.models.armor_facing import ArmorFacing
 from src.models.heresy_unit import HeresyUnit
 from src.models.unit_group import UnitGroup
@@ -15,6 +16,28 @@ def parse_units(soup):
         "Use Playtest Rules Errata 1.0 (From FAQ 1.1 Feb/2019)",
         "Warlord Traits",
         "Dedicated Transports Restrictions",
+        "Expanded Army List Profiles:",
+        "I: Dark Angels",
+        "III: Emperor's Children",
+        "IV: Iron Warriors",
+        "V: White Scars",
+        "VI: Space Wolves",
+        "VII: Imperial Fists",
+        "VIII: Night Lords",
+        "IX: Blood Angels",
+        "X: Iron Hands",
+        "XII: World Eaters",
+        "XIII: Ultramarines",
+        "XIV: Death Guard",
+        "XV: Thousand Sons",
+        "XVI: Sons of Horus",
+        "XVII: Word Bearers",
+        "XVIII: Salamanders",
+        "XIX: Raven Guard",
+        "XX: Alpha Legion",
+        "Solar Auxilia",
+        "Mechanicum",
+        "Legio Custodes"
     ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list
@@ -77,6 +100,7 @@ def create_parsed_unit(unit):
         save=unit.get("save"),
         wargear=unit.get("wargear"),
         weapon=unit.get("weapon"),
+        move=unit.get("move"),
         stat_type=HeresyUnit.get_stat_type(unit_type=unit.get("unit type") or unit.get("type")),
         abilities=unit.get("rules"),
         armor_facing=ArmorFacing(
@@ -95,7 +119,7 @@ def get_squads(squads):
 
 def find_unit_attachments(unit, search_term):
     dict_of_attachments = {}
-    weapons = unit.find_all(typename=search_term)
+    weapons = unit.find_all(typeName=search_term)
 
     for item in weapons:
         gear = get_characteristics(item, unit_name=None)
@@ -107,9 +131,12 @@ def find_unit_attachments(unit, search_term):
 def parse_squad_characteristics(unit):
     parsed_profiles = []
     unit_name = unit.attrs.get("name")
-    list_of_units = unit.find_all(typename="Unit")
-    list_of_walkers = unit.find_all(typename="Walker")
-    list_of_vehicles = unit.find_all(typename="Vehicle")
+
+    # todo: find some way to handle command squads / attachments its totally broken now
+    list_of_units = unit.find_all(typeName=" Unit")
+    list_of_walkers = unit.find_all(typeName=" Dreadnaught")
+    list_of_vehicles = unit.find_all(typeName=" Vehicle")
+
     list_of_profiles_in_squad = list_of_units + list_of_walkers + list_of_vehicles
     for profile in list_of_profiles_in_squad:
         parsed_unit = get_characteristics(profile, unit_name)
@@ -151,7 +178,7 @@ def filter_out_non_unit_entries(rule_whitelist, selections):
     dict_of_rules = {}
     for rule in rule_whitelist:
         for idx, selection in enumerate(selections):
-            name = selection.attrs.get("name")
+            name = selection.attrs.get("name").strip()
             if name == rule:
                 dict_of_rules.update({name: selection})
                 selections.pop(idx)

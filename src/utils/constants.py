@@ -4,7 +4,7 @@ from src.parsers.w40k import w40k
 
 KILLTEAM_ID: str = "3b7e-7dab-f79f-2e74"
 
-HORUS_HERESY_ID: str = "ca571888-56a9-c58e-ddaf-54f4713538bc"
+HORUS_HERESY_ID: str = "28d4-bd2e-4858-ece6"
 
 WARHAMMER_40K_ID: str = "28ec-711c-d87f-3aeb"
 

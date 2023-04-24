@@ -25,7 +25,7 @@ def parse_selection(unit):
     if len(res) > 0:
         units.extend(res)
 
-    res = create_list_of_units(unit.find_all("profile", {"typename": "Unit"}))
+    res = create_list_of_units(unit.find_all("profile", {"typeName": "Unit"}))
     if len(res) > 0:
         units.extend(res)
 
@@ -91,7 +91,7 @@ def get_rules(model):
 
 
 def get_abilities(model):
-    list_of_abilities = model.find_all("profile", {"typename": "Abilities"})
+    list_of_abilities = model.find_all("profile", {"typeName": "Abilities"})
     dict_of_abilities = {}
     for rule in list_of_abilities:
         name = rule.attrs.get("name")
@@ -101,7 +101,7 @@ def get_abilities(model):
 
 
 def get_transport(model):
-    list_of_transports = model.find_all("profile", {"typename": "Transport"})
+    list_of_transports = model.find_all("profile", {"typeName": "Transport"})
     dict_of_transports = {}
     for rule in list_of_transports:
         name = rule.attrs.get("name")
@@ -119,7 +119,7 @@ def get_keywords(model):
 
 
 def get_item_details(model, search_type):
-    search_filter = model.find_all("profile", {"typename": search_type})
+    search_filter = model.find_all("profile", {"typeName": search_type})
     formatted_items = {}
 
     for item in search_filter:
@@ -140,7 +140,7 @@ def get_item_details(model, search_type):
 
 
 def get_psychic(model):
-    search_filter = model.find_all("profile", {"typename": "Psychic Power"})
+    search_filter = model.find_all("profile", {"typeName": "Psychic Power"})
     formatted_items = {}
 
     for item in search_filter:

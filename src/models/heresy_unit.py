@@ -9,6 +9,7 @@ class HeresyUnit(Unit):
     armor_facing: ArmorFacing | None
     stat_type: str | None
     weapon: dict | None
+    move: str | None
 
     @staticmethod
     def get_stat_type(unit_type):

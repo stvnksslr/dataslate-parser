@@ -6,7 +6,7 @@ from src.utils.constants import HORUS_HERESY_ID
 from src.utils.gametype import detect_gametype, find_gametype_parser
 
 base_path = Path.cwd() / "test_rosters" / "horus_heresy"
-heresy_roster = str(base_path / "legion_astartes_roster_new.ros")
+heresy_roster = base_path / "hhv2.nightlords_zm.ros"
 killteam_roster = "killteam"
 
 
