@@ -10,7 +10,7 @@ base_path = Path.cwd() / "test_rosters" / "horus_heresy"
 
 def test__heresy_loop_through_test_folder_and_parse():
     """method: fetch_and_parse_roster(horus heresy)
-    prerequisite: given a unzipped roster file it will parse without errors
+    prerequisite: given an unzipped roster file it will parse without errors
     expected: successfully parses all roster files in the test folder.
     """
     parsed_rosters = []

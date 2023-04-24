@@ -21,10 +21,17 @@ TOUGHNESS = {
         "infantry (heavy, character, line)",
         "infantry (character, line)",
         "infantry (line)",
+        'infantry (heavy)',
+        'infantry (character, heavy)',
         "infantry (heavy, line)",
         "infantry (character, skirmish)",
         "infantry (skirmish, line)",
-        "infantry (character, assassin, light)"
+        "infantry (character, assassin, light)",
+        'infantry (monstrous)',
+        'infantry (close-order, character)',
+        'infantry (close-order)',
+        'infantry (monstrous, antigrav, cybertheurgist, character)',
+        'automata (cybernetica)',
     ],
 }
 ARMORED = {
