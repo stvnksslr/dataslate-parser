@@ -22,6 +22,7 @@
             {% if unit.toughness %}
                 <div class="clearfix faStatsHeader">
                     <div class="faStatHeader" data-stat="name">NAME</div>
+                    <div class="faStatHeader" data-stat="move">M</div>
                     <div class="faStatHeader" data-stat="weaponSkill">WS</div>
                     <div class="faStatHeader" data-stat="ballisticSkill">BS</div>
                     <div class="faStatHeader" data-stat="strength">S</div>
@@ -37,6 +38,7 @@
                 {% for model in unit.toughness %}
                     <div class="clearfix faStatsBody">
                         <div class="faStatBody" data-stat="name">{{ model.name }}</div>
+                        <div class="faStatBody" data-stat="move">{{ model.move }}"</div>
                         <div class="faStatBody" data-stat="weaponSkill">{{ model.weapon_skill }}</div>
                         <div class="faStatBody" data-stat="ballisticSkill">{{ model.ballistic_skill }}</div>
                         <div class="faStatBody" data-stat="strength">{{ model.strength }}</div>

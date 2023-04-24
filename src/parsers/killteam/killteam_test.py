@@ -13,17 +13,17 @@ def test__killteam_loop_through_test_folder_and_parse():
     expected: successfully parses all roster files in the test folder.
     """
     parsed_rosters = []
-    list_of_rosters = [file for file in listdir(str(base_path)) if Path.is_file(base_path / file)]
+    list_of_rosters = [file for file in listdir(base_path) if Path.is_file(base_path / file)]
 
     for roster in list_of_rosters:
-        parsed_roster = fetch_and_parse_roster(roster_file=str(base_path) + "/" + roster)
+        parsed_roster = fetch_and_parse_roster(roster_file=base_path / roster)
         parsed_rosters.append(parsed_roster)
 
     assert parsed_rosters
 
 
 def test__killteam_parse_chaos_killteam():
-    chaos_killteam_path = str(base_path / "chaos_killteam.ros")
+    chaos_killteam_path = base_path / "chaos_killteam.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=chaos_killteam_path)
 
     assert parsed_roster
@@ -33,7 +33,7 @@ def test__killteam_parse_chaos_killteam():
 
 
 def test__killteam_parse_vet_guardsman_killteam():
-    vet_guardsmen_path = str(base_path / "vet_guard.ros")
+    vet_guardsmen_path = base_path / "vet_guard.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=vet_guardsmen_path)
 
     assert parsed_roster

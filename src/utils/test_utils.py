@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from src.utils.gametype import detect_gametype, find_gametype_parser, find_template
 
 
-def fetch_and_parse_roster(roster_file):
+def fetch_and_parse_roster(roster_file: Path):
     with Path.open(roster_file) as roster_file:
         roster_file_content = roster_file.read()
 
@@ -20,7 +20,7 @@ def fetch_and_parse_rules(roster_file):
 
 
 def get_parser_type_and_parse(roster, summary_page):
-    soup = BeautifulSoup(roster, features="lxml")
+    soup = BeautifulSoup(roster, features="xml")
 
     gametype = detect_gametype(roster)
     parser = find_gametype_parser(gametype)

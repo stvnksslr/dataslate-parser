@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="c480-e569-c09a-742d" name="New Roster" battleScribeVersion="2.03" gameSystemId="28d4-bd2e-4858-ece6" gameSystemName="(HH V2) Horus Heresy (2022)" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="895.0"/>
+  </costs>
+  <forces>
+    <force id="d637-d2f4-5ca6-b4fc" name="Mortalis Assault Force Organisation Chart" entryId="5430-5be1-1613-be44" catalogueId="2f2b-1f31-c455-1701" catalogueRevision="10" catalogueName="2022 - LI - Custodes">
+      <selections>
+        <selection id="8642-3da3-33f7-d71e" name="Expanded Army List Profiles:" entryId="15dd-ba85-599e-d215" number="1" type="upgrade">
+          <rules>
+            <rule id="e7a4-a234-6cc7-f1b7::e6d4-65d6-66af-32da" name="Expanded Army Lists" hidden="false">
+              <description>Some events/group choose not to allow official rules in &quot;Legacies of The Age of Darkness&quot; download pdf (which are not playtest). This option is included to make it easier for users for those events/groups.</description>
+            </rule>
+          </rules>
+          <selections>
+            <selection id="dcfb-62d1-88f1-a61e" name="Exemplary Units On" entryId="3790-e8af-d3e2-0dec::8d56-d960-0687-7fee" entryGroupId="3790-e8af-d3e2-0dec::9149-0b99-5a42-de1d" number="1" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="4d72-e39a-8361-dd1b" name="Legacy Units On" entryId="e0e7-c67d-a672-77e3::d344-d97b-4687-8a62" entryGroupId="e0e7-c67d-a672-77e3::e196-9f62-2db3-4814" number="1" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="5463-9ed4-2063-e3c6" name="Expanded Army Lists" entryId="e8ed-ca49-ad6d-5688" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="c6e2-da07-c333-8214" name="Legio Custodes" entryId="8abb-00fb-4157-9177::e0d0-c905-b01e-fc15" number="1" type="upgrade">
+          <profiles>
+            <profile id="c5b2-e371-c1c8-b21e::bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions 
+Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
+
+Base Raction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
+In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one(1) Reaction in any single Phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c5b2-e371-c1c8-b21e::356c-76e3-ec76-65df" name="2) ZM Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE MOVEMENT PHASE
+During the Movement phase, the Reactive player may declare a Reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active player has completely resolved the movement of their unit, the Reactive player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Suppress Reaction.
+
+Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with weapons that have the Blast (X) special rule as part of this Reaction. Template Weapons may only be used as part of a Suppress Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c5b2-e371-c1c8-b21e::47f5-85fb-1b8b-a13e" name="3) ZM Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE SHOOTING PHASE
+During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform a Displace Reaction.
+
+Displace - Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c5b2-e371-c1c8-b21e::6c7a-4ba0-361e-f626" name="4) ZM Assualt Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE ASSAULT PHASE
+During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Brace Reaction.
+
+Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs 1D6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3b44-00c6-b984-7870" name="Allegiance:" entryId="e90d-e5a8-f42d-da84" primary="true"/>
+            <category id="73bb-e4a6-a716-8346" name="Mortalis Assault FoC" entryId="7b69-bf2f-4547-e83b" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="7af3-cd7e-1e2c-29f8" name="Allegiance" entryId="928e-1782-8717-7384" number="1" type="upgrade">
+          <selections>
+            <selection id="ef1c-e590-4306-f4dd" name="Loyalist" entryId="8cf7-d353-bf83-2ae6::d0b6-712f-0b12-a308" entryGroupId="2999-90f6-880e-d20f" number="1" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="74c8-280d-c17a-0f31" name="Allegiance:" entryId="e90d-e5a8-f42d-da84" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="1a82-b6d0-b9c3-7896" name="Custodian Shield Captain" entryId="608e-6aee-421f-3e30::bfaf-d07a-d3a5-c708" number="1" type="model">
+          <rules>
+            <rule id="608e-6aee-421f-3e30::ceb1-e8d2-4273-637f::d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
+              <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
+            </rule>
+            <rule id="608e-6aee-421f-3e30::6e52-ac3e-1eae-3f95::7989-1f2c-a43d-82ae" name="Stubborn" publicationId="e77a-823a-da94-16b9" page="248" hidden="false">
+              <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, the unit ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, the unit uses the rules for Fearless instead.</description>
+            </rule>
+            <rule id="608e-6aee-421f-3e30::1691-dc21-9ab0-ce07::7adf-ac9a-5035-522d" name="Relentless" publicationId="e77a-823a-da94-16b9" page="245" hidden="false">
+              <description>Relentless models can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance, or Rapid Fire weapons.</description>
+            </rule>
+            <rule id="608e-6aee-421f-3e30::f6ca-97a4-9554-b078::676c-7b75-4b6f-9405" name="Bulky (3)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
+              <description>Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.
+
+For example, a unit comprised of five  odels all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit.</description>
+            </rule>
+            <rule id="608e-6aee-421f-3e30::3c80-226c-bb8e-3d59::6998-b328-c080-5341" name="Legio Custodes" publicationId="15a4-fc68-502d-48a9" page="134" hidden="false">
+              <description>Models with this special rule gain the following benefits in various situations that involve ‘Nemesis’ units (see the Nemesis unit entry below):
+• All models with this special rule gain +1 Attacks when locked in combat with a Nemesis Unit.
+• A unit composed entirely of models with this special rule gains an additional bonus of +1 to all Charge rolls made when all targets of the Charge are Nemesis Units.
+• When rolling to Hit while Engaged with a Nemesis unit, a model with this special rule will never need to roll better than 4+ to score a Hit – unless the Nemesis unit is composed entirely of models with the Primarch Unit Type, or the attacking model is in a Challenge with a model that has the Primarch Unit Type.
+
+Nemesis Units
+A ‘Nemesis’ unit is defined as any enemy unit that fulfils at least one of the following conditions:
+• The unit includes one or more models with at least one of the following Unit Types or Unit Sub-types:
+- Primarch, Dreadnought, Monstrous, Reinforced, Bombard, Daemon, Corrupted, Super-heavy, Unique or Knight.
+• The majority of models in the unit have a value of 5 or more in any one of the following Characteristics:
+- Weapon Skill, Ballistic Skill, Wounds or Initiative. 
+• The unit includes an enemy Warlord.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="608e-6aee-421f-3e30::f55f-adbb-e729-0fa4" name="Custodian Shield Captain" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Skirmish)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="b39d-a831-ef28-2520" name="Misericord" entryId="608e-6aee-421f-3e30::15ed-0168-e84d-4b56::73cb-1501-d39e-4f24" number="1" type="upgrade">
+              <rules>
+                <rule id="608e-6aee-421f-3e30::15ed-0168-e84d-4b56::face-fe0e-ad8a-3a98::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::15ed-0168-e84d-4b56::df49-46f1-e6c4-d83e" name="Misericord" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="902a-11b8-71a3-8d7e" name="Meltabombs" entryId="608e-6aee-421f-3e30::75fa-7d9f-1a9d-efbe::b9dd-3b21-f3f8-78e3" number="1" type="upgrade">
+              <rules>
+                <rule id="608e-6aee-421f-3e30::75fa-7d9f-1a9d-efbe::278c-eee8-bb8a-1f3b::8a47-9fc5-16fb-b46e" name="Detonation" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
+                  <description>A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules.</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::75fa-7d9f-1a9d-efbe::b89e-4396-4dcf-2e31::cb59-f920-f071-7cd4" name="Armourbane (Melta)" publicationId="e77a-823a-da94-16b9" page="231" hidden="false">
+                  <description>If a model or weapon has this special rule, it rolls an additional D6 for armour penetration when targeting a Vehicle model, or, when targeting a model with the Automata or Dreadnought Unit Type, re-rolls all failed rolls To Wound instead. These effects apply to both Shooting Attacks and close combat attacks.
+
+Some instances of the Armourbane special rule may include a qualifier after the rule in brackets, for example Armourbane (Melta) or Armourbane (Melee). These variant rules are described below:
+
+Armourbane (Melta): A model or weapon with this Armourbane special rule only gains the benefits of the Armourbane special rule when at half range or less. If the attack is more than half its Maximum Range away, it rolls to penetrate as normal. If a weapon with this version of Armourbane also has the Blast special rule (see page 234), measure the distance to the centre of the Blast marker after it has scattered. If this is half the weapon’s range or less, then all Hits are counted as having the Armourbane special rule, otherwise the Hits are resolved as if they did not have the Armourbane special rule.
+
+Armourbane (Melee): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when attacking in close combat.
+
+Armourbane (Ranged): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when making Shooting Attacks.</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::75fa-7d9f-1a9d-efbe::6f8f-278b-b299-6c7b::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::75fa-7d9f-1a9d-efbe::182d-2757-c5b5-f92a::1570-c21a-881f-8b8a" name="Unwieldy" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
+                  <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::75fa-7d9f-1a9d-efbe::ba08-9a32-1e47-6448" name="Meltabombs" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Armourbane (Melee), Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="1961-306d-a0e8-6ace" name="Frag Grenades" entryId="608e-6aee-421f-3e30::91bd-c03e-711f-cb17::cf9c-327b-3449-00d7" number="1" type="upgrade">
+              <rules>
+                <rule id="608e-6aee-421f-3e30::91bd-c03e-711f-cb17::3d51-f148-14e5-8539::6f5f-8f7c-d18b-cd42" name="Grenades" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false">
+                  <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::91bd-c03e-711f-cb17::ccc0-4896-212b-4d53" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="6601-3579-1cc6-fd79" name="Auric Battleplate" entryId="608e-6aee-421f-3e30::28ab-2b54-0aa0-d946::4e8b-1f42-cea6-d3f4" publicationId="15a4-fc68-502d-48a9" page="152" number="1" type="upgrade">
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::28ab-2b54-0aa0-d946::6ec5-9b0d-b59b-04f1" name="Auric Battleplate" publicationId="15a4-fc68-502d-48a9" page="152" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Auric battleplate confers a 2+ Armour Save and a 4+ Invulnerable Save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="3f47-c5d2-0082-4c40" name="Arae-shrike" entryId="608e-6aee-421f-3e30::de97-4bf8-45e4-967b::fb25-cf83-cbb1-c7c8" publicationId="15a4-fc68-502d-48a9" page="151" number="1" type="upgrade">
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::de97-4bf8-45e4-967b::4afa-29fd-b26e-f78c" name="Arae-shrike" publicationId="15a4-fc68-502d-48a9" page="151" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">If there is a model with an arae-shrike on the battlefield when any enemy player declares a Deep Strike Assault or Flanking Assault, any roll to see if the Deep Strike Assault or Flanking Assault is ‘Disordered’ suffers a penalty of -1 (and is thus counted as Disordered on the roll of a ‘1’ or a ‘2’, unless other modifiers are also applied).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="897c-2e2e-2e89-32e7" name="Praesidium Shield" entryId="608e-6aee-421f-3e30::0389-5959-2553-14ef::6f59-3dda-0590-37c7" entryGroupId="608e-6aee-421f-3e30::0268-3502-3f31-fa00" number="1" type="upgrade">
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::0389-5959-2553-14ef::09e1-791e-2a1c-d2c8" name="Praesidium Shield" publicationId="15a4-fc68-502d-48a9" page="156" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Praesidium shield confers a 5+ Invulnerable Save – this does not stack with existing Invulnerable Saves and if a model has more than one such save, the controlling player must select one to use against any Wounds inflicted on that model. In addition, a model with a Praesidium shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="cc35-b620-37ac-1235" name="Archaeotech Pistol" entryId="608e-6aee-421f-3e30::cf2a-ea39-e9d8-540b::c22a-ed4d-af68-bf00" entryGroupId="608e-6aee-421f-3e30::0268-3502-3f31-fa00" number="1" type="upgrade">
+              <rules>
+                <rule id="608e-6aee-421f-3e30::cf2a-ea39-e9d8-540b::69a0-07e0-1915-ddb0::0ac9-fab7-aef3-de1d" name="Rending (3+)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
+                  <description>If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that their close combat attacks will strike a critical blow. For each To Wound roll equal to or higher than the value listed, the target automatically suffers a Wound, regardless of its Toughness. The controlling player may choose to resolve these Wounds at AP 2 instead of the weapon’s normal AP value.
+Similarly, if a model makes a Shooting Attack with a weapon that has the Rending special rule, a To Wound roll of equal to or greater than the listed value wounds automatically, regardless of Toughness, and is resolved at AP 2.
+In either case, against Vehicles each Armour Penetration roll of equal to or greater than the listed value allows a further D3 to be rolled, with the result added to the total Strength of the attack. These Hits are not resolved at AP 2, but are instead resolved using the weapon’s AP value.
+For example, a model with the Rending (5+) special rule that rolls To Wound against a non-Vehicle model will wound automatically on the roll of a 5+, and the attacking player has the choice of using an AP value of 2 instead of the AP value of their weapon.</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::cf2a-ea39-e9d8-540b::d83a-b3db-6a8e-63c2::6de0-55b0-bf21-48b9" name="Master-crafted" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
+                  <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::cf2a-ea39-e9d8-540b::19a0-cc18-eedc-a1c6" name="Archaeotech Pistol" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Rending (3+), Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </selection>
+            <selection id="8959-b277-afd7-dc26" name="Warlord" entryId="608e-6aee-421f-3e30::88f5-10e0-36b8-4e2e::0176-56a3-d590-b103" number="1" type="upgrade">
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::8ba1-f057-8ae7-65f7::3ddf-fb5c-220a-9581" name="Golden Exemplar (Warlord Trait)" publicationId="15a4-fc68-502d-48a9" page="17" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of a Warlord with this Trait, or a combat which includes a Warlord with this Trait, gains a bonus of +1 to the number of Wounds caused for the purposes of deciding which side has won a combat during the Assault phase. In addition, while Engaged in a Challenge a Warlord with this Trait adds a bonus of +1 to their Attacks and Initiative Characteristics.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="44bb-09d9-8327-9f4e" name="Paragon Glaive" entryId="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::a9fc-4298-7b35-8ef4" entryGroupId="608e-6aee-421f-3e30::8f5a-bf69-1e45-f2d5" number="1" type="upgrade">
+              <rules>
+                <rule id="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::5531-9e56-5990-4a53::5e7e-1628-8174-6f2c" name="Shred" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
+                  <description>If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred rule, it re-rolls failed To Wound rolls in close combat.
+
+Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::e372-49e5-cd90-24f2::4c23-e863-a569-7617" name="Two-handed" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
+                  <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons (see page 177).</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::7ea0-f53a-5ba5-3619::bd8c-4f52-d682-1b40" name="Reaping Blow (1)" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
+                  <description>If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1).</description>
+                </rule>
+                <rule id="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::3957-e658-000a-1476::93b9-1454-0e7c-42ae" name="Murderous Strike (5+)" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
+                  <description>Attacks with this special rule cause Instant Death on a To Wound roll equal to the number in brackets associated with the specific rule. Roll any viable Saves against this Instant Death-causing Wound separately and before any other Wounds the attack inflicts.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::d336-8de9-4b6a-ceb0" name="Paragon Glaive (Shooting)" publicationId="15a4-fc68-502d-48a9" page="147" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Shred</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="608e-6aee-421f-3e30::4b62-44bd-1fe7-2c96::2c5f-4bbb-2d9c-820c" name="Paragon Glaive (Melee)" publicationId="15a4-fc68-502d-48a9" page="147" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Reaping Blow (1), Murderous Strike (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+          </costs>
+          <categories>
+            <category id="8b53-851b-785e-8f59" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="793b-0a13-11fb-1f47" name="HQ:" entryId="4f85-eb33-30c9-8f51" primary="true"/>
+            <category id="f54f-1eff-c908-6b4f" name="Compulsory HQ:" entryId="f823-8c1d-6a87-26a1" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="6364-19aa-44aa-5742" name="Custodian Guard Squad" entryId="da13-587f-7be9-66be::7cec-fe1b-5748-7af3" publicationId="15a4-fc68-502d-48a9" page="25" number="1" type="unit">
+          <rules>
+            <rule id="9300-b317-6b65-c72a" name="Legio Custodes" hidden="false">
+              <description>• All models with this special rule gain +1 Attacks when locked in combat with a Nemesis unit.
+• A unit composed entirely of models with this special rule gains an additional bonus of +1 to all Charge are Nemesis units.
+• When rolling to Hit while Engaged with a Nemesis unis, a model with this special rule will never need to roll better than 4+ to score a Hit - unless the Nemesis unit is composed entirely of models with the Primarch Unit Type, or the attacking model is in a Challenge with a model that has the Primarch Unit Type.
+
+NEMESIS UNITS
+A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least one of the following conditions:
+• The unit includes one of more models with at least one of the following Unit Types or Unit Sub-types: - Primarch, Dreadnought, Monstrous, Reinforced, Bombard, Daemon, Corrupted, Super-heavy, Unique or Knight.
+• The majority of models in the unit have a value of 5 of more in any one of the following Characteristics: - Weapons Skill, Balistic Skill, Wounds or Initiative.
+• A unit includes an enemy Warlord.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::354a-2ea5-33cf-e75b::676c-7b75-4b6f-9405" name="Bulky (3)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
+              <description>Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.
+
+For example, a unit comprised of five  odels all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::58e3-1754-937b-87b7::13d1-9270-6539-08ed" name="Chosen Warriors" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
+              <description>A model with this special rule may issue and accept Challenges as if it had the Character type. Note that this does not allow a model with this special rule to use any other special rules associated with the Character type.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::9ba7-bbb3-0d92-6a73::6998-b328-c080-5341" name="Legio Custodes" publicationId="15a4-fc68-502d-48a9" page="134" hidden="false">
+              <description>Models with this special rule gain the following benefits in various situations that involve ‘Nemesis’ units (see the Nemesis unit entry below):
+• All models with this special rule gain +1 Attacks when locked in combat with a Nemesis Unit.
+• A unit composed entirely of models with this special rule gains an additional bonus of +1 to all Charge rolls made when all targets of the Charge are Nemesis Units.
+• When rolling to Hit while Engaged with a Nemesis unit, a model with this special rule will never need to roll better than 4+ to score a Hit – unless the Nemesis unit is composed entirely of models with the Primarch Unit Type, or the attacking model is in a Challenge with a model that has the Primarch Unit Type.
+
+Nemesis Units
+A ‘Nemesis’ unit is defined as any enemy unit that fulfils at least one of the following conditions:
+• The unit includes one or more models with at least one of the following Unit Types or Unit Sub-types:
+- Primarch, Dreadnought, Monstrous, Reinforced, Bombard, Daemon, Corrupted, Super-heavy, Unique or Knight.
+• The majority of models in the unit have a value of 5 or more in any one of the following Characteristics:
+- Weapon Skill, Ballistic Skill, Wounds or Initiative. 
+• The unit includes an enemy Warlord.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::e2b7-10df-9244-a960::7adf-ac9a-5035-522d" name="Relentless" publicationId="e77a-823a-da94-16b9" page="245" hidden="false">
+              <description>Relentless models can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance, or Rapid Fire weapons.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::8ce9-3e5f-9d5b-0797::7989-1f2c-a43d-82ae" name="Stubborn" publicationId="e77a-823a-da94-16b9" page="248" hidden="false">
+              <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, the unit ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, the unit uses the rules for Fearless instead.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::0559-8e38-019e-f0aa::d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
+              <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
+            </rule>
+          </rules>
+          <selections>
+            <selection id="72a9-66b0-3776-13f9" name="Misericord" entryId="da13-587f-7be9-66be::3b8f-6e61-8132-3418::73cb-1501-d39e-4f24" number="1" type="upgrade">
+              <rules>
+                <rule id="da13-587f-7be9-66be::3b8f-6e61-8132-3418::face-fe0e-ad8a-3a98::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="da13-587f-7be9-66be::3b8f-6e61-8132-3418::df49-46f1-e6c4-d83e" name="Misericord" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="156f-0313-bbba-9d5f" name="Meltabombs" entryId="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::b9dd-3b21-f3f8-78e3" number="1" type="upgrade">
+              <rules>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::278c-eee8-bb8a-1f3b::8a47-9fc5-16fb-b46e" name="Detonation" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
+                  <description>A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules.</description>
+                </rule>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::b89e-4396-4dcf-2e31::cb59-f920-f071-7cd4" name="Armourbane (Melta)" publicationId="e77a-823a-da94-16b9" page="231" hidden="false">
+                  <description>If a model or weapon has this special rule, it rolls an additional D6 for armour penetration when targeting a Vehicle model, or, when targeting a model with the Automata or Dreadnought Unit Type, re-rolls all failed rolls To Wound instead. These effects apply to both Shooting Attacks and close combat attacks.
+
+Some instances of the Armourbane special rule may include a qualifier after the rule in brackets, for example Armourbane (Melta) or Armourbane (Melee). These variant rules are described below:
+
+Armourbane (Melta): A model or weapon with this Armourbane special rule only gains the benefits of the Armourbane special rule when at half range or less. If the attack is more than half its Maximum Range away, it rolls to penetrate as normal. If a weapon with this version of Armourbane also has the Blast special rule (see page 234), measure the distance to the centre of the Blast marker after it has scattered. If this is half the weapon’s range or less, then all Hits are counted as having the Armourbane special rule, otherwise the Hits are resolved as if they did not have the Armourbane special rule.
+
+Armourbane (Melee): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when attacking in close combat.
+
+Armourbane (Ranged): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when making Shooting Attacks.</description>
+                </rule>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::6f8f-278b-b299-6c7b::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                </rule>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::182d-2757-c5b5-f92a::1570-c21a-881f-8b8a" name="Unwieldy" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
+                  <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::ba08-9a32-1e47-6448" name="Meltabombs" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Armourbane (Melee), Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="9dfc-e9e8-caea-d52f" name="Frag Grenades" entryId="da13-587f-7be9-66be::45bd-7692-37b5-d788::cf9c-327b-3449-00d7" number="1" type="upgrade">
+              <rules>
+                <rule id="da13-587f-7be9-66be::45bd-7692-37b5-d788::3d51-f148-14e5-8539::6f5f-8f7c-d18b-cd42" name="Grenades" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false">
+                  <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="da13-587f-7be9-66be::45bd-7692-37b5-d788::ccc0-4896-212b-4d53" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="2147-1e44-a098-a80a" name="Auric Warplate" entryId="da13-587f-7be9-66be::c8be-443b-130e-ebf5::aa93-02da-edd6-fd77" publicationId="15a4-fc68-502d-48a9" page="152" number="1" type="upgrade">
+              <profiles>
+                <profile id="da13-587f-7be9-66be::c8be-443b-130e-ebf5::9ef5-2af6-5d37-fc95" name="Auric Warplate" publicationId="15a4-fc68-502d-48a9" page="152" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Auric warplate confers a 2+ Armour Save and a 6+ Invulnerable Save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="5817-d6ba-21df-b3d7" name="Custodian Guard w/ Guardian Spear" entryId="da13-587f-7be9-66be::1d66-83bc-7363-e501" entryGroupId="da13-587f-7be9-66be::ecf8-243f-2a4f-ab80" number="3" type="model">
+              <profiles>
+                <profile id="da13-587f-7be9-66be::0746-d8f7-c064-d531::cf1b-e0d6-ddd9-24e6" name="Custodian" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish, Line)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="efb5-1a82-28d2-ca0a" name="Guardian Spear" entryId="da13-587f-7be9-66be::dc4f-398d-7081-9987::9e55-ae31-3ba6-d720" number="3" type="upgrade">
+                  <rules>
+                    <rule id="da13-587f-7be9-66be::dc4f-398d-7081-9987::d072-1fa9-0a47-465d::5e7e-1628-8174-6f2c" name="Shred" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
+                      <description>If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred rule, it re-rolls failed To Wound rolls in close combat.
+
+Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
+                    </rule>
+                    <rule id="da13-587f-7be9-66be::dc4f-398d-7081-9987::4fed-0ff8-b2c9-38b6::4c23-e863-a569-7617" name="Two-handed" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
+                      <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons (see page 177).</description>
+                    </rule>
+                    <rule id="da13-587f-7be9-66be::dc4f-398d-7081-9987::3962-a428-a2d6-14cb::bd8c-4f52-d682-1b40" name="Reaping Blow (1)" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
+                      <description>If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1).</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="da13-587f-7be9-66be::dc4f-398d-7081-9987::a057-f74d-e8ff-d2a7::05b1-7cf6-2076-52e0" name="Guardian Spear (Melee)" publicationId="15a4-fc68-502d-48a9" page="147" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Reaping Blow (1)</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="da13-587f-7be9-66be::dc4f-398d-7081-9987::dfec-c8e1-580c-9466::c053-c0fa-c608-ae0c" name="Guardian Spear (Shooting)" publicationId="15a4-fc68-502d-48a9" page="147" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Shred</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+          <categories>
+            <category id="7097-596a-771d-48a3" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="6a5a-75ff-e06b-8a6a" name="Legio Custodes" entryId="ccca-a9de-0cd9-f8be" primary="false"/>
+            <category id="19c1-7954-01fa-6c09" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="8ea0-5584-de84-076a" name="Troops:" entryId="9b5d-fac7-799b-d7e7" primary="true"/>
+            <category id="eeca-7897-f5ef-a9cd" name="Compulsory Troops:" entryId="8f42-a824-fb5f-8fea" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="48fd-8fcf-b86c-a6b6" name="Custodian Guard Squad" entryId="da13-587f-7be9-66be::7cec-fe1b-5748-7af3" publicationId="15a4-fc68-502d-48a9" page="25" number="1" type="unit">
+          <rules>
+            <rule id="9300-b317-6b65-c72a" name="Legio Custodes" hidden="false">
+              <description>• All models with this special rule gain +1 Attacks when locked in combat with a Nemesis unit.
+• A unit composed entirely of models with this special rule gains an additional bonus of +1 to all Charge are Nemesis units.
+• When rolling to Hit while Engaged with a Nemesis unis, a model with this special rule will never need to roll better than 4+ to score a Hit - unless the Nemesis unit is composed entirely of models with the Primarch Unit Type, or the attacking model is in a Challenge with a model that has the Primarch Unit Type.
+
+NEMESIS UNITS
+A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least one of the following conditions:
+• The unit includes one of more models with at least one of the following Unit Types or Unit Sub-types: - Primarch, Dreadnought, Monstrous, Reinforced, Bombard, Daemon, Corrupted, Super-heavy, Unique or Knight.
+• The majority of models in the unit have a value of 5 of more in any one of the following Characteristics: - Weapons Skill, Balistic Skill, Wounds or Initiative.
+• A unit includes an enemy Warlord.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::354a-2ea5-33cf-e75b::676c-7b75-4b6f-9405" name="Bulky (3)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
+              <description>Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.
+
+For example, a unit comprised of five  odels all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::58e3-1754-937b-87b7::13d1-9270-6539-08ed" name="Chosen Warriors" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
+              <description>A model with this special rule may issue and accept Challenges as if it had the Character type. Note that this does not allow a model with this special rule to use any other special rules associated with the Character type.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::9ba7-bbb3-0d92-6a73::6998-b328-c080-5341" name="Legio Custodes" publicationId="15a4-fc68-502d-48a9" page="134" hidden="false">
+              <description>Models with this special rule gain the following benefits in various situations that involve ‘Nemesis’ units (see the Nemesis unit entry below):
+• All models with this special rule gain +1 Attacks when locked in combat with a Nemesis Unit.
+• A unit composed entirely of models with this special rule gains an additional bonus of +1 to all Charge rolls made when all targets of the Charge are Nemesis Units.
+• When rolling to Hit while Engaged with a Nemesis unit, a model with this special rule will never need to roll better than 4+ to score a Hit – unless the Nemesis unit is composed entirely of models with the Primarch Unit Type, or the attacking model is in a Challenge with a model that has the Primarch Unit Type.
+
+Nemesis Units
+A ‘Nemesis’ unit is defined as any enemy unit that fulfils at least one of the following conditions:
+• The unit includes one or more models with at least one of the following Unit Types or Unit Sub-types:
+- Primarch, Dreadnought, Monstrous, Reinforced, Bombard, Daemon, Corrupted, Super-heavy, Unique or Knight.
+• The majority of models in the unit have a value of 5 or more in any one of the following Characteristics:
+- Weapon Skill, Ballistic Skill, Wounds or Initiative. 
+• The unit includes an enemy Warlord.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::e2b7-10df-9244-a960::7adf-ac9a-5035-522d" name="Relentless" publicationId="e77a-823a-da94-16b9" page="245" hidden="false">
+              <description>Relentless models can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance, or Rapid Fire weapons.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::8ce9-3e5f-9d5b-0797::7989-1f2c-a43d-82ae" name="Stubborn" publicationId="e77a-823a-da94-16b9" page="248" hidden="false">
+              <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, the unit ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, the unit uses the rules for Fearless instead.</description>
+            </rule>
+            <rule id="da13-587f-7be9-66be::0559-8e38-019e-f0aa::d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
+              <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
+            </rule>
+          </rules>
+          <selections>
+            <selection id="04aa-1d01-7847-3a6c" name="Auric Warplate" entryId="da13-587f-7be9-66be::c8be-443b-130e-ebf5::aa93-02da-edd6-fd77" publicationId="15a4-fc68-502d-48a9" page="152" number="1" type="upgrade">
+              <profiles>
+                <profile id="da13-587f-7be9-66be::c8be-443b-130e-ebf5::9ef5-2af6-5d37-fc95" name="Auric Warplate" publicationId="15a4-fc68-502d-48a9" page="152" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Auric warplate confers a 2+ Armour Save and a 6+ Invulnerable Save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="3a62-dc14-4711-11fa" name="Frag Grenades" entryId="da13-587f-7be9-66be::45bd-7692-37b5-d788::cf9c-327b-3449-00d7" number="1" type="upgrade">
+              <rules>
+                <rule id="da13-587f-7be9-66be::45bd-7692-37b5-d788::3d51-f148-14e5-8539::6f5f-8f7c-d18b-cd42" name="Grenades" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false">
+                  <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="da13-587f-7be9-66be::45bd-7692-37b5-d788::ccc0-4896-212b-4d53" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="47e4-2314-99de-5f3e" name="Meltabombs" entryId="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::b9dd-3b21-f3f8-78e3" number="1" type="upgrade">
+              <rules>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::278c-eee8-bb8a-1f3b::8a47-9fc5-16fb-b46e" name="Detonation" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
+                  <description>A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules.</description>
+                </rule>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::b89e-4396-4dcf-2e31::cb59-f920-f071-7cd4" name="Armourbane (Melta)" publicationId="e77a-823a-da94-16b9" page="231" hidden="false">
+                  <description>If a model or weapon has this special rule, it rolls an additional D6 for armour penetration when targeting a Vehicle model, or, when targeting a model with the Automata or Dreadnought Unit Type, re-rolls all failed rolls To Wound instead. These effects apply to both Shooting Attacks and close combat attacks.
+
+Some instances of the Armourbane special rule may include a qualifier after the rule in brackets, for example Armourbane (Melta) or Armourbane (Melee). These variant rules are described below:
+
+Armourbane (Melta): A model or weapon with this Armourbane special rule only gains the benefits of the Armourbane special rule when at half range or less. If the attack is more than half its Maximum Range away, it rolls to penetrate as normal. If a weapon with this version of Armourbane also has the Blast special rule (see page 234), measure the distance to the centre of the Blast marker after it has scattered. If this is half the weapon’s range or less, then all Hits are counted as having the Armourbane special rule, otherwise the Hits are resolved as if they did not have the Armourbane special rule.
+
+Armourbane (Melee): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when attacking in close combat.
+
+Armourbane (Ranged): A weapon or model with this version of the Armourbane special rule only gains the benefits of the Armourbane special rule when making Shooting Attacks.</description>
+                </rule>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::6f8f-278b-b299-6c7b::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                </rule>
+                <rule id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::182d-2757-c5b5-f92a::1570-c21a-881f-8b8a" name="Unwieldy" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
+                  <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="da13-587f-7be9-66be::3ff9-da5b-ec16-66d3::ba08-9a32-1e47-6448" name="Meltabombs" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Armourbane (Melee), Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="1228-03d1-cbc7-5800" name="Misericord" entryId="da13-587f-7be9-66be::3b8f-6e61-8132-3418::73cb-1501-d39e-4f24" number="1" type="upgrade">
+              <rules>
+                <rule id="da13-587f-7be9-66be::3b8f-6e61-8132-3418::face-fe0e-ad8a-3a98::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="da13-587f-7be9-66be::3b8f-6e61-8132-3418::df49-46f1-e6c4-d83e" name="Misericord" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="2f81-8c84-41c0-de41" name="Custodian Guard w/ Guardian Spear" entryId="da13-587f-7be9-66be::1d66-83bc-7363-e501" entryGroupId="da13-587f-7be9-66be::ecf8-243f-2a4f-ab80" number="3" type="model">
+              <profiles>
+                <profile id="da13-587f-7be9-66be::0746-d8f7-c064-d531::cf1b-e0d6-ddd9-24e6" name="Custodian" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish, Line)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="8438-cd28-e30e-8f67" name="Guardian Spear" entryId="da13-587f-7be9-66be::dc4f-398d-7081-9987::9e55-ae31-3ba6-d720" number="3" type="upgrade">
+                  <rules>
+                    <rule id="da13-587f-7be9-66be::dc4f-398d-7081-9987::d072-1fa9-0a47-465d::5e7e-1628-8174-6f2c" name="Shred" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
+                      <description>If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred rule, it re-rolls failed To Wound rolls in close combat.
+
+Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
+                    </rule>
+                    <rule id="da13-587f-7be9-66be::dc4f-398d-7081-9987::4fed-0ff8-b2c9-38b6::4c23-e863-a569-7617" name="Two-handed" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
+                      <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons (see page 177).</description>
+                    </rule>
+                    <rule id="da13-587f-7be9-66be::dc4f-398d-7081-9987::3962-a428-a2d6-14cb::bd8c-4f52-d682-1b40" name="Reaping Blow (1)" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
+                      <description>If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1).</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="da13-587f-7be9-66be::dc4f-398d-7081-9987::a057-f74d-e8ff-d2a7::05b1-7cf6-2076-52e0" name="Guardian Spear (Melee)" publicationId="15a4-fc68-502d-48a9" page="147" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Reaping Blow (1)</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="da13-587f-7be9-66be::dc4f-398d-7081-9987::dfec-c8e1-580c-9466::c053-c0fa-c608-ae0c" name="Guardian Spear (Shooting)" publicationId="15a4-fc68-502d-48a9" page="147" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Shred</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+          <categories>
+            <category id="f2b3-8312-c246-afbb" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="cf3e-b612-918d-b258" name="Legio Custodes" entryId="ccca-a9de-0cd9-f8be" primary="false"/>
+            <category id="ebd9-bfec-cfc1-e2b6" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="f744-b4e2-262d-2c6e" name="Troops:" entryId="9b5d-fac7-799b-d7e7" primary="true"/>
+            <category id="8392-b25b-b762-2c88" name="Compulsory Troops:" entryId="8f42-a824-fb5f-8fea" primary="false"/>
+          </categories>
+        </selection>
+        <selection id="1fa3-6f51-7ac0-fa31" name="Contemptor-Galatus Dreadnought" entryId="0e1f-efc9-d81d-9c7e::cecc-da1f-9de6-2163" number="1" type="model">
+          <rules>
+            <rule id="0e1f-efc9-d81d-9c7e::fab9-b58b-b9d4-68fd::d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
+              <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
+            </rule>
+            <rule id="0e1f-efc9-d81d-9c7e::5bab-0513-63ac-2d38::6998-b328-c080-5341" name="Legio Custodes" publicationId="15a4-fc68-502d-48a9" page="134" hidden="false">
+              <description>Models with this special rule gain the following benefits in various situations that involve ‘Nemesis’ units (see the Nemesis unit entry below):
+• All models with this special rule gain +1 Attacks when locked in combat with a Nemesis Unit.
+• A unit composed entirely of models with this special rule gains an additional bonus of +1 to all Charge rolls made when all targets of the Charge are Nemesis Units.
+• When rolling to Hit while Engaged with a Nemesis unit, a model with this special rule will never need to roll better than 4+ to score a Hit – unless the Nemesis unit is composed entirely of models with the Primarch Unit Type, or the attacking model is in a Challenge with a model that has the Primarch Unit Type.
+
+Nemesis Units
+A ‘Nemesis’ unit is defined as any enemy unit that fulfils at least one of the following conditions:
+• The unit includes one or more models with at least one of the following Unit Types or Unit Sub-types:
+- Primarch, Dreadnought, Monstrous, Reinforced, Bombard, Daemon, Corrupted, Super-heavy, Unique or Knight.
+• The majority of models in the unit have a value of 5 or more in any one of the following Characteristics:
+- Weapon Skill, Ballistic Skill, Wounds or Initiative. 
+• The unit includes an enemy Warlord.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="0e1f-efc9-d81d-9c7e::a808-b7fb-6778-5199" name="Contemptor-Galatus Dreadnought" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selections>
+            <selection id="51db-4537-215b-3503" name="Galatus Warblade with in-built Twin-linked Infernus  Incinerator" entryId="0e1f-efc9-d81d-9c7e::d9b2-ff52-c3aa-8e45" number="1" type="upgrade">
+              <selections>
+                <selection id="9a44-47eb-bfe1-55bb" name="Galatus Warblade" entryId="0e1f-efc9-d81d-9c7e::ac6b-af1c-8b3d-cc1b" number="1" type="upgrade">
+                  <rules>
+                    <rule id="0e1f-efc9-d81d-9c7e::f478-a02e-d655-42d7::9e96-fff1-b916-d9a3" name="Instant Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                      <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="0e1f-efc9-d81d-9c7e::def2-956e-aa06-8633" name="Galatus Warblade" publicationId="15a4-fc68-502d-48a9" page="150" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Instant Death</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="d1c2-c43c-03ec-9c81" name="Twin-linked Infernus Incinerator" entryId="0e1f-efc9-d81d-9c7e::51c8-d7c3-d8f7-a9ee::53e1-df76-4226-e438" number="1" type="upgrade">
+                  <rules>
+                    <rule id="0e1f-efc9-d81d-9c7e::51c8-d7c3-d8f7-a9ee::beb1-68cc-6a2b-4273::5e0e-88e6-db81-5a70" name="Template Weapons" publicationId="e77a-823a-da94-16b9" page="248" hidden="false">
+                      <description>Template weapons are indicated by having the word ‘Template’ for their range instead of a number. Instead of rolling To Hit, simply place the template so that its narrow end is touching the base of the firing model, or the end of the firing weapon’s barrel for Vehicle models without bases, and the rest of the template covers as many models in the target unit as possible, without touching any other friendly models (including other models from the firing model’s unit). Any models fully or partially under the template are hit. Against Vehicles, the template must be placed to cover as much of the Vehicle as possible without touching a friendly model. The position of the firer is used to determine which armour Facing is hit (see page 207). A Template weapon never hits the model firing it.
+
+Template weapons have the Ignores Cover and Wall of Death special rules. Wounds inflicted by Template weapons are allocated following the normal rules.
+
+Multiple Templates
+If a unit is firing more than one shot with the Template type, resolve each shot, one at a time, as described above, determining and recording how many Hits are scored by each template. Once the number of Hits from all templates has been determined, roll To Wound as normal.
+
+Wall of Death
+Template weapons can fire Snap Shots at any non-Flyer target. If a Template weapon fires as a Snap Shot, it automatically inflicts D3 Hits on the target unit, resolved at its normal Strength and AP value, as long as the target unit either has at least one model within 8&quot; or if the target unit is resolving a Charge against the unit making the Shooting Attack. If the weapon is also a Hellstorm weapon then it instead inflicts D6 Hits.
+
+Hellstorm Weapons
+Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weapon profile. Hellstorm weapons use the Hellstorm template (see page 152), but otherwise obey the rules for other Template weapons.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="0e1f-efc9-d81d-9c7e::51c8-d7c3-d8f7-a9ee::a13f-cb93-9253-2dfe" name="Twin-linked Infernus Incinerator" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="912b-7522-756f-ad58" name="Gravis Praesidium Shield" entryId="0e1f-efc9-d81d-9c7e::4d64-8418-1649-9980" number="1" type="upgrade">
+              <profiles>
+                <profile id="0e1f-efc9-d81d-9c7e::6ce5-824b-db80-c7c0" name="Gravis Praesidium Shield" publicationId="15a4-fc68-502d-48a9" page="155" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Gravis Praesidium shield confers a 4+ Invulnerable Save, this does not stack with existing Invulnerable Saves and if a model has more than one such save the controlling player must select one to use against any Wounds inflicted on that model. In addition, a model with a Gravis Praesidium shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+            <selection id="61db-c3f0-cc61-9298" name="Atomantic Deflector" entryId="0e1f-efc9-d81d-9c7e::0ac0-f383-ddd6-0b6b::38fb-9a0b-edef-a497" number="1" type="upgrade">
+              <profiles>
+                <profile id="0e1f-efc9-d81d-9c7e::0ac0-f383-ddd6-0b6b::ce1b-884e-2abe-a9a1" name="Atomantic Deflector" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235.0"/>
+          </costs>
+          <categories>
+            <category id="6e6b-d520-8f82-d63d" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="266a-7255-2191-3961" name="Heavy Support:" entryId="7031-469a-1aeb-eab0" primary="true"/>
+          </categories>
+        </selection>
+        <selection id="6344-62f5-f1dc-7bfe" name="Clade Assassins (Loyalist)" entryId="23b7-2bb1-90a6-51b1::7363-5a05-4102-24fa" number="1" type="upgrade">
+          <selections>
+            <selection id="f068-aede-a249-9dd6" name="Clade Vindicare Assassin" entryId="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::0b9a-903b-c3de-5075" entryGroupId="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::02f1-0af0-1c27-05b2" publicationId="15a4-fc68-502d-48a9" page="114" number="1" type="unit">
+              <rules>
+                <rule id="9522-1b3d-f849-fd60" name="Assassin Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+                  <description>• Models with the Assassin Sub-type ignore all movement penalties when moving or Charging through terrain of any kind and automatically pass all Dangerous Terrain tests they are called upon to make.
+• Models with the Independant Character special rule may not join a unit composed only of models with the Assassin Sub-type.
+• Models with the Assassin Sub-type may not Embark on any model with the Transport Sub-type.
+• Modesl with the Assassin Sub-type may never be selected as an army&apos;s Warlord</description>
+                </rule>
+                <rule id="3ec9-276f-e19f-e639" name="Light Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
+                  <description>• A unit that includes only models with the Light sub-type gains a +1 modifier to its Initiative when determining how far that unit may Run (this bonus stacks with other bonuses to Run distance, such as the Fleet (X) special rule) and when moving as part of a Reaction.
+• A unit that includes only models with the Light sub-type may make Shooting Attacks after having Run, but makes all such attacks as Snap Shots. Models or weapons that cannot attack as Snap Shots may not attack.
+• Models with the Light sub-type may never claim a Cover Save in the same turn that it makes a Run move.</description>
+                </rule>
+                <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::3984-8a02-4d9c-e3ae::0e32-5b92-a95a-8464" name="Infiltrate" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+                  <description>You may choose to deploy units that contain at least one model with this special rule last, after all other units (friend and foe) have been deployed. If both players have such units and choose to do so, the players roll off and the winner decides who goes first, then alternate deploying these units.
+
+Units that Infiltrate in this way can be set up anywhere on the battlefield that is more than 9&quot; from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a Building (see page 224), as long as the Building is more than 9&quot; from any enemy unit. Alternatively, they can be set up anywhere on the battlefield more than 12&quot; from any enemy unit, even in plain sight.
+If a unit with Infiltrate deploys inside a Dedicated Transport, the same rules apply when deploying their Transport.
+A unit that deploys using these rules cannot Charge in their first turn.
+Having Infiltrate also confers the Outflank special rule to units of Infiltrators that are kept as Reserves (see page 309).
+
+Infiltrate and Scout
+If a unit has both the Infiltrate and Scout special rule, that unit can deploy as per the Infiltrate special rule and then redeploy as per the Scout special rule.
+
+Independent Characters and Infiltrate
+An Independent Character without the Infiltrate special rule cannot join a unit of Infiltrators during deployment, and vice versa.</description>
+                </rule>
+                <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::5277-e76e-76fc-5775::aacf-9a7e-982d-b793" name="Scout" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
+                  <description>After both sides have deployed (including Infiltrators), but before the first player begins their first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, Dreadnought or Automata, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other Unit Type, each model can instead redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player’s Deployment Zone, but must remain more than 9&quot; away from any enemy unit. A unit that makes a Scout redeployment cannot Charge in the first Game Turn. A unit cannot Embark or Disembark as part of a Scout redeployment.
+
+If both sides have Scouts, roll off; the winner decides who redeploys first. Then alternate redeploying Scout units one at a time. If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a Disembarkation cannot be performed as part of the redeployment). Note that a Transport with this special rule does not lose it if a unit without this special rule is Embarked upon it. Having Scout also confers the Outflank special rule to units of Scouts that are kept as Reserves (see page 309).
+
+Infiltrate and Scout
+If a unit has both the Infiltrate and Scout special rules, that unit can deploy as per the Infiltrate special rule and then redeploy as per the Scout special rule.</description>
+                </rule>
+                <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::3aa4-e114-401c-8236::768e-56d6-ca52-24ae" name="Support Squad" publicationId="e77a-823a-da94-16b9" page="248" hidden="false">
+                  <description>A unit with this special rule may not be chosen as a compulsory choice for the army as part of the Force Organisation chart.</description>
+                </rule>
+                <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::dc32-2874-4392-4656::d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
+                  <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::faee-8596-e437-1e0e" name="Clade Vindicare Assassin" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Assassin, Light)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">8</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::e570-317a-2254-b403::71d4-b924-c931-1b45" name="Advanced Reaction: Tactical Displacement" publicationId="15a4-fc68-502d-48a9" page="113" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction may be made during the Shooting phase, whenever an enemy unit targets a unit that is composed entriely of models with the Assassin Unit Sub-type with a Shooting Attack. The Reaction unit may immediately move a distance in inches up to twice the majority Initiative Characteristic of the Reactive unit. This move may be made in any direction and ignores all Terrain or other effects that would limit or modify the distance moved (includeding allowing models in the Reacting unit to move across Impassable Terrain), as lon gas the final position of all models in the Reacting unit are at least 1&quot; away from any enemy model and not within an area of Impassable Terrain. If, after moving, any models in the Reacting unit are positioned out of range or line of sight of the unit that caused the Reacting, that unit may not select another target for the Shooting Attack that triggered the Reacting and no dice are rolled (weapons with the Gets Hot special rule do not need to roll to see if the weapon Gets Hot and weapons with the One Use special rule are not considered to have been expended).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selections>
+                <selection id="8f6a-601b-5580-ce3e" name="Exitus Rifle" entryId="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::a213-2600-430b-2658" publicationId="15a4-fc68-502d-48a9" page="114" number="1" type="upgrade">
+                  <rules>
+                    <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::9097-9a92-9fc1-e9cf::93b9-1454-0e7c-42ae" name="Murderous Strike (5+)" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
+                      <description>Attacks with this special rule cause Instant Death on a To Wound roll equal to the number in brackets associated with the specific rule. Roll any viable Saves against this Instant Death-causing Wound separately and before any other Wounds the attack inflicts.</description>
+                    </rule>
+                    <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::17c7-f0ab-dacb-9e6e::0ac9-fab7-aef3-de1d" name="Rending (6+)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
+                      <description>If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that their close combat attacks will strike a critical blow. For each To Wound roll equal to or higher than the value listed, the target automatically suffers a Wound, regardless of its Toughness. The controlling player may choose to resolve these Wounds at AP 2 instead of the weapon’s normal AP value.
+Similarly, if a model makes a Shooting Attack with a weapon that has the Rending special rule, a To Wound roll of equal to or greater than the listed value wounds automatically, regardless of Toughness, and is resolved at AP 2.
+In either case, against Vehicles each Armour Penetration roll of equal to or greater than the listed value allows a further D3 to be rolled, with the result added to the total Strength of the attack. These Hits are not resolved at AP 2, but are instead resolved using the weapon’s AP value.
+For example, a model with the Rending (5+) special rule that rolls To Wound against a non-Vehicle model will wound automatically on the roll of a 5+, and the attacking player has the choice of using an AP value of 2 instead of the AP value of their weapon.</description>
+                    </rule>
+                    <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::71d6-43fd-0ac5-3f88::9cd8-e726-5dbe-b106" name="Sniper" publicationId="e77a-823a-da94-16b9" page="247" hidden="false">
+                      <description>If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, all Wounds inflicted by its attacks are ‘Precision Shots’. Wounds from Precision Shots are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. Note that Snap Shots can never be Precision Shots and attacks with the Blast or Template rules may never benefit from the effects of the Sniper special rule.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::94f0-fe60-609f-9fe2" name="Exitus Rifle" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Murderous Strike (5+), Rending (6+), Sniper</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="cda6-3a0b-c65c-7c92" name="Exitus Pistol" entryId="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::61ff-ce96-56f7-5cbc" publicationId="15a4-fc68-502d-48a9" page="114" number="1" type="upgrade">
+                  <rules>
+                    <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::8077-4126-28fb-0fbb::a760-f736-1bf3-fa3c" name="Breaching (6+)" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
+                      <description>When rolling To Wound for a model that has the Breaching (X) special rule, or is attacking with a weapon that has the Breaching (X) special rule, for each To Wound roll equal to or higher than the value listed in brackets, the controlling player must resolve these wounds at AP 2 instead of the weapon’s normal AP value. This rule has no effect on models that do not have Wounds, such as models with the Vehicle Unit Type.
+
+For example, a model with the Breaching (5+) special rule that rolls To Wound and rolls a result of ‘5’ or higher, the Wound inflicted gains an AP of ‘2’ regardless of the AP value listed on the weapon’s profile. Note that a weapon that has both the Breaching (X) and the Gets Hot special rules always uses the base AP of the weapon when rolls of ‘1’ To Hit inflict Wounds on the attacking model.</description>
+                    </rule>
+                    <rule id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::d8d1-37c8-7f23-cc14::9cd8-e726-5dbe-b106" name="Sniper" publicationId="e77a-823a-da94-16b9" page="247" hidden="false">
+                      <description>If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, all Wounds inflicted by its attacks are ‘Precision Shots’. Wounds from Precision Shots are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. Note that Snap Shots can never be Precision Shots and attacks with the Blast or Template rules may never benefit from the effects of the Sniper special rule.</description>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::bffb-a0ee-48dc-98e4" name="Exitus Pistol" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 3, Breaching (6+), Sniper</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="acb8-0e99-1554-f087" name="Trajector Auspex Array" entryId="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::34a0-61a8-9c37-f7bc" publicationId="15a4-fc68-502d-48a9" page="114" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::6fc1-cc7a-42e1-111f" name="Trajector Auspex Array" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When making a Shooting Attack, a model with a trajector asuspex array ignores the effects of all special rules or Wargear that would modify or limit the range and To Hit rolls of any attack made by that model.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+                <selection id="f30b-42c6-04b2-8479" name="Panoply Of The Assassin" entryId="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::5bb8-72e7-54e4-27a7::bc9b-aac0-fdf7-4433" number="1" type="upgrade">
+                  <profiles>
+                    <profile id="23b7-2bb1-90a6-51b1::da2c-a58d-15e1-74cb::0878-1f42-1838-c1de::5bb8-72e7-54e4-27a7::c516-0961-ebaf-22c5" name="Panoply Of The Assassin" publicationId="15a4-fc68-502d-48a9" page="156" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models with the Panoply of the Assassin have a 4+ Armour Save and a 4+ Invulnerable Save.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selection>
+              </selections>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125.0"/>
+              </costs>
+              <categories>
+                <category id="c575-7d81-4296-cf8e" name="Assassin Sub-Type" entryId="d615-c0e4-6d17-107e" publicationId="15a4-fc68-502d-48a9" page="128" primary="false"/>
+                <category id="ea61-805c-8c58-daf3" name="Character" entryId="f75a-d5c1-59ba-5c5a" primary="false"/>
+                <category id="ee6f-c166-d9fc-2cc0" name="Light Sub-type:" entryId="bff2-ae16-74a8-8712" primary="false"/>
+              </categories>
+            </selection>
+          </selections>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+          <categories>
+            <category id="3d91-20cc-bb07-5f78" name="Unit:" entryId="36c3-e85e-97cc-c503" primary="false"/>
+            <category id="36e2-b61e-3b37-8b58" name="HQ:" entryId="4f85-eb33-30c9-8f51" primary="true"/>
+          </categories>
+        </selection>
+      </selections>
+      <publications>
+        <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book"/>
+        <publication id="15a4-fc68-502d-48a9" name="Libre Imperium"/>
+        <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books"/>
+        <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness v1.1"/>
+        <publication id="3886-76e5-438f-159f" name="Legacies of The Age of Darkness: Mechanicum v1.0"/>
+        <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions  Astartes v1.1"/>
+        <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat"/>
+        <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0"/>
+        <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook"/>
+        <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0"/>
+        <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1"/>
+        <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book"/>
+        <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles downloads"/>
+        <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book"/>
+      </publications>
+      <categories>
+        <category id="1670-1a74-e362-0d78" name="Uncategorised" entryId="(No Category)" primary="false"/>
+        <category id="0148-7334-7b21-9bed" name="Expanded Army Lists" entryId="e8ed-ca49-ad6d-5688" primary="false">
+          <rules>
+            <rule id="e7a4-a234-6cc7-f1b7::e6d4-65d6-66af-32da" name="Expanded Army Lists" hidden="false">
+              <description>Some events/group choose not to allow official rules in &quot;Legacies of The Age of Darkness&quot; download pdf (which are not playtest). This option is included to make it easier for users for those events/groups.</description>
+            </rule>
+          </rules>
+        </category>
+        <category id="128d-ef2d-d68a-1b2e" name="Allegiance:" entryId="e90d-e5a8-f42d-da84" primary="false"/>
+        <category id="5eed-25f7-48f8-d28f" name="Rite of War:" entryId="d494-e450-d4aa-579a" primary="false"/>
+        <category id="b271-1f8f-6d3f-a0e8" name="HQ:" entryId="4f85-eb33-30c9-8f51" primary="false"/>
+        <category id="8656-024c-ec57-cadd" name="Elites:" entryId="7aee-565f-b0ae-294e" primary="false"/>
+        <category id="ab91-b13a-1497-8d9d" name="Troops:" entryId="9b5d-fac7-799b-d7e7" primary="false"/>
+        <category id="a62f-5544-0eb8-fe0f" name="Fast Attack:" entryId="20ef-cd01-a8da-376e" primary="false"/>
+        <category id="e26e-5f96-07eb-eb69" name="Heavy Support:" entryId="7031-469a-1aeb-eab0" primary="false"/>
+        <category id="4488-ab80-9954-52c1" name="Primarch:" entryId="ad5f-31db-8bc7-5c46" primary="false">
+          <rules>
+            <rule id="7526-8c64-9373-5110::a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
+              <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
+• Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
+• Any Hits inflicted by a Primarch, as part of either Shooting Attacks or in close combat, are allocated by the Primarch’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
+• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.</description>
+            </rule>
+            <rule id="7526-8c64-9373-5110::0d88-efe0-d7f2-b00a::c57d-4820-458a-7ab5" name="Independent Character" publicationId="e77a-823a-da94-16b9" page="241" hidden="false">
+              <description>Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multicharacter unit.
+
+Joining and Leaving a Unit
+An Independent Character can begin the game already with a unit, either by being deployed in unit coherency with it or, if the unit is in Reserve, by you informing your opponent which unit it has joined.
+
+In order to join a unit, an Independent Character simply has to move so that they are within unit coherency distance of a friendly unit at the end of their Movement phase. If the Independent Character is within unit coherency of more than one unit at the end of its Movement phase, the player must declare which unit it is joining. If an Independent Character does not intend to, or cannot, join a unit, it must, where possible, remain outside of unit coherency with that unit at the end of the Movement phase. This is to make clear whether they have joined a unit or not. Note that after an Independent Character joins a unit, that unit can Move no further that Movement phase.
+An Independent Character can leave a unit during the Movement phase by moving out of unit coherency with it. They cannot join or leave during any other Phase – once shots are fired or Charges are declared.
+
+An Independent Character cannot leave a unit while either they or the unit are in Reserve, locked in combat, Falling Back or have been Pinned. They cannot join a unit that is in Reserve, locked in combat or Falling Back. If an Independent Character joins a unit, and all other models in that unit are killed, they again become a unit of one model at the start of the following Phase. While an Independent Character is part of a unit, they count as part of the unit for all rules purposes, though they still follow the rules for Characters.
+
+Special Rules
+When an Independent Character joins a unit, it might have different special rules from those of the unit. Unless specified in the rule itself (as in the Stubborn special rule), the unit’s special rules are not conferred upon the Independent Character, and the Independent Character’s special rules are not conferred upon the unit. Special rules that are conferred to the unit only apply for as long as the Independent Character is with them.
+
+Independent Characters and Infiltrate
+An Independent Character without the Infiltrate special rule cannot join a unit of Infiltrators during deployment, and vice versa.
+
+Independent Characters and Ongoing Effects
+Sometimes, a unit that an Independent Character has joined will be the target of a beneficial or harmful effect, such as those bestowed by the Blind special rule, for example. If the Independent Character leaves the unit, both the Independent Character and the unit continue to be affected by the effect, so you’ll need to mark the Independent Character accordingly.
+
+Conversely, if an Independent Character joins a unit after that unit has been the target of an ongoing effect (or joins a unit after they themselves have been the target of an ongoing effect), benefits and penalties from that effect are not shared.</description>
+            </rule>
+            <rule id="7526-8c64-9373-5110::8234-2d15-6c2f-6062::000b-fe96-31f8-c0ad" name="Eternal Warrior" publicationId="e77a-823a-da94-16b9" page="237" hidden="false">
+              <description>If a model with this special rule suffers an unsaved Wound from an attack that inflicts Instant Death, it only reduces its Wounds by 1, instead of automatically reducing its Wounds to 0.</description>
+            </rule>
+            <rule id="7526-8c64-9373-5110::d5ca-7903-8a29-f059::b48c-d7e1-2a83-2f5b" name="Fearless" publicationId="e77a-823a-da94-16b9" page="238" hidden="false">
+              <description>Units with one or more models with the Fearless special rule automatically pass Pinning tests. Regroup tests and Morale checks.In addition, models with the Fearless special rule ignore the effects of the Fear special rule.
+
+However, units containing one or more models with the Fearless special rule cannot use any Reactions that grant a Cover Save, Armour Save or Invulnerable Save, and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule (see page 188). If a unit has become Pinned and then gains the Fearless special rule,all the effects of being Pinned are immediately cancelled.</description>
+            </rule>
+            <rule id="7526-8c64-9373-5110::e721-b1da-84ba-8996::2784-d0be-a4e2-890f" name="It Will Not Die (5+)" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+              <description>At the end of each of your turns, roll a D6 for each of your models with this special rule that has less than its starting number of Wounds or Hull Points, but that has not been removed as a casualty or destroyed. On a roll equal to or greater than the number in brackets associated with the special rule, that model regains a Wound, or Hull Point, lost earlier in the game. For example, a model with It Will Not Die (5+) would regain a lost Wound on the roll of a 5 or more.</description>
+            </rule>
+            <rule id="7526-8c64-9373-5110::2a4b-7961-1ac1-06d9::676c-7b75-4b6f-9405" name="Bulky (4)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
+              <description>Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.
+
+For example, a unit comprised of five  odels all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit.</description>
+            </rule>
+            <rule id="7526-8c64-9373-5110::058b-7554-0d99-1e7a::7adf-ac9a-5035-522d" name="Relentless" publicationId="e77a-823a-da94-16b9" page="245" hidden="false">
+              <description>Relentless models can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance, or Rapid Fire weapons.</description>
+            </rule>
+          </rules>
+        </category>
+        <category id="0779-cd38-1748-4ba3" name="LoW &amp; Primarchs (25% Limit)" entryId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <category id="2287-9071-b42f-a61f" name="Compulsory HQ:" entryId="f823-8c1d-6a87-26a1" primary="false"/>
+        <category id="3860-2100-9609-fdbc" name="Compulsory Troops:" entryId="8f42-a824-fb5f-8fea" primary="false"/>
+        <category id="6265-3800-18a8-23f6" name="Infantry:" entryId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <category id="7e9c-0c3f-93c5-2563" name="Mortalis Assault FoC" entryId="7b69-bf2f-4547-e83b" primary="false">
+          <profiles>
+            <profile id="c5b2-e371-c1c8-b21e::bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions 
+Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
+
+Base Raction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
+In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one(1) Reaction in any single Phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c5b2-e371-c1c8-b21e::356c-76e3-ec76-65df" name="2) ZM Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE MOVEMENT PHASE
+During the Movement phase, the Reactive player may declare a Reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active player has completely resolved the movement of their unit, the Reactive player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Suppress Reaction.
+
+Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with weapons that have the Blast (X) special rule as part of this Reaction. Template Weapons may only be used as part of a Suppress Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c5b2-e371-c1c8-b21e::47f5-85fb-1b8b-a13e" name="3) ZM Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE SHOOTING PHASE
+During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform a Displace Reaction.
+
+Displace - Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c5b2-e371-c1c8-b21e::6c7a-4ba0-361e-f626" name="4) ZM Assualt Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE ASSAULT PHASE
+During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Brace Reaction.
+
+Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs 1D6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </category>
+      </categories>
+    </force>
+  </forces>
+</roster>

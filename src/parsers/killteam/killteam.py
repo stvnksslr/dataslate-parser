@@ -2,7 +2,7 @@ from src.models.killteam_unit import KillteamUnit
 
 
 def parse_units(soup):
-    operative_list = soup.find_all("profile", {"typename": "Operative"})
+    operative_list = soup.find_all("profile", {"typeName": "Operative"})
     parsed_unit_list = create_list_of_units(operative_list)
     return parsed_unit_list
 
@@ -52,7 +52,7 @@ def get_keywords(model):
 
 
 def get_item_details(model, search_type):
-    search_filter = model.parent.parent.find_all("profile", {"typename": search_type})
+    search_filter = model.parent.parent.find_all("profile", {"typeName": search_type})
     formatted_items = {}
 
     for item in search_filter:

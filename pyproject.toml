@@ -8,7 +8,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-beautifulsoup4 = "^4.12.1"
+beautifulsoup4 = "^4.12.2"
 lxml = "^4.9.2"
 fastapi = "^0.95.0"
 aiofiles = "^23.1.0"
