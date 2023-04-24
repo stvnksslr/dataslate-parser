@@ -17,6 +17,14 @@ TOUGHNESS = {
         "artillery (immobile)",
         "monstrous creature",
         "jump pack monstrous creature",
+        "dreadnought",
+        "infantry (heavy, character, line)",
+        "infantry (character, line)",
+        'infantry (line)',
+        'infantry (heavy, line)',
+        'infantry (character, skirmish)',
+        'infantry (skirmish, line)',
+        'infantry (character, assassin, light)'
     ],
 }
 ARMORED = {
