@@ -20,11 +20,11 @@ TOUGHNESS = {
         "dreadnought",
         "infantry (heavy, character, line)",
         "infantry (character, line)",
-        'infantry (line)',
-        'infantry (heavy, line)',
-        'infantry (character, skirmish)',
-        'infantry (skirmish, line)',
-        'infantry (character, assassin, light)'
+        "infantry (line)",
+        "infantry (heavy, line)",
+        "infantry (character, skirmish)",
+        "infantry (skirmish, line)",
+        "infantry (character, assassin, light)"
     ],
 }
 ARMORED = {
