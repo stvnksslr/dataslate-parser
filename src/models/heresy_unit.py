@@ -14,7 +14,7 @@ class HeresyUnit(Unit):
     @staticmethod
     def get_stat_type(unit_type):
         for category in STAT_BLOCK_TYPES:
-            for stat_type in category.get("categories"):
+            for stat_type in category.get("categories", {}):
                 if unit_type == stat_type:
-                    return category.get("name")
+                    return category.get("name", {})
         return None

@@ -12,7 +12,7 @@ This project is to take in battlescribe roster files and output them into easily
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.11+
 
 ## Setup
 
