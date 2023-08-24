@@ -16,8 +16,8 @@ class W40kSelection(BaseModel):
     rules: dict = None
     abilities: dict = None
     keywords: list
-    psyker_powers: dict | None
-    transport: dict | None
+    psyker_powers: dict | None = None
+    transport: dict | None = None
 
 
 class W40kUnit(Unit):

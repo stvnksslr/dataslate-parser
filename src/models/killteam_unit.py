@@ -7,4 +7,4 @@ class KillteamUnit(Unit):
     ga: str
     df: str
     keywords: list
-    psyker_powers: dict | None
+    psyker_powers: dict | None = None

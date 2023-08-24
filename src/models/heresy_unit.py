@@ -4,12 +4,12 @@ from src.parsers.heresy.heresy_constants import STAT_BLOCK_TYPES
 
 
 class HeresyUnit(Unit):
-    initiative: str | None
+    initiative: str | None = None
     unit_type: str
-    armor_facing: ArmorFacing | None
-    stat_type: str | None
-    weapon: dict | None
-    move: str | None
+    armor_facing: ArmorFacing | None = None
+    stat_type: str | None = None
+    weapon: dict | None = None
+    move: str | None = None
 
     @staticmethod
     def get_stat_type(unit_type):
