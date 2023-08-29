@@ -348,6 +348,20 @@ files = [
 ]
 
 [[package]]
+name = "jinja-partials"
+version = "0.1.1"
+description = "Simple reuse of partial HTML page templates in the Jinja template language for Python web frameworks."
+optional = false
+python-versions = "*"
+files = [
+    {file = "jinja_partials-0.1.1-py3-none-any.whl", hash = "sha256:c927e0dd51cb299c41c96bd200e01be299f860466fc2d6bb6a67861acb08b498"},
+    {file = "jinja_partials-0.1.1.tar.gz", hash = "sha256:7afea85362f48c49b32c2134612edf52e5f3d5af6f2038fcdb758c53a50ee7af"},
+]
+
+[package.dependencies]
+jinja2 = "*"
+
+[[package]]
 name = "jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
@@ -363,6 +377,24 @@ MarkupSafe = ">=2.0"
 
 [package.extras]
 i18n = ["Babel (>=2.7)"]
+
+[[package]]
+name = "jinja2-fragments"
+version = "0.3.0"
+description = "Render Jinja2 template block as HTML page fragments on Python web frameworks."
+optional = false
+python-versions = "*"
+files = [
+    {file = "jinja2_fragments-0.3.0-py3-none-any.whl", hash = "sha256:0e93af60da2af334bfaa0fcc549e9d493bf466774c5f30b49ac085a1ffeaae3f"},
+    {file = "jinja2_fragments-0.3.0.tar.gz", hash = "sha256:4068b47239f0bc2ca71ee2a4d9521a225ae8e3d4bb84a9ca89bd26a608812163"},
+]
+
+[package.dependencies]
+jinja2 = ">=3.1.0"
+
+[package.extras]
+dev = ["pre-commit"]
+tests = ["fastapi", "flask (>=2.1.0)", "pytest", "pytest-asyncio", "quart (>=0.18.0)"]
 
 [[package]]
 name = "loguru"
@@ -687,13 +719,13 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-co
 
 [[package]]
 name = "pluggy"
-version = "1.2.0"
+version = "1.3.0"
 description = "plugin and hook calling mechanisms for python"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "pluggy-1.2.0-py3-none-any.whl", hash = "sha256:c2fd55a7d7a3863cba1a013e4e2414658b1d07b6bc57b3919e0c63c9abb99849"},
-    {file = "pluggy-1.2.0.tar.gz", hash = "sha256:d12f0c4b579b15f5e054301bb226ee85eeeba08ffec228092f8defbaa3a4c4b3"},
+    {file = "pluggy-1.3.0-py3-none-any.whl", hash = "sha256:d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7"},
+    {file = "pluggy-1.3.0.tar.gz", hash = "sha256:cf61ae8f126ac6f7c451172cf30e3e43d3ca77615509771b3a984a0730651e12"},
 ]
 
 [package.extras]
@@ -1397,4 +1429,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "24e544a7eef4ce78f72444cf3f494ce4c4aa7b6f72c22f0ee19bdfe5af81bd7d"
+content-hash = "f273fb5a0a93aaedc1abc4d70f499a0b367d9eb75b9390305ae389ae2850476e"
