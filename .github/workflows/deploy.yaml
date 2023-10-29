@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: name/app   
+          images: ${{ github.repository_owner }}/${{github.repository}}
       #----------------------------------------------
       #          setup extra builder
       #----------------------------------------------
@@ -46,3 +46,4 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
