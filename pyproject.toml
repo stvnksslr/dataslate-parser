@@ -9,26 +9,27 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.11"
 beautifulsoup4 = "^4.12.2"
-lxml = "^4.9.2"
-fastapi = "^0.101.1"
-aiofiles = "^23.1.0"
+lxml = "^4.9.3"
+fastapi = "^0.104.0"
+aiofiles = "^23.2.1"
 jinja2 = "^3.1.2"
-python-multipart = "^0.0.5"
-loguru = "^0.6.0"
-uvicorn = { extras = ["standard"], version = "^0.21.1" }
-httpx = "^0.23.3"
-pydantic = "^2.3.0"
+jinja2-fragments = "^1.2.1"
+python-multipart = "^0.0.6"
+loguru = "^0.7.2"
+uvicorn = { extras = ["standard"], version = "^0.23.2" }
+httpx = "^0.25.0"
+pydantic = "^2.4.2"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.0.261"
-black = "^23.3.0"
-pytest = "^7.2.2"
-pytest-cov = "^4.0.0"
-pytest-sugar = "^0.9.6"
-pytest-asyncio = "^0.21.0"
-pytest-memray = "^1.4.0"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pytest-sugar = "^0.9.7"
+pytest-asyncio = "^0.21.1"
 pytest-clarity = "^1.0.1"
 pytest-random-order = "^1.1.0"
+
+[tool.poetry.group.code-quality.dependencies]
+ruff = "^0.1.3"
 
 [build-system]
 requires = ["poetry>=0.12"]
@@ -49,37 +50,37 @@ ignore = [
   "S311",    # Standard pseudo-random generators are not suitable for cryptographic purposes
 ]
 select = [
-  "A",    # flake8-builtins
-  "B",    # flake8-bugbear
-  "E",    # pycodestyle
-  "F",    # Pyflakes
-  "N",    # pep8-naming
-  "RET",  # flake8-return
-  "S",    # flake8-bandit
-  "W",    # pycodestyle
-  "Q",    # flake8-quotes
-  "C90",  # mccabe
-  "I",    # isort
-  "UP",   # pyupgrade
-  "BLE",  # flake8-blind-except
-  "C4",   # flake8-comprehensions
-  "ISC",  # flake8-implicit-str-concat
-  "ICN",  # flake8-import-conventions
-  "PT",   # flake8-pytest-style
-  "PIE",  # flake8-pie
-  "T20",  # flake8-print
-  "SIM",  # flake8-simplify
-  "TCH",  # flake8-type-checking
-  "ARG",  # flake8-unused-arguments
-  "PTH",  # flake8-use-pathlib
-  "ERA",  # eradicate
-  "PL",   # Pylint
-  "NPY",  # NumPy-specific rules
-  "PLE",  # Pylint
-  "PLR",  # Pylint
-  "PLW",  # Pylint
-  "RUF",  # Ruff-specific rules
-  "PD"    # pandas-vet
+  "A",   # flake8-builtins
+  "B",   # flake8-bugbear
+  "E",   # pycodestyle
+  "F",   # Pyflakes
+  "N",   # pep8-naming
+  "RET", # flake8-return
+  "S",   # flake8-bandit
+  "W",   # pycodestyle
+  "Q",   # flake8-quotes
+  "C90", # mccabe
+  "I",   # isort
+  "UP",  # pyupgrade
+  "BLE", # flake8-blind-except
+  "C4",  # flake8-comprehensions
+  "ISC", # flake8-implicit-str-concat
+  "ICN", # flake8-import-conventions
+  "PT",  # flake8-pytest-style
+  "PIE", # flake8-pie
+  "T20", # flake8-print
+  "SIM", # flake8-simplify
+  "TCH", # flake8-type-checking
+  "ARG", # flake8-unused-arguments
+  "PTH", # flake8-use-pathlib
+  "ERA", # eradicate
+  "PL",  # Pylint
+  "NPY", # NumPy-specific rules
+  "PLE", # Pylint
+  "PLR", # Pylint
+  "PLW", # Pylint
+  "RUF", # Ruff-specific rules
+  "PD",  # pandas-vet
 ]
 exclude = [
   ".eggs",
