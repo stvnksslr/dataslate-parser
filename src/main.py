@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, Form, UploadFile
+from jinja2_fragments.fastapi import Jinja2Blocks
 from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
@@ -20,12 +21,18 @@ app = FastAPI(
 )
 
 app.mount("/static", StaticFiles(directory="src/static"), name="static")
-templates = Jinja2Templates(directory="src//static/templates")
+templates = Jinja2Templates(directory="src/static/templates")
+templates_fragments = Jinja2Blocks(directory="src/static/templates")
 
 
 @app.get("/")
 async def root(request: Request):
     return templates.TemplateResponse("home.html", {"request": request})
+
+
+@app.get("/info/supported_battlescribe_versions")
+async def supported_battlescribe_versions():
+    return 2.03
 
 
 @app.post("/files/")
@@ -45,11 +52,11 @@ async def upload_roster(
     data = get_parser_type_and_parse(roster=upload_contents, summary_page=summary_page)
 
     parsed_roster = data.get("roster")
-    template = data.get("template")
+    template: str = data.get("template", "")
     rules_summary = data.get("rules_summary")
 
     if use_icons:
-        template = "icons_" + template
+        template = f"icons_{template}"
 
     return templates.TemplateResponse(
         template,

@@ -69,6 +69,19 @@ def create_parsed_list(list_of_squads):
 
 
 def sort_units_by_statline(squads):
+    """
+    Sorts a list of squads by their statline type (toughness, armored, or hybrid).
+
+    Args:
+        squads (list): A list of squads to be sorted.
+
+    Returns:
+        tuple: A tuple containing the sorted squads in the following order:
+            - armored (list): Squads with an 'armored' statline type.
+            - hybrid (list): Squads with a 'hybrid' statline type.
+            - parsed_squads (list): All squads, parsed into a standardized format.
+            - toughness (list): Squads with a 'toughness' statline type.
+    """
     toughness = []
     armored = []
     hybrid = []
