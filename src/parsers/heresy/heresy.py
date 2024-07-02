@@ -1,4 +1,3 @@
-
 from src.models.armor_facing import ArmorFacing
 from src.models.heresy_unit import HeresyUnit
 from src.models.unit_group import UnitGroup
@@ -37,7 +36,7 @@ def parse_units(soup):
         "XX: Alpha Legion",
         "Solar Auxilia",
         "Mechanicum",
-        "Legio Custodes"
+        "Legio Custodes",
     ]
     parsed_list = data_cleanse(rule_whitelist, soup)
     return parsed_list

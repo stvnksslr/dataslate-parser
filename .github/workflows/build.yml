@@ -13,7 +13,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.12"
-  POETRY_VERSION: "1.6.1"
+  POETRY_VERSION: "1.8.3"
       
 jobs:
   test:
@@ -53,7 +53,12 @@ jobs:
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install
       #----------------------------------------------
-      #              run linter suite
+      #              run formatter
+      #----------------------------------------------
+      - name: Run formatter
+        run: poetry run ruff format . --check
+      #----------------------------------------------
+      #              run linter
       #----------------------------------------------
       - name: Run linters
         run: poetry run ruff check .
@@ -61,15 +66,4 @@ jobs:
       #              run test suite
       #----------------------------------------------
       - name: Run tests
-        run: poetry run pytest
-      #----------------------------------------------
-      #      Send code coverage to code climate
-      #----------------------------------------------
-      - name: Submit coverage to code climate
-        uses: paambaati/codeclimate-action@v5.0.0
-        continue-on-error: true
-        env:
-          CI: "true"
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          coverageCommand: poetry run pytest --cov-branch --cov-report xml --cov=src src
+        run: poetry run pytest --cov

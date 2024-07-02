@@ -19,7 +19,6 @@ AGE_OF_SIGMAR_NAME: str = ""
 SUPPORTED_BATTLESCRIBE_VERSION = "2.03"
 
 BATTLESCRIBE_VERSION_ERROR = {
-    "ERROR": "battlesrcibe version not supported please upgrade, the current supported version is {}".format(
-        SUPPORTED_BATTLESCRIBE_VERSION
-    )
+    "ERROR": f"battlescribe version not supported please upgrade, the current supported version is "
+    f"{SUPPORTED_BATTLESCRIBE_VERSION}"
 }

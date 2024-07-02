@@ -45,9 +45,7 @@ def test_legion_zm_list():
 
 
 def test_solar_aux_zm_list():
-    """
-
-    """
+    """ """
     hhv2_solar_aux_zm = base_path / "hhv2.solar_aux_zm.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=hhv2_solar_aux_zm)
 
@@ -55,9 +53,7 @@ def test_solar_aux_zm_list():
 
 
 def test_mechanicum_zm_list():
-    """
-
-    """
+    """ """
     hhv2_mechanicum_zm = base_path / "hhv2.mechanicum_zm.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=hhv2_mechanicum_zm)
 
@@ -65,9 +61,7 @@ def test_mechanicum_zm_list():
 
 
 def test_custodes_zm_list():
-    """
-
-    """
+    """ """
     hhv2_custodes_zm = base_path / "hhv2.custodes_zm.ros"
     parsed_roster = fetch_and_parse_roster(roster_file=hhv2_custodes_zm)
 

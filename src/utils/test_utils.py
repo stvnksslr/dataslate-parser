@@ -6,15 +6,15 @@ from src.utils.gametype import detect_gametype, find_gametype_parser, find_templ
 
 
 def fetch_and_parse_roster(roster_file: Path):
-    with Path.open(roster_file) as roster_file:
-        roster_file_content = roster_file.read()
+    with Path.open(roster_file) as roster:
+        roster_file_content = roster.read()
 
         return get_parser_type_and_parse(roster_file_content, False).get("roster")
 
 
 def fetch_and_parse_rules(roster_file):
-    with Path.open(roster_file) as roster_file:
-        roster_file_content = roster_file.read()
+    with Path.open(roster_file) as roster:
+        roster_file_content = roster.read()
 
         return get_parser_type_and_parse(roster_file_content, True).get("rules_summary")
 
