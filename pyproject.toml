@@ -30,7 +30,11 @@ pytest-random-order = "^1.1.1"
 
 [tool.poetry.group.code-quality.dependencies]
 ruff = "^0.5.0"
-pyright = "^1.1.369"
+mypy = "^1.11.1"
+pre-commit = "^3.8.0"
+
+[tool.poetry.group.types.dependencies]
+types-beautifulsoup4 = "^4.12.0.20240511"
 
 [build-system]
 requires = ["poetry>=0.12"]
@@ -52,7 +56,7 @@ omit = [
     '.venv/*',
     '*/migrations/*',
     '*_test.py',
-    "src/utils/logger_manager.py"
+    "src/utils/logger_manager.py",
 ]
 
 [tool.ruff]
@@ -67,32 +71,32 @@ exclude = [
     ".venv",
 ]
 lint.ignore = [
-    "B008", # function-call-in-default-argument (B008)
-    "S101", # Use of `assert` detected
-    "RET504", # Unnecessary variable assignment before `return` statement
+    "B008",    # function-call-in-default-argument (B008)
+    "S101",    # Use of `assert` detected
+    "RET504",  # Unnecessary variable assignment before `return` statement
     "PLR2004", # Magic value used in comparison, consider replacing {value} with a constant variable
-    "ARG001", # Unused function argument: `{name}`
-    "S311", # Standard pseudo-random generators are not suitable for cryptographic purposes
-    "ISC001" # Checks for implicitly concatenated strings on a single line
+    "ARG001",  # Unused function argument: `{name}`
+    "S311",    # Standard pseudo-random generators are not suitable for cryptographic purposes
+    "ISC001",  # Checks for implicitly concatenated strings on a single line
 ]
 lint.select = [
-    "A", # flake8-builtins
-    "B", # flake8-bugbear
-    "E", # pycodestyle
-    "F", # Pyflakes
-    "N", # pep8-naming
+    "A",   # flake8-builtins
+    "B",   # flake8-bugbear
+    "E",   # pycodestyle
+    "F",   # Pyflakes
+    "N",   # pep8-naming
     "RET", # flake8-return
-    "S", # flake8-bandit
-    "W", # pycodestyle
-    "Q", # flake8-quotes
+    "S",   # flake8-bandit
+    "W",   # pycodestyle
+    "Q",   # flake8-quotes
     "C90", # mccabe
-    "I", # isort
-    "UP", # pyupgrade
+    "I",   # isort
+    "UP",  # pyupgrade
     "BLE", # flake8-blind-except
-    "C4", # flake8-comprehensions
+    "C4",  # flake8-comprehensions
     "ISC", # flake8-implicit-str-concat
     "ICN", # flake8-import-conventions
-    "PT", # flake8-pytest-style
+    "PT",  # flake8-pytest-style
     "PIE", # flake8-pie
     "T20", # flake8-print
     "SIM", # flake8-simplify
@@ -100,11 +104,11 @@ lint.select = [
     "ARG", # flake8-unused-arguments
     "PTH", # flake8-use-pathlib
     "ERA", # eradicate
-    "PL", # Pylint
+    "PL",  # Pylint
     "NPY", # NumPy-specific rules
     "PLE", # Pylint
     "PLR", # Pylint
     "PLW", # Pylint
     "RUF", # Ruff-specific rules
-    "PD", # pandas-vet
+    "PD",  # pandas-vet
 ]

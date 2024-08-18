@@ -1,3 +1,5 @@
+from types import ModuleType
+
 from bs4 import BeautifulSoup
 
 from src.utils.constants import SUPPORTED_PARSERS, TEMPLATES
@@ -9,7 +11,7 @@ def detect_gametype(roster):
     return game_system
 
 
-def find_gametype_parser(gametype) -> str:
+def find_gametype_parser(gametype) -> ModuleType | str:
     parser = SUPPORTED_PARSERS.get(gametype)
     if parser:
         return parser

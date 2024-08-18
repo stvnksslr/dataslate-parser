@@ -1,12 +1,7 @@
 # Dataslate Parser
 
-![](https://github.com/stvnksslr/dataslate-parser/workflows/build/badge.svg)
-![](https://github.com/stvnksslr/dataslate-parser/workflows/deploy/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/86bd40b6d3fd037140d4/maintainability)](https://codeclimate.com/github/stvnksslr/dataslate-parser/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/86bd40b6d3fd037140d4/test_coverage)](https://codeclimate.com/github/stvnksslr/dataslate-parser/test_coverage)
-
-![](https://img.shields.io/github/v/release/stvnksslr/dataslate-parser?label=Latest%20Release)
-![](https://img.shields.io/github/v/release/stvnksslr/dataslate-parser?label=Deployed%20Release)
+![Build](https://github.com/stvnksslr/dataslate-parser/workflows/build/badge.svg)
+[![Deploy](https://github.com/stvnksslr/dataslate-parser/actions/workflows/deploy.yaml/badge.svg)](https://github.com/stvnksslr/dataslate-parser/actions/workflows/deploy.yaml)
 
 This project is to take in battlescribe roster files and output them into easily printable sheets or cards since the current output is awful.
 

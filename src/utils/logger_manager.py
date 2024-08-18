@@ -1,31 +1,27 @@
 import logging
 import sys
 from pprint import pformat
+from typing import TYPE_CHECKING, Optional
 
 from loguru import logger
 from loguru._defaults import LOGURU_FORMAT
 
+if TYPE_CHECKING:
+    from types import FrameType
+
 
 class InterceptHandler(logging.Handler):
-    """Default handler from examples in loguru documentaion.
-    See https://loguru.readthedocs.io/en/stable/overview.html#entirely-compatible-with-standard-logging.
-    """
-
     def emit(self, record: logging.LogRecord):
-        """Emit function.
-
-        :param record:
-        :return:
-        """
         # Get corresponding Loguru level if it exists
         try:
             level = logger.level(record.levelname).name
         except ValueError:
-            level = record.levelno
+            level = logging.getLevelName(record.levelno)  # Convert int to level name string
 
         # Find caller from where originated the logged message
-        frame, depth = logging.currentframe(), 2
-        while frame.f_code.co_filename == logging.__file__:
+        frame: Optional[FrameType] = logging.currentframe()
+        depth = 2
+        while frame and frame.f_code.co_filename == logging.__file__:
             frame = frame.f_back
             depth += 1
 
