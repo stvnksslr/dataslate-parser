@@ -27,11 +27,17 @@ jobs:
       #  -----  install & configure uv and python  -----
       #----------------------------------------------
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@v3
+        uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
       - name: Install Python
         run: uv python install ${{ env.PYTHON_VERSION }}
+      #----------------------------------------------            
+      #              run formatter
+      #----------------------------------------------
+      - name: install groups
+        run: uv sync --only-dev
+      #----------------------------------------------
       #              run formatter
       #----------------------------------------------
       - name: Run formatter

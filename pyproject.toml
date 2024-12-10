@@ -19,7 +19,6 @@ dependencies = [
 ]
 
 [dependency-groups]
-code-quality = ["mypy>=1.11.1", "pre-commit>=3.8.0", "ruff>=0.8.0"]
 dev = [
     "pytest-asyncio>=0.23.7",
     "pytest-clarity>=1.0.1",
@@ -27,8 +26,11 @@ dev = [
     "pytest-random-order>=1.1.1",
     "pytest-sugar>=1.0.0",
     "pytest>=8.2.2",
+    "mypy>=1.11.1",
+    "pre-commit>=3.8.0",
+    "ruff>=0.8.0",
+    "types-beautifulsoup4>=4.12.0.20240511",
 ]
-types = ["types-beautifulsoup4>=4.12.0.20240511"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"

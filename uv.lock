@@ -141,20 +141,16 @@ dependencies = [
 ]
 
 [package.dev-dependencies]
-code-quality = [
+dev = [
     { name = "mypy" },
     { name = "pre-commit" },
-    { name = "ruff" },
-]
-dev = [
     { name = "pytest" },
     { name = "pytest-asyncio" },
     { name = "pytest-clarity" },
     { name = "pytest-cov" },
     { name = "pytest-random-order" },
     { name = "pytest-sugar" },
-]
-types = [
+    { name = "ruff" },
     { name = "types-beautifulsoup4" },
 ]
 
@@ -174,20 +170,18 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-code-quality = [
+dev = [
     { name = "mypy", specifier = ">=1.11.1" },
     { name = "pre-commit", specifier = ">=3.8.0" },
-    { name = "ruff", specifier = ">=0.8.0" },
-]
-dev = [
     { name = "pytest", specifier = ">=8.2.2" },
     { name = "pytest-asyncio", specifier = ">=0.23.7" },
     { name = "pytest-clarity", specifier = ">=1.0.1" },
     { name = "pytest-cov", specifier = ">=5.0.0" },
     { name = "pytest-random-order", specifier = ">=1.1.1" },
     { name = "pytest-sugar", specifier = ">=1.0.0" },
+    { name = "ruff", specifier = ">=0.8.0" },
+    { name = "types-beautifulsoup4", specifier = ">=4.12.0.20240511" },
 ]
-types = [{ name = "types-beautifulsoup4", specifier = ">=4.12.0.20240511" }]
 
 [[package]]
 name = "distlib"
