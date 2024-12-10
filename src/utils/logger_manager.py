@@ -1,7 +1,7 @@
 import logging
 import sys
 from pprint import pformat
-from typing import TYPE_CHECKING, Optional
+from typing import TYPE_CHECKING
 
 from loguru import logger
 from loguru._defaults import LOGURU_FORMAT
@@ -19,7 +19,7 @@ class InterceptHandler(logging.Handler):
             level = logging.getLevelName(record.levelno)  # Convert int to level name string
 
         # Find caller from where originated the logged message
-        frame: Optional[FrameType] = logging.currentframe()
+        frame: FrameType | None = logging.currentframe()
         depth = 2
         while frame and frame.f_code.co_filename == logging.__file__:
             frame = frame.f_back

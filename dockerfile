@@ -1,20 +1,26 @@
 FROM python:3.12-bookworm AS build
 
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
-    POETRY_VIRTUALENVS_CREATE=true \
-    POETRY_VIRTUALENVS_IN_PROJECT=true \
-    POETRY_NO_INTERACTION=1 \
     PIP_NO_CACHE_DIR=off \
-    POETRY_VERSION=1.8.3
+    UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy
 
 WORKDIR /package
 
-RUN pip install "poetry==$POETRY_VERSION"
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
-COPY pyproject.toml poetry.lock ./
-RUN poetry install --only main
+COPY pyproject.toml uv.lock ./
+
+# Install dependencies
+RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=bind,source=uv.lock,target=uv.lock \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+    uv sync --frozen --no-install-project --no-editable --no-dev
 
 COPY ./src ./src
+
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --frozen --no-editable --no-dev
 
 FROM python:3.12-slim-bookworm AS app
 
@@ -24,7 +30,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 RUN groupadd -r appuser && useradd -r -g appuser appuser
 
-COPY --from=build --chown=appuser:appuser /package/ .
+COPY --from=build /package/ ./
 
 USER appuser
 
