@@ -10,18 +10,10 @@ This project is to take in battlescribe roster files and output them into easily
 
 ## Setup
 
-### Poetry
+### UV
+1. uv sync
+2. uv run python -m src.main
 
-1. `poetry install`
-2. `poetry shell`
-3. `pytest`
-
-### Pip
-
-1. `python -m venv .venv`
-2. `activate with your preferred method`
-3. `pip install -r requirements-dev.txt`
-4. `pytest`
 
 ### Run App
 
