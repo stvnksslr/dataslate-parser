@@ -1,7 +1,7 @@
 [project]
 name = "dataslate-parser"
 version = "0.1.0"
-description = "Add your description here"
+description = "a module for parsing battlescribe rosters and allowing them to be printed or displayed cleanly"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
