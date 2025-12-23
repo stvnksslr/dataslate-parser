@@ -71,7 +71,6 @@ def create_list_of_units(model_list):
             attacks=characteristics.get("A"),
             leadership=characteristics.get("Ld"),
             save=characteristics.get("Save"),
-            keywords=[],
             wargear={},
             abilities={},
         )

@@ -4,7 +4,7 @@ repos:
       - id: ruff-check
         name: ruff-check
         entry: ./.venv/bin/ruff
-        args: 
+        args:
           - check
         language: system
         types: [python]
@@ -13,17 +13,17 @@ repos:
       - id: ruff-format
         name: ruff-format
         entry: ./.venv/bin/ruff
-        args: 
+        args:
           - format
         language: system
         types: [python]
         pass_filenames: false
         always_run: true
-      - id: mypy
-        name: mypy
-        entry: ./.venv/bin/mypy
-        args: 
-          - src
+      - id: ty
+        name: ty
+        entry: ./.venv/bin/ty
+        args:
+          - check
         language: system
         types: [python]
         pass_filenames: false

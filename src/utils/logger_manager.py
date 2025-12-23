@@ -78,4 +78,4 @@ def init_logging():
     logging.getLogger("uvicorn").handlers = [intercept_handler]
 
     # set logs output, level and format
-    logger.configure(handlers=[{"sink": sys.stdout, "level": logging.DEBUG, "format": format_record}])
+    logger.configure(handlers=[{"sink": sys.stdout, "level": logging.DEBUG, "format": format_record}])  # type: ignore[list-item]

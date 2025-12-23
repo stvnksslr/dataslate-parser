@@ -1,4 +1,3 @@
-from os import listdir
 from pathlib import Path
 
 from src.models.heresy_unit import HeresyUnit
@@ -14,10 +13,10 @@ def test__heresy_loop_through_test_folder_and_parse():
     expected: successfully parses all roster files in the test folder.
     """
     parsed_rosters = []
-    list_of_rosters = [file for file in listdir(str(base_path)) if Path.is_file(base_path / file)]
+    list_of_rosters = [file for file in base_path.iterdir() if file.is_file()]
 
     for roster in list_of_rosters:
-        parsed_roster = fetch_and_parse_roster(roster_file=base_path / roster)
+        parsed_roster = fetch_and_parse_roster(roster_file=roster)
         parsed_rosters.append(parsed_roster)
 
     assert bool(parsed_rosters)

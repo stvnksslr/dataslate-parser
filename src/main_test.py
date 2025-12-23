@@ -6,11 +6,11 @@ from src.main import app
 
 client = TestClient(app)
 base_path = Path.cwd() / "test_rosters"
-test_roster = str(base_path / "horus_heresy" / "hhv2.nightlords_zm.ros")
+test_roster = base_path / "horus_heresy" / "hhv2.nightlords_zm.ros"
 
 
 def post_files(multiple_pages, summary_page, use_icons):
-    with Path.open(test_roster) as roster_file:
+    with test_roster.open() as roster_file:
         roster_file_text = roster_file.read()
 
     return client.post(
