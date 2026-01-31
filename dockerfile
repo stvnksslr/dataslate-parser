@@ -1,4 +1,4 @@
-FROM python:3.12-bookworm AS build
+FROM python:3.14-trixie AS build
 
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_NO_CACHE_DIR=off \
@@ -22,7 +22,7 @@ COPY ./src ./src
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen --no-editable --no-dev
 
-FROM python:3.12-slim-bookworm AS app
+FROM python:3.14-slim-trixie AS app
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \

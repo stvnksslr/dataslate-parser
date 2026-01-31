@@ -10,22 +10,21 @@ Dataslate Parser is a FastAPI web application that transforms BattleScribe roste
 
 ```bash
 # Setup
-poetry install
-poetry shell
+uv sync
 
 # Run tests
-pytest                          # Run all tests with random order
-pytest src/parsers/w40k/w40k_test.py  # Run specific test file
-pytest -k "test_name"           # Run tests matching pattern
+uv run pytest                          # Run all tests with random order
+uv run pytest src/parsers/w40k/w40k_test.py  # Run specific test file
+uv run pytest -k "test_name"           # Run tests matching pattern
 
 # Linting and type checking
-ruff check src/                 # Lint code
-ruff check src/ --fix           # Auto-fix linting issues
-mypy src/                       # Type check
+uv run ruff check src/                 # Lint code
+uv run ruff check src/ --fix           # Auto-fix linting issues
+uv run ty check src/                   # Type check
 
 # Run application
-uvicorn src.main:app            # Start server (default port 8000)
-uvicorn src.main:app --reload   # Start with hot reload
+uv run uvicorn src.main:app            # Start server (default port 8000)
+uv run uvicorn src.main:app --reload   # Start with hot reload
 ```
 
 ## Architecture
@@ -59,7 +58,8 @@ Tests are co-located with source files (e.g., `w40k_test.py` alongside `w40k.py`
 
 ## Configuration Notes
 
-- Python 3.11+ required
+- Python 3.14+ required
+- Uses UV for dependency management
 - Ruff configured with 120 char line length
 - pytest runs with `--random-order` by default
 - BattleScribe version 2.03+ required for roster files
