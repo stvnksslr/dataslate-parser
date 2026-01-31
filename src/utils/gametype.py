@@ -1,13 +1,16 @@
 from types import ModuleType
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 from src.utils.constants import SUPPORTED_PARSERS, TEMPLATES
 
 
-def detect_gametype(roster):
+def detect_gametype(roster) -> str | None:
     soup = BeautifulSoup(roster, features="xml")
-    game_system = soup.find("roster").attrs.get("gameSystemId")
+    roster_element = soup.find("roster")
+    if not isinstance(roster_element, Tag):
+        return None
+    game_system = roster_element.attrs.get("gameSystemId")
     return game_system
 
 

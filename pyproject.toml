@@ -27,7 +27,8 @@ dev = [
     "pytest-sugar>=1.1.1",
     "pytest>=9.0.2",
     "ruff>=0.14.10",
-    "ty>=0.0.5"
+    "types-beautifulsoup4>=4.12.0.20241020",
+    "ty>=0.0.14",
 ]
 
 [tool.pytest.ini_options]

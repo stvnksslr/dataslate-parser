@@ -24,6 +24,8 @@ def get_parser_type_and_parse(roster, summary_page):
 
     gametype = detect_gametype(roster)
     parser = find_gametype_parser(gametype)
+    if isinstance(parser, str):
+        raise ValueError(parser)
     parsed_roster = parser.parse_units(soup)
 
     rules_summary = {}
