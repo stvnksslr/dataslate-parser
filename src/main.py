@@ -1,7 +1,11 @@
+from os import getenv
+
+import pyroscope
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from loguru import logger
 from uvicorn import run
 
 from src.utils.battlescribe_meta import check_battlescribe_version
@@ -11,6 +15,15 @@ from src.utils.test_utils import get_parser_type_and_parse
 from src.utils.zip_utils import check_if_zipped
 
 init_logging()
+
+# Initialize Pyroscope profiling
+if pyroscope_server := getenv("PYROSCOPE_SERVER_ADDRESS"):
+    pyroscope.configure(
+        application_name=getenv("PYROSCOPE_APPLICATION_NAME", "dataslate"),
+        server_address=pyroscope_server,
+        tags={"namespace": getenv("POD_NAMESPACE", "dataslate")},
+    )
+    logger.info(f"Pyroscope profiling enabled, sending to {pyroscope_server}")
 
 app = FastAPI(
     title="Dataslate",
